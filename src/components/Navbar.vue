@@ -1,36 +1,23 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-toggle="collapse"
-      data-target="#navbarNav"
-      aria-controls="navbarNav"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="#"
-            >Home <span class="sr-only">(current)</span></a
-          >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+  <div>
+    <b-navbar toggleable="lg" type="dark" variant="dark">
+      <b-navbar-brand href="#">NavBar</b-navbar-brand>
+
+      <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+
+      <b-collapse id="nav-collapse" is-nav>
+        <b-navbar-nav class="ml-auto">
+          <b-nav-item href="#" class="navitem">Home</b-nav-item>
+          <b-nav-item href="#">Sobre Nós</b-nav-item>
+          <b-nav-item href="#">Serviços</b-nav-item>
+          <b-nav-item href="#">Produtos</b-nav-item>
+          <b-nav-item href="#">Contactos</b-nav-item>
+        </b-navbar-nav>
+
+        <!-- Right aligned nav items -->
+      </b-collapse>
+    </b-navbar>
+  </div>
 </template>
 <script>
 export default {
@@ -40,8 +27,12 @@ export default {
 
 <style scoped>
 .navbar {
-  position: fixed;
+  /* position: fixed; */
   z-index: 1;
-  width: 100%;
+  /* width: 100%; */
+}
+.navbar-dark .navbar-nav .nav-link {
+    /* color: rgba(255, 255, 255, 0.5); */
+    color: #fff;
 }
 </style>
