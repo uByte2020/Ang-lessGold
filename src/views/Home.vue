@@ -19,7 +19,7 @@
           </div>
         </div>
         <div class="col-12" id="BemVindo-LesGold">
-          <div class="row justify-content-md-center">
+          <div class="row">
             <div class="col-lg-4 col-xl-4 col-sm-12 col-md-4">
               <img src="@/assets/logo.png" alt="" class="fluid img" />
             </div>
@@ -54,7 +54,7 @@
         <div class="col-12" id="OQFazemosPrinc">
           <div class="row">
             <div class="col-lg-8 col-xl-6 col-sm-12 col-md-8 OQFazemos">
-              <div class="col-lg-4 col-xl-10 col-sm-12 col-md-6">
+              <div class="col-lg-9 col-xl-9 col-sm-12 col-md-9">
                 <h3>O que fazemos</h3>
                 <div class="progress">
                   <div
@@ -84,21 +84,21 @@
             >
               <h2>Porquê Escolher-nos</h2>
             </div>
-            <div class="col-lg-4 col-xl-3 col-sm-8 col-md-4 TextoEscolherNos">
+            <div class="col-lg-7 col-xl-3 col-sm-8 col-md-7 TextoEscolherNos">
               <h4>Experiencia no mercado</h4>
               <p>
                 Estamos há anos no mercado prestando serviço de importação e
                 exportação
               </p>
             </div>
-            <div class="col-lg-4 col-xl-3 col-sm-8 col-md-4 TextoEscolherNos">
+            <div class="col-lg-7 col-xl-3 col-sm-8 col-md-7 TextoEscolherNos">
               <h4>Comprometimento com o Cliente</h4>
               <p>
                 Procuramos sempre os melhores resultados para os nossos
                 clientes.
               </p>
             </div>
-            <div class="col-lg-4 col-xl-3 col-sm-8 col-md-4 TextoEscolherNos">
+            <div class="col-lg-7 col-xl-3 col-sm-8 col-md-7 TextoEscolherNos">
               <h4>Qualidade do Produto</h4>
               <p>Fornecemos sempre os melhores produtos.</p>
             </div>
@@ -129,13 +129,20 @@
           </div>
         </div> -->
         <div class="col-12" id="RecebaNovidades">
-          <div class="row justify-content-md-center">
-            <div class="col-6">
-              <h1>Receba Novidades</h1>
+          <div class="row justify-content-md-center RecebaNovidadesTexto">
+            <div class="col-lg-7 col-xl-7 col-sm-12 col-md-7">
+              <h2>Receba Novidades</h2>
+              <p>Cadraste o seu email e receba novidades da ANG LESS GOLD</p>
             </div>
-            <div class="col-6"></div>
+            <div class="col-lg-5 col-xl-5 col-sm-12 col-md-5" id="inputT">
+              <!-- <input type="text" class="form-control" placeholder="E-mail" />
+               <b-icon icon="exclamation-circle-fill" variant="dark"></b-icon> -->
+              <input type="text" class="form-control" placeholder="E-mail" />
+              <!-- <b-icon icon="arrow-right" variant="dark"></b-icon> -->
+            </div>
           </div>
         </div>
+        <footer></footer>
       </div>
     </div>
   </div>
@@ -161,7 +168,8 @@ export default {
 </script>
 
 <style scoped>
-#Home{}
+#Home {
+}
 .inicio {
   padding: 5% 0;
 }
@@ -183,6 +191,7 @@ export default {
 }
 #BemVindo-LesGold {
   margin: 1% auto;
+  padding: 5%;
 }
 .TextoBemVindo {
   text-align: left;
@@ -197,14 +206,16 @@ export default {
   background-color: gray;
   margin-bottom: 0.5%;
   box-shadow: 1px -1px 5px black;
+  padding: 8%;
 }
 .OQFazemos {
   height: 50%;
   text-align: left;
   border: 1px solid gray;
-  margin: 10% auto;
+  /* margin: 5% auto; */
+  margin-left: 6%;
   background-color: white;
-  padding: 4% 1%;
+  padding: 3% 1%;
 }
 #EscolherNosPrinc {
   background-color: rgb(73, 63, 63);
@@ -234,8 +245,23 @@ export default {
   border-left: 3px solid black !important;
   background-color: none !important;
 }
-#RecebaNovidades{
+#RecebaNovidades {
   color: #fff;
-  background-color: #525659;
+  background-color: #65bb1f;
+  text-align: center;
+}
+.RecebaNovidadesTexto {
+  padding: 6% 3% 4% 3% !important;
+  text-align: left !important;
+  margin: auto 7%;
+}
+input {
+  border-radius: 25px;
+  text-align: center;
+  font-size: 16px;
+  padding: 5%;
+}
+#inputT {
+  margin-top: 2% !important;
 }
 </style>
