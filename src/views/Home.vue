@@ -29,7 +29,9 @@
                 <div class="col-lg-4 col-xl-4 col-sm-12 col-md-12">
                   <img src="@/assets/logo.png" alt="" class="img-fluid img" />
                 </div>
-                <div class="col-lg-8 col-xl-8 col-sm-12 col-md-12 TextoBemVindo">
+                <div
+                  class="col-lg-8 col-xl-8 col-sm-12 col-md-12 TextoBemVindo"
+                >
                   <h2 class="TextoBemVindoH1">
                     Bem-Vindo <br />
                     À Ang Less Gold
@@ -63,26 +65,30 @@
 
         <div class="col-12" id="OQFazemosPrinc">
           <div class="row">
-            <div class="col-lg-8 col-xl-6 col-sm-12 col-md-8 OQFazemos">
-              <div class="col-lg-9 col-xl-9 col-sm-12 col-md-9">
-                <h3>O que fazemos</h3>
-                <div class="progress">
-                  <div
-                    class="progress-bar bg-danger"
-                    role="progressbar"
-                    style="width: 100%"
-                    aria-valuenow="10"
-                    aria-valuemin="0"
-                    aria-valuemax="10"
-                  ></div>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-8 col-xl-6 col-sm-12 col-md-8 OQFazemos">
+                  <div class="col-lg-9 col-xl-9 col-sm-12 col-md-9">
+                    <h3>O que fazemos</h3>
+                    <div class="progress">
+                      <div
+                        class="progress-bar bg-danger"
+                        role="progressbar"
+                        style="width: 100%"
+                        aria-valuenow="10"
+                        aria-valuemin="0"
+                        aria-valuemax="10"
+                      ></div>
+                    </div>
+                  </div>
+                  <div class="col-lg-8 col-xl-10 col-sm-12 col-md-8">
+                    <p>
+                      Operamos com importações e exportações diversas como,
+                      Alimentos, Bebidas e Medicamentos, entre outros, na venda
+                      por encomenda
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div class="col-lg-8 col-xl-10 col-sm-12 col-md-8">
-                <p>
-                  Operamos com importações e exportações diversas como,
-                  Alimentos, Bebidas e Medicamentos, entre outros, na venda por
-                  encomenda
-                </p>
               </div>
             </div>
           </div>
@@ -140,22 +146,95 @@
         </div> -->
         <div class="col-12" id="RecebaNovidades">
           <div class="row justify-content-md-center RecebaNovidadesTexto">
-            <div class="col-lg-7 col-xl-7 col-sm-12 col-md-7">
-              <h2>Receba Novidades</h2>
-              <p>Cadraste o seu email e receba novidades da ANG LESS GOLD</p>
-            </div>
-            <div class="col-lg-5 col-xl-5 col-sm-12 col-md-5" id="inputT">
-              <!-- <input type="text" class="form-control" placeholder="E-mail" />
-               <b-icon icon="exclamation-circle-fill" variant="dark"></b-icon> -->
-              <input type="text" class="form-control" placeholder="E-mail" />
-              <!-- <b-icon icon="arrow-right" variant="dark"></b-icon> -->
-              <button id="button" class="btn btn-sm sucess">
-                <b-icon icon="arrow-right" variant="default"></b-icon>
-              </button>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-7 col-xl-7 col-sm-12 col-md-7">
+                  <h2>Receba Novidades</h2>
+                  <p>
+                    Cadraste o seu email e receba novidades da ANG LESS GOLD
+                  </p>
+                </div>
+                <div class="col-lg-5 col-xl-5 col-sm-12 col-md-5" id="inputT">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="E-mail"
+                  />
+                  <button id="button" class="btn btn-sm btn-success">
+                    <b-icon
+                      icon="arrow-right"
+                      font-scale="1"
+                      variant="default"
+                    ></b-icon>
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <footer></footer>
+        <footer class="col-12">
+          <div class="row footer">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-3 col-xl-3 col-sm-12 col-md-3">
+                  <h5>ANG LESS GOLD</h5>
+                  <small>
+                    Estranda da Mendanha <br />
+                    Nº 25 Bloco 4 - 4 C <br />Parque norte <br />
+                    2580-588 Carregando
+                  </small>
+                </div>
+                <div class="col-lg-3 col-xl-3 col-sm-12 col-md-3">
+                  <h5>Menu</h5>
+                  <small>Inicio <br />Produtos <br />Serviços</small>
+                </div>
+                <div class="col-lg-3 col-xl-3 col-sm-12 col-md-3">
+                  <h5>Informação</h5>
+                  <small>
+                    Quem Somos <br />Contactos <br />Politicas e Privacidades
+                  </small>
+                </div>
+                <div class="col-lg-3 col-xl-3 col-sm-12 col-md-3">
+                  <h5>
+                    <b-icon
+                      icon="facebook"
+                      variant="default"
+                      class="icon"
+                    ></b-icon
+                    ><b-icon icon="instagram" variant="default"></b-icon>
+                  </h5>
+                  <small>
+                    <img
+                      src="../assets/svg/Portugal.svg"
+                      alt="imagem-Angola"
+                      class="img-fluid IMG1"
+                    />
+                    <b-icon
+                      icon="telephone"
+                      font-scale="1"
+                      variant="default"
+                    ></b-icon>
+                     +351 935 348 752
+                  </small>
+                  <br>
+                  <small>
+                    <img
+                      src="../assets/svg/Angola.svg"
+                      alt="imagem-Angola"
+                      class="img-fluid IMG1"
+                    />
+                    <b-icon
+                      icon="telephone"
+                      font-scale="1"
+                      variant="default"
+                    ></b-icon>
+                     +244 948 005 815
+                  </small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
       </div>
     </div>
   </div>
@@ -181,6 +260,16 @@ export default {
 </script>
 
 <style scoped>
+@font-face {
+  font-family: "josefin-sans";
+  -ms-font-family: "josefin-sans";
+  -moz-font-family: "josefin-sans";
+  -webkit-font-family: "josefin-sans";
+  src: url("../assets/Fonts/josefin-sans.bold.ttf");
+  -ms-src: url("../assets/Fonts/josefin-sans.bold.ttf");
+  -moz-src: url("../assets/Fonts/josefin-sans.bold.ttf");
+  -webkit-src: url("../assets/Fonts/josefin-sans.bold.ttf");
+}
 #Home {
 }
 .inicio {
@@ -226,7 +315,6 @@ export default {
   text-align: left;
   border: 1px solid gray;
   /* margin: 5% auto; */
-  margin-left: 6%;
   background-color: white;
   padding: 3% 1%;
 }
@@ -266,22 +354,38 @@ export default {
 .RecebaNovidadesTexto {
   padding: 6% 3% 4% 3% !important;
   text-align: left !important;
-  margin: auto 7%;
 }
 input {
   border-radius: 25px;
   text-align: center;
   font-size: 16px;
   padding: 5%;
+  width: 100%;
 }
 #inputT {
   margin-top: 2% !important;
 }
 #button {
-  margin-top: -65px !important;
-  margin-left: 85%;
+  margin-top: -70px !important;
+  margin-left: 88%;
   color: #fff !important;
   background-color: rgb(53, 138, 53);
-  border-radius: 20px;
+  border-radius: 100px;
+}
+footer {
+  background-color: rgb(54, 54, 54);
+  padding: 5%;
+  color: #fff;
+}
+.footer {
+  text-align: left;
+}
+.icon {
+  margin-right: 6%;
+}
+.IMG1 {
+  width: 10%;
+  height: 10%;
+  margin-right: 3%;
 }
 </style>
