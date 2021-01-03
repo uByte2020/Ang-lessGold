@@ -4,53 +4,63 @@
     <div id="home" class="container-fluid">
       <div class="row">
         <div class="col-12">
-          <div class="row justify-content-md-center TextoInicio">
-            <div class="col-lg-8 col-xl-8 col-sm-12 col-md-8">
-              <h1>
-                Importação e Exportação de Bens Alimentares e Medicamentos
-              </h1>
-              <p class="TextoInicioP">
-                Soluções que permite a satisfação dos nossos clientes e
-                parceiros com maior qualidade e segurança naquilo que são as
-                diversas necessidades de bens alimentares
-              </p>
-              <button class="btn btn-lg btn-dark">Saiba Mais</button>
+          <div class="row TextoInicio">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-8 col-xl-8 col-sm-12 col-md-8">
+                  <h1>
+                    Importação e Exportação de Bens Alimentares e Medicamentos
+                  </h1>
+                  <p class="TextoInicioP">
+                    Soluções que permite a satisfação dos nossos clientes e
+                    parceiros com maior qualidade e segurança naquilo que são as
+                    diversas necessidades de bens alimentares
+                  </p>
+                  <button class="btn btn-lg btn-dark">Saiba Mais</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
         <div class="col-12" id="BemVindo-LesGold">
           <div class="row">
-            <div class="col-lg-4 col-xl-4 col-sm-12 col-md-4">
-              <img src="@/assets/logo.png" alt="" class="fluid img" />
-            </div>
-            <div class="col-lg-8 col-xl-8 col-sm-12 col-md-7 TextoBemVindo">
-              <h2 class="TextoBemVindoH1">
-                Bemvindo <br />
-                À Ang Less Gold
-              </h2>
-              <div class="progress">
-                <div
-                  class="progress-bar bg-danger"
-                  role="progressbar"
-                  style="width: 100%"
-                  aria-valuenow="10"
-                  aria-valuemin="0"
-                  aria-valuemax="10"
-                ></div>
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-4 col-xl-4 col-sm-12 col-md-12">
+                  <img src="@/assets/logo.png" alt="" class="img-fluid img" />
+                </div>
+                <div class="col-lg-8 col-xl-8 col-sm-12 col-md-12 TextoBemVindo">
+                  <h2 class="TextoBemVindoH1">
+                    Bem-Vindo <br />
+                    À Ang Less Gold
+                  </h2>
+                  <div class="progress">
+                    <div
+                      class="progress-bar bg-danger"
+                      role="progressbar"
+                      style="width: 100%"
+                      aria-valuenow="10"
+                      aria-valuemin="0"
+                      aria-valuemax="10"
+                    ></div>
+                  </div>
+                  <p class="TextoInicioP">
+                    A <b>ANG LESS GOLD</b> é uma empresa de direito Português,
+                    Contribuinte fiscal nº 515015253 com sede em estrada da
+                    Mendanha nº 25 Bloco 4 4c Parque norte, Carregado e
+                    Cadafais, conselho de Alenquer. Registada como pessoa
+                    coletiva 515015253 com número de identificação na segurança
+                    social 25150152535, cujo objetivo social e a prestação de
+                    serviço, comércio a grosso de bebidas, alimentaos,
+                    medicamentos, Importação e Exportação.
+                  </p>
+                  <button class="btn btn-lg btn-dark">Saiba Mais</button>
+                </div>
               </div>
-              <p class="TextoInicioP">
-                A <b>ANG LESS GOLD</b> é uma empresa de direito Português,
-                Contribuinte fiscal nº 515015253 com sede em estrada da Mendanha
-                nº 25 Bloco 4 4c Parque norte, Carregado e Cadafais, conselho de
-                Alenquer. Registada como pessoa coletiva 515015253 com número de
-                identificação na segurança social 25150152535, cujo objetivo
-                social e a prestação de serviço, comércio a grosso de bebidas,
-                alimentaos, medicamentos, Importação e Exportação.
-              </p>
-              <button class="btn btn-lg btn-dark">Saiba Mais</button>
             </div>
           </div>
         </div>
+
         <div class="col-12" id="OQFazemosPrinc">
           <div class="row">
             <div class="col-lg-8 col-xl-6 col-sm-12 col-md-8 OQFazemos">
@@ -139,6 +149,9 @@
                <b-icon icon="exclamation-circle-fill" variant="dark"></b-icon> -->
               <input type="text" class="form-control" placeholder="E-mail" />
               <!-- <b-icon icon="arrow-right" variant="dark"></b-icon> -->
+              <button id="button" class="btn btn-sm sucess">
+                <b-icon icon="arrow-right" variant="default"></b-icon>
+              </button>
             </div>
           </div>
         </div>
@@ -263,5 +276,12 @@ input {
 }
 #inputT {
   margin-top: 2% !important;
+}
+#button {
+  margin-top: -65px !important;
+  margin-left: 85%;
+  color: #fff !important;
+  background-color: rgb(53, 138, 53);
+  border-radius: 20px;
 }
 </style>
