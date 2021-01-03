@@ -3,7 +3,7 @@
     <Navbar />
     <div id="home" class="container-fluid">
       <div class="row">
-        <div class="col-12">
+        <div class="Inicio col-12">
           <div class="row TextoInicio">
             <div class="container">
               <div class="row">
@@ -16,7 +16,7 @@
                     parceiros com maior qualidade e segurança naquilo que são as
                     diversas necessidades de bens alimentares
                   </p>
-                  <button class="btn btn-lg btn-dark">Saiba Mais</button>
+                  <button type="button" class="btn btn-lg">Saiba Mais</button>
                 </div>
               </div>
             </div>
@@ -27,7 +27,11 @@
             <div class="container">
               <div class="row">
                 <div class="col-lg-4 col-xl-4 col-sm-12 col-md-12">
-                  <img src="@/assets/logo.png" alt="" class="img-fluid img" />
+                  <img
+                    src="@/assets/imgs/img1.jpeg"
+                    alt=""
+                    class="img-fluid img"
+                  />
                 </div>
                 <div
                   class="col-lg-8 col-xl-8 col-sm-12 col-md-12 TextoBemVindo"
@@ -56,7 +60,9 @@
                     serviço, comércio a grosso de bebidas, alimentaos,
                     medicamentos, Importação e Exportação.
                   </p>
-                  <button class="btn btn-lg btn-dark">Saiba Mais</button>
+                  <button type="button" class="btn btn-lg btn-dark">
+                    Saiba Mais
+                  </button>
                 </div>
               </div>
             </div>
@@ -144,6 +150,7 @@
             </div>
           </div>
         </div> -->
+        <Produtos />
         <div class="col-12" id="RecebaNovidades">
           <div class="row justify-content-md-center RecebaNovidadesTexto">
             <div class="container">
@@ -160,7 +167,11 @@
                     class="form-control"
                     placeholder="E-mail"
                   />
-                  <button id="button" class="btn btn-sm btn-success">
+                  <button
+                    type="button"
+                    id="button"
+                    class="btn btn-sm btn-success"
+                  >
                     <b-icon
                       icon="arrow-right"
                       font-scale="1"
@@ -176,33 +187,36 @@
           <div class="row footer">
             <div class="container">
               <div class="row">
-                <div class="col-lg-3 col-xl-3 col-sm-12 col-md-3">
-                  <h5>ANG LESS GOLD</h5>
+                <div class="col-lg-3 col-xl-3 col-sm-12 col-md-3 footerMarg">
+                  <h5>Endereço</h5>
+                  <div class="progress progress2">
+                    <div
+                      class="progress-bar progressCor"
+                      role="progressbar"
+                      style="width: 100%"
+                      aria-valuenow="10"
+                      aria-valuemin="0"
+                      aria-valuemax="10"
+                    ></div>
+                  </div>
                   <small>
                     Estranda da Mendanha <br />
                     Nº 25 Bloco 4 - 4 C <br />Parque norte <br />
                     2580-588 Carregando
                   </small>
                 </div>
-                <div class="col-lg-3 col-xl-3 col-sm-12 col-md-3">
-                  <h5>Menu</h5>
-                  <small>Inicio <br />Produtos <br />Serviços</small>
-                </div>
-                <div class="col-lg-3 col-xl-3 col-sm-12 col-md-3">
-                  <h5>Informação</h5>
-                  <small>
-                    Quem Somos <br />Contactos <br />Politicas e Privacidades
-                  </small>
-                </div>
-                <div class="col-lg-3 col-xl-3 col-sm-12 col-md-3">
-                  <h5>
-                    <b-icon
-                      icon="facebook"
-                      variant="default"
-                      class="icon"
-                    ></b-icon
-                    ><b-icon icon="instagram" variant="default"></b-icon>
-                  </h5>
+                <div class="col-lg-3 col-xl-3 col-sm-12 col-md-3 footerMarg">
+                  <h5>Contactos</h5>
+                  <div class="progress progress2">
+                    <div
+                      class="progress-bar progressCor"
+                      role="progressbar"
+                      style="width: 100%"
+                      aria-valuenow="10"
+                      aria-valuemin="0"
+                      aria-valuemax="10"
+                    ></div>
+                  </div>
                   <small>
                     <img
                       src="../assets/svg/Portugal.svg"
@@ -214,9 +228,9 @@
                       font-scale="1"
                       variant="default"
                     ></b-icon>
-                     +351 935 348 752
+                    +351 935 348 752
                   </small>
-                  <br>
+                  <br />
                   <small>
                     <img
                       src="../assets/svg/Angola.svg"
@@ -228,8 +242,45 @@
                       font-scale="1"
                       variant="default"
                     ></b-icon>
-                     +244 948 005 815
+                    +244 948 005 815
                   </small>
+                  <br />
+                  <b-icon
+                    icon="facebook"
+                    variant="default"
+                    class="icon"
+                  ></b-icon
+                  ><b-icon icon="instagram" class="icon" variant="default"></b-icon>
+                </div>
+                <div class="col-lg-3 col-xl-3 col-sm-12 col-md-3 footerMarg">
+                  <h5>Informação</h5>
+                  <div class="progress progress2">
+                    <div
+                      class="progress-bar progressCor"
+                      role="progressbar"
+                      style="width: 100%"
+                      aria-valuenow="10"
+                      aria-valuemin="0"
+                      aria-valuemax="10"
+                    ></div>
+                  </div>
+                  <small>
+                    Quem Somos <br />Contactos <br />Politicas e Privacidades
+                  </small>
+                </div>
+                <div class="col-lg-3 col-xl-3 col-sm-12 col-md-3 footerMarg">
+                  <h5>Menu</h5>
+                  <div class="progress progress2">
+                    <div
+                      class="progress-bar progressCor"
+                      role="progressbar"
+                      style="width: 100%"
+                      aria-valuenow="10"
+                      aria-valuemin="0"
+                      aria-valuemax="10"
+                    ></div>
+                  </div>
+                  <small>Inicio <br />Produtos <br />Serviços</small>
                 </div>
               </div>
             </div>
@@ -243,17 +294,17 @@
 <script>
 // @ is an alias to /src
 import Navbar from "../components/Navbar.vue";
-// import Produtos from "../components/home/Produtos";
+import Produtos from "../components/home/Produtos";
 
 export default {
   name: "Home",
   components: {
     Navbar,
-    // Produtos
+    Produtos
   },
   data() {
     return {
-      //backgroundimg: require("@/assets/logo.png"),
+      // backgroundimg:[require("@/assets/imgs/img7.jpg"),require("@/assets/imgs/img9.jpg"),]
     };
   },
 };
@@ -262,18 +313,13 @@ export default {
 <style scoped>
 @font-face {
   font-family: "josefin-sans";
-  -ms-font-family: "josefin-sans";
-  -moz-font-family: "josefin-sans";
-  -webkit-font-family: "josefin-sans";
-  src: url("../assets/Fonts/josefin-sans.bold.ttf");
-  -ms-src: url("../assets/Fonts/josefin-sans.bold.ttf");
-  -moz-src: url("../assets/Fonts/josefin-sans.bold.ttf");
-  -webkit-src: url("../assets/Fonts/josefin-sans.bold.ttf");
+  src: url("../assets/Fonts/josefin-sans.semibold.ttf") format("ttf");
 }
 #Home {
 }
-.inicio {
-  padding: 5% 0;
+.Inicio {
+  padding: 5%;
+  background-size: cover;
 }
 .TextoInicio {
   margin-top: 5%;
@@ -304,27 +350,38 @@ export default {
   height: 5px;
   width: 90px;
 }
+.progressCor {
+  background-color: #f8ce00 !important;
+}
+.progress2 {
+  height: 5px;
+  width: 30px;
+  margin-bottom: 3%;
+}
 #OQFazemosPrinc {
-  background-color: gray;
   margin-bottom: 0.5%;
   box-shadow: 1px -1px 5px black;
   padding: 8%;
+  background: url("../assets/imgs/img9.jpg") no-repeat center center;
+  background-size: cover;
 }
 .OQFazemos {
   height: 50%;
   text-align: left;
   border: 1px solid gray;
-  /* margin: 5% auto; */
   background-color: white;
   padding: 3% 1%;
+  color: #707070;
 }
 #EscolherNosPrinc {
   background-color: rgb(73, 63, 63);
   margin: 0.5% auto;
+  background: url("../assets/imgs/img21.png") no-repeat center center;
 }
 #EscolherNos {
   padding: 4%;
   text-align: center !important;
+  backdrop-filter: blur(2px);
 }
 .TextoEscolherNosTitulo {
   color: #fff;
@@ -348,7 +405,7 @@ export default {
 }
 #RecebaNovidades {
   color: #fff;
-  background-color: #65bb1f;
+  background-color: #68aa38;
   text-align: center;
 }
 .RecebaNovidadesTexto {
@@ -365,6 +422,14 @@ input {
 #inputT {
   margin-top: 2% !important;
 }
+button {
+  background-color: #8cb560;
+  color: #fff;
+}
+button:hover {
+  background-color: #8cb560;
+  color: #fff !important;
+}
 #button {
   margin-top: -70px !important;
   margin-left: 88%;
@@ -380,8 +445,11 @@ footer {
 .footer {
   text-align: left;
 }
+.footerMarg{margin-top: 2%;}
 .icon {
-  margin-right: 6%;
+  margin: 6%;
+  color:#f8ce00;
+  background-color: transparent;
 }
 .IMG1 {
   width: 10%;

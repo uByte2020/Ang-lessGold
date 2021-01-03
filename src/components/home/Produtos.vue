@@ -2,33 +2,30 @@
   <div class="container">
     <div class="row">
       <div class="col-3 borderD">
-          <div class="col-3">
-            <p><a href="#">Alimentos</a></p>
+        <div class="row">
+          <div class="col-7">
+          <a href="#">Alimentos</a>
           </div>
-          <div class="offset-md-9"></div>
-          <div class="col-3">
-            <p><a href="#">Bebidas</a></p>
+          <div class="col-7">
+          <a href="#">Bebidas</a>
           </div>
-          <div class="offset-md-9"></div>
-          <div class="col-3">
-            <p><a href="#">Enchidos</a></p>
+          <div class="col-7">
+          <a href="#">Enchidos</a>
           </div>
-          <div class="offset-md-9"></div>
-          <div class="col-3">
-            <p><a href="#">Carnes</a></p>
+          <div class="col-7">
+          <a href="#">Carnes</a>
           </div>
-          <div class="offset-md-9"></div>
-          <div class="col-3">
-            <p><a href="#">Frutas</a></p>
+          <div class="col-7">
+          <a href="#">Frutas</a>
           </div>
-          <div class="offset-md-9"></div>
-          <div class="col-3">
-            <p><a href="#">Medicamentos</a></p>
+          <div class="col-7">
+          <a href="#">Medicamentos</a>
           </div>
         </div>
+      </div>
     </div>
     <div class="col-4 Border">
-        <h1>Imagens</h1>
+      <h1>Imagens</h1>
     </div>
   </div>
 </template>
@@ -38,6 +35,6 @@ export default {};
 <style scoped>
 .borderD {
   margin-left: 2%;
-  border-left: 1px solid;
+  border-left: 1px solid black !important;
 }
 </style>
