@@ -36,10 +36,7 @@
                 <div
                   class="col-lg-8 col-xl-8 col-sm-12 col-md-12 TextoBemVindo"
                 >
-                  <h2 class="TextoBemVindoH1">
-                    Bem-Vindo <br />
-                    À Ang Less Gold
-                  </h2>
+                  <h2 class="TextoBemVindoH1">Bem-Vindo À Ang Less Gold</h2>
                   <div class="progress">
                     <div
                       class="progress-bar bg-danger"
@@ -199,11 +196,10 @@
                       aria-valuemax="10"
                     ></div>
                   </div>
-                  <small>
-                    Estranda da Mendanha <br />
-                    Nº 25 Bloco 4 - 4 C <br />Parque norte <br />
-                    2580-588 Carregando
-                  </small>
+                  <p>Estranda da Mendanha</p>
+                  <p>Nº 25 Bloco 4 - 4 C</p>
+                  <p>Parque norte</p>
+                  <p>2580-588 Carregando</p>
                 </div>
                 <div class="col-lg-3 col-xl-3 col-sm-12 col-md-3 footerMarg">
                   <h5>Contactos</h5>
@@ -217,7 +213,7 @@
                       aria-valuemax="10"
                     ></div>
                   </div>
-                  <small>
+                  <p>
                     <img
                       src="../assets/svg/Portugal.svg"
                       alt="imagem-Angola"
@@ -229,9 +225,9 @@
                       variant="default"
                     ></b-icon>
                     +351 935 348 752
-                  </small>
-                  <br />
-                  <small>
+                  </p>
+
+                  <p>
                     <img
                       src="../assets/svg/Angola.svg"
                       alt="imagem-Angola"
@@ -243,14 +239,18 @@
                       variant="default"
                     ></b-icon>
                     +244 948 005 815
-                  </small>
-                  <br />
+                  </p>
+
                   <b-icon
                     icon="facebook"
                     variant="default"
                     class="icon"
                   ></b-icon
-                  ><b-icon icon="instagram" class="icon" variant="default"></b-icon>
+                  ><b-icon
+                    icon="instagram"
+                    class="icon"
+                    variant="default"
+                  ></b-icon>
                 </div>
                 <div class="col-lg-3 col-xl-3 col-sm-12 col-md-3 footerMarg">
                   <h5>Informação</h5>
@@ -264,9 +264,9 @@
                       aria-valuemax="10"
                     ></div>
                   </div>
-                  <small>
-                    Quem Somos <br />Contactos <br />Politicas e Privacidades
-                  </small>
+                  <p>Quem Somos</p>
+                  <p>Contactos</p>
+                  <p>Politicas e Privacidades</p>
                 </div>
                 <div class="col-lg-3 col-xl-3 col-sm-12 col-md-3 footerMarg">
                   <h5>Menu</h5>
@@ -280,7 +280,7 @@
                       aria-valuemax="10"
                     ></div>
                   </div>
-                  <small>Inicio <br />Produtos <br />Serviços</small>
+                  <p>Inicio</p><p>Produtos</p><p>Serviços</p>
                 </div>
               </div>
             </div>
@@ -300,7 +300,7 @@ export default {
   name: "Home",
   components: {
     Navbar,
-    Produtos
+    Produtos,
   },
   data() {
     return {
@@ -445,15 +445,21 @@ footer {
 .footer {
   text-align: left;
 }
-.footerMarg{margin-top: 2%;}
+.footerMarg {
+  margin-top: 2%;
+}
 .icon {
-  margin: 6%;
-  color:#f8ce00;
+  margin-right: 6%;
+  margin-top: 6%;
+  color: #f8ce00;
   background-color: transparent;
 }
 .IMG1 {
   width: 10%;
   height: 10%;
   margin-right: 3%;
+}
+p {
+  font-size: 16px;
 }
 </style>
