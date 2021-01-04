@@ -36,10 +36,10 @@
                 <div
                   class="col-lg-8 col-xl-8 col-sm-12 col-md-12 TextoBemVindo"
                 >
-                  <h2 class="TextoBemVindoH1">Bem-Vindo <br> À Ang Less Gold</h2>
-                  <div class="progress">
+                  <h2 class="TextoBemVindoH1">Bem-Vindo <br> À ANG LESS GOLD</h2>
+                  <div class="progress ">
                     <div
-                      class="progress-bar bg-danger"
+                      class="progress-bar ProgressCor1"
                       role="progressbar"
                       style="width: 100%"
                       aria-valuenow="10"
@@ -75,7 +75,7 @@
                     <h3>O que fazemos</h3>
                     <div class="progress">
                       <div
-                        class="progress-bar bg-danger"
+                        class="progress-bar ProgressCor2"
                         role="progressbar"
                         style="width: 100%"
                         aria-valuenow="10"
@@ -104,22 +104,22 @@
               <h2>Porquê Escolher-nos</h2>
             </div>
             <div class="col-lg-7 col-xl-3 col-sm-8 col-md-7 TextoEscolherNos">
-              <h4>Experiencia no mercado</h4>
-              <p>
+              <h4 class="TextoEscolherNosTitulo">Experiencia no mercado</h4>
+              <p class="TextoEscolherNosTxt">
                 Estamos há anos no mercado prestando serviço de importação e
                 exportação
               </p>
             </div>
             <div class="col-lg-7 col-xl-3 col-sm-8 col-md-7 TextoEscolherNos">
-              <h4>Comprometimento com o Cliente</h4>
-              <p>
+              <h4 class="TextoEscolherNosTitulo">Comprometimento com o Cliente</h4>
+              <p class="TextoEscolherNosTxt">
                 Procuramos sempre os melhores resultados para os nossos
                 clientes.
               </p>
             </div>
             <div class="col-lg-7 col-xl-3 col-sm-8 col-md-7 TextoEscolherNos">
-              <h4>Qualidade do Produto</h4>
-              <p>Fornecemos sempre os melhores produtos.</p>
+              <h4 class="TextoEscolherNosTitulo">Qualidade do Produto</h4>
+              <p class="TextoEscolherNosTxt">Fornecemos sempre os melhores produtos.</p>
             </div>
           </div>
         </div>
@@ -153,8 +153,8 @@
             <div class="container">
               <div class="row">
                 <div class="col-lg-7 col-xl-7 col-sm-12 col-md-7">
-                  <h2>Receba Novidades</h2>
-                  <p>
+                  <h2 class="RecebaNovidadesTitulo">Receba Novidades</h2>
+                  <p class="RecebaNovidadesTexto2">
                     Cadraste o seu email e receba novidades da ANG LESS GOLD
                   </p>
                 </div>
@@ -314,8 +314,19 @@ export default {
 
 <style scoped>
 @font-face {
-  font-family: "josefin-sans";
-  src: url("../assets/Fonts/josefin-sans.semibold.ttf") format("ttf");
+  font-family: "Josefin";
+  src: local("Fonts"),
+   url(../assets/Fonts/josefin-sans.bold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Josefin-SemiBold";
+  src: local("Fonts"),
+   url(../assets/Fonts/josefin-sans.semibold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Gotham";
+  src: local("Fonts"),
+   url(../assets/Fonts/GothamBold.otf) format("truetype");
 }
 #Home {
 }
@@ -340,6 +351,7 @@ export default {
   text-align: left;
   color: #fff;
   opacity: 1;
+  font-family: "Gotham";
   /* backdrop-filter: blur(5px); */
 }
 .TextoInicioh1 {
@@ -360,6 +372,10 @@ export default {
 }
 .TextoBemVindo {
   text-align: left;
+  font-family: "Josefin";
+}
+.ProgressCor1{
+  background-color:#8CB560!important;
 }
 .TextoBemVindoH1 {
 }
@@ -375,10 +391,22 @@ export default {
   width: 30px;
   margin-bottom: 3%;
 }
+.ProgressCor2{
+  background-color:#707070 !important;
+}
 #OQFazemosPrinc {
   margin-bottom: 0.5%;
   box-shadow: 1px -1px 5px black;
   padding: 8%;
+  position: relative;
+}
+#OQFazemosPrinc::before{
+  content: "";
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
   background: url("../assets/imgs/img9.jpg") no-repeat center center;
   background-size: cover;
 }
@@ -412,14 +440,26 @@ export default {
 }
 .TextoEscolherNosTitulo {
   color: #fff;
+  font-family: "Josefin";
+  font-size: 40px;
 }
 .TextoEscolherNos {
   background-color: #fff;
   margin: 1% 1%;
-  padding: 4%;
+  padding: 3%;
   height: auto;
   border-radius: 3%;
   text-align: center !important;
+}
+.TextoEscolherNosTitulo{
+  font-family: "Josefin-SemiBold";
+  font-size: 24px;
+  color: #000;
+  margin: 2% auto;
+}
+.TextoEscolherNosTxt{
+  font-size: 19px;
+  margin: 2%;
 }
 #ExplroreProdutos {
   margin-top: 2%;
@@ -438,6 +478,13 @@ export default {
 .RecebaNovidadesTexto {
   padding: 6% 3% 4% 3% !important;
   text-align: left !important;
+}
+.RecebaNovidadesTitulo{
+  font-family:"Josefin";
+  font-size: 60px;
+}
+.RecebaNovidadesTexto2{
+  font-size: 24px;
 }
 input {
   border-radius: 25px;

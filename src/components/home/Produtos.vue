@@ -87,6 +87,9 @@ export default {
 };
 </script>
 <style scoped>
+h3{
+  font-family: "Josefin";
+}
 #Produto {
   padding: 6%;
 }
