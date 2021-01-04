@@ -36,7 +36,7 @@
                 <div
                   class="col-lg-8 col-xl-8 col-sm-12 col-md-12 TextoBemVindo"
                 >
-                  <h2 class="TextoBemVindoH1">Bem-Vindo À Ang Less Gold</h2>
+                  <h2 class="TextoBemVindoH1">Bem-Vindo <br> À Ang Less Gold</h2>
                   <div class="progress">
                     <div
                       class="progress-bar bg-danger"
@@ -280,7 +280,9 @@
                       aria-valuemax="10"
                     ></div>
                   </div>
-                  <p>Inicio</p><p>Produtos</p><p>Serviços</p>
+                  <p>Inicio</p>
+                  <p>Produtos</p>
+                  <p>Serviços</p>
                 </div>
               </div>
             </div>
@@ -319,11 +321,26 @@ export default {
 }
 .Inicio {
   padding: 5%;
+  position: relative;
+}
+.Inicio::before{
+  content:"";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background: url("../assets/imgs/img28.jpg") no-repeat center center;
   background-size: cover;
+  z-index: -1;
+  filter: grayscale(20%) brightness(40%);
 }
 .TextoInicio {
   margin-top: 5%;
   text-align: left;
+  color: #fff;
+  opacity: 1;
+  /* backdrop-filter: blur(5px); */
 }
 .TextoInicioh1 {
 }
@@ -374,14 +391,24 @@ export default {
   color: #707070;
 }
 #EscolherNosPrinc {
-  background-color: rgb(73, 63, 63);
+  background-color:rgb(16, 139, 16);
   margin: 0.5% auto;
+  position: relative;
+}
+#EscolherNosPrinc::before{
+  content: "";
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  top: 0px;
+  left: 0px;
   background: url("../assets/imgs/img21.png") no-repeat center center;
+  filter: brightness(30%);
+  background-size: cover;
 }
 #EscolherNos {
   padding: 4%;
   text-align: center !important;
-  backdrop-filter: blur(2px);
 }
 .TextoEscolherNosTitulo {
   color: #fff;
