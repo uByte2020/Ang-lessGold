@@ -70,40 +70,91 @@ export default {
 @media only screen and (min-width: 1680px){
   .img {
     margin-left: 80%;
-    width: 90%;
+    -moz-margin-left: 80%;
+    -ms-margin-left: 80%;
+    -webkit-margin-left: 80%;
     height: 50%;
+    -moz-height: 50%;
+    -ms-height: 50%;
+    -webkit-height: 50%;
+    width: 90%;
+    -moz-width: 90%;
+    -ms-width: 90%;
+    -webkit-width: 90%;
   }
 }
 @media only screen and (max-width: 600px) {
   .navbar {
     position: absolute;
+    -moz-position: absolute;
+    -ms-position: absolute;
+    -webkit-position: absolute;
     z-index: 1 !important;
+    -moz-z-index: 1 !important;
+    -ms-z-index: 1 !important;
+    -webkit-z-index: 1 !important;
     width: 100%;
+    -moz-width: 100%;
+    -ms-width: 100%;
+    -webkit-width: 100%;
     /* background-color: transparent !important; */
   }
   .img {
     margin-left: -60%;
+    -moz-margin-left: -60%;
+    -ms-margin-left: -60%;
+    -webkit-margin-left: -60%;
     width: 90%;
+    -moz-width: 90%;
+    -ms-width: 90%;
+    -webkit-width: 90%;
     height: 50%;
+    -moz-height: 50%;
+    -ms-height: 50%;
+    -webkit-height: 50%;
   }
   .nav-collapse,
   .Marg {
     margin-top: -20%;
+    -moz-margin-top: -20%;
+    -ms-margin-top: -20%;
+    -webkit-margin-top: -20%;
     margin-left: 80%;
+    -moz-margin-left: 80%;
+    -ms-margin-left: 80%;
+    -webkit-margin-left: 80%;
   }
 }
 @media only screen and (max-width: 790px){
   .img {
     margin-left: -50%;
+    -moz-margin-left: -50%;
+    -ms-margin-left: -50%;
+    -webkit-margin-left: -50%;
     width: 90%;
+    -moz-width: 90%;
+    -ms-width: 90%;
+    -webkit-width: 90%;
     height: 50%;
+    -moz-height: 50%;
+    -ms-height: 50%;
+    -webkit-height: 50%;
   }
 }
 @media only screen and (max-width: 1024px){
   .img {
     margin-left: -40%;
+    -moz-margin-left: -40%;
+    -ms-margin-left: -40%;
+    -webkit-margin-left: -40%;
     width: 90%;
+    -moz-width: 90%;
+    -ms-width: 90%;
+    -webkit-width: 90%;
     height: 50%;
+    -moz-height: 50%;
+    -ms-height: 50%;
+    -webkit-height: 50%;
   }
 }
 </style>
