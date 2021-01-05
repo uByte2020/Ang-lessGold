@@ -28,7 +28,7 @@
               <div class="row">
                 <div class="col-lg-4 col-xl-4 col-sm-12 col-md-12">
                   <img
-                    src="@/assets/imgs/img1.jpeg"
+                    src="@/assets/imgs/img30.jpg"
                     alt=""
                     class="img-fluid img"
                   />
@@ -57,7 +57,7 @@
                     serviço, comércio a grosso de bebidas, alimentaos,
                     medicamentos, Importação e Exportação.
                   </p>
-                  <button type="button" class="btn btn-lg btn-dark">
+                  <button type="button" class="btn btn-lg">
                     Saiba Mais
                   </button>
                 </div>
