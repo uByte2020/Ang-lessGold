@@ -36,7 +36,7 @@
                 <div
                   class="col-lg-8 col-xl-8 col-sm-12 col-md-12 TextoBemVindo"
                 >
-                  <h2 class="TextoBemVindoH1">Bemvindo <br> À ANG LESS GOLD</h2>
+                  <h2 class="TextoBemVindoH1">Bem-Vindo <br> À ANG LESS GOLD</h2>
                   <div class="progress ">
                     <div
                       class="progress-bar ProgressCor1"
@@ -394,6 +394,7 @@ export default {
   top: 0px;
   left: 0px;
   background: url("../assets/imgs/img9.jpg") no-repeat center center;
+  
   background-size:100% 150%;
 }
 .OQFazemos {
@@ -533,5 +534,10 @@ footer {
 }
 p {
   font-size: 16px;
+}
+@media only screen and (max-width: 600px){
+  .TextoInicio{
+    margin-top: 20%;
+  }
 }
 </style>
