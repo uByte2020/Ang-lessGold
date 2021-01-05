@@ -1,6 +1,7 @@
 <template>
   <div>
     <b-navbar toggleable="lg" type="dark" variant="dark">
+      <b-navbar-brand href="#"></b-navbar-brand>
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
@@ -24,11 +25,15 @@ export default {
 };
 </script>
 
-<style scoped lang="css">
+<style scoped>
 .navbar {
-  background-color: #424F4B !important;
+  position: absolute;
+  z-index: 1 !important;
+  width: 100%;
+  background-color: transparent !important;
 }
 .navbar-dark .navbar-nav .nav-link {
+    /* color: rgba(255, 255, 255, 0.5); */
     color: #fff;
 }
 </style>

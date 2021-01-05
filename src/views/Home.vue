@@ -320,7 +320,9 @@ export default {
   background: url("../assets/imgs/img28.jpg") no-repeat center center;
   background-size: cover;
   z-index: -1;
-  filter: grayscale(20%) brightness(40%);
+  filter: grayscale(60%) brightness(30%) !important;
+  -webkit-filter: grayscale(60%) brightness(30%) !important;
+  -moz-filter: grayscale(60%) brightness(30%) !important;
 }
 .TextoInicio {
   margin-top: 5%;
@@ -339,7 +341,7 @@ export default {
   box-shadow: 0px 0px 6px 4px gray;
   border-radius: 5px;
   width: 90%;
-  height: 85%;
+  height: 100%;
   margin-right: 15%;
 }
 #BemVindo-LesGold {
@@ -347,7 +349,10 @@ export default {
   padding: 5%;
 }
 .TextoBemVindo {
+  margin-top: 1%;
   text-align: left;
+}
+.TextoBemVindoH1{
   font-family: "Josefin";
 }
 .ProgressCor1{
