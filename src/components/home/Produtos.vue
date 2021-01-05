@@ -124,33 +124,29 @@ export default {
   methods: {
     AlimentosClick() {
       this.Alimentos = true;
-      if (this.Alimentos == true) {
         const Cor = document.getElementById("Link1");
         Cor.style.color = "#f8ce00";
         Cor.style.borderLeft = "2px solid #f8ce00";
-        Cor.style.marginLeft = "-8%";
-        Cor.style.paddingLeft = "8%";
+        Cor.style.marginLeft = "-7%";
+        Cor.style.paddingLeft = "4%";
         const Cor2 = document.getElementById("Link2");
         Cor2.style.color = "#000";
         Cor2.style.borderLeft = "0";
         Cor2.style.marginLeft = "-8%";
         Cor2.style.paddingLeft = "8%";
-      }
     },
     AlimentoClick() {
       this.Alimentos = false;
       const Cor = document.getElementById("Link2");
-      if (this.Alimentos === false) {
         Cor.style.color = "#f8ce00";
         Cor.style.borderLeft = "2px solid #f8ce00";
-        Cor.style.marginLeft = "-8%";
-        Cor.style.paddingLeft = "8%";
+        Cor.style.marginLeft = "-7%";
+        Cor.style.paddingLeft = "4%";
         const Cor2 = document.getElementById("Link1");
         Cor2.style.color = "#000";
         Cor2.style.borderLeft = "0";
         Cor2.style.marginLeft = "-8%";
         Cor2.style.paddingLeft = "8%";
-      }
     },
   },
 };
@@ -201,7 +197,7 @@ h3 {
   -moz-color: #f8ce00;
   -ms-color: #f8ce00;
   -webkit-color: #f8ce00;
-  border-left: 2px solid #f8ce00;
+  border-left: 2px solid #f8ce00 !important;
   -moz-border-left: 2px solid #f8ce00;
   -ms-border-left: 2px solid #f8ce00;
   -webkit-border-left: 2px solid #f8ce00;
