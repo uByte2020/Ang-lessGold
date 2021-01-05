@@ -104,7 +104,7 @@
               <h2>Porquê Escolher-nos</h2>
             </div>
             <div class="col-lg-7 col-xl-3 col-sm-8 col-md-7 TextoEscolherNos">
-              <h4 class="TextoEscolherNosTitulo">Experiencia no mercado</h4>
+              <h4 class="TextoEscolherNosTitulo">Responsabilidade Social</h4>
               <p class="TextoEscolherNosTxt">
                 Estamos há anos no mercado prestando serviço de importação e
                 exportação
@@ -112,14 +112,14 @@
             </div>
             <div class="col-lg-7 col-xl-3 col-sm-8 col-md-7 TextoEscolherNos">
               <h4 class="TextoEscolherNosTitulo">Comprometimento com o Cliente</h4>
-              <p class="TextoEscolherNosTxt">
+              <p class="TextoEscolherNosTxt2">
                 Procuramos sempre os melhores resultados para os nossos
                 clientes.
               </p>
             </div>
             <div class="col-lg-7 col-xl-3 col-sm-8 col-md-7 TextoEscolherNos">
               <h4 class="TextoEscolherNosTitulo">Qualidade do Produto</h4>
-              <p class="TextoEscolherNosTxt">Fornecemos sempre os melhores produtos.</p>
+              <p class="TextoEscolherNosTxt3">Fornecemos sempre os melhores produtos.</p>
             </div>
           </div>
         </div>
@@ -304,6 +304,11 @@ export default {
   src: local("Fonts"),
    url(../assets/Fonts/GothamBold.otf) format("truetype");
 }
+@font-face {
+  font-family: "Segoe";
+  src: local("Fonts"),
+   url(../assets/Fonts/Segoe_UI.ttf) format("truetype");
+}
 #Home {
 }
 .Inicio {
@@ -440,7 +445,21 @@ export default {
 }
 .TextoEscolherNosTxt{
   font-size: 19px;
-  margin: 2%;
+  margin: 13% auto;
+  font-family: "Segoe";
+  font-size: 19px;
+}
+.TextoEscolherNosTxt2{
+  font-size: 19px;
+  margin: 5% auto;
+  font-family: "Segoe";
+  font-size: 19px;
+}
+.TextoEscolherNosTxt3{
+  font-size: 19px;
+  margin: 15% auto;
+  font-family: "Segoe";
+  font-size: 19px;
 }
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
@@ -463,6 +482,7 @@ export default {
 }
 .RecebaNovidadesTexto2{
   font-size: 24px;
+  font-family: "Segoe";
 }
 input {
   border-radius: 25px;
