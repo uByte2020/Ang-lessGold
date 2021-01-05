@@ -7,10 +7,10 @@
       <div class="col-lg-3 col-sm-12 col-xl-3 col-md-3">
         <div class="row links">
           <div class="col-lg-12 col-sm-4 col-xl-12 col-md-12">
-            <a href="#pereciveis" @click="AlimentosClick()">Pereciveis</a>
+            <a href="#Produto" @click="AlimentosClick()">Pereciveis</a>
           </div>
           <div class="col-lg-12 col-sm-4 col-xl-12 col-md-12">
-            <a href="#Npereciveis" @click="AlimentoClick()">Não Pereciveis</a>
+            <a href="#Produto" @click="AlimentoClick()">Não Pereciveis</a>
           </div>
         </div>
       </div>
@@ -22,20 +22,20 @@
         <div class="row">
           <div class="col-4">
             <figure>
-              <img src="@/assets/imgs/img6.jpg" class="img-fluid" alt="Mucua" />
-              <figcaption>Mucua</figcaption>
+              <img src="@/assets/imgs/img14.jpg" class="img-fluid img" alt="Mucua" />
+              <figcaption>Fuba de Milho</figcaption>
             </figure>
           </div>
           <div class="col-4">
             <figure>
-              <img src="@/assets/imgs/img6.jpg" class="img-fluid" alt="Mucua" />
-              <figcaption>Mucua</figcaption>
+              <img src="@/assets/imgs/img18.jpg" class="img-fluid img" alt="Mucua" />
+              <figcaption>Bacalhau - Posta / Inteiro</figcaption>
             </figure>
           </div>
           <div class="col-4">
             <figure>
-              <img src="@/assets/imgs/img6.jpg" class="img-fluid" alt="Mucua" />
-              <figcaption>Mucua</figcaption>
+              <img src="@/assets/imgs/img6.jpg" class="img-fluid img" alt="Mucua" />
+              <figcaption>Múcua</figcaption>
             </figure>
           </div>
         </div>
@@ -48,19 +48,19 @@
         <div class="row">
           <div class="col-4">
             <figure>
-              <img src="@/assets/imgs/img10.png" class="img-fluid" alt="Mucua" />
+              <img src="@/assets/imgs/img10.png" class="img-fluid img" alt="Mucua" />
               <figcaption>Mucua</figcaption>
             </figure>
           </div>
           <div class="col-4">
             <figure>
-              <img src="@/assets/imgs/img10.png" class="img-fluid" alt="Mucua" />
+              <img src="@/assets/imgs/img10.png" class="img-fluid img" alt="Mucua" />
               <figcaption>Mucua</figcaption>
             </figure>
           </div>
           <div class="col-4">
             <figure>
-              <img src="@/assets/imgs/img10.png" class="img-fluid" alt="Mucua" />
+              <img src="@/assets/imgs/img10.png" class="img-fluid img" alt="Mucua" />
               <figcaption>Mucua</figcaption>
             </figure>
           </div>
@@ -104,8 +104,25 @@ a {
 a:active,
 a:hover,
 a:focus {
-  border-left: 2px solid #f8ce00;
-  color: #f8ce00;
+  color: #000;
   text-decoration: none;
+}
+a:active{
+  color: #f8ce00;
+  border-left: 2px solid #f8ce00;
+  padding: 2%;
+}
+.img{
+  height: 150px;
+  width: 90%;
+  box-shadow: 1px 1px 5px gray;
+}
+figcaption{
+  margin:1% auto;
+  /* margin-left: 3%; */
+  height: 10%;
+  width: 90%;
+  padding: 4%;
+  box-shadow: 1px 1px 5px gray;
 }
 </style>

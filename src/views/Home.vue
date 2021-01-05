@@ -99,7 +99,7 @@
         <div class="col-12" id="EscolherNosPrinc">
           <div class="row justify-content-md-center" id="EscolherNos">
             <div
-              class="col-lg-12 col-xl-12 col-sm-12 col-md-12 TextoEscolherNosTitulo"
+              class="col-lg-12 col-xl-12 col-sm-12 col-md-12 TextoEscolherNosTituloPrinc"
             >
               <h2>Porquê Escolher-nos</h2>
             </div>
@@ -123,30 +123,6 @@
             </div>
           </div>
         </div>
-        <!-- <div class="col-12" id="ExplroreProdutos">
-          <div class="row justify-content-md-center">
-            <div class="col-12">
-              <h3>Explore os Nossos Produtos</h3>
-            </div>
-            <div class="col-12">
-              <div>
-                <b-card no-body>
-                  <b-tabs pills card vertical nav-wrapper-class="w-30">
-                    <b-tab title="Tab 1" class="tab" active
-                      ><b-card-text>Tab contents 1</b-card-text></b-tab
-                    >
-                    <b-tab title="Tab 2" class="tab"
-                      ><b-card-text>Tab contents 2</b-card-text></b-tab
-                    >
-                    <b-tab title="Tab 3" class="tab"
-                      ><b-card-text>Tab contents 3</b-card-text></b-tab
-                    >
-                  </b-tabs>
-                </b-card>
-              </div>
-            </div>
-          </div>
-        </div> -->
         <Produtos />
         <div class="col-12" id="RecebaNovidades">
           <div class="row justify-content-md-center RecebaNovidadesTexto">
@@ -438,7 +414,7 @@ export default {
   padding: 4%;
   text-align: center !important;
 }
-.TextoEscolherNosTitulo {
+.TextoEscolherNosTituloPrinc {
   color: #fff;
   font-family: "Josefin";
   font-size: 40px;

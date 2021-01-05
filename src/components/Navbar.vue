@@ -24,14 +24,11 @@ export default {
 };
 </script>
 
-<style scoped>
+<style scoped lang="css">
 .navbar {
-  /* position: fixed; */
-  z-index: 1;
-  /* width: 100%;
+  background-color: #424F4B !important;
 }
 .navbar-dark .navbar-nav .nav-link {
-    /* color: rgba(255, 255, 255, 0.5); */
     color: #fff;
 }
 </style>
