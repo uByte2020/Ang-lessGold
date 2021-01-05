@@ -14,15 +14,20 @@
           ></div>
         </div>
       </div>
+      <div class="col-12">
+        <a href="#" id="VerTodos">VER TODOS PRODUTOS</a>
+      </div>
       <div class="col-lg-3 col-sm-12 col-xl-3 col-md-3">
         <div class="row links">
-          <div class="col-lg-12 col-sm-4 col-xl-12 col-md-12">
+          <div class="col-lg-12 col-sm-4 col-xl-12 col-md-12" id="LinkCor">
             <a href="#Produto" id="Link1" @click="AlimentosClick()"
               >Pereciveis</a
             >
           </div>
           <div class="col-lg-12 col-sm-4 col-xl-12 col-md-12">
-            <a href="#Produto" @click="AlimentoClick()">Não Pereciveis</a>
+            <a href="#Produto" id="Link2" @click="AlimentoClick()"
+              >Não Pereciveis</a
+            >
           </div>
         </div>
       </div>
@@ -114,11 +119,30 @@ export default {
   },
   methods: {
     AlimentosClick() {
-      // const link1 = document.getElementById("Link1").innerText.st;
       this.Alimentos = true;
+      if (this.Alimentos == true) {
+        const Cor = document.getElementById("Link1");
+        Cor.style.color = "#f8ce00";
+        Cor.style.borderLeft = "1px solid #f8ce00";
+        Cor.style.padding = "2%";
+        const Cor2 = document.getElementById("Link2");
+        Cor2.style.color = "#000";
+        Cor2.style.borderLeft = "0";
+        Cor2.style.padding = "0";
+      }
     },
     AlimentoClick() {
       this.Alimentos = false;
+      const Cor = document.getElementById("Link2");
+      if (this.Alimentos === false) {
+        Cor.style.color = "#f8ce00";
+        Cor.style.borderLeft = "1px solid #f8ce00";
+        Cor.style.padding = "2%";
+        const Cor2 = document.getElementById("Link1");
+        Cor2.style.color = "#000";
+        Cor2.style.borderLeft = "0";
+        Cor2.style.padding = "0";
+      }
     },
   },
 };
@@ -131,7 +155,8 @@ h3 {
   padding: 6%;
 }
 .links {
-  border-left: 1px solid gray;
+  border-left: 1px ridge gray;
+  text-align: left;
 }
 a {
   color: #000;
@@ -145,9 +170,6 @@ a:focus {
   text-decoration: none;
 }
 a:active {
-  color: #f8ce00;
-  border-left: 2px solid #f8ce00;
-  padding: 2%;
 }
 .img {
   height: 150px;
@@ -155,7 +177,7 @@ a:active {
   /* box-shadow: 1px 1px 5px gray; */
   border-radius: 7px;
 }
-.DivImg{
+.DivImg {
   margin-top: 2%;
 }
 figure {
@@ -181,5 +203,24 @@ figcaption {
 }
 .progressCor {
   background-color: #68aa38;
+}
+#VerTodos {
+  font-size: 10px;
+  color: gray;
+  text-decoration: blue;
+  text-align: right !important;
+  margin-left: 80%;
+}
+#VerTodos:hover {
+  color: blue;
+  text-decoration: 1px blue;
+}
+@media only screen and (max-width: 600px){
+  #VerTodos {
+  font-size: 10px;
+  color: gray;
+  text-decoration: blue;
+  margin: auto;
+}
 }
 </style>
