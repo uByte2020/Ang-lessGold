@@ -67,6 +67,13 @@ export default {
 .img{
   margin-left: 10%;
 }
+@media only screen and (min-width: 1680px){
+  .img {
+    margin-left: 80%;
+    width: 90%;
+    height: 50%;
+  }
+}
 @media only screen and (max-width: 600px) {
   .navbar {
     position: absolute;

@@ -121,7 +121,6 @@ export default {
       Alimentos: true,
     };
   },
-  mounted: {},
   methods: {
     AlimentosClick() {
       this.Alimentos = true;
