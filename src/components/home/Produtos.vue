@@ -20,7 +20,11 @@
       <div class="col-lg-3 col-sm-12 col-xl-3 col-md-3">
         <div class="row links">
           <div class="col-lg-12 col-sm-4 col-xl-12 col-md-12" id="LinkCor">
-            <a href="#Produto" id="Link1" @click="AlimentosClick()"
+            <a
+              href="#Produto"
+              :class="{ active: Alimentos, LinkActive: 'Link' }"
+              id="Link1"
+              @click="AlimentosClick()"
               >Pereciveis</a
             >
           </div>
@@ -34,7 +38,7 @@
       <div
         class="col-lg-9 col-sm-12 col-xl-9 col-md-9"
         id="pereciveis"
-        v-show="Alimentos == true"
+        v-show="Alimentos === true"
       >
         <div class="row">
           <div class="col-lg-4 col-sm-12 col-xl-4 col-md-4 DivImg">
@@ -117,18 +121,21 @@ export default {
       Alimentos: true,
     };
   },
+  mounted: {},
   methods: {
     AlimentosClick() {
       this.Alimentos = true;
       if (this.Alimentos == true) {
         const Cor = document.getElementById("Link1");
         Cor.style.color = "#f8ce00";
-        Cor.style.borderLeft = "1px solid #f8ce00";
-        Cor.style.padding = "2%";
+        Cor.style.borderLeft = "2px solid #f8ce00";
+        Cor.style.marginLeft = "-8%";
+        Cor.style.paddingLeft = "8%";
         const Cor2 = document.getElementById("Link2");
         Cor2.style.color = "#000";
         Cor2.style.borderLeft = "0";
-        Cor2.style.padding = "0";
+        Cor2.style.marginLeft = "-8%";
+        Cor2.style.paddingLeft = "8%";
       }
     },
     AlimentoClick() {
@@ -136,12 +143,14 @@ export default {
       const Cor = document.getElementById("Link2");
       if (this.Alimentos === false) {
         Cor.style.color = "#f8ce00";
-        Cor.style.borderLeft = "1px solid #f8ce00";
-        Cor.style.padding = "2%";
+        Cor.style.borderLeft = "2px solid #f8ce00";
+        Cor.style.marginLeft = "-8%";
+        Cor.style.paddingLeft = "8%";
         const Cor2 = document.getElementById("Link1");
         Cor2.style.color = "#000";
         Cor2.style.borderLeft = "0";
-        Cor2.style.padding = "0";
+        Cor2.style.marginLeft = "-8%";
+        Cor2.style.paddingLeft = "8%";
       }
     },
   },
@@ -157,6 +166,18 @@ h3 {
 .links {
   border-left: 1px ridge gray;
   text-align: left;
+}
+.LinkActive {
+  color: #f8ce00;
+  border-left: 2px solid #f8ce00;
+  margin-left: -8%;
+  padding-left: 8%;
+}
+.LinkActive:hover{
+  color: #f8ce00;
+  border-left: 2px solid #f8ce00;
+  margin-left: -8%;
+  padding-left: 8%;
 }
 a {
   color: #000;
@@ -215,12 +236,13 @@ figcaption {
   color: blue;
   text-decoration: 1px blue;
 }
-@media only screen and (max-width: 600px){
+
+@media only screen and (max-width: 600px) {
   #VerTodos {
-  font-size: 10px;
-  color: gray;
-  text-decoration: blue;
-  margin: auto;
-}
+    font-size: 10px;
+    color: gray;
+    text-decoration: blue;
+    margin: auto;
+  }
 }
 </style>

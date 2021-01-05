@@ -65,7 +65,7 @@ export default {
   font-size: 20px;
 }
 .img{
-  margin-left: 80%;
+  margin-left: 10%;
 }
 @media only screen and (max-width: 600px) {
   .navbar {
@@ -83,6 +83,20 @@ export default {
   .Marg {
     margin-top: -20%;
     margin-left: 80%;
+  }
+}
+@media only screen and (max-width: 790px){
+  .img {
+    margin-left: -50%;
+    width: 90%;
+    height: 50%;
+  }
+}
+@media only screen and (max-width: 1024px){
+  .img {
+    margin-left: -40%;
+    width: 90%;
+    height: 50%;
   }
 }
 </style>

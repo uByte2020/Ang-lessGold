@@ -36,7 +36,7 @@
                 <div
                   class="col-lg-8 col-xl-8 col-sm-12 col-md-12 TextoBemVindo"
                 >
-                  <h2 class="TextoBemVindoH1">Bem-Vindo <br> À ANG LESS GOLD</h2>
+                  <h2 class="TextoBemVindoH1">BemVindo <br> À ANG LESS GOLD</h2>
                   <div class="progress ">
                     <div
                       class="progress-bar ProgressCor1"
@@ -422,7 +422,7 @@ export default {
   background-size: 100% 180%;
 }
 #EscolherNos {
-  padding: 4%;
+  padding: 4% 7%;
   text-align: center !important;
 }
 .TextoEscolherNosTituloPrinc {
@@ -452,7 +452,7 @@ export default {
 }
 .TextoEscolherNosTxt2{
   font-size: 19px;
-  margin: 5% auto;
+  margin: 6% auto;
   font-family: "Segoe";
   font-size: 19px;
 }
@@ -474,7 +474,7 @@ export default {
   text-align: center;
 }
 .RecebaNovidadesTexto {
-  padding: 6% 3% 4% 3% !important;
+  padding: 6% 7% 4% 7% !important;
   text-align: left !important;
 }
 .RecebaNovidadesTitulo{
