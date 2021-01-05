@@ -36,7 +36,7 @@
                 <div
                   class="col-lg-8 col-xl-8 col-sm-12 col-md-12 TextoBemVindo"
                 >
-                  <h2 class="TextoBemVindoH1">Bem-Vindo <br> À ANG LESS GOLD</h2>
+                  <h2 class="TextoBemVindoH1">Bemvindo <br> À ANG LESS GOLD</h2>
                   <div class="progress ">
                     <div
                       class="progress-bar ProgressCor1"
@@ -362,7 +362,7 @@ export default {
 }
 .progress {
   height: 5px;
-  width: 90px;
+  width: 50px;
 }
 .progressCor {
   background-color: #f8ce00 !important;
@@ -373,7 +373,7 @@ export default {
   margin-bottom: 3%;
 }
 .ProgressCor2{
-  background-color:#707070 !important;
+  background-color:#8CB560 !important;
 }
 #OQFazemosPrinc {
   margin-bottom: 0.5%;
@@ -389,7 +389,7 @@ export default {
   top: 0px;
   left: 0px;
   background: url("../assets/imgs/img9.jpg") no-repeat center center;
-  background-size: cover;
+  background-size:100% 150%;
 }
 .OQFazemos {
   height: 50%;
@@ -400,7 +400,7 @@ export default {
   color: #707070;
 }
 #EscolherNosPrinc {
-  background-color:rgb(16, 139, 16);
+  background-color:rgb(22, 20, 20);
   margin: 0.5% auto;
   position: relative;
 }
@@ -413,7 +413,7 @@ export default {
   left: 0px;
   background: url("../assets/imgs/img21.png") no-repeat center center;
   filter: brightness(30%);
-  background-size: cover;
+  background-size: 100% 180%;
 }
 #EscolherNos {
   padding: 4%;
@@ -441,9 +441,6 @@ export default {
 .TextoEscolherNosTxt{
   font-size: 19px;
   margin: 2%;
-}
-#ExplroreProdutos {
-  margin-top: 2%;
 }
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {

@@ -32,7 +32,7 @@
         v-show="Alimentos == true"
       >
         <div class="row">
-          <div class="col-lg-4 col-sm-12 col-xl-4 col-md-4">
+          <div class="col-lg-4 col-sm-12 col-xl-4 col-md-4 DivImg">
             <figure>
               <img
                 src="@/assets/imgs/img14.jpg"
@@ -42,7 +42,7 @@
               <figcaption>Fuba de Milho</figcaption>
             </figure>
           </div>
-          <div class="col-lg-4 col-sm-12 col-xl-4 col-md-4">
+          <div class="col-lg-4 col-sm-12 col-xl-4 col-md-4 DivImg">
             <figure>
               <img
                 src="@/assets/imgs/img18.jpg"
@@ -52,7 +52,7 @@
               <figcaption>Bacalhau - Posta / Inteiro</figcaption>
             </figure>
           </div>
-          <div class="col-lg-4 col-sm-12 col-xl-4 col-md-4">
+          <div class="col-lg-4 col-sm-12 col-xl-4 col-md-4 DivImg">
             <figure>
               <img
                 src="@/assets/imgs/img6.jpg"
@@ -65,12 +65,12 @@
         </div>
       </div>
       <div
-        class="col-lg-9 col-sm-12 col-xl-9 col-md-9"
+        class="col-lg-9 col-sm-12 col-xl-9 col-md-9 DivImg"
         id="Npereciveis"
         v-show="Alimentos == false"
       >
         <div class="row">
-          <div class="col-lg-4 col-sm-12 col-xl-4 col-md-4">
+          <div class="col-lg-4 col-sm-12 col-xl-4 col-md-4 DivImg">
             <figure>
               <img
                 src="@/assets/imgs/img10.png"
@@ -80,7 +80,7 @@
               <figcaption>Mucua</figcaption>
             </figure>
           </div>
-          <div class="col-lg-4 col-sm-12 col-xl-4 col-md-4">
+          <div class="col-lg-4 col-sm-12 col-xl-4 col-md-4 DivImg">
             <figure>
               <img
                 src="@/assets/imgs/img10.png"
@@ -90,7 +90,7 @@
               <figcaption>Mucua</figcaption>
             </figure>
           </div>
-          <div class="col-lg-4 col-sm-12 col-xl-4 col-md-4">
+          <div class="col-lg-4 col-sm-12 col-xl-4 col-md-4 DivImg">
             <figure>
               <img
                 src="@/assets/imgs/img10.png"
@@ -155,12 +155,15 @@ a:active {
   /* box-shadow: 1px 1px 5px gray; */
   border-radius: 7px;
 }
+.DivImg{
+  margin-top: 2%;
+}
 figure {
   height: 100%;
   width: 90%;
   box-shadow: 1px 1px 3px gray;
   border-radius: 7px;
-  margin: 1% auto;
+  margin: 1% auto !important;
 }
 figcaption {
   margin: 1% auto;
