@@ -124,33 +124,29 @@ export default {
   methods: {
     AlimentosClick() {
       this.Alimentos = true;
-      if (this.Alimentos == true) {
-        const Cor = document.getElementById("Link1");
-        Cor.style.color = "#f8ce00";
-        Cor.style.borderLeft = "2px solid #f8ce00";
-        Cor.style.marginLeft = "-8%";
-        Cor.style.paddingLeft = "8%";
-        const Cor2 = document.getElementById("Link2");
-        Cor2.style.color = "#000";
-        Cor2.style.borderLeft = "0";
-        Cor2.style.marginLeft = "-8%";
-        Cor2.style.paddingLeft = "8%";
-      }
+      const Cor = document.getElementById("Link1");
+      Cor.style.color = "#f8ce00";
+      Cor.style.borderLeft = "2px solid #f8ce00";
+      Cor.style.marginLeft = "-7%";
+      Cor.style.paddingLeft = "4%";
+      const Cor2 = document.getElementById("Link2");
+      Cor2.style.color = "#000";
+      Cor2.style.borderLeft = "0";
+      Cor2.style.marginLeft = "-8%";
+      Cor2.style.paddingLeft = "8%";
     },
     AlimentoClick() {
       this.Alimentos = false;
       const Cor = document.getElementById("Link2");
-      if (this.Alimentos === false) {
-        Cor.style.color = "#f8ce00";
-        Cor.style.borderLeft = "2px solid #f8ce00";
-        Cor.style.marginLeft = "-8%";
-        Cor.style.paddingLeft = "8%";
-        const Cor2 = document.getElementById("Link1");
-        Cor2.style.color = "#000";
-        Cor2.style.borderLeft = "0";
-        Cor2.style.marginLeft = "-8%";
-        Cor2.style.paddingLeft = "8%";
-      }
+      Cor.style.color = "#f8ce00";
+      Cor.style.borderLeft = "2px solid #f8ce00";
+      Cor.style.marginLeft = "-7%";
+      Cor.style.paddingLeft = "4%";
+      const Cor2 = document.getElementById("Link1");
+      Cor2.style.color = "#000";
+      Cor2.style.borderLeft = "0";
+      Cor2.style.marginLeft = "-8%";
+      Cor2.style.paddingLeft = "8%";
     },
   },
 };
@@ -196,12 +192,12 @@ h3 {
   -ms-padding-left: 8%;
   -webkit-padding-left: 8%;
 }
-.LinkActive:hover{
+.LinkActive:hover {
   color: #f8ce00;
   -moz-color: #f8ce00;
   -ms-color: #f8ce00;
   -webkit-color: #f8ce00;
-  border-left: 2px solid #f8ce00;
+  border-left: 2px solid #f8ce00 !important;
   -moz-border-left: 2px solid #f8ce00;
   -ms-border-left: 2px solid #f8ce00;
   -webkit-border-left: 2px solid #f8ce00;
@@ -251,6 +247,10 @@ a:active {
   -moz-width: 100%;
   -ms-width: 100%;
   -webkit-width: 100%;
+  object-fit: fill;
+  -moz-object-fit: fill;
+  -ms-object-fit: fill;
+  -webkit-object-fit: fill;
   /* box-shadow: 1px 1px 5px gray; */
   border-radius: 7px;
   -moz-border-radius: 7px;
@@ -268,7 +268,7 @@ figure {
   -moz-height: 100%;
   -ms-height: 100%;
   -webkit-height: 100%;
-  width: 90%;
+  width: 85%;
   -moz-width: 90%;
   -ms-width: 90%;
   -webkit-width: 90%;
