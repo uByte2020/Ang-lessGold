@@ -102,9 +102,16 @@
             <div
               class="col-lg-12 col-xl-12 col-sm-12 col-md-12 TextoEscolherNosTituloPrinc"
             >
-              <h2>Porquê Escolher-nos</h2>
+              <h2>Porque Escolher-nos</h2>
             </div>
             <div class="col-lg-7 col-xl-3 col-sm-8 col-md-7 TextoEscolherNos">
+              <div class="col-12">
+                <img
+                  src="../assets/svg/Responsabilidadesocial.svg"
+                  alt="Responsabilidade Social"
+                  class="icon"
+                />
+              </div>
               <h4 class="TextoEscolherNosTitulo">Responsabilidade Social</h4>
               <p class="TextoEscolherNosTxt">
                 Estamos há anos no mercado prestando serviço de importação e
@@ -112,6 +119,13 @@
               </p>
             </div>
             <div class="col-lg-7 col-xl-3 col-sm-8 col-md-7 TextoEscolherNos">
+              <div class="col-12">
+                <img
+                  src="../assets/svg/Comprometimento.svg"
+                  alt="Comprometimento com o cliente"
+                  class="icon"
+                />
+              </div>
               <h4 class="TextoEscolherNosTitulo">
                 Comprometimento com o Cliente
               </h4>
@@ -121,6 +135,13 @@
               </p>
             </div>
             <div class="col-lg-7 col-xl-3 col-sm-8 col-md-7 TextoEscolherNos">
+              <div class="col-12">
+                <img
+                  src="../assets/svg/Qualidadeproduto.svg"
+                  alt="Qualidade do produto"
+                  class="icon"
+                />
+              </div>
               <h4 class="TextoEscolherNosTitulo">Qualidade do Produto</h4>
               <p class="TextoEscolherNosTxt3">
                 Fornecemos sempre os melhores produtos.
@@ -293,6 +314,10 @@ export default {
   -webkit-margin: 2% auto;
 }
 .img {
+  object-fit: fill;
+  -moz-object-fit: fill;
+  -ms-object-fit: fill;
+  -webkit-object-fit: fill;
   box-shadow: 0px 0px 6px 4px gray;
   -moz-box-shadow: 0px 0px 6px 4px gray;
   -ms-box-shadow: 0px 0px 6px 4px gray;
@@ -462,6 +487,9 @@ export default {
   -moz-color: #707070;
   -ms-color: #707070;
   -webkit-color: #707070;
+}
+.icon {
+  height: 70px;
 }
 #EscolherNosPrinc {
   background-color: rgb(22, 20, 20);
