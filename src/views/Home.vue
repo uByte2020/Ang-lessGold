@@ -37,7 +37,7 @@
                   class="col-lg-8 col-xl-8 col-sm-12 col-md-12 TextoBemVindo"
                 >
                   <h2 class="TextoBemVindoH1">
-                    BemVindo <br />
+                    Bem-Vindo <br />
                     À ANG LESS GOLD
                   </h2>
                   <div class="progress">
