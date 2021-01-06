@@ -1,11 +1,13 @@
 <template>
   <div>
+      <!-- :style="{ position: position }" -->
     <b-navbar
       class="mt-0"
       toggleable="lg"
       type="dark"
       :variant="BackgroundClick ? 'dark' : 'transparent'"
     >
+    <!-- backgroundColor -->
       <b-navbar-brand class="p-1 ml-5">
         <img src="../assets/imgs/LogoImg2.png" alt="logo" class="img"
       /></b-navbar-brand>
@@ -19,7 +21,7 @@
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav class="ml-auto">
           <b-nav-item href="#" class="navitem">Home</b-nav-item>
-          <b-nav-item href="#">Sobre Nós</b-nav-item>
+          <b-nav-item href="/QuemSomos">Sobre Nós</b-nav-item>
           <b-nav-item href="#">Serviços</b-nav-item>
           <b-nav-item href="#">Produtos</b-nav-item>
           <b-nav-item href="/Contacto">Contactos</b-nav-item>
@@ -42,6 +44,21 @@ export default {
       this.BackgroundClick = !this.BackgroundClick;
     },
   },
+  // props: {
+  //   backgroundColor: {
+  //     type: Text,
+  //     default: "transparent",
+  //   },
+  //   variant: Text,
+  //   position: {
+  //     type: Text,
+  //     default: "absolute",
+  //   },
+  //   navTextColor: {
+  //     type: Text,
+  //     default: "#fff",
+  //   },
+  // },
 };
 </script>
 
@@ -51,6 +68,15 @@ export default {
   src: local("Fonts"),
     url(../assets/Fonts/josefin-sans.bold.ttf) format("truetype");
 }
+
+/* .nav-link {
+  color: green !important;
+  font-family: "Josefin-SemiBold";
+  font-size: 23px;
+  padding-left: 2%;
+  padding-right: 2%;
+} */
+
 .navbar {
   position: absolute;
   z-index: 1;
@@ -64,10 +90,10 @@ export default {
   font-family: "Josefin";
   font-size: 20px;
 }
-.img{
+.img {
   margin-left: 10%;
 }
-@media only screen and (min-width: 1680px){
+@media only screen and (min-width: 1680px) {
   .img {
     margin-left: 80%;
     -moz-margin-left: 80%;
@@ -125,7 +151,7 @@ export default {
     -webkit-margin-left: 80%;
   }
 }
-@media only screen and (max-width: 790px){
+@media only screen and (max-width: 790px) {
   .img {
     margin-left: -50%;
     -moz-margin-left: -50%;
@@ -141,7 +167,7 @@ export default {
     -webkit-height: 50%;
   }
 }
-@media only screen and (max-width: 1024px){
+@media only screen and (max-width: 1024px) {
   .img {
     margin-left: -40%;
     -moz-margin-left: -40%;

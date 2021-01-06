@@ -1,10 +1,11 @@
 <template>
   <div>
+      <!-- :style="{ position: position }" -->
     <b-navbar
       class="mt-0"
       toggleable="lg"
       type="dark"
-      :variant="BackgroundClick ? 'dark' : 'default'"
+      :variant="BackgroundClick ? 'dark' : 'transparent'"
     >
       <b-navbar-brand class="p-1 ml-5">
         <img src="../assets/imgs/LogopngAnglessGold.png" alt="logo" class="img"
@@ -18,8 +19,8 @@
 
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav class="ml-auto">
-          <b-nav-item href="#">Home</b-nav-item>
-          <b-nav-item href="#">Sobre Nós</b-nav-item>
+          <b-nav-item href="/" class="navitem">Home</b-nav-item>
+          <b-nav-item href="/QuemSomos">Sobre Nós</b-nav-item>
           <b-nav-item href="#">Serviços</b-nav-item>
           <b-nav-item href="#">Produtos</b-nav-item>
           <b-nav-item href="/Contacto">Contactos</b-nav-item>
@@ -30,7 +31,7 @@
 </template>
 <script>
 export default {
-  name: "Navbar",
+  name: "NavbarPrinc",
   data() {
     return {
       BackgroundClick: false,
@@ -42,47 +43,152 @@ export default {
       this.BackgroundClick = !this.BackgroundClick;
     },
   },
+  // props: {
+  //   backgroundColor: {
+  //     type: Text,
+  //     default: "transparent",
+  //   },
+  //   variant: Text,
+  //   position: {
+  //     type: Text,
+  //     default: "absolute",
+  //   },
+  //   navTextColor: {
+  //     type: Text,
+  //     default: "#fff",
+  //   },
+  // },
 };
 </script>
 
 <style scoped>
 @font-face {
-  font-family: "Josefin-SemiBold";
+  font-family: "Josefin";
   src: local("Fonts"),
-   url(../assets/Fonts/josefin-sans.semibold.ttf) format("truetype");
+    url(../assets/Fonts/josefin-sans.bold.ttf) format("truetype");
 }
-.navbar {
-  padding: 2%;
-  /* background-color: transparent !important; */
-}
-a {
+
+.nav-link {
   color: green !important;
   font-family: "Josefin-SemiBold";
   font-size: 23px;
   padding-left: 2%;
   padding-right: 2%;
 }
+
+.navbar {
+  position: relative !important;
+  z-index: 1;
+  width: 100%;
+
+  /* background-color: transparent !important; */
+}
 .navbar-dark .navbar-nav .nav-link {
   /* color: rgba(255, 255, 255, 0.5); */
   color: #fff;
   font-family: "Josefin";
+  font-size: 20px;
 }
 .img {
-  /* margin-left: 10%; */
+  margin-left: 10%;
+}
+
+@media only screen and (min-width: 1680px) {
+  .img {
+    margin-left: 80%;
+    -moz-margin-left: 80%;
+    -ms-margin-left: 80%;
+    -webkit-margin-left: 80%;
+    height: 50%;
+    -moz-height: 50%;
+    -ms-height: 50%;
+    -webkit-height: 50%;
+    width: 90%;
+    -moz-width: 90%;
+    -ms-width: 90%;
+    -webkit-width: 90%;
+  }
 }
 @media only screen and (max-width: 600px) {
-    .navbar{
-        width: 100%;
-    }
-  .img{
-      margin-left: -50% !important;
-      width: 150px;
-  }  
-  #nav-collapse,
-  .Marg
-  {
-      margin-left: 10%;
-      background-color: rgba(70, 68, 68, 0.157);
+  button, .navbar-toggle, .Marg, .collapse{
+  color:black!important;
+  background-color: black;
+}
+  .navbar {
+    position: absolute;
+    -moz-position: absolute;
+    -ms-position: absolute;
+    -webkit-position: absolute;
+    z-index: 1 !important;
+    -moz-z-index: 1 !important;
+    -ms-z-index: 1 !important;
+    -webkit-z-index: 1 !important;
+    width: 100%;
+    -moz-width: 100%;
+    -ms-width: 100%;
+    -webkit-width: 100%;
+    /* background-color: transparent !important; */
+  }
+  .img {
+    margin-left: -60%;
+    -moz-margin-left: -60%;
+    -ms-margin-left: -60%;
+    -webkit-margin-left: -60%;
+    width: 90%;
+    -moz-width: 90%;
+    -ms-width: 90%;
+    -webkit-width: 90%;
+    height: 50%;
+    -moz-height: 50%;
+    -ms-height: 50%;
+    -webkit-height: 50%;
+  }
+  .nav-collapse,
+  .Marg {
+    margin-top: -20%;
+    -moz-margin-top: -20%;
+    -ms-margin-top: -20%;
+    -webkit-margin-top: -20%;
+    margin-left: 80%;
+    -moz-margin-left: 80%;
+    -ms-margin-left: 80%;
+    -webkit-margin-left: 80%;
+  }
+}
+@media only screen and (max-width: 790px) {
+  button, .navbar-toggle, .Marg, .collapse{
+  color:black!important;
+  background-color: rgba(75, 74, 74, 0.507);
+}
+  .img {
+    margin-left: -50%;
+    -moz-margin-left: -50%;
+    -ms-margin-left: -50%;
+    -webkit-margin-left: -50%;
+    width: 90%;
+    -moz-width: 90%;
+    -ms-width: 90%;
+    -webkit-width: 90%;
+    height: 50%;
+    -moz-height: 50%;
+    -ms-height: 50%;
+    -webkit-height: 50%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .img {
+    margin-left: -40%;
+    -moz-margin-left: -40%;
+    -ms-margin-left: -40%;
+    -webkit-margin-left: -40%;
+    width: 90%;
+    -moz-width: 90%;
+    -ms-width: 90%;
+    -webkit-width: 90%;
+    height: 50%;
+    -moz-height: 50%;
+    -ms-height: 50%;
+    -webkit-height: 50%;
   }
 }
 </style>
