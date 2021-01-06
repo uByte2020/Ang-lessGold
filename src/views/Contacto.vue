@@ -1,6 +1,6 @@
 <template>
   <div id="Contactos">
-    <NavbarPrinc />
+    <NavbarPrinc  />
     <div class="container-fluid">
       <div class="row">
         <div class="col-12 ContactoTitulo">
@@ -119,17 +119,17 @@ export default {
   -moz-text-align: left;
   -ms-text-align: left;
   -webkit-text-align: left;
-  position:relative;
-  -moz-position:relative;
-  -ms-position:relative;
-  -webkit-position:relative;
+  position: relative;
+  -moz-position: relative;
+  -ms-position: relative;
+  -webkit-position: relative;
   /* z-index: 1; */
 }
-.ContactoTitulo::before{
-  content:"";
-  -moz-content:"";
-  -ms-content:"";
-  -webkit-content:"";
+.ContactoTitulo::before {
+  content: "";
+  -moz-content: "";
+  -ms-content: "";
+  -webkit-content: "";
   position: absolute;
   -moz-position: absolute;
   -ms-position: absolute;
@@ -142,18 +142,22 @@ export default {
   -moz-height: 100%;
   -ms-height: 100%;
   -webkit-height: 100%;
-  top:0px;
-  -moz-top:0px;
-  -ms-top:0px;
-  -webkit-top:0px;
+  top: 0px;
+  -moz-top: 0px;
+  -ms-top: 0px;
+  -webkit-top: 0px;
   left: 0px;
   -moz-left: 0px;
   -ms-left: 0px;
   -webkit-left: 0px;
-  background: url('../assets/imgs/backgroundContacto .jpeg')no-repeat center center;
-  -moz-background: url('../assets/imgs/backgroundContacto .jpeg')no-repeat center center;
-  -ms-background: url('../assets/imgs/backgroundContacto .jpeg')no-repeat center center;
-  -webkit-background: url('../assets/imgs/backgroundContacto .jpeg')no-repeat center center;
+  background: url("../assets/imgs/backgroundContacto .jpeg") no-repeat center
+    center;
+  -moz-background: url("../assets/imgs/backgroundContacto .jpeg") no-repeat
+    center center;
+  -ms-background: url("../assets/imgs/backgroundContacto .jpeg") no-repeat
+    center center;
+  -webkit-background: url("../assets/imgs/backgroundContacto .jpeg") no-repeat
+    center center;
   background-size: 100% 100%;
   -moz-background-size: 100% 100%;
   -ms-background-size: 100% 100%;
@@ -286,7 +290,7 @@ label {
   -ms-padding: 5%;
   -webkit-padding: 5%;
 }
-.mapa{
+.mapa {
   margin: auto !important;
 }
 </style>

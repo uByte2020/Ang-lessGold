@@ -576,9 +576,9 @@ export default {
   -moz-margin: 1% 1%;
   -ms-margin: 1% 1%;
   -webkit-margin: 1% 1%;
-  padding: 3%;
-  -moz-padding: 3%;
-  -ms-padding: 3%;
+  padding: 1%;
+  -moz-padding: 1%;
+  -ms-padding: 1%;
   -webkit-padding: 3%;
   height: auto;
   -moz-height: auto;
