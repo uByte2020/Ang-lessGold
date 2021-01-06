@@ -22,7 +22,7 @@
           <b-nav-item href="#">Sobre Nós</b-nav-item>
           <b-nav-item href="#">Serviços</b-nav-item>
           <b-nav-item href="#">Produtos</b-nav-item>
-          <b-nav-item href="#">Contactos</b-nav-item>
+          <b-nav-item href="/Contacto">Contactos</b-nav-item>
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
