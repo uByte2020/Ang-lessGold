@@ -19,7 +19,7 @@
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav class="ml-auto">
           <b-nav-item href="#" class="navitem">Home</b-nav-item>
-          <b-nav-item href="#">Sobre Nós</b-nav-item>
+          <b-nav-item href="/QuemSomos">Sobre Nós</b-nav-item>
           <b-nav-item href="#">Serviços</b-nav-item>
           <b-nav-item href="#">Produtos</b-nav-item>
           <b-nav-item href="/Contacto">Contactos</b-nav-item>
