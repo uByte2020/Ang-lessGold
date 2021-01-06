@@ -36,8 +36,11 @@
                 <div
                   class="col-lg-8 col-xl-8 col-sm-12 col-md-12 TextoBemVindo"
                 >
-                  <h2 class="TextoBemVindoH1">BemVindo <br> À ANG LESS GOLD</h2>
-                  <div class="progress ">
+                  <h2 class="TextoBemVindoH1">
+                    BemVindo <br />
+                    À ANG LESS GOLD
+                  </h2>
+                  <div class="progress">
                     <div
                       class="progress-bar ProgressCor1"
                       role="progressbar"
@@ -57,9 +60,7 @@
                     serviço, comércio a grosso de bebidas, alimentaos,
                     medicamentos, Importação e Exportação.
                   </p>
-                  <button type="button" class="btn btn-lg">
-                    Saiba Mais
-                  </button>
+                  <button type="button" class="btn btn-lg">Saiba Mais</button>
                 </div>
               </div>
             </div>
@@ -111,7 +112,9 @@
               </p>
             </div>
             <div class="col-lg-7 col-xl-3 col-sm-8 col-md-7 TextoEscolherNos">
-              <h4 class="TextoEscolherNosTitulo">Comprometimento com o Cliente</h4>
+              <h4 class="TextoEscolherNosTitulo">
+                Comprometimento com o Cliente
+              </h4>
               <p class="TextoEscolherNosTxt2">
                 Procuramos sempre os melhores resultados para os nossos
                 clientes.
@@ -119,7 +122,9 @@
             </div>
             <div class="col-lg-7 col-xl-3 col-sm-8 col-md-7 TextoEscolherNos">
               <h4 class="TextoEscolherNosTitulo">Qualidade do Produto</h4>
-              <p class="TextoEscolherNosTxt3">Fornecemos sempre os melhores produtos.</p>
+              <p class="TextoEscolherNosTxt3">
+                Fornecemos sempre os melhores produtos.
+              </p>
             </div>
           </div>
         </div>
@@ -156,114 +161,7 @@
             </div>
           </div>
         </div>
-        <footer class="col-12">
-          <div class="row footer">
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-3 col-xl-3 col-sm-12 col-md-3 footerMarg">
-                  <h5>Endereço</h5>
-                  <div class="progress progress2">
-                    <div
-                      class="progress-bar progressCor"
-                      role="progressbar"
-                      style="width: 100%"
-                      aria-valuenow="10"
-                      aria-valuemin="0"
-                      aria-valuemax="10"
-                    ></div>
-                  </div>
-                  <p>Estranda da Mendanha</p>
-                  <p>Nº 25 Bloco 4 - 4 C</p>
-                  <p>Parque norte</p>
-                  <p>2580-588 Carregando</p>
-                </div>
-                <div class="col-lg-3 col-xl-3 col-sm-12 col-md-3 footerMarg">
-                  <h5>Contactos</h5>
-                  <div class="progress progress2">
-                    <div
-                      class="progress-bar progressCor"
-                      role="progressbar"
-                      style="width: 100%"
-                      aria-valuenow="10"
-                      aria-valuemin="0"
-                      aria-valuemax="10"
-                    ></div>
-                  </div>
-                  <p>
-                    <img
-                      src="../assets/svg/Portugal.svg"
-                      alt="imagem-Angola"
-                      class="img-fluid IMG1"
-                    />
-                    <b-icon
-                      icon="telephone"
-                      font-scale="1"
-                      variant="default"
-                    ></b-icon>
-                    +351 935 348 752
-                  </p>
-
-                  <p>
-                    <img
-                      src="../assets/svg/Angola.svg"
-                      alt="imagem-Angola"
-                      class="img-fluid IMG1"
-                    />
-                    <b-icon
-                      icon="telephone"
-                      font-scale="1"
-                      variant="default"
-                    ></b-icon>
-                    +244 948 005 815
-                  </p>
-
-                  <b-icon
-                    icon="facebook"
-                    variant="default"
-                    class="icon"
-                  ></b-icon
-                  ><b-icon
-                    icon="instagram"
-                    class="icon"
-                    variant="default"
-                  ></b-icon>
-                </div>
-                <div class="col-lg-3 col-xl-3 col-sm-12 col-md-3 footerMarg">
-                  <h5>Informação</h5>
-                  <div class="progress progress2">
-                    <div
-                      class="progress-bar progressCor"
-                      role="progressbar"
-                      style="width: 100%"
-                      aria-valuenow="10"
-                      aria-valuemin="0"
-                      aria-valuemax="10"
-                    ></div>
-                  </div>
-                  <p>Quem Somos</p>
-                  <p>Contactos</p>
-                  <p>Politicas e Privacidades</p>
-                </div>
-                <div class="col-lg-3 col-xl-3 col-sm-12 col-md-3 footerMarg">
-                  <h5>Menu</h5>
-                  <div class="progress progress2">
-                    <div
-                      class="progress-bar progressCor"
-                      role="progressbar"
-                      style="width: 100%"
-                      aria-valuenow="10"
-                      aria-valuemin="0"
-                      aria-valuemax="10"
-                    ></div>
-                  </div>
-                  <p>Inicio</p>
-                  <p>Produtos</p>
-                  <p>Serviços</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </footer>
+        <Footer />
       </div>
     </div>
   </div>
@@ -271,6 +169,7 @@
 
 <script>
 // @ is an alias to /src
+import Footer from "../components/Footer.vue";
 import Navbar from "../components/Navbar.vue";
 import Produtos from "../components/home/Produtos";
 
@@ -279,6 +178,7 @@ export default {
   components: {
     Navbar,
     Produtos,
+    Footer,
   },
   data() {
     return {
@@ -292,22 +192,20 @@ export default {
 @font-face {
   font-family: "Josefin";
   src: local("Fonts"),
-   url(../assets/Fonts/josefin-sans.bold.ttf) format("truetype");
+    url(../assets/Fonts/josefin-sans.bold.ttf) format("truetype");
 }
 @font-face {
   font-family: "Josefin-SemiBold";
   src: local("Fonts"),
-   url(../assets/Fonts/josefin-sans.semibold.ttf) format("truetype");
+    url(../assets/Fonts/josefin-sans.semibold.ttf) format("truetype");
 }
 @font-face {
   font-family: "Gotham";
-  src: local("Fonts"),
-   url(../assets/Fonts/GothamBold.otf) format("truetype");
+  src: local("Fonts"), url(../assets/Fonts/GothamBold.otf) format("truetype");
 }
 @font-face {
   font-family: "Segoe";
-  src: local("Fonts"),
-   url(../assets/Fonts/Segoe_UI.ttf) format("truetype");
+  src: local("Fonts"), url(../assets/Fonts/Segoe_UI.ttf) format("truetype");
 }
 #Home {
 }
@@ -321,11 +219,11 @@ export default {
   -ms-position: relative;
   -webkit-position: relative;
 }
-.Inicio::before{
-  content:"";
-  -moz-content:"";
-  -ms-content:"";
-  -webkit-content:"";
+.Inicio::before {
+  content: "";
+  -moz-content: "";
+  -ms-content: "";
+  -webkit-content: "";
   position: absolute;
   -moz-position: absolute;
   -ms-position: absolute;
@@ -362,7 +260,7 @@ export default {
   -moz-filter: grayscale(60%) brightness(30%) !important;
   -ms-filter: grayscale(60%) brightness(30%) !important;
   -webkit-filter: grayscale(60%) brightness(30%) !important;
-  }
+}
 .TextoInicio {
   margin-top: 5%;
   -moz-margin-top: 5%;
@@ -436,17 +334,17 @@ export default {
   -ms-text-align: left;
   -webkit-text-align: left;
 }
-.TextoBemVindoH1{
+.TextoBemVindoH1 {
   font-family: "Josefin";
   -moz-font-family: "Josefin";
   -ms-font-family: "Josefin";
   -webkit-font-family: "Josefin";
 }
-.ProgressCor1{
-  background-color:#8CB560!important;
-  -moz-background-color:#8CB560!important;
-  -ms-background-color:#8CB560!important;
-  -webkit-background-color:#8CB560!important;
+.ProgressCor1 {
+  background-color: #8cb560 !important;
+  -moz-background-color: #8cb560 !important;
+  -ms-background-color: #8cb560 !important;
+  -webkit-background-color: #8cb560 !important;
 }
 .TextoBemVindoH1 {
 }
@@ -480,11 +378,11 @@ export default {
   -ms-margin-bottom: 3%;
   -webkit-margin-bottom: 3%;
 }
-.ProgressCor2{
-  background-color:#8CB560 !important;
-  -moz-background-color:#8CB560 !important;
-  -ms-background-color:#8CB560 !important;
-  -webkit-background-color:#8CB560 !important;
+.ProgressCor2 {
+  background-color: #8cb560 !important;
+  -moz-background-color: #8cb560 !important;
+  -ms-background-color: #8cb560 !important;
+  -webkit-background-color: #8cb560 !important;
 }
 #OQFazemosPrinc {
   margin-bottom: 0.5%;
@@ -504,15 +402,15 @@ export default {
   -ms-position: relative;
   -webkit-position: relative;
 }
-#OQFazemosPrinc::before{
+#OQFazemosPrinc::before {
   content: "";
   -moz-content: "";
   -ms-content: "";
   -webkit-content: "";
-  position:absolute;
-  -moz-position:absolute;
-  -ms-position:absolute;
-  -webkit-position:absolute;
+  position: absolute;
+  -moz-position: absolute;
+  -ms-position: absolute;
+  -webkit-position: absolute;
   width: 100%;
   -moz-width: 100%;
   -ms-width: 100%;
@@ -533,11 +431,11 @@ export default {
   -moz-background: url("../assets/imgs/img9.jpg") no-repeat center center;
   -ms-background: url("../assets/imgs/img9.jpg") no-repeat center center;
   -webkit-background: url("../assets/imgs/img9.jpg") no-repeat center center;
-  
-  background-size:100% 150%;
-  -moz-background-size:100% 150%;
-  -ms-background-size:100% 150%;
-  -webkit-background-size:100% 150%;
+
+  background-size: 100% 150%;
+  -moz-background-size: 100% 150%;
+  -ms-background-size: 100% 150%;
+  -webkit-background-size: 100% 150%;
 }
 .OQFazemos {
   height: 50%;
@@ -566,10 +464,10 @@ export default {
   -webkit-color: #707070;
 }
 #EscolherNosPrinc {
-  background-color:rgb(22, 20, 20);
-  -moz-background-color:rgb(22, 20, 20);
-  -ms-background-color:rgb(22, 20, 20);
-  -webkit-background-color:rgb(22, 20, 20);
+  background-color: rgb(22, 20, 20);
+  -moz-background-color: rgb(22, 20, 20);
+  -ms-background-color: rgb(22, 20, 20);
+  -webkit-background-color: rgb(22, 20, 20);
   margin: 0.5% auto;
   -moz-margin: 0.5% auto;
   -ms-margin: 0.5% auto;
@@ -579,7 +477,7 @@ export default {
   -ms-position: relative;
   -webkit-position: relative;
 }
-#EscolherNosPrinc::before{
+#EscolherNosPrinc::before {
   content: "";
   -moz-content: "";
   -ms-content: "";
@@ -667,7 +565,7 @@ export default {
   -ms-text-align: center !important;
   -webkit-text-align: center !important;
 }
-.TextoEscolherNosTitulo{
+.TextoEscolherNosTitulo {
   font-family: "Josefin-SemiBold";
   -moz-font-family: "Josefin-SemiBold";
   -ms-font-family: "Josefin-SemiBold";
@@ -685,7 +583,7 @@ export default {
   -ms-margin: 2% auto;
   -webkit-margin: 2% auto;
 }
-.TextoEscolherNosTxt{
+.TextoEscolherNosTxt {
   font-size: 19px;
   -moz-font-size: 19px;
   -ms-font-size: 19px;
@@ -703,7 +601,7 @@ export default {
   -ms-font-size: 19px;
   -webkit-font-size: 19px;
 }
-.TextoEscolherNosTxt2{
+.TextoEscolherNosTxt2 {
   font-size: 19px;
   -moz-font-size: 19px;
   -ms-font-size: 19px;
@@ -721,7 +619,7 @@ export default {
   -ms-font-size: 19px;
   -webkit-font-size: 19px;
 }
-.TextoEscolherNosTxt3{
+.TextoEscolherNosTxt3 {
   font-size: 19px;
   -moz-font-size: 19px;
   -ms-font-size: 19px;
@@ -778,17 +676,17 @@ export default {
   -ms-text-align: left !important;
   -webkit-text-align: left !important;
 }
-.RecebaNovidadesTitulo{
-  font-family:"Josefin";
-  -moz-font-family:"Josefin";
-  -ms-font-family:"Josefin";
-  -webkit-font-family:"Josefin";
+.RecebaNovidadesTitulo {
+  font-family: "Josefin";
+  -moz-font-family: "Josefin";
+  -ms-font-family: "Josefin";
+  -webkit-font-family: "Josefin";
   font-size: 60px;
   -moz-font-size: 60px;
   -ms-font-size: 60px;
   -webkit-font-size: 60px;
 }
-.RecebaNovidadesTexto2{
+.RecebaNovidadesTexto2 {
   font-size: 24px;
   -moz-font-size: 24px;
   -ms-font-size: 24px;
@@ -868,72 +766,14 @@ button:hover {
   -ms-border-radius: 100px;
   -webkit-border-radius: 100px;
 }
-footer {
-  background-color: rgb(54, 54, 54);
-  -moz-background-color: rgb(54, 54, 54);
-  -ms-background-color: rgb(54, 54, 54);
-  -webkit-background-color: rgb(54, 54, 54);
-  padding: 5%;
-  -moz-padding: 5%;
-  -ms-padding: 5%;
-  -webkit-padding: 5%;
-  color: #fff;
-  -moz-color: #fff;
-  -ms-color: #fff;
-  -webkit-color: #fff;
-}
-.footer {
-  text-align: left;
-  -moz-text-align: left;
-  -ms-text-align: left;
-  -webkit-text-align: left;
-}
-.footerMarg {
-  margin-top: 2%;
-  -moz-margin-top: 2%;
-  -ms-margin-top: 2%;
-  -webkit-margin-top: 2%;
-}
-.icon {
-  margin-right: 6%;
-  -moz-margin-right: 6%;
-  -ms-margin-right: 6%;
-  -webkit-margin-right: 6%;
-  margin-top: 6%;
-  -moz-margin-top: 6%;
-  -ms-margin-top: 6%;
-  -webkit-margin-top: 6%;
-  color: #f8ce00;
-  -moz-color: #f8ce00;
-  -ms-color: #f8ce00;
-  -webkit-color: #f8ce00;
-  background-color: transparent;
-  -moz-background-color: transparent;
-  -ms-background-color: transparent;
-  -webkit-background-color: transparent;
-}
-.IMG1 {
-  width: 10%;
-  -moz-width: 10%;
-  -ms-width: 10%;
-  -webkit-width: 10%;
-  height: 10%;
-  -moz-height: 10%;
-  -ms-height: 10%;
-  -webkit-height: 10%;
-  margin-right: 3%;
-  -moz-margin-right: 3%;
-  -ms-margin-right: 3%;
-  -webkit-margin-right: 3%;
-}
 p {
   font-size: 16px;
   -moz-font-size: 16px;
   -ms-font-size: 16px;
   -webkit-font-size: 16px;
 }
-@media only screen and (max-width: 600px){
-  .TextoInicio{
+@media only screen and (max-width: 600px) {
+  .TextoInicio {
     margin-top: 20%;
     -moz-margin-top: 20%;
     -ms-margin-top: 20%;
