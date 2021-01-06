@@ -65,21 +65,26 @@
             </div>
           </div>
         </div>
-
-        <!-- <Footer /> -->
+        <div class="col-12">
+          <h3 class="Localizacao">Localização</h3>
+        </div>
+        <!-- <Map /> -->
+        <Footer />
       </div>
     </div>
   </div>
 </template>
 
 <script>
-// import Footer from "../components/Footer.vue"
+import Footer from "../components/Footer.vue";
 import NavbarPrinc from "../components/NavbarPrinc.vue";
+// import Map from '../components/Contacto/Map'
 export default {
   name: "Contacto",
   components: {
-    //   Footer
+      Footer,
     NavbarPrinc,
+    // Map,
   },
 };
 </script>
@@ -125,13 +130,21 @@ label {
 }
 .AngLessTitulo {
   color: #8cb560;
+  font-family: "Gotham";
 }
 .Texto {
+  font-family: "Gotham";
   color: #707070;
   font-size: 24px;
   margin-top: 4%;
   /* margin-left: 31%; */
   /* text-align: left; */
   /* width: 40px !important; */
+}
+.Localizacao{
+  font-family: "Gotham";
+  color: #8cb560;
+  text-align: left;
+  padding: 5%;
 }
 </style>
