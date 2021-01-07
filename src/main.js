@@ -16,7 +16,6 @@ Vue.use(VueGoogleMaps, {
     libraries: "places" // necessary for places input
   }
 });
-
 new Vue({
   router,
   render: h => h(App)

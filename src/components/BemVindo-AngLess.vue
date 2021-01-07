@@ -1,35 +1,39 @@
 <template>
   <div id="BemVindo-AngLess">
-    <div class="container BemVindo-LesGold">
+    <div class="container-fluid BemVindo-LesGold">
       <div class="row">
-        <div class="col-lg-4 col-xl-4 col-sm-12 col-md-12">
-          <img src="@/assets/imgs/img30.jpg" alt="" class="img-fluid img" />
-        </div>
-        <div class="col-lg-8 col-xl-8 col-sm-12 col-md-12 TextoBemVindo">
-          <h2 class="TextoBemVindoH1">
-            Bem-Vindo <br />
-            À ANG LESS GOLD
-          </h2>
-          <div class="progress">
-            <div
-              class="progress-bar ProgressCor1"
-              role="progressbar"
-              style="width: 100%"
-              aria-valuenow="10"
-              aria-valuemin="0"
-              aria-valuemax="10"
-            ></div>
+        <div class="col-12">
+          <div class="row">
+            <div class="col-lg-4 col-xl-4 col-sm-12 col-md-12">
+              <img src="@/assets/imgs/img30.jpg" alt="" class="img-fluid img" />
+            </div>
+            <div class="col-lg-8 col-xl-8 col-sm-12 col-md-12 TextoBemVindo">
+              <h2 class="TextoBemVindoH1">
+                Bem-Vindo <br />
+                À ANG LESS GOLD
+              </h2>
+              <div class="progress">
+                <div
+                  class="progress-bar ProgressCor1"
+                  role="progressbar"
+                  style="width: 100%"
+                  aria-valuenow="10"
+                  aria-valuemin="0"
+                  aria-valuemax="10"
+                ></div>
+              </div>
+              <p class="TextoInicioP">
+                A <b>ANG LESS GOLD</b> é uma empresa de direito Português,
+                Contribuinte fiscal nº 515015253 com sede em estrada da Mendanha
+                nº 25 Bloco 4 4c Parque norte, Carregado e Cadafais, conselho de
+                Alenquer. Registada como pessoa coletiva 515015253 com número de
+                identificação na segurança social 25150152535, cujo objetivo
+                social e a prestação de serviço, comércio a grosso de bebidas,
+                alimentaos, medicamentos, Importação e Exportação.
+              </p>
+              <button type="button" class="btn btn-lg">Saiba Mais</button>
+            </div>
           </div>
-          <p class="TextoInicioP">
-            A <b>ANG LESS GOLD</b> é uma empresa de direito Português,
-            Contribuinte fiscal nº 515015253 com sede em estrada da Mendanha nº
-            25 Bloco 4 4c Parque norte, Carregado e Cadafais, conselho de
-            Alenquer. Registada como pessoa coletiva 515015253 com número de
-            identificação na segurança social 25150152535, cujo objetivo social
-            e a prestação de serviço, comércio a grosso de bebidas, alimentaos,
-            medicamentos, Importação e Exportação.
-          </p>
-          <button type="button" class="btn btn-lg">Saiba Mais</button>
         </div>
       </div>
     </div>
@@ -39,9 +43,9 @@
 <script>
 export default {
   name: "BemVindo-AngLess",
-  props:{
-      margin:Text,
-  }
+  props: {
+    margin: Text,
+  },
 };
 </script>
 <style scoped>

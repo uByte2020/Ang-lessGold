@@ -12,7 +12,7 @@
             IMPORTAÇÃO &amp; EXPORTAÇÃO LDA
           </h1>
         </div>
-        <div class="BemVCompenent">
+        <div class="col-10 BemVCompenent">
           <BemVindoAngLess />
         </div>
         <!-- <div
@@ -21,18 +21,65 @@
           data-aos-easing="ease-in-sine"
           style="color:green; background-color:green;height:"
         ></div> -->
-        <div class="col-12">
+        <div class="col-12" id="BackgroundBlack">
           <div class="row">
-            <div class="col-lg-6 col-md-12 col-xl-6 col-sm-12">Texto</div>
-
-            <div class="col-lg-6 col-md-12 col-xl-6 col-sm-12">Texto</div>
-
-            <div class="col-lg-12 col-md-12 col-xl-6 col-sm-12">
-              Texto
+            <div class="col-12">
               <div class="row justify-content-md-center">
-                <div class="col-lg-4 col-md-4 col-xl-4 col-sm-12">Texto</div>
-                <div class="col-lg-4 col-md-4 col-xl-4 col-sm-12">Texto</div>
-                <div class="col-lg-4 col-md-4 col-xl-4 col-sm-12">Texto</div>
+                <div class="col-lg-6 col-md-12 col-xl-6 col-sm-12">
+                  <p class="BackgroundBlackTexto">
+                    Para nós a chave do sucesso e melhor dia/dia com a nossa
+                    equipa de profissionais trabalhando arduamente para conceber
+                    soluções personalizadas que vão ao encontro das necessidades
+                    positivamente nas empresas dos clientes e parceiros com a
+                    demonstração nas empresas dos clientes e parceiros com
+                    demonstração de qualidade dos nossos produtos com 80%
+                    satisfeito, elaborando programações de atendimento e
+                    interface entre as diversas áreas de produção comercial e
+                    operacional, coordenação e controle das atividade logísticas
+                    relacionadas a armazenagem e transporte, operações
+                    especiais.
+                  </p>
+                </div>
+
+                <div class="col-lg-5 col-md-12 col-xl-5 col-sm-12">
+                  <img
+                    src="../assets/imgs/img29.jpg"
+                    class="img-fluid img"
+                    alt="Empresarios"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-12 col-md-12 col-xl-12 col-sm-12 tabelasBracas">
+              <div class="row justify-content-md-center">
+                <div
+                  class="col-lg-3 col-md-12 col-xl-3 col-sm-12 "
+                >
+                  <div class="row BackgroundBlackwhite">
+                    <div class="col-12"><img src="../assets/svg/missao.svg" class="img-fluid icon" alt="Missao"></div>
+                    <div class="col-12 "><h2 class="titulo">Missão</h2></div>
+                    <div class="col-12"><p>Lorem ipsum dolor sit amet consetetur</p></div>
+                  </div>
+                </div>
+                <div
+                  class="col-lg-3 col-md-12 col-xl-3 col-sm-12"
+                >
+                  <div class="row  BackgroundBlackwhite">
+                    <div class="col-12"><img src="../assets/svg/visao.svg" class="img-fluid icon" alt="Missao"></div>
+                    <div class="col-12 titulo"><h2>Visão</h2></div>
+                    <div class="col-12"><p>Lorem ipsum dolor sit amet consetetur</p></div>
+                  </div>
+                </div>
+                <div
+                  class="col-lg-3 col-md-12 col-xl-3 col-sm-12 "
+                >
+                  <div class="row  BackgroundBlackwhite">
+                    <div class="col-12"><img src="../assets/svg/valor.svg" class="img-fluid icon" alt="Missao"></div>
+                    <div class="col-12 titulo"><h2>Valores</h2></div>
+                    <div class="col-12"><p>Lorem ipsum dolor sit amet consetetur</p></div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -55,10 +102,10 @@ export default {
 <style scoped>
 h1 {
   text-align: left;
-  margin-left: 6%;
+  margin-left: 4%;
 }
 .BemVCompenent {
-  margin: auto 3% !important;
+  /* margin: auto 3% !important; */
 }
 .TituloAngLess {
   font-family: "Gotham";
@@ -75,6 +122,41 @@ h1 {
   margin-left: 4%;
   color: #fff;
   text-align: left;
+}
+#BackgroundBlack {
+  padding: 4%;
+  background-color: rgb(46, 45, 45);
+  color: #fff;
+}
+.BackgroundBlackTexto {
+  text-align: left;
+  font-size: 20px;
+  line-height: 2;
+  width: 100%;
+}
+.tabelasBracas{
+  margin: 3% auto;
+}
+.BackgroundBlackwhite {
+  width: 90% !important;
+  background-color: #fff;
+  height: 250px;
+  margin: 2%;
+  color: black;
+  border-radius: 10px;
+}
+.img {
+  height: 100%;
+  width: 90%;
+  object-fit: fill;
+}
+.icon{
+  margin-top: 3%;
+  height: 100%;
+  width: 70px;
+}
+.titulo{
+  margin: 2% auto;
 }
 @font-face {
   font-family: "Gotham";

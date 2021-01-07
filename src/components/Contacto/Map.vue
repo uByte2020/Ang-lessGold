@@ -3,8 +3,15 @@
     <gmap-map
       :center="center"
       :zoom="16"
-      style="width: 100%; height: 700px; margin-bottom: 4%; box-shadow: 3px 2px 10px gray;"
+      style="
+        width: 100%;
+        height: 700px;
+        margin-bottom: 4%;
+        box-shadow: 3px 2px 10px gray;
+      "
     >
+      <area shape="circle" coords="2580,,25" href="another.htm" />
+      <area shape="default" />
       <gmap-marker
         :key="index"
         v-for="(m, index) in markers"

@@ -330,10 +330,11 @@ label {
   -moz-text-align: left;
   -ms-text-align: left;
   -webkit-text-align: left;
-  padding: 5%;
-  -moz-padding: 5%;
-  -ms-padding: 5%;
-  -webkit-padding: 5%;
+  padding:3% 4%;
+  -moz-padding: 3% 4%;
+  -ms-padding: 3% 4%;
+  -webkit-padding: 3% 4%;
+  margin: auto;
 }
 .mapa {
   margin: auto !important;
