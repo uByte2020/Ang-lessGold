@@ -32,8 +32,7 @@
                   <div class="col-12">
                     <div class="form-group">
                       <label for="Mensagem">Mensagem</label>
-                      <input
-                        type="text-area"
+                      <textarea
                         name="Mensagem"
                         class="form-control"
                       />
@@ -56,7 +55,7 @@
                   <h2 class="AngLessTitulo">ANG LESS GOLD</h2>
                 </div>
                 <div class="col-12 Texto">
-                  <p>
+                  <p style="width:300px; margin: auto">
                     Estrada da Mendanha <br />Nº 25 Bloco 4 - 4 C <br />Parque
                     norte <br />2580-588 Carregado
                   </p>
@@ -158,10 +157,10 @@ export default {
     center center;
   -webkit-background: url("../assets/imgs/backgroundContacto .jpeg") no-repeat
     center center;
-  background-size: 100% 100%;
-  -moz-background-size: 100% 100%;
-  -ms-background-size: 100% 100%;
-  -webkit-background-size: 100% 100%;
+  background-size: 100% 130%;
+  -moz-background-size: 100% 130%;
+  -ms-background-size: 100% 130%;
+  -webkit-background-size: 100% 130%;
   z-index: -1;
   -moz-z-index: -1;
   -ms-z-index: -1;
@@ -194,6 +193,48 @@ label {
   -moz-padding: 5%;
   -ms-padding: 5%;
   -webkit-padding: 5%;
+  position: relative;
+  -moz-position: relative;
+  -ms-position: relative;
+  -webkit-position: relative;
+}
+#Formulario::before{
+  content: "";
+  -moz-content: "";
+  -ms-content: "";
+  -webkit-content: "";
+  position: absolute;
+  -moz-position: absolute;
+  -ms-position: absolute;
+  -webkit-position: absolute;
+  width: 100%;
+  -moz-width: 100%;
+  -ms-width: 100%;
+  -webkit-width: 100%;
+  height: 100%;
+  -moz-height: 100%;
+  -ms-height: 100%;
+  -webkit-height: 100%;
+  top: 0px;
+  -moz-top: 0px;
+  -ms-top: 0px;
+  -webkit-top: 0px;
+  left: 0px;
+  -moz-left: 0px;
+  -ms-left: 0px;
+  -webkit-left: 0px;
+  background: url('../assets/imgs/img4.jpg') no-repeat center center;
+  -moz-background: url('../assets/imgs/img4.jpg') no-repeat center center;
+  -ms-background: url('../assets/imgs/img4.jpg')no-repeat center center;
+  -webkit-background: url('../assets/imgs/img4.jpg') no-repeat center center;
+  background-size: 70% 120%;
+  -moz-background-size: 70% 120%;
+  -ms-background-size: 70% 120%;
+  -webkit-background-size: 70% 150%;
+  filter:opacity(0.1);
+  -moz-filter:opacity(0.1);
+  -ms-filter:opacity(0.1);
+  -webkit-filter:opacity(0.1);
 }
 .form-control {
   width: 100%;
@@ -256,6 +297,10 @@ label {
   -moz-font-family: "Gotham";
   -ms-font-family: "Gotham";
   -webkit-font-family: "Gotham";
+  text-align: left;
+  -moz-text-align: left;
+  -ms-text-align: left;
+  -webkit-text-align: left;
   color: #707070;
   -moz-color: #707070;
   -ms-color: #707070;
