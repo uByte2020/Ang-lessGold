@@ -1,10 +1,10 @@
 <template>
   <div id="Contactos">
-    <NavbarPrinc  />
+    <NavbarPrinc />
     <div class="container-fluid">
       <div class="row">
         <div class="col-12 ContactoTitulo">
-          <h1>CONTACTOS</h1>
+          <h1 style="margin-left: 4%;">CONTACTOS</h1>
         </div>
         <div class="col-12" id="Formulario">
           <div class="row">
@@ -220,20 +220,20 @@ label {
   -moz-width: 100%;
   -ms-width: 100%;
   -webkit-width: 100%;
-  margin-bottom: 4%;
-  -moz-margin-bottom: 4%;
-  -ms-margin-bottom: 4%;
-  -webkit-margin-bottom: 4%;
+  margin-bottom: 10%;
+  -moz-margin-bottom: 10%;
+  -ms-margin-bottom: 10%;
+  -webkit-margin-bottom: 10%;
   font-family: "Gotham";
   -moz-font-family: "Gotham";
   -ms-font-family: "Gotham";
   -webkit-font-family: "Gotham";
 }
 .btn:hover {
-  color: #fff;
-  -moz-color: #fff;
-  -ms-color: #fff;
-  -webkit-color: #fff;
+  color: rgb(214, 210, 210);
+  -moz-color: rgb(214, 210, 210);
+  -ms-color: rgb(214, 210, 210);
+  -webkit-color: rgb(214, 210, 210);
 }
 .AngLess {
   text-align: center;

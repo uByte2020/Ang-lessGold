@@ -94,7 +94,7 @@ a{
   font-size: 20px;
 }
 .img {
-  margin-left: 10% !important;
+  margin-left: 10% ;
 }
 
 @media only screen and (min-width: 1680px) {
