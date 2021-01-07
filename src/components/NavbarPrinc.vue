@@ -80,8 +80,12 @@ export default {
   position: relative !important;
   z-index: 1;
   width: 100%;
+  padding: 2%;
 
   /* background-color: transparent !important; */
+}
+a{
+  font-size: 25px !important;
 }
 .navbar-dark .navbar-nav .nav-link {
   /* color: rgba(255, 255, 255, 0.5); */
@@ -90,7 +94,7 @@ export default {
   font-size: 20px;
 }
 .img {
-  margin-left: 10%;
+  margin-left: 10% !important;
 }
 
 @media only screen and (min-width: 1680px) {
