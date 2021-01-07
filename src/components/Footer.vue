@@ -6,7 +6,7 @@
           <div class="container">
             <div class="row">
               <div class="col-12">
-                <img src="../assets/imgs/img32.png" alt="Logo">
+                <img src="../assets/imgs/img32.png" alt="Logo" />
               </div>
               <div class="col-lg-3 col-xl-3 col-sm-12 col-md-3 footerMarg">
                 <h5>Endereço</h5>
@@ -107,6 +107,7 @@
             </div>
           </div>
         </div>
+      <h6>ANG LESS &copy; | TODOS DIREITOS RESERVADOS | ANG LESS GOLD- 2021</h6>
       </footer>
     </div>
   </div>
@@ -158,7 +159,7 @@ footer {
   -moz-background-color: rgb(54, 54, 54);
   -ms-background-color: rgb(54, 54, 54);
   -webkit-background-color: rgb(54, 54, 54);
-  padding: 5%;
+  padding:1% 5%;
   padding-top: 2% !important;
   -moz-padding: 5%;
   -ms-padding: 5%;
@@ -217,5 +218,9 @@ p {
   -moz-font-size: 16px;
   -ms-font-size: 16px;
   -webkit-font-size: 16px;
+}
+h6 {
+  margin: auto !important;
+  margin-top: 4% !important;
 }
 </style>

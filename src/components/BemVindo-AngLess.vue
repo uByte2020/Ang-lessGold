@@ -39,6 +39,9 @@
 <script>
 export default {
   name: "BemVindo-AngLess",
+  props:{
+      margin:Text,
+  }
 };
 </script>
 <style scoped>
