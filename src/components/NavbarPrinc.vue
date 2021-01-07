@@ -1,6 +1,6 @@
 <template>
   <div>
-      <!-- :style="{ position: position }" -->
+    <!-- :style="{ position: position }" -->
     <b-navbar
       class="mt-0"
       toggleable="lg"
@@ -15,6 +15,10 @@
         target="nav-collapse"
         @click="toggleBackgroundClick"
         class="Marg"
+      >
+        <template #default="{ expanded }">
+          <b-icon v-if="expanded" icon="x" font-scale="1"></b-icon>
+          <b-icon v-else icon="list" font-scale="1"></b-icon> </template
       ></b-navbar-toggle>
 
       <b-collapse id="nav-collapse" is-nav>
@@ -84,7 +88,7 @@ export default {
 
   /* background-color: transparent !important; */
 }
-a{
+a {
   font-size: 25px !important;
 }
 .navbar-dark .navbar-nav .nav-link {
@@ -94,30 +98,16 @@ a{
   font-size: 20px;
 }
 .img {
-  margin-left: 10% ;
+  margin-left: 10%;
 }
 
-@media only screen and (min-width: 1680px) {
-  .img {
-    margin-left: 80%;
-    -moz-margin-left: 80%;
-    -ms-margin-left: 80%;
-    -webkit-margin-left: 80%;
-    height: 50%;
-    -moz-height: 50%;
-    -ms-height: 50%;
-    -webkit-height: 50%;
-    width: 90%;
-    -moz-width: 90%;
-    -ms-width: 90%;
-    -webkit-width: 90%;
-  }
-}
 @media only screen and (max-width: 600px) {
-  button, .navbar-toggle, .Marg, .collapse{
-  color:black!important;
-  background-color: black;
-}
+  button,
+  .navbar-toggle,
+  .Marg,
+  .collapse {
+    color: black !important;
+  }
   .navbar {
     position: absolute;
     -moz-position: absolute;
@@ -160,10 +150,12 @@ a{
   }
 }
 @media only screen and (max-width: 790px) {
-  button, .navbar-toggle, .Marg, .collapse{
-  color:black!important;
-  background-color: rgba(75, 74, 74, 0.507);
-}
+  button,
+  .navbar-toggle,
+  .Marg,
+  .collapse {
+    color: black !important;
+  }
   .img {
     margin-left: -50%;
     -moz-margin-left: -50%;

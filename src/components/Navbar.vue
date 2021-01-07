@@ -1,13 +1,13 @@
 <template>
   <div>
-      <!-- :style="{ position: position }" -->
+    <!-- :style="{ position: position }" -->
     <b-navbar
       class="mt-0"
       toggleable="lg"
       type="dark"
       :variant="BackgroundClick ? 'dark' : 'transparent'"
     >
-    <!-- backgroundColor -->
+      <!-- backgroundColor -->
       <b-navbar-brand class="p-1 ml-5">
         <img src="../assets/imgs/LogoImg2.png" alt="logo" class="img"
       /></b-navbar-brand>
@@ -16,6 +16,10 @@
         target="nav-collapse"
         @click="toggleBackgroundClick"
         class="Marg"
+      >
+        <template #default="{ expanded }">
+          <b-icon v-if="expanded" icon="x" font-scale="1"></b-icon>
+          <b-icon v-else icon="list" font-scale="1"></b-icon> </template
       ></b-navbar-toggle>
 
       <b-collapse id="nav-collapse" is-nav>

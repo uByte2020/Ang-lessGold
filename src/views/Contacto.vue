@@ -107,10 +107,10 @@ export default {
   -moz-color: #fff;
   -ms-color: #fff;
   -webkit-color: #fff;
-  padding: 3%;
-  -moz-padding: 3%;
-  -ms-padding: 3%;
-  -webkit-padding: 3%;
+  padding: 2%;
+  -moz-padding: 2%;
+  -ms-padding: 2%;
+  -webkit-padding: 2%;
   font-family: "Gotham";
   -moz-font-family: "Gotham";
   -ms-font-family: "Gotham";
@@ -166,10 +166,10 @@ export default {
   -moz-z-index: -1;
   -ms-z-index: -1;
   -webkit-z-index: -1;
-  filter: grayscale(60%) brightness(30%) !important;
-  -moz-filter: grayscale(60%) brightness(30%) !important;
-  -ms-filter: grayscale(60%) brightness(30%) !important;
-  -webkit-filter: grayscale(60%) brightness(30%) !important;
+  filter: grayscale(40%) brightness(60%) !important;
+  -moz-filter: grayscale(40%) brightness(60%) !important;
+  -ms-filter: grayscale(40%) brightness(60%) !important;
+  -webkit-filter: grayscale(40%) brightness(60%) !important;
 }
 label {
   font-size: 20px;
