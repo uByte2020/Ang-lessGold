@@ -40,7 +40,7 @@
                 <p>
                   <img
                     src="../assets/svg/Portugal.svg"
-                    alt="imagem-Angola"
+                    alt="imagem-Portugal"
                     class="img-fluid IMG1"
                   />
                   <b-icon
