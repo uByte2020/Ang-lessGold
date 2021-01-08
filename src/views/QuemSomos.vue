@@ -15,12 +15,16 @@
         <div class="col-10 BemVCompenent">
           <BemVindoAngLess />
         </div>
-        <!-- <div
-          data-aos="fade-up"
-          data-aos-offset="300"
-          data-aos-easing="ease-in-sine"
-          style="color:green; background-color:green;height:"
-        ></div> -->
+        <div class="col-12" id="dataaos">
+          <div
+            data-aos="fade-up"
+            data-aos-offset="300"
+            data-aos-duration="900"
+            data-aos-easing="ease-in-sine"
+          >
+            aaaaaaaaa
+          </div>
+        </div>
         <div class="col-12" id="BackgroundBlack">
           <div class="row">
             <div class="col-12">
@@ -53,31 +57,49 @@
 
             <div class="col-lg-12 col-md-12 col-xl-12 col-sm-12 tabelasBracas">
               <div class="row justify-content-md-center">
-                <div
-                  class="col-lg-3 col-md-12 col-xl-3 col-sm-12 "
-                >
+                <div class="col-lg-3 col-md-12 col-xl-3 col-sm-12">
                   <div class="row BackgroundBlackwhite">
-                    <div class="col-12"><img src="../assets/svg/missao.svg" class="img-fluid icon" alt="Missao"></div>
-                    <div class="col-12 "><h2 class="titulo">Missão</h2></div>
-                    <div class="col-12"><p>Lorem ipsum dolor sit amet consetetur</p></div>
+                    <div class="col-12">
+                      <img
+                        src="../assets/svg/missao.svg"
+                        class="img-fluid icon"
+                        alt="Missao"
+                      />
+                    </div>
+                    <div class="col-12"><h2 class="titulo">Missão</h2></div>
+                    <div class="col-12">
+                      <p>Lorem ipsum dolor sit amet consetetur</p>
+                    </div>
                   </div>
                 </div>
-                <div
-                  class="col-lg-3 col-md-12 col-xl-3 col-sm-12"
-                >
-                  <div class="row  BackgroundBlackwhite">
-                    <div class="col-12"><img src="../assets/svg/visao.svg" class="img-fluid icon" alt="Missao"></div>
+                <div class="col-lg-3 col-md-12 col-xl-3 col-sm-12">
+                  <div class="row BackgroundBlackwhite">
+                    <div class="col-12">
+                      <img
+                        src="../assets/svg/visao.svg"
+                        class="img-fluid icon"
+                        alt="Missao"
+                      />
+                    </div>
                     <div class="col-12 titulo"><h2>Visão</h2></div>
-                    <div class="col-12"><p>Lorem ipsum dolor sit amet consetetur</p></div>
+                    <div class="col-12">
+                      <p>Lorem ipsum dolor sit amet consetetur</p>
+                    </div>
                   </div>
                 </div>
-                <div
-                  class="col-lg-3 col-md-12 col-xl-3 col-sm-12 "
-                >
-                  <div class="row  BackgroundBlackwhite">
-                    <div class="col-12"><img src="../assets/svg/valor.svg" class="img-fluid icon" alt="Missao"></div>
+                <div class="col-lg-3 col-md-12 col-xl-3 col-sm-12">
+                  <div class="row BackgroundBlackwhite">
+                    <div class="col-12">
+                      <img
+                        src="../assets/svg/valor.svg"
+                        class="img-fluid icon"
+                        alt="Missao"
+                      />
+                    </div>
                     <div class="col-12 titulo"><h2>Valores</h2></div>
-                    <div class="col-12"><p>Lorem ipsum dolor sit amet consetetur</p></div>
+                    <div class="col-12">
+                      <p>Lorem ipsum dolor sit amet consetetur</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -91,6 +113,7 @@
 <script>
 import NavbarPrinc from "../components/NavbarPrinc";
 import BemVindoAngLess from "../components/BemVindo-AngLess";
+
 export default {
   name: "QuemSomos",
   components: {
@@ -134,8 +157,10 @@ h1 {
   line-height: 2;
   width: 100%;
 }
-.tabelasBracas{
+.tabelasBracas {
   margin: 3% auto;
+  padding: 9%;
+  padding-bottom: 0%;
 }
 .BackgroundBlackwhite {
   width: 90% !important;
@@ -150,13 +175,19 @@ h1 {
   width: 90%;
   object-fit: fill;
 }
-.icon{
+.icon {
   margin-top: 3%;
   height: 100%;
   width: 70px;
 }
-.titulo{
+.titulo {
   margin: 2% auto;
+}
+.dataaos {
+  color: green;
+  background-color: #8cb560!important;
+  height: 100px;
+  border-radius: 100% 0 0 0;
 }
 @font-face {
   font-family: "Gotham";

@@ -5,7 +5,8 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 import * as VueGoogleMaps from "vue2-google-maps";
-
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 Vue.use(BootstrapVue) 
 Vue.use(IconsPlugin)
@@ -17,6 +18,9 @@ Vue.use(VueGoogleMaps, {
   }
 });
 new Vue({
+  created(){
+    AOS.init({disable: "phone"})
+  },
   router,
   render: h => h(App)
 }).$mount('#app')
