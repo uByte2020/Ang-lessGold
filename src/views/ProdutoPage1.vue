@@ -6,6 +6,9 @@
             <div class="col-12 ProdutoTitulo">
                 <h1 class="ProdutoTituloH1">Produtos</h1>
             </div>
+            <div class="col-12">
+                <h2></h2>
+            </div>
         </div>
     </div>
   </div>
@@ -21,7 +24,7 @@ export default {
 .ProdutoTitulo{
     text-align: left;
     background-color: #8cb560 ;
-    padding: 2%;
+    padding: 2% 7%;
 }
 .ProdutoTituloH1{
     text-align: left;

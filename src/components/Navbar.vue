@@ -24,10 +24,18 @@
 
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav class="ml-auto">
-          <b-nav-item href="#" class="navitem">Home</b-nav-item>
-          <b-nav-item href="/QuemSomos">Sobre Nós</b-nav-item>
-          <b-nav-item href="/ProdutosPage1">Produtos</b-nav-item>
-          <b-nav-item href="/Contacto">Contactos</b-nav-item>
+          <b-nav-item class="navitem"
+            ><router-link to="/">Home</router-link></b-nav-item
+          >
+          <b-nav-item
+            ><router-link to="/QuemSomos">Sobre Nós</router-link></b-nav-item
+          >
+          <b-nav-item
+            ><router-link to="/ProdutosPage1">Produtos</router-link></b-nav-item
+          >
+          <b-nav-item
+            ><router-link to="/Contacto">Contactos</router-link></b-nav-item
+          >
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
@@ -87,14 +95,13 @@ export default {
 
   /* background-color: transparent !important; */
 }
-.navbar-dark .navbar-nav .nav-link {
-  /* color: rgba(255, 255, 255, 0.5); */
-  color: #fff;
-  font-family: "Josefin";
-  font-size: 20px;
-}
 .img {
   margin-left: 10%;
+}
+a {
+  font-size: 20px;
+  font-family: "Josefin";
+  color: #fff !important;
 }
 @media only screen and (min-width: 1680px) {
   .img {

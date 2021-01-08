@@ -23,10 +23,10 @@
 
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav class="ml-auto">
-          <b-nav-item href="/" class="navitem">Home</b-nav-item>
-          <b-nav-item href="/QuemSomos">Sobre Nós</b-nav-item>
-          <b-nav-item href="/ProdutosPage1">Produtos</b-nav-item>
-          <b-nav-item href="/Contacto">Contactos</b-nav-item>
+          <b-nav-item class="navitem"><router-link to="/">Home</router-link></b-nav-item>
+          <b-nav-item ><router-link to="/QuemSomos">Sobre Nós</router-link></b-nav-item>
+          <b-nav-item ><router-link to="/ProdutosPage1">Produtos</router-link></b-nav-item>
+          <b-nav-item ><router-link to="/Contacto">Contactos</router-link></b-nav-item>
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
@@ -72,7 +72,6 @@ export default {
 }
 
 .nav-link {
-  color: green !important;
   font-family: "Josefin-SemiBold";
   font-size: 23px;
   padding-left: 2%;
@@ -89,6 +88,8 @@ export default {
 }
 a {
   font-size: 25px !important;
+  font-family: "Josefin-SemiBold";
+  color: #8cb560 !important;
 }
 .navbar-dark .navbar-nav .nav-link {
   /* color: rgba(255, 255, 255, 0.5); */
