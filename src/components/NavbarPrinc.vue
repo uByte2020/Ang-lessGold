@@ -25,7 +25,6 @@
         <b-navbar-nav class="ml-auto">
           <b-nav-item href="/" class="navitem">Home</b-nav-item>
           <b-nav-item href="/QuemSomos">Sobre Nós</b-nav-item>
-          <b-nav-item href="#">Serviços</b-nav-item>
           <b-nav-item href="#">Produtos</b-nav-item>
           <b-nav-item href="/Contacto">Contactos</b-nav-item>
         </b-navbar-nav>
@@ -84,7 +83,7 @@ export default {
   position: relative !important;
   z-index: 1;
   width: 100%;
-  padding: 2%;
+  padding: 1%;
 
   /* background-color: transparent !important; */
 }

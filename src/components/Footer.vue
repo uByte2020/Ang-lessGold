@@ -107,7 +107,7 @@
             </div>
           </div>
         </div>
-      <h6>ANG LESS &copy; | TODOS DIREITOS RESERVADOS | ANG LESS GOLD- 2021</h6>
+      <div><small>2018 - ANG LESS GOLD - TODOS DIREITOS RESERVADOS</small> </div>
       </footer>
     </div>
   </div>
@@ -117,6 +117,9 @@
 export default {};
 </script>
 <style scoped>
+small{
+  font-size: 0.7rem;
+}
 .progress {
   height: 5px;
   -moz-height: 5px;

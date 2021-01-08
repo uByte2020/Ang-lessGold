@@ -67,7 +67,7 @@
         <div class="col-12">
           <h3 class="Localizacao">Localização</h3>
           <div class="row">
-            <div class="col-9 mapa">
+            <div class="col-11 mapa">
               <Map />
             </div>
           </div>
@@ -106,10 +106,10 @@ export default {
   -moz-color: #fff;
   -ms-color: #fff;
   -webkit-color: #fff;
-  padding: 2%;
-  -moz-padding: 2%;
-  -ms-padding: 2%;
-  -webkit-padding: 2%;
+  padding: 1%;
+  -moz-padding: 1%;
+  -ms-padding: 1%;
+  -webkit-padding: 1%;
   font-family: "Gotham";
   -moz-font-family: "Gotham";
   -ms-font-family: "Gotham";
@@ -189,10 +189,10 @@ label {
   -webkit-color: #707070;
 }
 #Formulario {
-  padding: 5%;
-  -moz-padding: 5%;
-  -ms-padding: 5%;
-  -webkit-padding: 5%;
+  padding: 2% 5%;
+  -moz-padding:2% 5%;
+  -ms-padding:2% 5%;
+  -webkit-padding:2% 5%;
   position: relative;
   -moz-position: relative;
   -ms-position: relative;
@@ -261,10 +261,10 @@ label {
   -moz-width: 100%;
   -ms-width: 100%;
   -webkit-width: 100%;
-  margin-bottom: 10%;
-  -moz-margin-bottom: 10%;
-  -ms-margin-bottom: 10%;
-  -webkit-margin-bottom: 10%;
+  margin-bottom: 4%;
+  -moz-margin-bottom: 4%;
+  -ms-margin-bottom: 4%;
+  -webkit-margin-bottom: 4%;
   font-family: "Gotham";
   -moz-font-family: "Gotham";
   -ms-font-family: "Gotham";
@@ -330,10 +330,10 @@ label {
   -moz-text-align: left;
   -ms-text-align: left;
   -webkit-text-align: left;
-  padding:3% 4%;
-  -moz-padding: 3% 4%;
-  -ms-padding: 3% 4%;
-  -webkit-padding: 3% 4%;
+  padding:1% 4%;
+  -moz-padding: 1% 4%;
+  -ms-padding: 1% 4%;
+  -webkit-padding: 1% 4%;
   margin: auto;
 }
 .mapa {
