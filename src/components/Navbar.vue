@@ -31,7 +31,7 @@
             ><router-link to="/QuemSomos">Sobre Nós</router-link></b-nav-item
           >
           <b-nav-item
-            ><router-link to="/ProdutosPage1">Produtos</router-link></b-nav-item
+            ><router-link to="/Produtos">Produtos</router-link></b-nav-item
           >
           <b-nav-item
             ><router-link to="/Contacto">Contactos</router-link></b-nav-item
