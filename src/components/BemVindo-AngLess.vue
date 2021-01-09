@@ -60,14 +60,14 @@ export default {
   -webkit-padding: 5%;
 }
 .img {
-  object-fit: fill;
-  -moz-object-fit: fill;
-  -ms-object-fit: fill;
-  -webkit-object-fit: fill;
-  box-shadow: 0px 0px 6px 4px gray;
-  -moz-box-shadow: 0px 0px 6px 4px gray;
-  -ms-box-shadow: 0px 0px 6px 4px gray;
-  -webkit-box-shadow: 0px 0px 6px 4px gray;
+  object-fit: contain;
+  -moz-object-fit: contain;
+  -ms-object-fit: contain;
+  -webkit-object-fit: contain;
+  box-shadow: 0px 0px 2px gray;
+  -moz-box-shadow: 0px 0px 2px gray;
+  -ms-box-shadow: 0px 0px 2px gray;
+  -webkit-box-shadow: 0px 0px 2px gray;
   border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;

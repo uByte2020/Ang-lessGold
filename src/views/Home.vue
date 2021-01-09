@@ -7,8 +7,8 @@
           <div class="row TextoInicio">
             <div class="container">
               <div class="row">
-                <div class="col-lg-8 col-xl-8 col-sm-12 col-md-8">
-                  <h1>
+                <div class="col-lg-8 col-xl-8 col-sm-12 col-md-12">
+                  <h1 class="TextoInicioH1">
                     Importação e Exportação de Bens Alimentares e Medicamentos
                   </h1>
                   <p class="TextoInicioP">
@@ -26,11 +26,11 @@
           <BemVindoAngLess />
         </div> -->
         <div class="col-lg-12 col-md-10 col-xl-10 col-sm-12">
-          <div class="row" id="BemVindo-LesGold">
-            <div class="col-lg-6 col-xl-6 col-sm-12 col-md-12">
+          <div class="row justify-content-md-center" id="BemVindo-LesGold">
+            <div class="col-lg-5 col-xl-5 col-sm-12 col-md-12 imgof">
               <img src="@/assets/imgs/img30.jpg" alt="" class="img-fluid img" />
             </div>
-            <div class="col-lg-6 col-xl-6 col-sm-12 col-md-12 TextoBemVindo">
+            <div class="col-lg-7 col-xl-7 col-sm-12 col-md-12 TextoBemVindo">
               <h2 class="TextoBemVindoH1">
                 Bem-Vindo <br />
                 À ANG LESS GOLD
@@ -45,7 +45,7 @@
                   aria-valuemax="10"
                 ></div>
               </div>
-              <p class="TextoInicioP">
+              <p class="TextoInicioAng">
                 A <b>ANG LESS GOLD</b> é uma empresa de direito Português,
                 Contribuinte fiscal nº 515015253 com sede em estrada da Mendanha
                 nº 25 Bloco 4 4c Parque norte, Carregado e Cadafais, conselho de
@@ -204,6 +204,7 @@ export default {
   -moz-position: relative;
   -ms-position: relative;
   -webkit-position: relative;
+  height: 90vh;
 }
 .Inicio::before {
   content: "";
@@ -248,10 +249,10 @@ export default {
   -webkit-filter: grayscale(60%) brightness(30%) !important;
 }
 .TextoInicio {
-  margin-top: 5%;
-  -moz-margin-top: 5%;
-  -ms-margin-top: 5%;
-  -webkit-margin-top: 5%;
+  margin-top: 15%;
+  -moz-margin-top: 15%;
+  -ms-margin-top: 15%;
+  -webkit-margin-top: 15%;
   text-align: left;
   -moz-text-align: left;
   -ms-text-align: left;
@@ -260,23 +261,23 @@ export default {
   -moz-color: #fff;
   -ms-color: #fff;
   -webkit-color: #fff;
-  opacity: 1;
-  -moz-opacity: 1;
-  -ms-opacity: 1;
-  -webkit-opacity: 1;
   font-family: "Gotham";
   -moz-font-family: "Gotham";
   -ms-font-family: "Gotham";
   -webkit-font-family: "Gotham";
   /* backdrop-filter: blur(5px); */
 }
-.TextoInicioh1 {
+.TextoInicioH1 {
+  /* font-size: 100%; */
 }
 .TextoInicioP {
-  margin: 2% auto;
-  -moz-margin: 2% auto;
-  -ms-margin: 2% auto;
-  -webkit-margin: 2% auto;
+  margin: 5% auto;
+  -moz-margin: 5% auto;
+  -ms-margin: 5% auto;
+  -webkit-margin:5% auto;
+  width: 100%;
+  font-size: 19px;
+  color: #70707070;
 }
 
 #BemVindo-LesGold {
@@ -288,13 +289,10 @@ export default {
   -moz-padding: 5%;
   -ms-padding: 5%;
   -webkit-padding: 5%;
-  margin-left: 10%!important;
+  /* margin-left: 10%!important; */
 }
-.img {
-  object-fit: fill;
-  -moz-object-fit: fill;
-  -ms-object-fit: fill;
-  -webkit-object-fit: fill;
+/* .imgof{
+  position: relative;
   box-shadow: 0px 0px 6px 4px gray;
   -moz-box-shadow: 0px 0px 6px 4px gray;
   -ms-box-shadow: 0px 0px 6px 4px gray;
@@ -303,18 +301,38 @@ export default {
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -webkit-border-radius: 5px;
+  width: 150px;
+  -moz-width: 100%;
+  -ms-width: 100%;
+  -webkit-width: 100%;
+  height: 300px;
+  -moz-height: 100%;
+  -ms-height: 100%;
+  -webkit-height: 100%;
+   margin-right: 15%;	 
+}
+.imgof::before{
+} */
+.img {
+  box-shadow: 0px 0px 2px gray;
+  -moz-box-shadow: 0px 0px 2px gray;
+  -ms-box-shadow: 0px 0px 2px gray;
+  -webkit-box-shadow: 0px 0px 2px gray;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -webkit-border-radius: 5px;
   width: 100%;
   -moz-width: 100%;
   -ms-width: 100%;
   -webkit-width: 100%;
-  height: 100%;
-  -moz-height: 100%;
-  -ms-height: 100%;
-  -webkit-height: 100%;
-  margin-right: 15%;
-  -moz-margin-right: 15%;
-  -ms-margin-right: 15%;
-  -webkit-margin-right: 15%;
+  height: auto;
+  -moz-height:auto;
+  -ms-height: auto;
+  -webkit-height: auto;
+  /* margin-right: 15%; */
+  margin-top: 3%;
+  object-fit: contain;	
 }
 .TextoBemVindo {
   margin-top: 1%;
@@ -374,7 +392,7 @@ button:hover {
 }
 
 .TextoInicioP {
-  margin: 2% auto;
+  margin: 5% auto;
   -moz-margin: 2% auto;
   -ms-margin: 2% auto;
   -webkit-margin: 2% auto;
@@ -424,10 +442,10 @@ button:hover {
   -moz-margin-bottom: 0.5%;
   -ms-margin-bottom: 0.5%;
   -webkit-margin-bottom: 0.5%;
-  box-shadow: 1px -1px 5px black;
+  /* box-shadow: 1px -1px 5px black;
   -moz-box-shadow: 1px -1px 5px black;
   -ms-box-shadow: 1px -1px 5px black;
-  -webkit-box-shadow: 1px -1px 5px black;
+  -webkit-box-shadow: 1px -1px 5px black; */
   padding: 8%;
   -moz-padding: 8%;
   -ms-padding: 8%;

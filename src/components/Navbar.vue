@@ -80,45 +80,55 @@ export default {
     url(../assets/Fonts/josefin-sans.bold.ttf) format("truetype");
 }
 
-/* .nav-link {
-  color: green !important;
+.nav-link {
   font-family: "Josefin-SemiBold";
   font-size: 23px;
   padding-left: 2%;
   padding-right: 2%;
-} */
+}
 
 .navbar {
-  position: absolute;
+  position: absolute !important;
   z-index: 1;
-  width: 85%;
+  width: 100%;
+  padding: 1%;
 
   /* background-color: transparent !important; */
+}
+a {
+  font-size: 25px !important;
+  font-family: "Josefin-SemiBold";
+  color: #fff !important;
+}
+.navbar-dark .navbar-nav .nav-link {
+  /* color: rgba(255, 255, 255, 0.5); */
+  color: #fff;
+  font-family: "Josefin";
+  font-size: 20px;
 }
 .img {
   margin-left: 10%;
 }
-a {
-  font-size: 20px;
-  font-family: "Josefin";
-  color: #fff !important;
+.navbar-collapse,
+.collapse {
+  margin-right: 10%;
 }
-@media only screen and (min-width: 1680px) {
+/* @media only screen and (min-width: 1680px) {
   .img {
     margin-left: 80%;
-    -moz-margin-left: 80%;
-    -ms-margin-left: 80%;
-    -webkit-margin-left: 80%;
-    height: 50%;
-    -moz-height: 50%;
-    -ms-height: 50%;
-    -webkit-height: 50%;
-    width: 90%;
-    -moz-width: 90%;
-    -ms-width: 90%;
-    -webkit-width: 90%;
+    -moz-margin-left: 50%;
+    -ms-margin-left: 50%;
+    -webkit-margin-left: 50%;
+    height: 100%;
+    -moz-height: 100%;
+    -ms-height: 100%;
+    -webkit-height: 100%;
+    width: 100%;
+    -moz-width: 100%;
+    -ms-width: 100%;
+    -webkit-width: 100%;
   }
-}
+} */
 @media only screen and (max-width: 600px) {
   .navbar {
     position: absolute;
@@ -183,11 +193,11 @@ a {
     -moz-margin-left: -40%;
     -ms-margin-left: -40%;
     -webkit-margin-left: -40%;
-    width: 90%;
+    width: 100%;
     -moz-width: 90%;
     -ms-width: 90%;
     -webkit-width: 90%;
-    height: 50%;
+    height: 100%;
     -moz-height: 50%;
     -ms-height: 50%;
     -webkit-height: 50%;
