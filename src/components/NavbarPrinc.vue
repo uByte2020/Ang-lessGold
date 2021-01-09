@@ -23,10 +23,18 @@
 
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav class="ml-auto">
-          <b-nav-item class="navitem"><router-link to="/">Home</router-link></b-nav-item>
-          <b-nav-item ><router-link to="/QuemSomos">Sobre Nós</router-link></b-nav-item>
-          <b-nav-item ><router-link to="/Produtos">Produtos</router-link></b-nav-item>
-          <b-nav-item ><router-link to="/Contacto">Contactos</router-link></b-nav-item>
+          <b-nav-item class="navitem"
+            ><router-link to="/">Home</router-link></b-nav-item
+          >
+          <b-nav-item
+            ><router-link to="/QuemSomos">Sobre Nós</router-link></b-nav-item
+          >
+          <b-nav-item
+            ><router-link to="/Produtos">Produtos</router-link></b-nav-item
+          >
+          <b-nav-item
+            ><router-link to="/Contacto">Contactos</router-link></b-nav-item
+          >
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
@@ -100,7 +108,10 @@ a {
 .img {
   margin-left: 10%;
 }
-
+.navbar-collapse,
+.collapse {
+  margin-right: 10%;
+}
 @media only screen and (max-width: 600px) {
   button,
   .navbar-toggle,
@@ -147,6 +158,17 @@ a {
     -moz-margin-left: 80%;
     -ms-margin-left: 80%;
     -webkit-margin-left: 80%;
+  }
+
+  .navbar-collapse {
+    position: absolute;
+    margin-top: 76%!important;
+    /* margin:auto; */
+    margin-left: -5%;
+    margin-right: 15%!important;
+    background-color: #343A40;
+    width: 104%!important;
+    /* padding: 5%; */
   }
 }
 @media only screen and (max-width: 790px) {
