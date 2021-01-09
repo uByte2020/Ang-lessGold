@@ -274,7 +274,7 @@ export default {
   margin: 5% auto;
   -moz-margin: 5% auto;
   -ms-margin: 5% auto;
-  -webkit-margin:5% auto;
+  -webkit-margin: 5% auto;
   width: 100%;
   font-size: 19px;
   color: #70707070;
@@ -313,6 +313,10 @@ export default {
 }
 .imgof::before{
 } */
+.progressLargura {
+  width: 100% !important;
+  /* margin-top: 20px!important; */
+}
 .img {
   box-shadow: 0px 0px 2px gray;
   -moz-box-shadow: 0px 0px 2px gray;
@@ -327,12 +331,12 @@ export default {
   -ms-width: 100%;
   -webkit-width: 100%;
   height: auto;
-  -moz-height:auto;
+  -moz-height: auto;
   -ms-height: auto;
   -webkit-height: auto;
   /* margin-right: 15%; */
-  margin-top: 3%;
-  object-fit: contain;	
+  margin-top: 4%;
+  object-fit: contain;
 }
 .TextoBemVindo {
   margin-top: 1%;
@@ -612,7 +616,7 @@ button:hover {
   -moz-height: auto;
   -ms-height: auto;
   -webkit-height: auto;
-  border-radius: 3%;
+  border-radius: 3px;
   -moz-border-radius: 3%;
   -ms-border-radius: 3%;
   -webkit-border-radius: 3%;
@@ -620,6 +624,7 @@ button:hover {
   -moz-text-align: center !important;
   -ms-text-align: center !important;
   -webkit-text-align: center !important;
+  width: 100% !important;
 }
 .TextoEscolherNosTitulo {
   font-family: "Josefin-SemiBold";
@@ -644,10 +649,10 @@ button:hover {
   -moz-font-size: 19px;
   -ms-font-size: 19px;
   -webkit-font-size: 19px;
-  margin: 8% auto;
-  -moz-margin: 8% auto;
-  -ms-margin: 8% auto;
-  -webkit-margin: 8% auto;
+  margin: 10px auto;
+  -moz-margin: 10px auto;
+  -ms-margin: 10px auto;
+  -webkit-margin: 10px auto;
   font-family: "Segoe";
   -moz-font-family: "Segoe";
   -ms-font-family: "Segoe";
@@ -662,9 +667,9 @@ button:hover {
   -moz-font-size: 19px;
   -ms-font-size: 19px;
   -webkit-font-size: 19px;
-  margin: 8% auto !important;
-  -moz-margin: 8% auto;
-  -ms-margin: 8% auto;
+  margin: 10px auto !important;
+  -moz-margin: 10px auto;
+  -ms-margin: 10px auto;
   -webkit-margin: 8% auto;
   font-family: "Segoe";
   -moz-font-family: "Segoe";
@@ -680,10 +685,10 @@ button:hover {
   -moz-font-size: 19px;
   -ms-font-size: 19px;
   -webkit-font-size: 19px;
-  margin: 8% auto;
-  -moz-margin: 8% auto;
-  -ms-margin: 8% auto;
-  -webkit-margin: 8% auto;
+  margin: 10px auto;
+  -moz-margin: 10px auto;
+  -ms-margin: 10px auto;
+  -webkit-margin: 10px auto;
   font-family: "Segoe";
   -moz-font-family: "Segoe";
   -ms-font-family: "Segoe";
@@ -743,140 +748,120 @@ p {
     -webkit-margin-top: 20%;
   }
   #BemVindo-LesGold {
-  margin: 1% auto !important;
-  -moz-margin: 1% auto;
-  -ms-margin: 1% auto;
-  -webkit-margin: 1% auto;
-  padding: 5%;
-  -moz-padding: 5%;
-  -ms-padding: 5%;
-  -webkit-padding: 5%;
-}
+    margin: 1% auto !important;
+    -moz-margin: 1% auto;
+    -ms-margin: 1% auto;
+    -webkit-margin: 1% auto;
+    padding: 5%;
+    -moz-padding: 5%;
+    -ms-padding: 5%;
+    -webkit-padding: 5%;
+  }
 }
 @media only screen and (max-width: 800px) {
   #BemVindo-LesGold {
-  margin: 1% auto !important;
-  -moz-margin: 1% auto;
-  -ms-margin: 1% auto;
-  -webkit-margin: 1% auto;
-  padding: 5%;
-  -moz-padding: 5%;
-  -ms-padding: 5%;
-  -webkit-padding: 5%;
+    margin: 1% auto !important;
+    -moz-margin: 1% auto;
+    -ms-margin: 1% auto;
+    -webkit-margin: 1% auto;
+    padding: 5%;
+    -moz-padding: 5%;
+    -ms-padding: 5%;
+    -webkit-padding: 5%;
+  }
 }
-}
-@media only screen and (max-width: 1590px){
-.TextoEscolherNosTxt {
-  font-size: 19px;
-  -moz-font-size: 19px;
-  -ms-font-size: 19px;
-  -webkit-font-size: 19px;
-  margin: 35px auto;
-  -moz-margin: 8% auto;
-  -ms-margin: 8% auto;
-  -webkit-margin: 8% auto;
-  font-family: "Segoe";
-  -moz-font-family: "Segoe";
-  -ms-font-family: "Segoe";
-  -webkit-font-family: "Segoe";
-  font-size: 19px;
-  -moz-font-size: 19px;
-  -ms-font-size: 19px;
-  -webkit-font-size: 19px;
-}
-.TextoEscolherNosTxt2 {
-  font-size: 19px;
-  -moz-font-size: 19px;
-  -ms-font-size: 19px;
-  -webkit-font-size: 19px;
-  margin: 10px auto !important;
-  -moz-margin: 30px auto;
-  -ms-margin: 30px auto;
-  -webkit-margin: 30px auto;
-  font-family: "Segoe";
-  -moz-font-family: "Segoe";
-  -ms-font-family: "Segoe";
-  -webkit-font-family: "Segoe";
-  font-size: 19px;
-  -moz-font-size: 19px;
-  -ms-font-size: 19px;
-  -webkit-font-size: 19px;
-}
-.TextoEscolherNosTxt3 {
-  font-size: 19px;
-  -moz-font-size: 19px;
-  -ms-font-size: 19px;
-  -webkit-font-size: 19px;
-  margin: 35px auto;
-  -moz-margin: 35px auto;
-  -ms-margin: 35px auto;
-  -webkit-margin: 35px auto;
-  font-family: "Segoe";
-  -moz-font-family: "Segoe";
-  -ms-font-family: "Segoe";
-  -webkit-font-family: "Segoe";
-  font-size: 19px;
-  -moz-font-size: 19px;
-  -ms-font-size: 19px;
-  -webkit-font-size: 19px;
-}
+@media only screen and (max-width: 1590px) {
+  .TextoEscolherNosTxt {
+    font-size: 19px;
+    -moz-font-size: 19px;
+    -ms-font-size: 19px;
+    -webkit-font-size: 19px;
+    margin: 35px auto;
+    -moz-margin: 35px auto;
+    -ms-margin: 35px auto;
+    -webkit-margin: 35px auto;
+    font-family: "Segoe";
+    -moz-font-family: "Segoe";
+    -ms-font-family: "Segoe";
+    -webkit-font-family: "Segoe";
+  }
+  .TextoEscolherNosTxt2 {
+    font-size: 19px;
+    -moz-font-size: 19px;
+    -ms-font-size: 19px;
+    -webkit-font-size: 19px;
+    margin: 1px auto !important;
+    -moz-margin: 1px auto;
+    -ms-margin: 1px auto;
+    -webkit-margin: 1px auto;
+    font-family: "Segoe";
+    -moz-font-family: "Segoe";
+    -ms-font-family: "Segoe";
+    -webkit-font-family: "Segoe";
+    font-size: 19px;
+    -moz-font-size: 19px;
+    -ms-font-size: 19px;
+    -webkit-font-size: 19px;
+  }
+  .TextoEscolherNosTxt3 {
+    font-size: 19px;
+    -moz-font-size: 19px;
+    -ms-font-size: 19px;
+    -webkit-font-size: 19px;
+    margin: 30px auto;
+    -moz-margin: 30px auto;
+    -ms-margin: 30px auto;
+    -webkit-margin: 35px auto;
+    font-family: "Segoe";
+    -moz-font-family: "Segoe";
+    -ms-font-family: "Segoe";
+    -webkit-font-family: "Segoe";
+  }
 }
 
-@media only screen and (min-width: 1590px){
-.TextoEscolherNosTxt {
-  font-size: 19px;
-  -moz-font-size: 19px;
-  -ms-font-size: 19px;
-  -webkit-font-size: 19px;
-  margin: 30px auto;
-  -moz-margin: 8% auto;
-  -ms-margin: 8% auto;
-  -webkit-margin: 8% auto;
-  font-family: "Segoe";
-  -moz-font-family: "Segoe";
-  -ms-font-family: "Segoe";
-  -webkit-font-family: "Segoe";
-  font-size: 19px;
-  -moz-font-size: 19px;
-  -ms-font-size: 19px;
-  -webkit-font-size: 19px;
-}
-.TextoEscolherNosTxt2 {
-  font-size: 19px;
-  -moz-font-size: 19px;
-  -ms-font-size: 19px;
-  -webkit-font-size: 19px;
-  margin: 30px auto !important;
-  -moz-margin: 30px auto;
-  -ms-margin: 30px auto;
-  -webkit-margin: 30px auto;
-  font-family: "Segoe";
-  -moz-font-family: "Segoe";
-  -ms-font-family: "Segoe";
-  -webkit-font-family: "Segoe";
-  font-size: 19px;
-  -moz-font-size: 19px;
-  -ms-font-size: 19px;
-  -webkit-font-size: 19px;
-}
-.TextoEscolherNosTxt3 {
-  font-size: 19px;
-  -moz-font-size: 19px;
-  -ms-font-size: 19px;
-  -webkit-font-size: 19px;
-  margin: 30px auto;
-  -moz-margin: 30px auto;
-  -ms-margin: 30px auto;
-  -webkit-margin: 30px auto;
-  font-family: "Segoe";
-  -moz-font-family: "Segoe";
-  -ms-font-family: "Segoe";
-  -webkit-font-family: "Segoe";
-  font-size: 19px;
-  -moz-font-size: 19px;
-  -ms-font-size: 19px;
-  -webkit-font-size: 19px;
-}
+@media only screen and (min-width: 1590px) {
+  .TextoEscolherNosTxt {
+    font-size: 19px;
+    -moz-font-size: 19px;
+    -ms-font-size: 19px;
+    -webkit-font-size: 19px;
+    margin: 30px auto;
+    -moz-margin: 30px auto;
+    -ms-margin: 30px auto;
+    -webkit-margin: 30px auto;
+    font-family: "Segoe";
+    -moz-font-family: "Segoe";
+    -ms-font-family: "Segoe";
+    -webkit-font-family: "Segoe";
+  }
+  .TextoEscolherNosTxt2 {
+    font-size: 19px;
+    -moz-font-size: 19px;
+    -ms-font-size: 19px;
+    -webkit-font-size: 19px;
+    margin: 30px auto !important;
+    -moz-margin: 30px auto;
+    -ms-margin: 30px auto;
+    -webkit-margin: 30px auto;
+    font-family: "Segoe";
+    -moz-font-family: "Segoe";
+    -ms-font-family: "Segoe";
+    -webkit-font-family: "Segoe";
+  }
+  .TextoEscolherNosTxt3 {
+    font-size: 19px;
+    -moz-font-size: 19px;
+    -ms-font-size: 19px;
+    -webkit-font-size: 19px;
+    margin: 30px auto;
+    -moz-margin: 30px auto;
+    -ms-margin: 30px auto;
+    -webkit-margin: 30px auto;
+    font-family: "Segoe";
+    -moz-font-family: "Segoe";
+    -ms-font-family: "Segoe";
+    -webkit-font-family: "Segoe";
+  }
 }
 /* @media only screen and (max-width: 280px){
   div{
