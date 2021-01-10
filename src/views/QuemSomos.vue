@@ -171,7 +171,6 @@ h1 {
   color: #707070;
   /* margin-left: 2%; */
 }
-
 #quemSomos {
   background-color: #8cb560;
   padding: 2%;
@@ -200,15 +199,14 @@ h1 {
   filter: brightness(20%);
 }
 .BackgroundBlackTexto {
-  text-align: left;
+  text-align: justify;
   font-size: 19px;
   line-height: 2;
   width: 100%;
 }
 .tabelasBracas {
-  margin: 3% auto;
-  padding: 9%;
-  padding-bottom: 0%;
+  margin: auto;
+  padding: 7% 9%;
 }
 .centro {
   margin: auto !important;

@@ -49,8 +49,8 @@
                 alt="Mucua"
               />
               <figcaption>
-                <h6 class="explore-prod">Farinha</h6>
-                <p><small>Preço</small></p>
+                <h6 class="explore-prod">Farinha Musseque</h6>
+                <p class="preco">Preço</p>
               </figcaption>
             </figure>
           </div>
@@ -63,7 +63,7 @@
               />
               <figcaption>
                 <h6 class="explore-prod">Bacalhau - Posta / Inteiro</h6>
-                <p><small>Preço</small></p>
+                <p class="preco">Preço</p>
               </figcaption>
             </figure>
           </div>
@@ -76,7 +76,7 @@
               />
               <figcaption>
                 <h6 class="explore-prod">Múcua</h6>
-                <p><small>Preço</small></p>
+                <p class="preco">Preço</p>
               </figcaption>
             </figure>
           </div>
@@ -97,7 +97,7 @@
               />
               <figcaption>
                 <h6 class="explore-prod">Chouriço</h6>
-                <p><small>Preço</small></p>
+                <p class="preco">Preço</p>
               </figcaption>
             </figure>
           </div>
@@ -110,7 +110,7 @@
               />
               <figcaption>
                 <h6 class="explore-prod">Chouriço</h6>
-                <p><small>Preço</small></p>
+                <p class="preco">Preço</p>
               </figcaption>
             </figure>
           </div>
@@ -123,7 +123,7 @@
               />
               <figcaption>
                 <h6 class="explore-prod">Chouriço</h6>
-                <p><small>Preço</small></p>
+                <p class="preco">Preço</p>
               </figcaption>
             </figure>
           </div>
@@ -175,8 +175,10 @@ export default {
   src: local("Fonts"),
     url(../../assets/Fonts/josefin-sans.bold.ttf) format("truetype");
 }
-small {
+.preco {
   color: #f8ce00;
+  font-family: 'JosefiniBold';
+  font-size: 1.08rem;
 }
 .titulo-produto {
   font-family: "JosefiniBold";
@@ -289,14 +291,8 @@ a:focus {
 a:active {
 }
 .img {
-  height: 150px;
-  -moz-height: 150px;
-  -ms-height: 150px;
-  -webkit-height: 150px;
+  height: 155px;
   width: 100%;
-  -moz-width: 100%;
-  -ms-width: 100%;
-  -webkit-width: 100%;
   object-fit: cover;
   -moz-object-fit: cover;
   -ms-object-fit: cover;
@@ -314,7 +310,7 @@ a:active {
   -webkit-margin-top: 2%;
 }
 figure {
-  height: 100%;
+  height: 90%;
   -moz-height: 100%;
   -ms-height: 100%;
   -webkit-height: 100%;
@@ -334,11 +330,11 @@ figure {
   -moz-margin: 1% auto !important;
   -ms-margin: 1% auto !important;
   -webkit-margin: 1% auto !important;
-  transition: 2s ease-out;
+  transition: 0.2s ease-out;
 }
 figure:hover {
   transform: scale(1.08);
-  transition: 0.8s;
+  transition: 0.3s;
 }
 figcaption {
   font-family: "Josefin-SemiBold";
