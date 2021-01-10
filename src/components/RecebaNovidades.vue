@@ -131,4 +131,16 @@ input {
   -ms-border-radius: 100px;
   -webkit-border-radius: 100px;
 }
+@media only screen and (max-width: 300px){
+.RecebaNovidadesTitulo {
+  font-family: "Josefin";
+  -moz-font-family: "Josefin";
+  -ms-font-family: "Josefin";
+  -webkit-font-family: "Josefin";
+  font-size: 40px;
+  -moz-font-size: 60px;
+  -ms-font-size: 60px;
+  -webkit-font-size: 60px;
+}
+}
 </style>
