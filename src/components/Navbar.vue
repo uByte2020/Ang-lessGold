@@ -99,7 +99,6 @@ export default {
   z-index: 1;
   width: 100%;
   /* padding: 1%; */
-
   /* background-color: transparent !important; */
 }
 a {
