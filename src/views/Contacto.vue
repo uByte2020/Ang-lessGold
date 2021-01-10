@@ -1,10 +1,10 @@
 <template>
   <div id="Contactos">
-    <NavbarPrinc  />
+    <NavbarPrinc />
     <div class="container-fluid">
       <div class="row">
         <div class="col-12 ContactoTitulo">
-          <h1>CONTACTOS</h1>
+          <h1 style="margin-left: 4%;">CONTACTOS</h1>
         </div>
         <div class="col-12" id="Formulario">
           <div class="row">
@@ -32,8 +32,7 @@
                   <div class="col-12">
                     <div class="form-group">
                       <label for="Mensagem">Mensagem</label>
-                      <input
-                        type="text-area"
+                      <textarea
                         name="Mensagem"
                         class="form-control"
                       />
@@ -56,7 +55,7 @@
                   <h2 class="AngLessTitulo">ANG LESS GOLD</h2>
                 </div>
                 <div class="col-12 Texto">
-                  <p>
+                  <p style="width:300px; margin: auto">
                     Estrada da Mendanha <br />Nº 25 Bloco 4 - 4 C <br />Parque
                     norte <br />2580-588 Carregado
                   </p>
@@ -68,7 +67,7 @@
         <div class="col-12">
           <h3 class="Localizacao">Localização</h3>
           <div class="row">
-            <div class="col-9 mapa">
+            <div class="col-11 mapa">
               <Map />
             </div>
           </div>
@@ -107,10 +106,10 @@ export default {
   -moz-color: #fff;
   -ms-color: #fff;
   -webkit-color: #fff;
-  padding: 3%;
-  -moz-padding: 3%;
-  -ms-padding: 3%;
-  -webkit-padding: 3%;
+  padding: 1%;
+  -moz-padding: 1%;
+  -ms-padding: 1%;
+  -webkit-padding: 1%;
   font-family: "Gotham";
   -moz-font-family: "Gotham";
   -ms-font-family: "Gotham";
@@ -158,18 +157,18 @@ export default {
     center center;
   -webkit-background: url("../assets/imgs/backgroundContacto .jpeg") no-repeat
     center center;
-  background-size: 100% 100%;
-  -moz-background-size: 100% 100%;
-  -ms-background-size: 100% 100%;
-  -webkit-background-size: 100% 100%;
+  background-size: 100% 130%;
+  -moz-background-size: 100% 130%;
+  -ms-background-size: 100% 130%;
+  -webkit-background-size: 100% 130%;
   z-index: -1;
   -moz-z-index: -1;
   -ms-z-index: -1;
   -webkit-z-index: -1;
-  filter: grayscale(60%) brightness(30%) !important;
-  -moz-filter: grayscale(60%) brightness(30%) !important;
-  -ms-filter: grayscale(60%) brightness(30%) !important;
-  -webkit-filter: grayscale(60%) brightness(30%) !important;
+  filter: grayscale(40%) brightness(60%) !important;
+  -moz-filter: grayscale(40%) brightness(60%) !important;
+  -ms-filter: grayscale(40%) brightness(60%) !important;
+  -webkit-filter: grayscale(40%) brightness(60%) !important;
 }
 label {
   font-size: 20px;
@@ -190,10 +189,52 @@ label {
   -webkit-color: #707070;
 }
 #Formulario {
-  padding: 5%;
-  -moz-padding: 5%;
-  -ms-padding: 5%;
-  -webkit-padding: 5%;
+  padding: 2% 5%;
+  -moz-padding:2% 5%;
+  -ms-padding:2% 5%;
+  -webkit-padding:2% 5%;
+  position: relative;
+  -moz-position: relative;
+  -ms-position: relative;
+  -webkit-position: relative;
+}
+#Formulario::before{
+  content: "";
+  -moz-content: "";
+  -ms-content: "";
+  -webkit-content: "";
+  position: absolute;
+  -moz-position: absolute;
+  -ms-position: absolute;
+  -webkit-position: absolute;
+  width: 100%;
+  -moz-width: 100%;
+  -ms-width: 100%;
+  -webkit-width: 100%;
+  height: 100%;
+  -moz-height: 100%;
+  -ms-height: 100%;
+  -webkit-height: 100%;
+  top: 0px;
+  -moz-top: 0px;
+  -ms-top: 0px;
+  -webkit-top: 0px;
+  left: 0px;
+  -moz-left: 0px;
+  -ms-left: 0px;
+  -webkit-left: 0px;
+  background: url('../assets/imgs/img4.jpg') no-repeat center center;
+  -moz-background: url('../assets/imgs/img4.jpg') no-repeat center center;
+  -ms-background: url('../assets/imgs/img4.jpg')no-repeat center center;
+  -webkit-background: url('../assets/imgs/img4.jpg') no-repeat center center;
+  background-size: 70% 120%;
+  -moz-background-size: 70% 120%;
+  -ms-background-size: 70% 120%;
+  -webkit-background-size: 70% 150%;
+  filter:opacity(0.1);
+  -moz-filter:opacity(0.1);
+  -ms-filter:opacity(0.1);
+  -webkit-filter:opacity(0.1);
 }
 .form-control {
   width: 100%;
@@ -230,10 +271,10 @@ label {
   -webkit-font-family: "Gotham";
 }
 .btn:hover {
-  color: #fff;
-  -moz-color: #fff;
-  -ms-color: #fff;
-  -webkit-color: #fff;
+  color: rgb(214, 210, 210);
+  -moz-color: rgb(214, 210, 210);
+  -ms-color: rgb(214, 210, 210);
+  -webkit-color: rgb(214, 210, 210);
 }
 .AngLess {
   text-align: center;
@@ -256,6 +297,10 @@ label {
   -moz-font-family: "Gotham";
   -ms-font-family: "Gotham";
   -webkit-font-family: "Gotham";
+  text-align: left;
+  -moz-text-align: left;
+  -ms-text-align: left;
+  -webkit-text-align: left;
   color: #707070;
   -moz-color: #707070;
   -ms-color: #707070;
@@ -285,10 +330,11 @@ label {
   -moz-text-align: left;
   -ms-text-align: left;
   -webkit-text-align: left;
-  padding: 5%;
-  -moz-padding: 5%;
-  -ms-padding: 5%;
-  -webkit-padding: 5%;
+  padding:1% 4%;
+  -moz-padding: 1% 4%;
+  -ms-padding: 1% 4%;
+  -webkit-padding: 1% 4%;
+  margin: auto;
 }
 .mapa {
   margin: auto !important;

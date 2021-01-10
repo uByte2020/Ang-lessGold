@@ -6,7 +6,7 @@
           <div class="container">
             <div class="row">
               <div class="col-12">
-                <img src="../assets/imgs/img32.png" alt="Logo">
+                <img src="../assets/imgs/img32.png" alt="Logo" />
               </div>
               <div class="col-lg-3 col-xl-3 col-sm-12 col-md-3 footerMarg">
                 <h5>Endereço</h5>
@@ -40,7 +40,7 @@
                 <p>
                   <img
                     src="../assets/svg/Portugal.svg"
-                    alt="imagem-Angola"
+                    alt="imagem-Portugal"
                     class="img-fluid IMG1"
                   />
                   <b-icon
@@ -107,6 +107,7 @@
             </div>
           </div>
         </div>
+      <div><small>2018 - ANG LESS GOLD - TODOS DIREITOS RESERVADOS</small> </div>
       </footer>
     </div>
   </div>
@@ -116,6 +117,9 @@
 export default {};
 </script>
 <style scoped>
+small{
+  font-size: 0.7rem;
+}
 .progress {
   height: 5px;
   -moz-height: 5px;
@@ -158,7 +162,7 @@ footer {
   -moz-background-color: rgb(54, 54, 54);
   -ms-background-color: rgb(54, 54, 54);
   -webkit-background-color: rgb(54, 54, 54);
-  padding: 5%;
+  padding:1% 5%;
   padding-top: 2% !important;
   -moz-padding: 5%;
   -ms-padding: 5%;
@@ -217,5 +221,9 @@ p {
   -moz-font-size: 16px;
   -ms-font-size: 16px;
   -webkit-font-size: 16px;
+}
+h6 {
+  margin: auto !important;
+  margin-top: 4% !important;
 }
 </style>

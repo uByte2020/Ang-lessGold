@@ -7,8 +7,8 @@
           <div class="row TextoInicio">
             <div class="container">
               <div class="row">
-                <div class="col-lg-8 col-xl-8 col-sm-12 col-md-8">
-                  <h1>
+                <div class="col-lg-8 col-xl-8 col-sm-12 col-md-12">
+                  <h1 class="TextoInicioH1">
                     Importação e Exportação de Bens Alimentares e Medicamentos
                   </h1>
                   <p class="TextoInicioP">
@@ -22,51 +22,42 @@
             </div>
           </div>
         </div>
-        <div class="col-12" id="BemVindo-LesGold">
-          <div class="row">
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-4 col-xl-4 col-sm-12 col-md-12">
-                  <img
-                    src="@/assets/imgs/img30.jpg"
-                    alt=""
-                    class="img-fluid img"
-                  />
-                </div>
+        <!-- <div class="col-lg-12 col-md-11 col-xl-9 col-sm-11" id="BemVindo-LesGold">
+          <BemVindoAngLess />
+        </div> -->
+        <div class="col-lg-12 col-md-10 col-xl-10 col-sm-12">
+          <div class="row justify-content-md-center" id="BemVindo-LesGold">
+            <div class="col-lg-5 col-xl-5 col-sm-12 col-md-12 imgof">
+              <img src="@/assets/imgs/img30.jpg" alt="" class="img-fluid img" />
+            </div>
+            <div class="col-lg-7 col-xl-7 col-sm-12 col-md-12 TextoBemVindo">
+              <h2 class="TextoBemVindoH1">
+                Bem-Vindo <br />
+                À ANG LESS GOLD
+              </h2>
+              <div class="progress">
                 <div
-                  class="col-lg-8 col-xl-8 col-sm-12 col-md-12 TextoBemVindo"
-                >
-                  <h2 class="TextoBemVindoH1">
-                    Bem-Vindo <br />
-                    À ANG LESS GOLD
-                  </h2>
-                  <div class="progress">
-                    <div
-                      class="progress-bar ProgressCor1"
-                      role="progressbar"
-                      style="width: 100%"
-                      aria-valuenow="10"
-                      aria-valuemin="0"
-                      aria-valuemax="10"
-                    ></div>
-                  </div>
-                  <p class="TextoInicioP">
-                    A <b>ANG LESS GOLD</b> é uma empresa de direito Português,
-                    Contribuinte fiscal nº 515015253 com sede em estrada da
-                    Mendanha nº 25 Bloco 4 4c Parque norte, Carregado e
-                    Cadafais, conselho de Alenquer. Registada como pessoa
-                    coletiva 515015253 com número de identificação na segurança
-                    social 25150152535, cujo objetivo social e a prestação de
-                    serviço, comércio a grosso de bebidas, alimentaos,
-                    medicamentos, Importação e Exportação.
-                  </p>
-                  <button type="button" class="btn btn-lg">Saiba Mais</button>
-                </div>
+                  class="progress-bar ProgressCor1"
+                  role="progressbar"
+                  style="width: 100%"
+                  aria-valuenow="10"
+                  aria-valuemin="0"
+                  aria-valuemax="10"
+                ></div>
               </div>
+              <p class="TextoInicioAng">
+                A <b>ANG LESS GOLD</b> é uma empresa de direito Português,
+                Contribuinte fiscal nº 515015253 com sede em estrada da Mendanha
+                nº 25 Bloco 4 4c Parque norte, Carregado e Cadafais, conselho de
+                Alenquer. Registada como pessoa coletiva 515015253 com número de
+                identificação na segurança social 25150152535, cujo objetivo
+                social e a prestação de serviço, comércio a grosso de bebidas,
+                alimentaos, medicamentos, Importação e Exportação.
+              </p>
+              <button type="button" class="btn btn-lg">Saiba Mais</button>
             </div>
           </div>
         </div>
-
         <div class="col-12" id="OQFazemosPrinc">
           <div class="row">
             <div class="container">
@@ -150,38 +141,8 @@
           </div>
         </div>
         <Produtos />
-        <div class="col-12" id="RecebaNovidades">
-          <div class="row justify-content-md-center RecebaNovidadesTexto">
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-7 col-xl-7 col-sm-12 col-md-7">
-                  <h2 class="RecebaNovidadesTitulo">Receba Novidades</h2>
-                  <p class="RecebaNovidadesTexto2">
-                    Cadraste o seu email e receba novidades da ANG LESS GOLD
-                  </p>
-                </div>
-                <div class="col-lg-5 col-xl-5 col-sm-12 col-md-5" id="inputT">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="E-mail"
-                  />
-                  <button
-                    type="button"
-                    id="button"
-                    class="btn btn-sm btn-success"
-                  >
-                    <b-icon
-                      icon="arrow-right"
-                      font-scale="1"
-                      variant="default"
-                    ></b-icon>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+
+        <RecebaNovidades />
         <Footer />
       </div>
     </div>
@@ -193,12 +154,16 @@
 import Footer from "../components/Footer.vue";
 import Navbar from "../components/Navbar.vue";
 import Produtos from "../components/home/Produtos";
+// import BemVindoAngLess from "../components/BemVindo-AngLess";
+import RecebaNovidades from "../components/RecebaNovidades";
 
 export default {
   name: "Home",
   components: {
     Navbar,
     Produtos,
+    // BemVindoAngLess,
+    RecebaNovidades,
     Footer,
   },
   data() {
@@ -239,6 +204,7 @@ export default {
   -moz-position: relative;
   -ms-position: relative;
   -webkit-position: relative;
+  height: 90vh;
 }
 .Inicio::before {
   content: "";
@@ -283,10 +249,10 @@ export default {
   -webkit-filter: grayscale(60%) brightness(30%) !important;
 }
 .TextoInicio {
-  margin-top: 5%;
-  -moz-margin-top: 5%;
-  -ms-margin-top: 5%;
-  -webkit-margin-top: 5%;
+  margin-top: 15%;
+  -moz-margin-top: 15%;
+  -ms-margin-top: 15%;
+  -webkit-margin-top: 15%;
   text-align: left;
   -moz-text-align: left;
   -ms-text-align: left;
@@ -295,29 +261,38 @@ export default {
   -moz-color: #fff;
   -ms-color: #fff;
   -webkit-color: #fff;
-  opacity: 1;
-  -moz-opacity: 1;
-  -ms-opacity: 1;
-  -webkit-opacity: 1;
   font-family: "Gotham";
   -moz-font-family: "Gotham";
   -ms-font-family: "Gotham";
   -webkit-font-family: "Gotham";
   /* backdrop-filter: blur(5px); */
 }
-.TextoInicioh1 {
+.TextoInicioH1 {
+  /* font-size: 100%; */
 }
 .TextoInicioP {
-  margin: 2% auto;
-  -moz-margin: 2% auto;
-  -ms-margin: 2% auto;
-  -webkit-margin: 2% auto;
+  margin: 5% auto;
+  -moz-margin: 5% auto;
+  -ms-margin: 5% auto;
+  -webkit-margin: 5% auto;
+  width: 100%;
+  font-size: 19px;
+  color: #70707070;
 }
-.img {
-  object-fit: fill;
-  -moz-object-fit: fill;
-  -ms-object-fit: fill;
-  -webkit-object-fit: fill;
+
+#BemVindo-LesGold {
+  margin: 1% auto !important;
+  -moz-margin: 1% auto;
+  -ms-margin: 1% auto;
+  -webkit-margin: 1% auto;
+  padding: 5%;
+  -moz-padding: 5%;
+  -ms-padding: 5%;
+  -webkit-padding: 5%;
+  /* margin-left: 10%!important; */
+}
+/* .imgof{
+  position: relative;
   box-shadow: 0px 0px 6px 4px gray;
   -moz-box-shadow: 0px 0px 6px 4px gray;
   -ms-box-shadow: 0px 0px 6px 4px gray;
@@ -326,28 +301,42 @@ export default {
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -webkit-border-radius: 5px;
-  width: 90%;
-  -moz-width: 90%;
-  -ms-width: 90%;
-  -webkit-width: 90%;
-  height: 100%;
+  width: 150px;
+  -moz-width: 100%;
+  -ms-width: 100%;
+  -webkit-width: 100%;
+  height: 300px;
   -moz-height: 100%;
   -ms-height: 100%;
   -webkit-height: 100%;
-  margin-right: 15%;
-  -moz-margin-right: 15%;
-  -ms-margin-right: 15%;
-  -webkit-margin-right: 15%;
+   margin-right: 15%;	 
 }
-#BemVindo-LesGold {
-  margin: 1% auto;
-  -moz-margin: 1% auto;
-  -ms-margin: 1% auto;
-  -webkit-margin: 1% auto;
-  padding: 5%;
-  -moz-padding: 5%;
-  -ms-padding: 5%;
-  -webkit-padding: 5%;
+.imgof::before{
+} */
+.progressLargura {
+  width: 100% !important;
+  /* margin-top: 20px!important; */
+}
+.img {
+  box-shadow: 0px 0px 2px gray;
+  -moz-box-shadow: 0px 0px 2px gray;
+  -ms-box-shadow: 0px 0px 2px gray;
+  -webkit-box-shadow: 0px 0px 2px gray;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  width: 100%;
+  -moz-width: 100%;
+  -ms-width: 100%;
+  -webkit-width: 100%;
+  height: auto;
+  -moz-height: auto;
+  -ms-height: auto;
+  -webkit-height: auto;
+  /* margin-right: 15%; */
+  margin-top: 4%;
+  object-fit: contain;
 }
 .TextoBemVindo {
   margin-top: 1%;
@@ -364,6 +353,10 @@ export default {
   -moz-font-family: "Josefin";
   -ms-font-family: "Josefin";
   -webkit-font-family: "Josefin";
+  color: #707070;
+  -moz-color: #707070;
+  -ms-color: #707070;
+  -webkit-color: #707070;
 }
 .ProgressCor1 {
   background-color: #8cb560 !important;
@@ -371,7 +364,46 @@ export default {
   -ms-background-color: #8cb560 !important;
   -webkit-background-color: #8cb560 !important;
 }
-.TextoBemVindoH1 {
+.progress {
+  height: 5px;
+  -moz-height: 5px;
+  -ms-height: 5px;
+  -webkit-height: 5px;
+  width: 50px;
+  -moz-width: 50px;
+  -ms-width: 50px;
+  -webkit-width: 50px;
+}
+button {
+  background-color: #8cb560;
+  -moz-background-color: #8cb560;
+  -ms-background-color: #8cb560;
+  -webkit-background-color: #8cb560;
+  color: #fff;
+  -moz-color: #fff;
+  -ms-color: #fff;
+  -webkit-color: #fff;
+}
+button:hover {
+  background-color: #8cb560;
+  -moz-background-color: #8cb560;
+  -ms-background-color: #8cb560;
+  -webkit-background-color: #8cb560;
+  color: #000 !important;
+  -moz-color: #000 !important;
+  -ms-color: #000 !important;
+  -webkit-color: #000 !important;
+}
+
+.TextoInicioP {
+  margin: 5% auto;
+  -moz-margin: 2% auto;
+  -ms-margin: 2% auto;
+  -webkit-margin: 2% auto;
+  color: #707070;
+  -moz-color: #707070;
+  -ms-color: #707070;
+  -webkit-color: #707070;
 }
 .progress {
   height: 5px;
@@ -414,10 +446,10 @@ export default {
   -moz-margin-bottom: 0.5%;
   -ms-margin-bottom: 0.5%;
   -webkit-margin-bottom: 0.5%;
-  box-shadow: 1px -1px 5px black;
+  /* box-shadow: 1px -1px 5px black;
   -moz-box-shadow: 1px -1px 5px black;
   -ms-box-shadow: 1px -1px 5px black;
-  -webkit-box-shadow: 1px -1px 5px black;
+  -webkit-box-shadow: 1px -1px 5px black; */
   padding: 8%;
   -moz-padding: 8%;
   -ms-padding: 8%;
@@ -584,7 +616,7 @@ export default {
   -moz-height: auto;
   -ms-height: auto;
   -webkit-height: auto;
-  border-radius: 3%;
+  border-radius: 3px;
   -moz-border-radius: 3%;
   -ms-border-radius: 3%;
   -webkit-border-radius: 3%;
@@ -592,6 +624,7 @@ export default {
   -moz-text-align: center !important;
   -ms-text-align: center !important;
   -webkit-text-align: center !important;
+  width: 100% !important;
 }
 .TextoEscolherNosTitulo {
   font-family: "Josefin-SemiBold";
@@ -616,10 +649,10 @@ export default {
   -moz-font-size: 19px;
   -ms-font-size: 19px;
   -webkit-font-size: 19px;
-  margin: 13% auto;
-  -moz-margin: 13% auto;
-  -ms-margin: 13% auto;
-  -webkit-margin: 13% auto;
+  margin: 10px auto;
+  -moz-margin: 10px auto;
+  -ms-margin: 10px auto;
+  -webkit-margin: 10px auto;
   font-family: "Segoe";
   -moz-font-family: "Segoe";
   -ms-font-family: "Segoe";
@@ -634,10 +667,10 @@ export default {
   -moz-font-size: 19px;
   -ms-font-size: 19px;
   -webkit-font-size: 19px;
-  margin: 6% auto;
-  -moz-margin: 6% auto;
-  -ms-margin: 6% auto;
-  -webkit-margin: 6% auto;
+  margin: 10px auto !important;
+  -moz-margin: 10px auto;
+  -ms-margin: 10px auto;
+  -webkit-margin: 8% auto;
   font-family: "Segoe";
   -moz-font-family: "Segoe";
   -ms-font-family: "Segoe";
@@ -652,10 +685,10 @@ export default {
   -moz-font-size: 19px;
   -ms-font-size: 19px;
   -webkit-font-size: 19px;
-  margin: 15% auto;
-  -moz-margin: 15% auto;
-  -ms-margin: 15% auto;
-  -webkit-margin: 15% auto;
+  margin: 10px auto;
+  -moz-margin: 10px auto;
+  -ms-margin: 10px auto;
+  -webkit-margin: 10px auto;
   font-family: "Segoe";
   -moz-font-family: "Segoe";
   -ms-font-family: "Segoe";
@@ -680,78 +713,7 @@ export default {
   -ms-background-color: none !important;
   -webkit-background-color: none !important;
 }
-#RecebaNovidades {
-  color: #fff;
-  -moz-color: #fff;
-  -ms-color: #fff;
-  -webkit-color: #fff;
-  background-color: #68aa38;
-  -moz-background-color: #68aa38;
-  -ms-background-color: #68aa38;
-  -webkit-background-color: #68aa38;
-  text-align: center;
-  -moz-text-align: center;
-  -ms-text-align: center;
-  -webkit-text-align: center;
-}
-.RecebaNovidadesTexto {
-  padding: 6% 7% 4% 7% !important;
-  -moz-padding: 6% 7% 4% 7% !important;
-  -ms-padding: 6% 7% 4% 7% !important;
-  -webkit-padding: 6% 7% 4% 7% !important;
-  text-align: left !important;
-  -moz-text-align: left !important;
-  -ms-text-align: left !important;
-  -webkit-text-align: left !important;
-}
-.RecebaNovidadesTitulo {
-  font-family: "Josefin";
-  -moz-font-family: "Josefin";
-  -ms-font-family: "Josefin";
-  -webkit-font-family: "Josefin";
-  font-size: 60px;
-  -moz-font-size: 60px;
-  -ms-font-size: 60px;
-  -webkit-font-size: 60px;
-}
-.RecebaNovidadesTexto2 {
-  font-size: 24px;
-  -moz-font-size: 24px;
-  -ms-font-size: 24px;
-  -webkit-font-size: 24px;
-  font-family: "Segoe";
-  -moz-font-family: "Segoe";
-  -ms-font-family: "Segoe";
-  -webkit-font-family: "Segoe";
-}
-input {
-  border-radius: 25px;
-  -moz-border-radius: 25px;
-  -ms-border-radius: 25px;
-  -webkit-border-radius: 25px;
-  text-align: center;
-  -moz-text-align: center;
-  -ms-text-align: center;
-  -webkit-text-align: center;
-  font-size: 16px;
-  -moz-font-size: 16px;
-  -ms-font-size: 16px;
-  -webkit-font-size: 16px;
-  padding: 5%;
-  -moz-padding: 5%;
-  -ms-padding: 5%;
-  -webkit-padding: 5%;
-  width: 100%;
-  -moz-width: 100%;
-  -ms-width: 100%;
-  -webkit-width: 100%;
-}
-#inputT {
-  margin-top: 2% !important;
-  -moz-margin-top: 2% !important;
-  -ms-margin-top: 2% !important;
-  -webkit-margin-top: 2% !important;
-}
+
 button {
   background-color: #8cb560;
   -moz-background-color: #8cb560;
@@ -772,28 +734,6 @@ button:hover {
   -ms-color: #fff !important;
   -webkit-color: #fff !important;
 }
-#button {
-  margin-top: -70px !important;
-  -moz-margin-top: -70px !important;
-  -ms-margin-top: -70px !important;
-  -webkit-margin-top: -70px !important;
-  margin-left: 88%;
-  -moz-margin-left: 88%;
-  -ms-margin-left: 88%;
-  -webkit-margin-left: 88%;
-  color: #fff !important;
-  -moz-color: #fff !important;
-  -ms-color: #fff !important;
-  -webkit-color: #fff !important;
-  background-color: rgb(53, 138, 53);
-  -moz-background-color: rgb(53, 138, 53);
-  -ms-background-color: rgb(53, 138, 53);
-  -webkit-background-color: rgb(53, 138, 53);
-  border-radius: 100px;
-  -moz-border-radius: 100px;
-  -ms-border-radius: 100px;
-  -webkit-border-radius: 100px;
-}
 p {
   font-size: 16px;
   -moz-font-size: 16px;
@@ -807,5 +747,128 @@ p {
     -ms-margin-top: 20%;
     -webkit-margin-top: 20%;
   }
+  #BemVindo-LesGold {
+    margin: 1% auto !important;
+    -moz-margin: 1% auto;
+    -ms-margin: 1% auto;
+    -webkit-margin: 1% auto;
+    padding: 5%;
+    -moz-padding: 5%;
+    -ms-padding: 5%;
+    -webkit-padding: 5%;
+  }
 }
+@media only screen and (max-width: 800px) {
+  #BemVindo-LesGold {
+    margin: 1% auto !important;
+    -moz-margin: 1% auto;
+    -ms-margin: 1% auto;
+    -webkit-margin: 1% auto;
+    padding: 5%;
+    -moz-padding: 5%;
+    -ms-padding: 5%;
+    -webkit-padding: 5%;
+  }
+}
+@media only screen and (max-width: 1590px) {
+  .TextoEscolherNosTxt {
+    font-size: 19px;
+    -moz-font-size: 19px;
+    -ms-font-size: 19px;
+    -webkit-font-size: 19px;
+    margin: 35px auto;
+    -moz-margin: 35px auto;
+    -ms-margin: 35px auto;
+    -webkit-margin: 35px auto;
+    font-family: "Segoe";
+    -moz-font-family: "Segoe";
+    -ms-font-family: "Segoe";
+    -webkit-font-family: "Segoe";
+  }
+  .TextoEscolherNosTxt2 {
+    font-size: 19px;
+    -moz-font-size: 19px;
+    -ms-font-size: 19px;
+    -webkit-font-size: 19px;
+    margin: 1px auto !important;
+    -moz-margin: 1px auto;
+    -ms-margin: 1px auto;
+    -webkit-margin: 1px auto;
+    font-family: "Segoe";
+    -moz-font-family: "Segoe";
+    -ms-font-family: "Segoe";
+    -webkit-font-family: "Segoe";
+    font-size: 19px;
+    -moz-font-size: 19px;
+    -ms-font-size: 19px;
+    -webkit-font-size: 19px;
+  }
+  .TextoEscolherNosTxt3 {
+    font-size: 19px;
+    -moz-font-size: 19px;
+    -ms-font-size: 19px;
+    -webkit-font-size: 19px;
+    margin: 30px auto;
+    -moz-margin: 30px auto;
+    -ms-margin: 30px auto;
+    -webkit-margin: 35px auto;
+    font-family: "Segoe";
+    -moz-font-family: "Segoe";
+    -ms-font-family: "Segoe";
+    -webkit-font-family: "Segoe";
+  }
+}
+
+@media only screen and (min-width: 1590px) {
+  .TextoEscolherNosTxt {
+    font-size: 19px;
+    -moz-font-size: 19px;
+    -ms-font-size: 19px;
+    -webkit-font-size: 19px;
+    margin: 30px auto;
+    -moz-margin: 30px auto;
+    -ms-margin: 30px auto;
+    -webkit-margin: 30px auto;
+    font-family: "Segoe";
+    -moz-font-family: "Segoe";
+    -ms-font-family: "Segoe";
+    -webkit-font-family: "Segoe";
+  }
+  .TextoEscolherNosTxt2 {
+    font-size: 19px;
+    -moz-font-size: 19px;
+    -ms-font-size: 19px;
+    -webkit-font-size: 19px;
+    margin: 30px auto !important;
+    -moz-margin: 30px auto;
+    -ms-margin: 30px auto;
+    -webkit-margin: 30px auto;
+    font-family: "Segoe";
+    -moz-font-family: "Segoe";
+    -ms-font-family: "Segoe";
+    -webkit-font-family: "Segoe";
+  }
+  .TextoEscolherNosTxt3 {
+    font-size: 19px;
+    -moz-font-size: 19px;
+    -ms-font-size: 19px;
+    -webkit-font-size: 19px;
+    margin: 30px auto;
+    -moz-margin: 30px auto;
+    -ms-margin: 30px auto;
+    -webkit-margin: 30px auto;
+    font-family: "Segoe";
+    -moz-font-family: "Segoe";
+    -ms-font-family: "Segoe";
+    -webkit-font-family: "Segoe";
+  }
+}
+/* @media only screen and (max-width: 280px){
+  div{
+    width: 300px!important;
+  }
+  #EscolherNosPrinc{
+    width: 1%!important;
+  }
+} */
 </style>
