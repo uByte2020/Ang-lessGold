@@ -7,7 +7,7 @@
           <h1 class="quemSomosTitutlo">Quem Somos</h1>
         </div>
         <div class="col-12 TituloAngLess">
-          <h1>
+          <h1 id="TituloAngLessH1">
             ANG LESS GOLD <br />
             IMPORTAÇÃO &amp; EXPORTAÇÃO LDA
           </h1>
@@ -19,15 +19,16 @@
           class="col-12"
           id="dataaos"
           data-aos="fade-up"
-          data-aos-offset="300"
           data-aos-duration="1000"
-          data-aos-easing="ease-in-sine"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="300"
+          data-aos-offset="0"
         ></div>
         <div class="col-12" id="BackgroundBlack">
           <div class="row">
-            <div class="col-12">
+            <div class="col-12 TxTEImg">
               <div class="row justify-content-md-center">
-                <div class="col-lg-5 col-md-12 col-xl-5 col-sm-12">
+                <div class="col-lg-12 col-md-12 col-xl-5 col-sm-12">
                   <p class="BackgroundBlackTexto">
                     Para nós a chave do sucesso e melhor dia/dia com a nossa
                     equipa de profissionais trabalhando arduamente para conceber
@@ -43,7 +44,7 @@
                   </p>
                 </div>
 
-                <div class="col-lg-6 col-md-12 col-xl-6 col-sm-12">
+                <div class="col-lg-12 col-md-12 col-xl-6 col-sm-12">
                   <img
                     src="../assets/imgs/img29.jpg"
                     class="img-fluid img"
@@ -55,9 +56,16 @@
 
             <div class="col-lg-12 col-md-12 col-xl-12 col-sm-12 tabelasBracas">
               <div class="row justify-content-md-center centro">
-                <div class="col-lg-3 col-md-12 col-xl-3 col-sm-12">
+                <div
+                  class="col-lg-3 col-md-12 col-xl-3 col-sm-12"
+                  data-aos="fade-up"
+                  data-aos-easing="ease-in-back"
+                  data-aos-delay="300"
+                  data-aos-offset="0"
+                  data-aos-duration="1000"
+                >
                   <div class="row BackgroundBlackwhite">
-                    <div class="col-12">
+                    <div class="col-12 IconDiv">
                       <img
                         src="../assets/svg/missao.svg"
                         class="img-fluid icon"
@@ -65,22 +73,29 @@
                       />
                     </div>
                     <div class="col-12"><h2 class="titulo">Missão</h2></div>
-                    <div class="col-12">
+                    <div class="col-12 Texto">
                       <p>Lorem ipsum dolor sit amet consetetur</p>
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-3 col-md-12 col-xl-3 col-sm-12">
+                <div
+                  class="col-lg-3 col-md-12 col-xl-3 col-sm-12"
+                  data-aos="fade-up"
+                  data-aos-easing="ease-in-back"
+                  data-aos-delay="300"
+                  data-aos-offset="0"
+                  data-aos-duration="1000"
+                >
                   <div class="row BackgroundBlackwhiteVisao">
-                    <div class="col-12">
+                    <div class="col-12 IconDiv2">
                       <img
                         src="../assets/svg/visao.svg"
                         class="img-fluid icon"
                         alt="Missao"
                       />
                     </div>
-                    <div class="col-12 titulo"><h2>Visão</h2></div>
-                    <div class="col-12">
+                    <div class="col-12 titulo2"><h2>Visão</h2></div>
+                    <div class="col-12 Texto2">
                       <p>Lorem ipsum dolor sit amet consetetur</p>
                     </div>
                     <div class="progress col-12">
@@ -95,17 +110,24 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-3 col-md-12 col-xl-3 col-sm-12">
+                <div
+                  class="col-lg-3 col-md-12 col-xl-3 col-sm-12"
+                  data-aos="fade-up"
+                  data-aos-easing="ease-in-back"
+                  data-aos-delay="300"
+                  data-aos-offset="0"
+                  data-aos-duration="1000"
+                >
                   <div class="row BackgroundBlackwhite">
-                    <div class="col-12">
+                    <div class="col-12 IconDiv3">
                       <img
                         src="../assets/svg/valor.svg"
                         class="img-fluid icon"
                         alt="Missao"
                       />
                     </div>
-                    <div class="col-12 titulo"><h2>Valores</h2></div>
-                    <div class="col-12">
+                    <div class="col-12 titulo3"><h2>Valores</h2></div>
+                    <div class="col-12 Texto3">
                       <p>Lorem ipsum dolor sit amet consetetur</p>
                     </div>
                   </div>
@@ -122,7 +144,7 @@
 </template>
 <script>
 import NavbarPrinc from "../components/NavbarPrinc";
-import BemVindoAngLess from "../components/BemVindo-AngLess";
+import BemVindoAngLess from "../components/quemSomos/BemVindo-AngLess";
 import RecebaNovidades from "../components/RecebaNovidades";
 import Footer from "../components/Footer";
 
@@ -147,9 +169,9 @@ h1 {
 .TituloAngLess {
   font-family: "Gotham";
   color: #707070;
-
   /* margin-left: 2%; */
 }
+
 #quemSomos {
   background-color: #8cb560;
   padding: 2%;
@@ -167,7 +189,7 @@ h1 {
 }
 .BackgroundBlackTexto {
   text-align: left;
-  font-size: 20px;
+  font-size: 19px;
   line-height: 2;
   width: 100%;
 }
@@ -196,10 +218,13 @@ h1 {
   border-radius: 10px 10px 0px 0px;
 }
 .img {
-  height: 100%;
+  height: auto;
   width: 90%;
-  border-radius: 4%;
-  object-fit: fill;
+  border-radius: 6% !important;
+  object-fit: contain;
+}
+.TxTEImg {
+  margin: auto !important;
 }
 .icon {
   margin-top: 3%;
@@ -208,8 +233,31 @@ h1 {
   filter: invert(70%) sepia(11%) saturate(1530%) hue-rotate(46deg)
     brightness(93%) contrast(90%);
 }
+.IconDiv {
+  margin: auto;
+}
+.IconDiv2 {
+  margin: 10px auto;
+}
+.IconDiv3 {
+}
 .titulo {
-  margin: 2% auto;
+  margin: auto;
+}
+.titulo2 {
+  margin: 5px auto;
+}
+.titulo3 {
+  margin: auto;
+  margin-top: 1px;
+}
+.Texto {
+}
+.Texto2 {
+  margin: 7px auto;
+}
+.Texto3 {
+  margin-top: -10px;
 }
 #dataaos {
   margin-top: -5%;
@@ -223,7 +271,7 @@ h1 {
   -moz-height: 5px;
   -ms-height: 5px;
   -webkit-height: 5px;
-  margin-top: 50px;
+  margin-top: auto;
 }
 .ProgressCor1 {
   background-color: #8cb560 !important;
@@ -234,5 +282,10 @@ h1 {
 @font-face {
   font-family: "Gotham";
   src: local("Fonts"), url(../assets/Fonts/GothamBold.otf) format("truetype");
+}
+@media only screen and (max-width: 600px) {
+  #TituloAngLessH1 {
+    font-size: 35px !important;
+  }
 }
 </style>
