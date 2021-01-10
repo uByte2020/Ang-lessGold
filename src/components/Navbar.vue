@@ -4,8 +4,8 @@
     <b-navbar
       class="mt-0"
       toggleable="lg"
-      type="dark"
-      :variant="BackgroundClick ? 'dark' : 'transparent'"
+      type="white"
+      :variant="BackgroundClick ||scrollPosition > 657 ? 'white' : 'transparent'"
     >
       <!-- backgroundColor -->
       <b-navbar-brand class="p-1 ml-5">
@@ -47,13 +47,21 @@ export default {
   data() {
     return {
       BackgroundClick: false,
+      scrollPosition: null,
     };
   },
   methods: {
+    updateScroll() {
+      this.scrollPosition = window.scrollY;
+    },
     toggleBackgroundClick() {
       console.log(this.BackgroundClick);
       this.BackgroundClick = !this.BackgroundClick;
     },
+  },
+  
+  mounted() {
+    window.addEventListener("scroll", this.updateScroll);
   },
   // props: {
   //   backgroundColor: {
@@ -86,12 +94,11 @@ export default {
   padding-left: 2%;
   padding-right: 2%;
 }
-
 .navbar {
   position: absolute !important;
   z-index: 1;
   width: 100%;
-  padding: 1%;
+  /* padding: 1%; */
 
   /* background-color: transparent !important; */
 }
@@ -102,7 +109,7 @@ a {
 }
 .navbar-dark .navbar-nav .nav-link {
   /* color: rgba(255, 255, 255, 0.5); */
-  color: #fff;
+  color: #000;
   font-family: "Josefin";
   font-size: 20px;
 }

@@ -31,7 +31,6 @@
                 social e a prestação de serviço, comércio a grosso de bebidas,
                 alimentaos, medicamentos, Importação e Exportação.
               </p>
-              <button type="button" class="btn btn-lg">Saiba Mais</button>
             </div>
           </div>
         </div>
@@ -121,27 +120,6 @@ export default {
   -ms-width: 50px;
   -webkit-width: 50px;
 }
-button {
-  background-color: #8cb560;
-  -moz-background-color: #8cb560;
-  -ms-background-color: #8cb560;
-  -webkit-background-color: #8cb560;
-  color: #fff;
-  -moz-color: #fff;
-  -ms-color: #fff;
-  -webkit-color: #fff;
-}
-button:hover {
-  background-color: #8cb560;
-  -moz-background-color: #8cb560;
-  -ms-background-color: #8cb560;
-  -webkit-background-color: #8cb560;
-  color: #000 !important;
-  -moz-color: #000 !important;
-  -ms-color: #000 !important;
-  -webkit-color: #000 !important;
-}
-
 .TextoInicioP {
   margin: 2% auto;
   -moz-margin: 2% auto;
