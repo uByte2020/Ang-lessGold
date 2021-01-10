@@ -5,12 +5,82 @@
         "descricao": "informação do produto",
         "saibaMais": "Saiba mais",
         "icon": "pt.svg"
-      },
-      {
-        "foto": "img1.jpeg",
-        "titulo": "Chispe",
+    },
+    {
+        "foto": "img18.jpg",
+        "titulo": "Bacalhau Graúdo",
         "descricao": "informação do produto",
         "saibaMais": "Saiba mais",
         "icon": "pt.svg"
-      }
+    },
+    {
+        "foto": "img18.jpg",
+        "titulo": "Peixe Seco",
+        "descricao": "informação do produto",
+        "saibaMais": "Saiba mais",
+        "icon": "pt.svg"
+    },
+    {
+        "foto": "img18.jpg",
+        "titulo": "Costuletas de Porco",
+        "descricao": "informação do produto",
+        "saibaMais": "Saiba mais",
+        "icon": "pt.svg"
+    },
+    {
+        "foto": "img18.jpg",
+        "titulo": "Febra de Porco",
+        "descricao": "informação do produto",
+        "saibaMais": "Saiba mais",
+        "icon": "pt.svg"
+    },
+    {
+        "foto": "img1.jpeg",
+        "titulo": "Chispe de Porco",
+        "descricao": "informação do produto",
+        "saibaMais": "Saiba mais",
+        "icon": "pt.svg"
+    },
+    {
+        "foto": "img25.jpg",
+        "titulo": "Queijo",
+        "descricao": "informação do produto",
+        "saibaMais": "Saiba mais",
+        "icon": "pt.svg"
+    },
+    {
+        "foto": "img18.jpg",
+        "titulo": "Quiabo",
+        "descricao": "informação do produto",
+        "saibaMais": "Saiba mais",
+        "icon": "pt.svg"
+    },
+    {
+        "foto": "img18.jpg",
+        "titulo": "Fuba de Milho/Bombó",
+        "descricao": "informação do produto",
+        "saibaMais": "Saiba mais",
+        "icon": "pt.svg"
+    },
+    {
+        "foto": "img18.jpg",
+        "titulo": "Farinha Musseque/Fina",
+        "descricao": "informação do produto",
+        "saibaMais": "Saiba mais",
+        "icon": "pt.svg"
+    },
+    {
+        "foto": "img18.jpg",
+        "titulo": "Chouriço de Carne",
+        "descricao": "informação do produto",
+        "saibaMais": "Saiba mais",
+        "icon": "pt.svg"
+    },
+    {
+        "foto": "img18.jpg",
+        "titulo": "Cerveja de Cuca",
+        "descricao": "informação do produto",
+        "saibaMais": "Saiba mais",
+        "icon": "pt.svg"
+    }
 ]
