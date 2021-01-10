@@ -4,7 +4,7 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-12 ContactoTitulo">
-          <h1 style="margin-left: 4%;">CONTACTOS</h1>
+          <h1 style="margin-left: 4%">CONTACTOS</h1>
         </div>
         <div class="col-12" id="Formulario">
           <div class="row">
@@ -32,13 +32,10 @@
                   <div class="col-12">
                     <div class="form-group">
                       <label for="Mensagem">Mensagem</label>
-                      <textarea
-                        name="Mensagem"
-                        class="form-control"
-                      />
+                      <textarea name="Mensagem" class="form-control" />
                     </div>
                   </div>
-                  <div class="col-lg-7 col-xl-7 col-sm-12 col-md-7">
+                  <div class="col-lg-12 col-xl-6 col-sm-12 col-md-12">
                     <button
                       type="submit"
                       class="btn btn-default btn-lg btn-block"
@@ -55,10 +52,10 @@
                   <h2 class="AngLessTitulo">ANG LESS GOLD</h2>
                 </div>
                 <div class="col-12 Texto">
-                  <p style="width:300px; margin: auto">
-                    Estrada da Mendanha <br />Nº 25 Bloco 4 - 4 C <br />Parque
-                    norte <br />2580-588 Carregado
-                  </p>
+                  <p class="texto-ang-less">Estrada da Mendanha</p>
+                  <p class="texto-ang-less">Nº 25 Bloco 4 - 4 C</p>
+                  <p class="texto-ang-less">Parque norte</p>
+                  <p class="texto-ang-less">2580-588 Carregado</p>
                 </div>
               </div>
             </div>
@@ -97,6 +94,10 @@ export default {
   font-family: "Gotham";
   src: local("Fonts"), url(../assets/Fonts/GothamBold.otf) format("truetype");
 }
+.texto-ang-less {
+  width: 300px;
+  margin: auto;
+}
 .ContactoTitulo {
   background-color: rgb(139, 180, 95, 0.6);
   -moz-background-color: rgb(139, 180, 95, 0.6);
@@ -106,10 +107,7 @@ export default {
   -moz-color: #fff;
   -ms-color: #fff;
   -webkit-color: #fff;
-  padding: 1%;
-  -moz-padding: 1%;
-  -ms-padding: 1%;
-  -webkit-padding: 1%;
+  padding: 2%;
   font-family: "Gotham";
   -moz-font-family: "Gotham";
   -ms-font-family: "Gotham";
@@ -123,52 +121,6 @@ export default {
   -ms-position: relative;
   -webkit-position: relative;
   /* z-index: 1; */
-}
-.ContactoTitulo::before {
-  content: "";
-  -moz-content: "";
-  -ms-content: "";
-  -webkit-content: "";
-  position: absolute;
-  -moz-position: absolute;
-  -ms-position: absolute;
-  -webkit-position: absolute;
-  width: 100%;
-  -moz-width: 100%;
-  -ms-width: 100%;
-  -webkit-width: 100%;
-  height: 100%;
-  -moz-height: 100%;
-  -ms-height: 100%;
-  -webkit-height: 100%;
-  top: 0px;
-  -moz-top: 0px;
-  -ms-top: 0px;
-  -webkit-top: 0px;
-  left: 0px;
-  -moz-left: 0px;
-  -ms-left: 0px;
-  -webkit-left: 0px;
-  background: url("../assets/imgs/backgroundContacto .jpeg") no-repeat center
-    center;
-  -moz-background: url("../assets/imgs/backgroundContacto .jpeg") no-repeat
-    center center;
-  -ms-background: url("../assets/imgs/backgroundContacto .jpeg") no-repeat
-    center center;
-  -webkit-background: url("../assets/imgs/backgroundContacto .jpeg") no-repeat
-    center center;
-  background-size: 100% 130%;
-  -moz-background-size: 100% 130%;
-  -ms-background-size: 100% 130%;
-  -webkit-background-size: 100% 130%;
-  z-index: -1;
-  -moz-z-index: -1;
-  -ms-z-index: -1;
-  -webkit-z-index: -1;
-  filter: grayscale(40%) brightness(60%) !important;
-  -moz-filter: grayscale(40%) brightness(60%) !important;
-  -ms-filter: grayscale(40%) brightness(60%) !important;
-  -webkit-filter: grayscale(40%) brightness(60%) !important;
 }
 label {
   font-size: 20px;
@@ -190,15 +142,15 @@ label {
 }
 #Formulario {
   padding: 2% 5%;
-  -moz-padding:2% 5%;
-  -ms-padding:2% 5%;
-  -webkit-padding:2% 5%;
+  -moz-padding: 2% 5%;
+  -ms-padding: 2% 5%;
+  -webkit-padding: 2% 5%;
   position: relative;
   -moz-position: relative;
   -ms-position: relative;
   -webkit-position: relative;
 }
-#Formulario::before{
+#Formulario::before {
   content: "";
   -moz-content: "";
   -ms-content: "";
@@ -223,18 +175,18 @@ label {
   -moz-left: 0px;
   -ms-left: 0px;
   -webkit-left: 0px;
-  background: url('../assets/imgs/img4.jpg') no-repeat center center;
-  -moz-background: url('../assets/imgs/img4.jpg') no-repeat center center;
-  -ms-background: url('../assets/imgs/img4.jpg')no-repeat center center;
-  -webkit-background: url('../assets/imgs/img4.jpg') no-repeat center center;
+  background: url("../assets/imgs/img4.jpg") no-repeat center center;
+  -moz-background: url("../assets/imgs/img4.jpg") no-repeat center center;
+  -ms-background: url("../assets/imgs/img4.jpg") no-repeat center center;
+  -webkit-background: url("../assets/imgs/img4.jpg") no-repeat center center;
   background-size: 70% 120%;
   -moz-background-size: 70% 120%;
   -ms-background-size: 70% 120%;
   -webkit-background-size: 70% 150%;
-  filter:opacity(0.1);
-  -moz-filter:opacity(0.1);
-  -ms-filter:opacity(0.1);
-  -webkit-filter:opacity(0.1);
+  filter: opacity(0.1);
+  -moz-filter: opacity(0.1);
+  -ms-filter: opacity(0.1);
+  -webkit-filter: opacity(0.1);
 }
 .form-control {
   width: 100%;
@@ -330,7 +282,7 @@ label {
   -moz-text-align: left;
   -ms-text-align: left;
   -webkit-text-align: left;
-  padding:1% 4%;
+  padding: 1% 4%;
   -moz-padding: 1% 4%;
   -ms-padding: 1% 4%;
   -webkit-padding: 1% 4%;
@@ -338,5 +290,10 @@ label {
 }
 .mapa {
   margin: auto !important;
+}
+@media only screen and (max-width: 300px){
+  .texto-ang-less{
+    font-size: 20px;
+  }
 }
 </style>
