@@ -155,11 +155,11 @@ button:hover {
 @font-face {
   font-family: "Josefin";
   src: local("Fonts"),
-    url(../assets/Fonts/josefin-sans.bold.ttf) format("truetype");
+    url(../../assets/Fonts/josefin-sans.bold.ttf) format("truetype");
 }
 
 @font-face {
   font-family: "Gotham";
-  src: local("Fonts"), url(../assets/Fonts/GothamBold.otf) format("truetype");
+  src: local("Fonts"), url(../../assets/Fonts/GothamBold.otf) format("truetype");
 }
 </style>

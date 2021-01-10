@@ -1,7 +1,7 @@
 <template>
   <div class="container-fluid" id="RecebaNovidades">
     <div class="row">
-      <div class="col-12" >
+      <div class="col-12">
         <div class="row RecebaNovidadesTexto">
           <div class="container">
             <div class="row">
@@ -114,10 +114,10 @@ input {
   -moz-margin-top: -70px !important;
   -ms-margin-top: -70px !important;
   -webkit-margin-top: -70px !important;
-  margin-left: 88%;
-  -moz-margin-left: 88%;
-  -ms-margin-left: 88%;
-  -webkit-margin-left: 88%;
+  margin-left: 90%;
+  -moz-margin-left: 90%;
+  -ms-margin-left: 90%;
+  -webkit-margin-left: 90%;
   color: #fff !important;
   -moz-color: #fff !important;
   -ms-color: #fff !important;
@@ -131,16 +131,64 @@ input {
   -ms-border-radius: 100px;
   -webkit-border-radius: 100px;
 }
-@media only screen and (max-width: 300px){
-.RecebaNovidadesTitulo {
-  font-family: "Josefin";
-  -moz-font-family: "Josefin";
-  -ms-font-family: "Josefin";
-  -webkit-font-family: "Josefin";
-  font-size: 40px;
-  -moz-font-size: 60px;
-  -ms-font-size: 60px;
-  -webkit-font-size: 60px;
+@media only screen and (max-width: 800px){
+  #button {
+    margin-top: -65px !important;
+    -moz-margin-top: -65px !important;
+    -ms-margin-top: -65px !important;
+    -webkit-margin-top: -65px !important;
+    margin-left: 83%;
+    -moz-margin-left: 85%;
+    -ms-margin-left: 85%;
+    -webkit-margin-left: 85%;
+    color: #fff !important;
+    -moz-color: #fff !important;
+    -ms-color: #fff !important;
+    -webkit-color: #fff !important;
+    background-color: rgb(53, 138, 53);
+    -moz-background-color: rgb(53, 138, 53);
+    -ms-background-color: rgb(53, 138, 53);
+    -webkit-background-color: rgb(53, 138, 53);
+    border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -webkit-border-radius: 100px;
+  }
 }
+@media only screen and (max-width: 600px) {
+  #button {
+    margin-top: -65px !important;
+    -moz-margin-top: -65px !important;
+    -ms-margin-top: -65px !important;
+    -webkit-margin-top: -65px !important;
+    margin-left: 85%;
+    -moz-margin-left: 85%;
+    -ms-margin-left: 85%;
+    -webkit-margin-left: 85%;
+    color: #fff !important;
+    -moz-color: #fff !important;
+    -ms-color: #fff !important;
+    -webkit-color: #fff !important;
+    background-color: rgb(53, 138, 53);
+    -moz-background-color: rgb(53, 138, 53);
+    -ms-background-color: rgb(53, 138, 53);
+    -webkit-background-color: rgb(53, 138, 53);
+    border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -webkit-border-radius: 100px;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .RecebaNovidadesTitulo {
+    font-family: "Josefin";
+    -moz-font-family: "Josefin";
+    -ms-font-family: "Josefin";
+    -webkit-font-family: "Josefin";
+    font-size: 40px;
+    -moz-font-size: 60px;
+    -ms-font-size: 60px;
+    -webkit-font-size: 60px;
+  }
 }
 </style>

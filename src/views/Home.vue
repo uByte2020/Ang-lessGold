@@ -231,10 +231,10 @@ export default {
   -moz-left: 0px;
   -ms-left: 0px;
   -webkit-left: 0px;
-  background: url("../assets/imgs/img28.jpg") no-repeat center center;
-  -moz-background: url("../assets/imgs/img28.jpg") no-repeat center center;
-  -ms-background: url("../assets/imgs/img28.jpg") no-repeat center center;
-  -webkit-background: url("../assets/imgs/img28.jpg") no-repeat center center;
+  background: url("../assets/imgs/img31.jpg") no-repeat center center;
+  -moz-background: url("../assets/imgs/img31.jpg") no-repeat center center;
+  -ms-background: url("../assets/imgs/img31.jpg") no-repeat center center;
+  -webkit-background: url("../assets/imgs/img31.jpg") no-repeat center center;
   background-size: cover;
   -moz-background-size: cover;
   -ms-background-size: cover;
@@ -243,10 +243,10 @@ export default {
   -moz-z-index: -1;
   -ms-z-index: -1;
   -webkit-z-index: -1;
-  filter: grayscale(60%) brightness(30%) !important;
-  -moz-filter: grayscale(60%) brightness(30%) !important;
-  -ms-filter: grayscale(60%) brightness(30%) !important;
-  -webkit-filter: grayscale(60%) brightness(30%) !important;
+  filter: grayscale(50%) brightness(30%) !important;
+  -moz-filter: grayscale(50%) brightness(30%) !important;
+  -ms-filter: grayscale(50%) brightness(30%) !important;
+  -webkit-filter: grayscale(50%) brightness(30%) !important;
 }
 .TextoInicio {
   margin-top: 15%;
@@ -385,14 +385,14 @@ button {
   -webkit-color: #fff;
 }
 button:hover {
-  background-color: #8cb560;
-  -moz-background-color: #8cb560;
-  -ms-background-color: #8cb560;
-  -webkit-background-color: #8cb560;
-  color: #000 !important;
-  -moz-color: #000 !important;
-  -ms-color: #000 !important;
-  -webkit-color: #000 !important;
+  background-color: #f8ce00!important;
+  -moz-background-color: #f8ce00!important;
+  -ms-background-color: #f8ce00!important;
+  -webkit-background-color: #f8ce00!important;
+  color: #ffffff !important;
+  -moz-color: #ffffff !important;
+  -ms-color: #ffffff!important;
+  -webkit-color: #ffffff !important;
 }
 
 .TextoInicioP {
@@ -484,10 +484,10 @@ button:hover {
   -moz-left: 0px;
   -ms-left: 0px;
   -webkit-left: 0px;
-  background: url("../assets/imgs/img9.jpg") no-repeat center center;
-  -moz-background: url("../assets/imgs/img9.jpg") no-repeat center center;
-  -ms-background: url("../assets/imgs/img9.jpg") no-repeat center center;
-  -webkit-background: url("../assets/imgs/img9.jpg") no-repeat center center;
+  background: url("../assets/imgs/img9.jpg") no-repeat center;
+  -moz-background: url("../assets/imgs/img9.jpg") no-repeat  center;
+  -ms-background: url("../assets/imgs/img9.jpg") no-repeat center;
+  -webkit-background: url("../assets/imgs/img9.jpg") no-repeat center;
 
   background-size: 100% 150%;
   -moz-background-size: 100% 150%;

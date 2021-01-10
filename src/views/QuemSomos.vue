@@ -19,9 +19,10 @@
           class="col-12"
           id="dataaos"
           data-aos="fade-up"
-          data-aos-offset="300"
           data-aos-duration="1000"
-          data-aos-easing="ease-in-sine"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="300"
+          data-aos-offset="0"
         ></div>
         <div class="col-12" id="BackgroundBlack">
           <div class="row">
@@ -122,7 +123,7 @@
 </template>
 <script>
 import NavbarPrinc from "../components/NavbarPrinc";
-import BemVindoAngLess from "../components/BemVindo-AngLess";
+import BemVindoAngLess from "../components/quemSomos/BemVindo-AngLess";
 import RecebaNovidades from "../components/RecebaNovidades";
 import Footer from "../components/Footer";
 

@@ -29,7 +29,7 @@
             >
           </div>
           <div class="col-lg-12 col-sm-4 col-xl-12 col-md-12">
-            <a href="#Produto" id="Link2" @click="AlimentoClick()"
+            <a href="#Produto" id="Link2" @click="AlimentosClick()"
               >Não Pereciveis</a
             >
           </div>
@@ -48,7 +48,10 @@
                 class="img-fluid img"
                 alt="Mucua"
               />
-              <figcaption>Fuba de Milho</figcaption>
+              <figcaption>
+                <h6>Farinha</h6>
+                <p><small>Preço</small></p>
+              </figcaption>
             </figure>
           </div>
           <div class="col-lg-4 col-sm-12 col-xl-4 col-md-4 DivImg">
@@ -58,7 +61,10 @@
                 class="img-fluid img"
                 alt="Mucua"
               />
-              <figcaption>Bacalhau - Posta / Inteiro</figcaption>
+              <figcaption>
+                <h6>Bacalhau - Posta / Inteiro</h6>
+                <p><small>Preço</small></p>
+              </figcaption>
             </figure>
           </div>
           <div class="col-lg-4 col-sm-12 col-xl-4 col-md-4 DivImg">
@@ -68,7 +74,10 @@
                 class="img-fluid img"
                 alt="Mucua"
               />
-              <figcaption>Múcua</figcaption>
+              <figcaption>
+                <h6>Múcua</h6>
+                <p><small>Preço</small></p>
+              </figcaption>
             </figure>
           </div>
         </div>
@@ -86,7 +95,10 @@
                 class="img-fluid img"
                 alt="Mucua"
               />
-              <figcaption>Mucua</figcaption>
+              <figcaption>
+                <h6>Chouriço</h6>
+                <p><small>Preço</small></p>
+              </figcaption>
             </figure>
           </div>
           <div class="col-lg-4 col-sm-12 col-xl-4 col-md-4 DivImg">
@@ -96,7 +108,10 @@
                 class="img-fluid img"
                 alt="Mucua"
               />
-              <figcaption>Mucua</figcaption>
+              <figcaption>
+                <h6>Chouriço</h6>
+                <p><small>Preço</small></p>
+              </figcaption>
             </figure>
           </div>
           <div class="col-lg-4 col-sm-12 col-xl-4 col-md-4 DivImg">
@@ -106,7 +121,10 @@
                 class="img-fluid img"
                 alt="Mucua"
               />
-              <figcaption>Mucua</figcaption>
+              <figcaption>
+                <h6>Chouriço</h6>
+                <p><small>Preço</small></p>
+              </figcaption>
             </figure>
           </div>
         </div>
@@ -123,32 +141,30 @@ export default {
   },
   methods: {
     AlimentosClick() {
-      this.Alimentos = true;
+      this.Alimentos = !this.Alimentos;
       const Cor = document.getElementById("Link1");
-      Cor.style.color = "#f8ce00";
-      Cor.style.borderLeft = "2px solid #f8ce00";
-      Cor.style.marginLeft = "-8%";
-      Cor.style.paddingLeft = "4%";
       const Cor2 = document.getElementById("Link2");
-      Cor2.style.color = " #707070";
-      Cor2.style.borderLeft = "0";
-      Cor2.style.marginLeft = "-8%";
-      Cor2.style.paddingLeft = "8%";
-      Cor.style.fontSize='16px'
-      Cor2.style.fontSize='16px'
-    },
-    AlimentoClick() {
-      this.Alimentos = false;
-      const Cor = document.getElementById("Link2");
-      Cor.style.color = "#f8ce00";
-      Cor.style.borderLeft = "2px solid #f8ce00";
-      Cor.style.marginLeft = "-8%";
-      Cor.style.paddingLeft = "4%";
-      const Cor2 = document.getElementById("Link1");
-      Cor2.style.color = " #707070";
-      Cor2.style.borderLeft = "0";
-      Cor2.style.marginLeft = "-8%";
-      Cor2.style.paddingLeft = "8%";
+      if (this.Alimentos == true) {
+        Cor.style.color = "#f8ce00";
+        Cor.style.borderLeft = "2px solid #f8ce00";
+        Cor.style.marginLeft = "-8%";
+        Cor.style.paddingLeft = "4%";
+        Cor.style.fontSize = "16px";
+        Cor2.style.color = " #707070";
+        Cor2.style.borderLeft = "0";
+        Cor2.style.marginLeft = "-8%";
+        Cor2.style.paddingLeft = "8%";
+        Cor2.style.fontSize = "16px";
+      } else {
+        Cor2.style.color = "#f8ce00";
+        Cor2.style.borderLeft = "2px solid #f8ce00";
+        Cor2.style.marginLeft = "-8%";
+        Cor2.style.paddingLeft = "4%";
+        Cor.style.color = " #707070";
+        Cor.style.borderLeft = "0";
+        Cor.style.marginLeft = "-8%";
+        Cor.style.paddingLeft = "8%";
+      }
     },
   },
 };
@@ -159,6 +175,9 @@ export default {
   src: local("Fonts"),
     url(../assets/Fonts/josefin-sans.semibold.ttf) format("truetype");
 } */
+small{
+  color: #f8ce00;
+}
 h3 {
   font-family: "Josefin";
   -moz-font-family: "Josefin";
@@ -172,7 +191,7 @@ h3 {
   -webkit-padding: 6%;
 }
 .links {
-  color: #707070!important;
+  color: #707070 !important;
   border-left: 3px solid #70707070;
   -moz-border-left: 1px ridge #70707070;
   -ms-border-left: 1px ridge #70707070;
@@ -203,10 +222,10 @@ h3 {
   -webkit-padding-left: 8%;
 }
 .LinkActive:hover {
-  /* color: #68aa38 !important; */
-  /* -moz-color: #f8ce00;
-  -ms-color: #f8ce00;
-  -webkit-color: #f8ce00; */
+  color: #68aa38 !important;
+  -moz-color: #68aa38;
+  -ms-color: #68aa38;
+  -webkit-color: #68aa38;
   border-left: 2px solid #f8ce00 !important;
   -moz-border-left: 2px solid #f8ce00;
   -ms-border-left: 2px solid #f8ce00;
@@ -221,14 +240,15 @@ h3 {
   -webkit-padding-left: 8%;
 }
 #Link2:hover {
-  /* color: #68aa38 !important; */
-  /* -moz-color: #f8ce00;
-  -ms-color: #f8ce00;
-  -webkit-color: #f8ce00; */
+  color: #68aa38 !important;
+  -moz-color: #68aa38;
+  -ms-color: #68aa38;
+  -webkit-color: #68aa38;
   border-left: 2px solid #f8ce00 !important;
   -moz-border-left: 2px solid #f8ce00;
   -ms-border-left: 2px solid #f8ce00;
   -webkit-border-left: 2px solid #f8ce00;
+  color: #68aa38 !important;
   margin-left: -8%;
   -moz-margin-left: -8%;
   -ms-margin-left: -8%;
@@ -271,14 +291,14 @@ a:active {
   -moz-height: 150px;
   -ms-height: 150px;
   -webkit-height: 150px;
-  width: 100%;
-  -moz-width: 100%;
-  -ms-width: 100%;
+  width: auto;
+  -moz-width: auto;
+  -ms-width: auto;
   -webkit-width: 100%;
-  object-fit: fill;
-  -moz-object-fit: fill;
-  -ms-object-fit: fill;
-  -webkit-object-fit: fill;
+  object-fit: cover;
+  -moz-object-fit: cover;
+  -ms-object-fit: cover;
+  -webkit-object-fit: cover;
   /* box-shadow: 1px 1px 5px gray; */
   border-radius: 7px;
   -moz-border-radius: 7px;
@@ -296,11 +316,11 @@ figure {
   -moz-height: 100%;
   -ms-height: 100%;
   -webkit-height: 100%;
-  width: 100%;
-  -moz-width: 90%;
-  -ms-width: 90%;
-  -webkit-width: 90%;
-  box-shadow: 1px 1px 4px gray;
+  width: 200px;
+  -moz-width: auto;
+  -ms-width: auto;
+  -webkit-width: auto;
+  box-shadow: 1px 1px 4px #70707070;
   -moz-box-shadow: 0px 0px 1px gray;
   -ms-box-shadow: 0px 0px 1px gray;
   -webkit-box-shadow: 0px 0px 1px gray;
@@ -313,8 +333,11 @@ figure {
   -ms-margin: 1% auto !important;
   -webkit-margin: 1% auto !important;
 }
+figure:hover {
+  transform: scale(1.2);
+}
 figcaption {
-  font-family: 'Josefin-SemiBold';
+  font-family: "Josefin-SemiBold";
   margin: 1% auto;
   -moz-margin: 1% auto;
   -ms-margin: 1% auto;
@@ -382,14 +405,14 @@ figcaption {
   -webkit-margin-left: 80%;
 }
 #VerTodos:hover {
-  color: blue;
-  -moz-color: blue;
-  -ms-color: blue;
-  -webkit-color: blue;
-  text-decoration: 1px blue;
-  -moz-text-decoration: 1px blue;
-  -ms-text-decoration: 1px blue;
-  -webkit-text-decoration: 1px blue;
+  color: #68aa38;
+  -moz-color:  #68aa38;
+  -ms-color:  #68aa38;
+  -webkit-color:  #68aa38;
+  text-decoration: 1px  #68aa38;
+  -moz-text-decoration: 1px  #68aa38;
+  -ms-text-decoration: 1px  #68aa38;
+  -webkit-text-decoration: 1px  #68aa38;
 }
 a {
   color: #707070;
