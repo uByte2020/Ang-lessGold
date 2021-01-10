@@ -7,7 +7,7 @@
           <h1 class="quemSomosTitutlo">Quem Somos</h1>
         </div>
         <div class="col-12 TituloAngLess">
-          <h1>
+          <h1 id="TituloAngLessH1">
             ANG LESS GOLD <br />
             IMPORTAÇÃO &amp; EXPORTAÇÃO LDA
           </h1>
@@ -148,9 +148,9 @@ h1 {
 .TituloAngLess {
   font-family: "Gotham";
   color: #707070;
-
   /* margin-left: 2%; */
 }
+
 #quemSomos {
   background-color: #8cb560;
   padding: 2%;
@@ -168,7 +168,7 @@ h1 {
 }
 .BackgroundBlackTexto {
   text-align: left;
-  font-size: 20px;
+  font-size: 19px;
   line-height: 2;
   width: 100%;
 }
@@ -235,5 +235,10 @@ h1 {
 @font-face {
   font-family: "Gotham";
   src: local("Fonts"), url(../assets/Fonts/GothamBold.otf) format("truetype");
+}
+@media only screen and (max-width: 600px){
+#TituloAngLessH1{
+  font-size: 35px!important;
+}
 }
 </style>
