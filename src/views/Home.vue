@@ -400,10 +400,10 @@ button:hover {
   -moz-margin: 2% auto;
   -ms-margin: 2% auto;
   -webkit-margin: 2% auto;
-  color: #707070;
-  -moz-color: #707070;
-  -ms-color: #707070;
-  -webkit-color: #707070;
+  color: #ffff;
+  -moz-color: #ffff;
+  -ms-color: #ffff;
+  -webkit-color: #ffff;
 }
 .progress {
   height: 5px;
@@ -741,6 +741,18 @@ p {
   -webkit-font-size: 16px;
 }
 @media only screen and (max-width: 600px) {
+  
+.Inicio {
+  padding: 5%;
+  -moz-padding: 5%;
+  -ms-padding: 5%;
+  -webkit-padding: 5%;
+  position: relative;
+  -moz-position: relative;
+  -ms-position: relative;
+  -webkit-position: relative;
+  height: 105vh;
+}
   .TextoInicio {
     margin-top: 20%;
     -moz-margin-top: 20%;
@@ -863,12 +875,54 @@ p {
     -webkit-font-family: "Segoe";
   }
 }
-/* @media only screen and (max-width: 280px){
-  div{
-    width: 300px!important;
+@media only screen and (max-width: 300px){
+  #Home{
+    width: 100vw!important;
   }
-  #EscolherNosPrinc{
-    width: 1%!important;
-  }
-} */
+.Inicio {
+  padding: 5%;
+  -moz-padding: 5%;
+  -ms-padding: 5%;
+  -webkit-padding: 5%;
+  position: relative;
+  -moz-position: relative;
+  -ms-position: relative;
+  -webkit-position: relative;
+  height: 100%!important;
+  width: 105%!important;
+}
+.TextoInicio {
+  margin-top: 17%;
+  -moz-margin-top: 17%;
+  -ms-margin-top: 17%;
+  -webkit-margin-top: 17%;
+  text-align: left;
+  -moz-text-align: left;
+  -ms-text-align: left;
+  -webkit-text-align: left;
+  color: #fff;
+  -moz-color: #fff;
+  -ms-color: #fff;
+  -webkit-color: #fff;
+  font-family: "Gotham";
+  -moz-font-family: "Gotham";
+  -ms-font-family: "Gotham";
+  -webkit-font-family: "Gotham";
+  /* backdrop-filter: blur(5px); */
+}
+.TextoInicioH1 {
+  /* font-size: 100%; */
+  font-size: 30px;
+}
+.TextoInicioP {
+  margin: 5% auto;
+  -moz-margin: 5% auto;
+  -ms-margin: 5% auto;
+  -webkit-margin: 5% auto;
+  width: 100%;
+  font-size: 19px;
+  color: #fff;
+}
+
+}
 </style>
