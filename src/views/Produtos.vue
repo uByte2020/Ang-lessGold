@@ -6,7 +6,7 @@
         <div class="col-12 ProdutoTitulo">
           <h1 class="ProdutoTituloH1">Produtos</h1>
         </div>
-        <div class="col-12">
+        <div class="content">
           <div class="row">
             <ProductItem v-for="(produto, index) in produtos" :product="produto" :key="index"/>
           </div>
@@ -42,6 +42,12 @@ export default {
 };
 </script>
 <style scoped>
+
+.content{
+      padding-left: 35px;
+    padding-right: 35px;
+}
+
 .ProdutoTitulo {
   text-align: left;
   padding: 3%;

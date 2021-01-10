@@ -54,6 +54,9 @@ export default {
   margin: 1% auto;
   padding: 2%;
 }
+.ImagemGrelha:hover{
+    cursor: pointer;
+}
 h3 {
   font-size: 20px;
   color: #000;
@@ -61,6 +64,11 @@ h3 {
 a {
   color: #8cb560;
 }
+a:hover {
+  text-decoration: none;
+  color: #f8ce00 !important;
+}
+
 .icon {
   height: 20px;
   margin-left: 150px !important;

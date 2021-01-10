@@ -67,24 +67,24 @@ export default {
   },
   props: {
     backgroundColor: {
-      type: Text,
+      type: String,
       default: "transparent",
     },
-    variant: Text,
+    variant: String,
     navbarClass:{
-      type: Text,
+      type: String,
       default: "navbar",
     },
     navTextColor: {
-      type: Text,
+      type: String,
       default: "#fff",
     },
     logoImg:{
-      type: Text,
+      type: String,
       default: 'other'
     },
     navItemClass:{
-      type: Text,
+      type: String,
       default: 'other'
     }
   },
@@ -98,10 +98,18 @@ export default {
     url(../assets/Fonts/josefin-sans.bold.ttf) format("truetype");
 }
 
+a:hover{
+  text-decoration: none;
+}
+
 .nav-item-da{
   font-size: 25px !important;
   font-family: "Josefin-SemiBold";
   color: #8cb560 !important;
+}
+
+.nav-item-da:hover, .nav-item-da-home:hover{
+  color: #f8ce00 !important;
 }
 
 .nav-item-da-home {
