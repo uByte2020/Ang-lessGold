@@ -114,6 +114,7 @@ figcaption {
   width: 100%;
   height: 200px;
   border-radius: 7px;
+  object-fit: cover;
 }
 @media only screen and (max-width: 300px) {
   

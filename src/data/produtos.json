@@ -70,17 +70,17 @@
         "icon": "pt.svg"
     },
     {
-        "foto": "img18.jpg",
+        "foto": "img10.png",
         "titulo": "Chouriço de Carne",
         "descricao": "informação do produto",
         "saibaMais": "Saiba mais",
         "icon": "pt.svg"
     },
     {
-        "foto": "img18.jpg",
+        "foto": "img20.jpg",
         "titulo": "Cerveja de Cuca",
         "descricao": "informação do produto",
         "saibaMais": "Saiba mais",
-        "icon": "pt.svg"
+        "icon": "ao.svg"
     }
 ]
