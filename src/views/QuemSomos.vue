@@ -24,7 +24,7 @@
           data-aos-delay="300"
           data-aos-offset="0"
         ></div>
-        <div class="col-12" id="BackgroundBlack">
+        <div class="col-12" id="background-black">
           <div class="row">
             <div class="col-12 TxTEImg">
               <div class="row justify-content-md-center">
@@ -182,10 +182,22 @@ h1 {
   color: #fff;
   text-align: left;
 }
-#BackgroundBlack {
+#background-black {
   padding: 5%;
   background-color: rgb(46, 45, 45);
   color: #fff;
+  position: relative;
+}
+#background-black::before{
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background: url('../assets/imgs/img26.jpg')no-repeat center center fixed;
+  background-size: cover;
+  filter: brightness(40%) grayscale(50%);
 }
 .BackgroundBlackTexto {
   text-align: left;
