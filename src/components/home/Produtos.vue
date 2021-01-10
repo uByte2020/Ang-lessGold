@@ -2,7 +2,7 @@
   <div id="Produto" class="container">
     <div class="row">
       <div class="col-lg-12 col-sm-12 col-xl-12 col-md-12">
-        <h2>Explores os Nossos Produtos</h2>
+        <h2 class="titulo-produto">Explore os Nossos Produtos</h2>
         <div class="progress">
           <div
             class="progress-bar progressCor"
@@ -49,7 +49,7 @@
                 alt="Mucua"
               />
               <figcaption>
-                <h6>Farinha</h6>
+                <h6 class="explore-prod">Farinha</h6>
                 <p><small>Preço</small></p>
               </figcaption>
             </figure>
@@ -62,7 +62,7 @@
                 alt="Mucua"
               />
               <figcaption>
-                <h6>Bacalhau - Posta / Inteiro</h6>
+                <h6 class="explore-prod">Bacalhau - Posta / Inteiro</h6>
                 <p><small>Preço</small></p>
               </figcaption>
             </figure>
@@ -75,7 +75,7 @@
                 alt="Mucua"
               />
               <figcaption>
-                <h6>Múcua</h6>
+                <h6 class="explore-prod">Múcua</h6>
                 <p><small>Preço</small></p>
               </figcaption>
             </figure>
@@ -96,7 +96,7 @@
                 alt="Mucua"
               />
               <figcaption>
-                <h6>Chouriço</h6>
+                <h6 class="explore-prod">Chouriço</h6>
                 <p><small>Preço</small></p>
               </figcaption>
             </figure>
@@ -109,7 +109,7 @@
                 alt="Mucua"
               />
               <figcaption>
-                <h6>Chouriço</h6>
+                <h6 class="explore-prod">Chouriço</h6>
                 <p><small>Preço</small></p>
               </figcaption>
             </figure>
@@ -122,7 +122,7 @@
                 alt="Mucua"
               />
               <figcaption>
-                <h6>Chouriço</h6>
+                <h6 class="explore-prod">Chouriço</h6>
                 <p><small>Preço</small></p>
               </figcaption>
             </figure>
@@ -145,19 +145,19 @@ export default {
       const Cor = document.getElementById("Link1");
       const Cor2 = document.getElementById("Link2");
       if (this.Alimentos == true) {
-        Cor.style.color = "#f8ce00";
-        Cor.style.borderLeft = "2px solid #f8ce00";
+        Cor.style.color = "#68aa38";
+        Cor.style.borderLeft = "2px solid #68aa38";
         Cor.style.marginLeft = "-8%";
         Cor.style.paddingLeft = "4%";
-        Cor.style.fontSize = "16px";
+        Cor.style.fontSize = "1.2rem";
         Cor2.style.color = " #707070";
         Cor2.style.borderLeft = "0";
         Cor2.style.marginLeft = "-8%";
         Cor2.style.paddingLeft = "8%";
-        Cor2.style.fontSize = "16px";
+        Cor2.style.fontSize = "1.2rem";
       } else {
-        Cor2.style.color = "#f8ce00";
-        Cor2.style.borderLeft = "2px solid #f8ce00";
+        Cor2.style.color = "#68aa38";
+        Cor2.style.borderLeft = "2px solid #68aa38";
         Cor2.style.marginLeft = "-8%";
         Cor2.style.paddingLeft = "4%";
         Cor.style.color = " #707070";
@@ -170,25 +170,26 @@ export default {
 };
 </script>
 <style scoped>
-/* @font-face {
-  font-family: "Josefin-SemiBold";
+@font-face {
+  font-family: "JosefiniBold";
   src: local("Fonts"),
-    url(../assets/Fonts/josefin-sans.semibold.ttf) format("truetype");
-} */
-small{
+    url(../../assets/Fonts/josefin-sans.bold.ttf) format("truetype");
+}
+small {
   color: #f8ce00;
 }
-h3 {
-  font-family: "Josefin";
-  -moz-font-family: "Josefin";
-  -ms-font-family: "Josefin";
-  -webkit-font-family: "Josefin";
+.titulo-produto {
+  font-family: "JosefiniBold";
+  font-weight: 800;
 }
 #Produto {
   padding: 6%;
   -moz-padding: 6%;
   -ms-padding: 6%;
   -webkit-padding: 6%;
+}
+.explore-prod {
+  font-size: 1.2rem;
 }
 .links {
   color: #707070 !important;
@@ -201,17 +202,19 @@ h3 {
   -ms-text-align: left;
   -webkit-text-align: left;
   margin-right: -30px !important;
+  font-family: "JosefiniBold";
+  font-size: 1.2rem;
 }
 .LinkActive {
   font-size: 16px;
-  color: #f8ce00;
-  -moz-color: #f8ce00;
-  -ms-color: #f8ce00;
-  -webkit-color: #f8ce00;
-  border-left: 2px solid #f8ce00;
-  -moz-border-left: 2px solid #f8ce00;
-  -ms-border-left: 2px solid #f8ce00;
-  -webkit-border-left: 2px solid #f8ce00;
+  color: #68aa38;
+  -moz-color: #68aa38;
+  -ms-color: #68aa38;
+  -webkit-color: #68aa38;
+  border-left: 2px solid #68aa38;
+  -moz-border-left: 2px solid #68aa38;
+  -ms-border-left: 2px solid #68aa38;
+  -webkit-border-left: 2px solid #68aa38;
   margin-left: -8%;
   -moz-margin-left: -8%;
   -ms-margin-left: -8%;
@@ -222,10 +225,10 @@ h3 {
   -webkit-padding-left: 8%;
 }
 .LinkActive:hover {
-  color: #68aa38 !important;
-  -moz-color: #68aa38;
-  -ms-color: #68aa38;
-  -webkit-color: #68aa38;
+  color: #f8ce00 !important;
+  -moz-color: #f8ce00;
+  -ms-color: #f8ce00;
+  -webkit-color: #f8ce00;
   border-left: 2px solid #f8ce00 !important;
   -moz-border-left: 2px solid #f8ce00;
   -ms-border-left: 2px solid #f8ce00;
@@ -240,15 +243,14 @@ h3 {
   -webkit-padding-left: 8%;
 }
 #Link2:hover {
-  color: #68aa38 !important;
-  -moz-color: #68aa38;
-  -ms-color: #68aa38;
-  -webkit-color: #68aa38;
+  color: #f8ce00 !important;
+  -moz-color: #f8ce00;
+  -ms-color: #f8ce00;
+  -webkit-color: #f8ce00;
   border-left: 2px solid #f8ce00 !important;
   -moz-border-left: 2px solid #f8ce00;
   -ms-border-left: 2px solid #f8ce00;
   -webkit-border-left: 2px solid #f8ce00;
-  color: #68aa38 !important;
   margin-left: -8%;
   -moz-margin-left: -8%;
   -ms-margin-left: -8%;
@@ -291,9 +293,9 @@ a:active {
   -moz-height: 150px;
   -ms-height: 150px;
   -webkit-height: 150px;
-  width: auto;
-  -moz-width: auto;
-  -ms-width: auto;
+  width: 100%;
+  -moz-width: 100%;
+  -ms-width: 100%;
   -webkit-width: 100%;
   object-fit: cover;
   -moz-object-fit: cover;
@@ -332,9 +334,11 @@ figure {
   -moz-margin: 1% auto !important;
   -ms-margin: 1% auto !important;
   -webkit-margin: 1% auto !important;
+  transition: 2s ease-out;
 }
 figure:hover {
-  transform: scale(1.2);
+  transform: scale(1.08);
+  transition: 0.8s;
 }
 figcaption {
   font-family: "Josefin-SemiBold";
@@ -356,6 +360,7 @@ figcaption {
   -ms-padding: 4%;
   -webkit-padding: 4%;
   color: #707070;
+  font-size: 0.8rem;
   /* box-shadow: 1px 1px 5px gray; */
 }
 .progress {
@@ -406,13 +411,13 @@ figcaption {
 }
 #VerTodos:hover {
   color: #68aa38;
-  -moz-color:  #68aa38;
-  -ms-color:  #68aa38;
-  -webkit-color:  #68aa38;
-  text-decoration: 1px  #68aa38;
-  -moz-text-decoration: 1px  #68aa38;
-  -ms-text-decoration: 1px  #68aa38;
-  -webkit-text-decoration: 1px  #68aa38;
+  -moz-color: #68aa38;
+  -ms-color: #68aa38;
+  -webkit-color: #68aa38;
+  text-decoration: 1px #68aa38;
+  -moz-text-decoration: 1px #68aa38;
+  -ms-text-decoration: 1px #68aa38;
+  -webkit-text-decoration: 1px #68aa38;
 }
 a {
   color: #707070;
