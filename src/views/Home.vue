@@ -446,10 +446,10 @@ button:hover {
   -moz-margin-bottom: 0.5%;
   -ms-margin-bottom: 0.5%;
   -webkit-margin-bottom: 0.5%;
-  /* box-shadow: 1px -1px 5px black;
-  -moz-box-shadow: 1px -1px 5px black;
-  -ms-box-shadow: 1px -1px 5px black;
-  -webkit-box-shadow: 1px -1px 5px black; */
+  box-shadow: 1px 0px 2px black;
+  -moz-box-shadow: 1px 0px 2px black;
+  -ms-box-shadow: 1px 0px 2px black;
+  -webkit-box-shadow: 1px 0px 2px black;
   padding: 8%;
   -moz-padding: 8%;
   -ms-padding: 8%;
@@ -484,15 +484,15 @@ button:hover {
   -moz-left: 0px;
   -ms-left: 0px;
   -webkit-left: 0px;
-  background: url("../assets/imgs/img9.jpg") no-repeat center;
-  -moz-background: url("../assets/imgs/img9.jpg") no-repeat  center;
-  -ms-background: url("../assets/imgs/img9.jpg") no-repeat center;
-  -webkit-background: url("../assets/imgs/img9.jpg") no-repeat center;
+  background: url("../assets/imgs/img33.jpg") no-repeat center;
+  -moz-background: url("../assets/imgs/img33.jpg") no-repeat  center;
+  -ms-background: url("../assets/imgs/img33.jpg") no-repeat center;
+  -webkit-background: url("../assets/imgs/img33.jpg") no-repeat center;
 
-  background-size: 100% 150%;
-  -moz-background-size: 100% 150%;
-  -ms-background-size: 100% 150%;
-  -webkit-background-size: 100% 150%;
+  background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -webkit-background-size: cover;
 }
 .OQFazemos {
   height: 50%;
