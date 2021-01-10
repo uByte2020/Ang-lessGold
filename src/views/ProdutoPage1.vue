@@ -45,7 +45,7 @@
                   <h4 class="BacalhauH4">
                     Produto proveniente de
                     <img
-                      src="../assets/svg/Portugal.svg"
+                      src="../assets/svg/pt.svg"
                       alt="Portugal"
                       class="icon img-fluid"
                     />

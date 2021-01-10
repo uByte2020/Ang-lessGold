@@ -1,0 +1,16 @@
+[
+    {
+        "foto": "img18.jpg",
+        "titulo": "Bacalhau Posta / Inteiro",
+        "descricao": "informação do produto",
+        "saibaMais": "Saiba mais",
+        "icon": "pt.svg"
+      },
+      {
+        "foto": "img1.jpeg",
+        "titulo": "Chispe",
+        "descricao": "informação do produto",
+        "saibaMais": "Saiba mais",
+        "icon": "pt.svg"
+      }
+]

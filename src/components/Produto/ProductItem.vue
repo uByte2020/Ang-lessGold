@@ -1,46 +1,42 @@
 <template>
-  <div id="Produtos">
-    <NavbarPrinc />
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-12 ProdutoTitulo">
-          <h1 class="ProdutoTituloH1">Produtos</h1>
-        </div>
-        <div class="col-12">
-          <div class="row">
-            <ProductItem v-for="(produto, index) in produtos" :product="produto" :key="index"/>
-          </div>
-        </div>
-        <RecebaNovidades />
-        <Footer />
-      </div>
+    <div class="col-lg-4 col-md-6 col-xl-3 col-sm-12 ImagemGrelha">
+        <figure>
+            <img :src="loadImg(product.foto)" class="img-fluid img" />
+            <figcaption>
+                <h3>{{ product.titulo }}</h3>
+                <small> {{ product.descricao }} </small><br />
+                <router-link to="#">
+                    <small>{{ product.saibaMais }}</small>
+                </router-link>
+                <img
+                :src="loadIcon(product.icon)"
+                alt="Portugal"
+                class="icon img-fluid"
+                />
+            </figcaption>
+        </figure>
     </div>
-  </div>
 </template>
-<script>
-import NavbarPrinc from "../components/NavbarPrinc";
-import RecebaNovidades from "../components/RecebaNovidades";
-import Footer from "../components/Footer";
-import ProductItem from "../components/Produto/ProductItem";
-import produtosJson from '@/data/produtos.json'; 
 
+<script>
+const productImage = require.context('@/assets/imgs/products/', false, /\.png$|\.jpg$|\.jpeg$/)
+const productIcon = require.context('@/assets/svg/', false, /\.png$|\.jpg$|\.svg$/)
 export default {
-  name: "Produtos",
-  components: {
-    NavbarPrinc,
-    RecebaNovidades,
-    Footer,
-    ProductItem
+  name: 'ProductItem',
+  props: {
+    product: Object
   },
-  data() {
-    return {
-      perPage: 3,
-      currentPage: 3,
-      produtos: produtosJson,
-    };
+   methods: {
+    loadImg(imgPath) {
+      return productImage('./'+imgPath)
+    },
+    loadIcon(iconPath) {
+      return productIcon('./'+iconPath)
+    },
   },
-};
+}
 </script>
+
 <style scoped>
 .ProdutoTitulo {
   text-align: left;
