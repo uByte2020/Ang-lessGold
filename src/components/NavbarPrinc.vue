@@ -3,12 +3,13 @@
     <!-- :style="{ position: position }" -->
     <b-navbar
       class="mt-0"
+      :class="navbarClass"
       toggleable="lg"
       type="dark"
-      :variant="BackgroundClick ? 'dark' : 'transparent'"
+      :variant="BackgroundClick ? 'dark' : backgroundColor"
     >
       <b-navbar-brand class="p-1 ml-5">
-        <img src="../assets/imgs/LogopngAnglessGold.png" alt="logo" class="img"
+        <img :src="getLogoImg" alt="logo" class="img"
       /></b-navbar-brand>
 
       <b-navbar-toggle
@@ -24,16 +25,16 @@
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav class="ml-auto">
           <b-nav-item class="navitem"
-            ><router-link to="/">Home</router-link></b-nav-item
+            ><router-link :class="getnavItemClass" to="/">Home</router-link></b-nav-item
           >
           <b-nav-item
-            ><router-link to="/QuemSomos">Sobre Nós</router-link></b-nav-item
+            ><router-link :class="getnavItemClass" to="/QuemSomos">Sobre Nós</router-link></b-nav-item
           >
           <b-nav-item
-            ><router-link to="/Produtos">Produtos</router-link></b-nav-item
+            ><router-link :class="getnavItemClass" to="/Produtos">Produtos</router-link></b-nav-item
           >
           <b-nav-item
-            ><router-link to="/Contacto">Contactos</router-link></b-nav-item
+            ><router-link :class="getnavItemClass" to="/Contacto">Contactos</router-link></b-nav-item
           >
         </b-navbar-nav>
       </b-collapse>
@@ -54,21 +55,39 @@ export default {
       this.BackgroundClick = !this.BackgroundClick;
     },
   },
-  // props: {
-  //   backgroundColor: {
-  //     type: Text,
-  //     default: "transparent",
-  //   },
-  //   variant: Text,
-  //   position: {
-  //     type: Text,
-  //     default: "absolute",
-  //   },
-  //   navTextColor: {
-  //     type: Text,
-  //     default: "#fff",
-  //   },
-  // },
+  computed:{
+    getLogoImg(){
+      return this.logoImg === 'home' ? require('@/assets/imgs/Logobranco.png')
+      : require('@/assets/imgs/LogopngAnglessGold.png');
+    },
+    getnavItemClass(){
+      return this.navItemClass === 'home' ? 'nav-item-da-home'
+      : 'nav-item-da';
+    }
+  },
+  props: {
+    backgroundColor: {
+      type: Text,
+      default: "transparent",
+    },
+    variant: Text,
+    navbarClass:{
+      type: Text,
+      default: "navbar",
+    },
+    navTextColor: {
+      type: Text,
+      default: "#fff",
+    },
+    logoImg:{
+      type: Text,
+      default: 'other'
+    },
+    navItemClass:{
+      type: Text,
+      default: 'other'
+    }
+  },
 };
 </script>
 
@@ -77,6 +96,18 @@ export default {
   font-family: "Josefin";
   src: local("Fonts"),
     url(../assets/Fonts/josefin-sans.bold.ttf) format("truetype");
+}
+
+.nav-item-da{
+  font-size: 25px !important;
+  font-family: "Josefin-SemiBold";
+  color: #8cb560 !important;
+}
+
+.nav-item-da-home {
+  font-size: 25px !important;
+  font-family: "Josefin-SemiBold";
+  color: #fff !important;
 }
 
 .nav-link {
@@ -94,11 +125,16 @@ export default {
 
   /* background-color: transparent !important; */
 }
-a {
-  font-size: 25px !important;
-  font-family: "Josefin-SemiBold";
-  color: #8cb560 !important;
+
+.navbar-home {
+  position: absolute !important;
+  z-index: 1;
+  width: 100%;
+  /* padding: 1%; */
+  /* background-color: transparent !important; */
 }
+
+
 .navbar-dark .navbar-nav .nav-link {
   /* color: rgba(255, 255, 255, 0.5); */
   color: #fff;

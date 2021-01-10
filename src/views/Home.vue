@@ -1,6 +1,6 @@
 <template>
   <div id="Home">
-    <Navbar />
+    <NavbarPrinc :backgroundColor="'transparent'" :navbarClass="'navbar-home'" :logoImg="'home'" :navItemClass="'home'"/>
     <div id="home" class="container-fluid">
       <div class="row">
         <div class="Inicio col-12">
@@ -152,7 +152,7 @@
 <script>
 // @ is an alias to /src
 import Footer from "../components/Footer.vue";
-import Navbar from "../components/Navbar.vue";
+import NavbarPrinc from "../components/NavbarPrinc.vue";
 import Produtos from "../components/home/Produtos";
 // import BemVindoAngLess from "../components/BemVindo-AngLess";
 import RecebaNovidades from "../components/RecebaNovidades";
@@ -160,7 +160,7 @@ import RecebaNovidades from "../components/RecebaNovidades";
 export default {
   name: "Home",
   components: {
-    Navbar,
+    NavbarPrinc,
     Produtos,
     // BemVindoAngLess,
     RecebaNovidades,
