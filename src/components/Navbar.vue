@@ -9,7 +9,7 @@
     >
       <!-- backgroundColor -->
       <b-navbar-brand class="p-1 ml-5">
-        <img src="../assets/imgs/LogoImg2.png" alt="logo" class="img"
+        <img src="../assets/imgs/Logobranco.png" alt="logo" class="img"
       /></b-navbar-brand>
 
       <b-navbar-toggle
@@ -146,22 +146,23 @@ a {
     /* background-color: transparent !important; */
   }
   .img {
-    margin-left: -60%;
+    margin-left: -50%;
     -moz-margin-left: -60%;
     -ms-margin-left: -60%;
     -webkit-margin-left: -60%;
-    width: 90%;
-    -moz-width: 90%;
-    -ms-width: 90%;
+    width: 80%;
+    -moz-width: 80%;
+    -ms-width: 80%;
     -webkit-width: 90%;
-    height: 50%;
+    height: auto;
     -moz-height: 50%;
     -ms-height: 50%;
     -webkit-height: 50%;
+    margin-top: -5%;
   }
   .nav-collapse,
   .Marg {
-    margin-top: -20%;
+    margin-top: -25%;
     -moz-margin-top: -20%;
     -ms-margin-top: -20%;
     -webkit-margin-top: -20%;
