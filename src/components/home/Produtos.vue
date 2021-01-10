@@ -2,7 +2,7 @@
   <div id="Produto" class="container">
     <div class="row">
       <div class="col-lg-12 col-sm-12 col-xl-12 col-md-12">
-        <h3>Explores os Nossos Produtos</h3>
+        <h2>Explores os Nossos Produtos</h2>
         <div class="progress">
           <div
             class="progress-bar progressCor"
@@ -127,23 +127,25 @@ export default {
       const Cor = document.getElementById("Link1");
       Cor.style.color = "#f8ce00";
       Cor.style.borderLeft = "2px solid #f8ce00";
-      Cor.style.marginLeft = "-7%";
+      Cor.style.marginLeft = "-8%";
       Cor.style.paddingLeft = "4%";
       const Cor2 = document.getElementById("Link2");
-      Cor2.style.color = "#000";
+      Cor2.style.color = " #707070";
       Cor2.style.borderLeft = "0";
       Cor2.style.marginLeft = "-8%";
       Cor2.style.paddingLeft = "8%";
+      Cor.style.fontSize='16px'
+      Cor2.style.fontSize='16px'
     },
     AlimentoClick() {
       this.Alimentos = false;
       const Cor = document.getElementById("Link2");
       Cor.style.color = "#f8ce00";
       Cor.style.borderLeft = "2px solid #f8ce00";
-      Cor.style.marginLeft = "-7%";
+      Cor.style.marginLeft = "-8%";
       Cor.style.paddingLeft = "4%";
       const Cor2 = document.getElementById("Link1");
-      Cor2.style.color = "#000";
+      Cor2.style.color = " #707070";
       Cor2.style.borderLeft = "0";
       Cor2.style.marginLeft = "-8%";
       Cor2.style.paddingLeft = "8%";
@@ -152,6 +154,11 @@ export default {
 };
 </script>
 <style scoped>
+/* @font-face {
+  font-family: "Josefin-SemiBold";
+  src: local("Fonts"),
+    url(../assets/Fonts/josefin-sans.semibold.ttf) format("truetype");
+} */
 h3 {
   font-family: "Josefin";
   -moz-font-family: "Josefin";
@@ -165,16 +172,19 @@ h3 {
   -webkit-padding: 6%;
 }
 .links {
-  border-left: 1px ridge gray;
-  -moz-border-left: 1px ridge gray;
-  -ms-border-left: 1px ridge gray;
-  -webkit-border-left: 1px ridge gray;
+  color: #707070!important;
+  border-left: 3px solid #70707070;
+  -moz-border-left: 1px ridge #70707070;
+  -ms-border-left: 1px ridge #70707070;
+  -webkit-border-left: 1px ridge #70707070;
   text-align: left;
   -moz-text-align: left;
   -ms-text-align: left;
   -webkit-text-align: left;
+  margin-right: -30px !important;
 }
 .LinkActive {
+  font-size: 16px;
   color: #f8ce00;
   -moz-color: #f8ce00;
   -ms-color: #f8ce00;
@@ -193,10 +203,28 @@ h3 {
   -webkit-padding-left: 8%;
 }
 .LinkActive:hover {
-  color: #f8ce00;
-  -moz-color: #f8ce00;
+  /* color: #68aa38 !important; */
+  /* -moz-color: #f8ce00;
   -ms-color: #f8ce00;
-  -webkit-color: #f8ce00;
+  -webkit-color: #f8ce00; */
+  border-left: 2px solid #f8ce00 !important;
+  -moz-border-left: 2px solid #f8ce00;
+  -ms-border-left: 2px solid #f8ce00;
+  -webkit-border-left: 2px solid #f8ce00;
+  margin-left: -8%;
+  -moz-margin-left: -8%;
+  -ms-margin-left: -8%;
+  -webkit-margin-left: -8%;
+  padding-left: 8%;
+  -moz-padding-left: 8%;
+  -ms-padding-left: 8%;
+  -webkit-padding-left: 8%;
+}
+#Link2:hover {
+  /* color: #68aa38 !important; */
+  /* -moz-color: #f8ce00;
+  -ms-color: #f8ce00;
+  -webkit-color: #f8ce00; */
   border-left: 2px solid #f8ce00 !important;
   -moz-border-left: 2px solid #f8ce00;
   -ms-border-left: 2px solid #f8ce00;
@@ -211,10 +239,10 @@ h3 {
   -webkit-padding-left: 8%;
 }
 a {
-  color: #000;
+  /* color: #707070!important;
   -moz-color: #000;
   -ms-color: #000;
-  -webkit-color: #000;
+  -webkit-color: #000; */
   text-decoration: none;
   -moz-text-decoration: none;
   -ms-text-decoration: none;
@@ -268,14 +296,14 @@ figure {
   -moz-height: 100%;
   -ms-height: 100%;
   -webkit-height: 100%;
-  width: 85%;
+  width: 100%;
   -moz-width: 90%;
   -ms-width: 90%;
   -webkit-width: 90%;
-  box-shadow: 1px 1px 3px gray;
-  -moz-box-shadow: 1px 1px 3px gray;
-  -ms-box-shadow: 1px 1px 3px gray;
-  -webkit-box-shadow: 1px 1px 3px gray;
+  box-shadow: 1px 1px 4px gray;
+  -moz-box-shadow: 0px 0px 1px gray;
+  -ms-box-shadow: 0px 0px 1px gray;
+  -webkit-box-shadow: 0px 0px 1px gray;
   border-radius: 7px;
   -moz-border-radius: 7px;
   -ms-border-radius: 7px;
@@ -286,6 +314,7 @@ figure {
   -webkit-margin: 1% auto !important;
 }
 figcaption {
+  font-family: 'Josefin-SemiBold';
   margin: 1% auto;
   -moz-margin: 1% auto;
   -ms-margin: 1% auto;
@@ -303,6 +332,7 @@ figcaption {
   -moz-padding: 4%;
   -ms-padding: 4%;
   -webkit-padding: 4%;
+  color: #707070;
   /* box-shadow: 1px 1px 5px gray; */
 }
 .progress {
@@ -361,7 +391,15 @@ figcaption {
   -ms-text-decoration: 1px blue;
   -webkit-text-decoration: 1px blue;
 }
-
+a {
+  color: #707070;
+}
+a:active {
+  color: #f8ce00;
+}
+a:hover {
+  /* color: #68aa38; */
+}
 @media only screen and (max-width: 600px) {
   #VerTodos {
     font-size: 10px;
@@ -380,6 +418,18 @@ figcaption {
     -moz-margin: auto;
     -ms-margin: auto;
     -webkit-margin: auto;
+  }
+  .links {
+    border-left: 1px solid #70707070;
+    -moz-border-left: 1px ridge #70707070;
+    -ms-border-left: 1px ridge #70707070;
+    -webkit-border-left: 1px ridge #70707070;
+    text-align: left;
+    -moz-text-align: left;
+    -ms-text-align: left;
+    -webkit-text-align: left;
+    margin-right: 60px !important;
+    color: #70707070 !important;
   }
 }
 </style>
