@@ -44,7 +44,7 @@
           <div class="col-lg-4 col-sm-12 col-xl-4 col-md-4 DivImg">
             <figure>
               <img
-                src="@/assets/imgs/img14.jpg"
+                src="@/assets/imgs/products/img14.jpg"
                 class="img-fluid img"
                 alt="Mucua"
               />
@@ -54,7 +54,7 @@
           <div class="col-lg-4 col-sm-12 col-xl-4 col-md-4 DivImg">
             <figure>
               <img
-                src="@/assets/imgs/img18.jpg"
+                src="@/assets/imgs/products/img18.jpg"
                 class="img-fluid img"
                 alt="Mucua"
               />
@@ -64,7 +64,7 @@
           <div class="col-lg-4 col-sm-12 col-xl-4 col-md-4 DivImg">
             <figure>
               <img
-                src="@/assets/imgs/img6.jpg"
+                src="@/assets/imgs/products/img6.jpg"
                 class="img-fluid img"
                 alt="Mucua"
               />
@@ -82,7 +82,7 @@
           <div class="col-lg-4 col-sm-12 col-xl-4 col-md-4 DivImg">
             <figure>
               <img
-                src="@/assets/imgs/img10.png"
+                src="@/assets/imgs/products/img10.png"
                 class="img-fluid img"
                 alt="Mucua"
               />
@@ -92,7 +92,7 @@
           <div class="col-lg-4 col-sm-12 col-xl-4 col-md-4 DivImg">
             <figure>
               <img
-                src="@/assets/imgs/img10.png"
+                src="@/assets/imgs/products/img10.png"
                 class="img-fluid img"
                 alt="Mucua"
               />
@@ -102,7 +102,7 @@
           <div class="col-lg-4 col-sm-12 col-xl-4 col-md-4 DivImg">
             <figure>
               <img
-                src="@/assets/imgs/img10.png"
+                src="@/assets/imgs/products/img10.png"
                 class="img-fluid img"
                 alt="Mucua"
               />
