@@ -44,12 +44,12 @@
           <div class="col-lg-4 col-sm-12 col-xl-4 col-md-4 DivImg">
             <figure>
               <img
-                src="@/assets/imgs/products/img14.jpg"
+                src="@/assets/imgs/products/img10.png"
                 class="img-fluid img"
-                alt="Mucua"
+                alt="Chouriço"
               />
               <figcaption>
-                <h6 class="explore-prod">Farinha Musseque</h6>
+                <h6 class="explore-prod">Chouriço</h6>
                 <p class="preco">Preço</p>
               </figcaption>
             </figure>
@@ -57,12 +57,12 @@
           <div class="col-lg-4 col-sm-12 col-xl-4 col-md-4 DivImg">
             <figure>
               <img
-                src="@/assets/imgs/products/img18.jpg"
+                src="@/assets/imgs/products/img1.jpeg"
                 class="img-fluid img"
-                alt="Mucua"
+                alt="Chispe"
               />
               <figcaption>
-                <h6 class="explore-prod">Bacalhau - Posta / Inteiro</h6>
+                <h6 class="explore-prod">Chispe</h6>
                 <p class="preco">Preço</p>
               </figcaption>
             </figure>
@@ -70,12 +70,12 @@
           <div class="col-lg-4 col-sm-12 col-xl-4 col-md-4 DivImg">
             <figure>
               <img
-                src="@/assets/imgs/products/img6.jpg"
+                src="@/assets/imgs/products/img17.jpg"
                 class="img-fluid img"
-                alt="Mucua"
+                alt="Carne"
               />
               <figcaption>
-                <h6 class="explore-prod">Múcua</h6>
+                <h6 class="explore-prod">Carne</h6>
                 <p class="preco">Preço</p>
               </figcaption>
             </figure>
@@ -91,12 +91,12 @@
           <div class="col-lg-4 col-sm-12 col-xl-4 col-md-4 DivImg">
             <figure>
               <img
-                src="@/assets/imgs/products/img10.png"
+                src="@/assets/imgs/products/img14.jpg"
                 class="img-fluid img"
-                alt="Mucua"
+                alt="Farinha Musseque"
               />
               <figcaption>
-                <h6 class="explore-prod">Chouriço</h6>
+                <h6 class="explore-prod">Farinha Musseque</h6>
                 <p class="preco">Preço</p>
               </figcaption>
             </figure>
@@ -104,12 +104,12 @@
           <div class="col-lg-4 col-sm-12 col-xl-4 col-md-4 DivImg">
             <figure>
               <img
-                src="@/assets/imgs/products/img10.png"
+                src="@/assets/imgs/products/img18.jpg"
                 class="img-fluid img"
-                alt="Mucua"
+                alt="Peixe Seco"
               />
               <figcaption>
-                <h6 class="explore-prod">Chouriço</h6>
+                <h6 class="explore-prod">Peixe Seco</h6>
                 <p class="preco">Preço</p>
               </figcaption>
             </figure>
@@ -117,12 +117,12 @@
           <div class="col-lg-4 col-sm-12 col-xl-4 col-md-4 DivImg">
             <figure>
               <img
-                src="@/assets/imgs/products/img10.png"
+                src="@/assets/imgs/products/img6.jpg"
                 class="img-fluid img"
                 alt="Mucua"
               />
               <figcaption>
-                <h6 class="explore-prod">Chouriço</h6>
+                <h6 class="explore-prod">Múcua</h6>
                 <p class="preco">Preço</p>
               </figcaption>
             </figure>

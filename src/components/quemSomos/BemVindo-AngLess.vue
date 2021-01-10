@@ -129,6 +129,7 @@ export default {
   -moz-color: #707070;
   -ms-color: #707070;
   -webkit-color: #707070;
+  text-align: justify;
 }
 @font-face {
   font-family: "Josefin";
