@@ -291,6 +291,9 @@ export default {
   -webkit-padding: 5%;
   /* margin-left: 10%!important; */
 }
+.TextoInicioAng{
+  text-align: justify;
+}
 /* .imgof{
   position: relative;
   box-shadow: 0px 0px 6px 4px gray;
@@ -488,7 +491,7 @@ button:hover {
   -moz-background: url("../assets/imgs/img33.jpg") no-repeat  center;
   -ms-background: url("../assets/imgs/img33.jpg") no-repeat center;
   -webkit-background: url("../assets/imgs/img33.jpg") no-repeat center;
-
+  filter: brightness(50%);
   background-size: cover;
   -moz-background-size: cover;
   -ms-background-size: cover;
@@ -503,10 +506,7 @@ button:hover {
   -moz-text-align: left;
   -ms-text-align: left;
   -webkit-text-align: left;
-  border: 1px solid gray;
-  -moz-border: 1px solid gray;
-  -ms-border: 1px solid gray;
-  -webkit-border: 1px solid gray;
+  border-radius: 5px;
   background-color: white;
   -moz-background-color: white;
   -ms-background-color: white;
@@ -576,10 +576,10 @@ button:hover {
   -webkit-background-size: 100% 180%;
 }
 #EscolherNos {
-  padding: 4% 7%;
-  -moz-padding: 4% 7%;
-  -ms-padding: 4% 7%;
-  -webkit-padding: 4% 7%;
+  padding: 4% 6%;
+  -moz-padding: 4% 6%;
+  -ms-padding: 4% 6%;
+  -webkit-padding: 4% 6%;
   text-align: center !important;
   -moz-text-align: center !important;
   -ms-text-align: center !important;
