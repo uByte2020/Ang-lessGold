@@ -197,7 +197,7 @@ h1 {
   width: 100%;
   background: url('../assets/imgs/img26.jpg')no-repeat center center fixed;
   background-size: cover;
-  filter: brightness(40%) grayscale(50%);
+  filter: brightness(20%);
 }
 .BackgroundBlackTexto {
   text-align: left;
