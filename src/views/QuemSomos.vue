@@ -3,10 +3,8 @@
     <NavbarPrinc />
     <div class="container-fluid">
       <div class="row">
-        <div class="col-12" id="quemSomos">
-          <h1 class="quemSomosTitutlo">Quem Somos</h1>
-        </div>
-        <div class="col-12 TituloAngLess">
+        <TitleBar title="Quem Somos" pageClass="quem-somos-page"></TitleBar>
+        <div class="col-12 TituloAngLess mt-5">
           <h1 id="TituloAngLessH1">
             ANG LESS GOLD <br />
             IMPORTAÇÃO &amp; EXPORTAÇÃO LDA
@@ -24,22 +22,21 @@
           data-aos-delay="300"
           data-aos-offset="0"
         ></div>
-        <div class="col-12" id="background-black">
+        <div class="col-12 pt-5" id="background-black">
           <div class="row">
             <div class="col-12 TxTEImg">
               <div class="row justify-content-md-center">
                 <div class="col-lg-12 col-md-12 col-xl-5 col-sm-12">
                   <p class="BackgroundBlackTexto">
-                    Para nós a chave do sucesso e melhor dia/dia com a nossa
-                    equipa de profissionais trabalhando arduamente para conceber
-                    soluções personalizadas que vão ao encontro das necessidades
-                    positivamente nas empresas dos clientes e parceiros com a
-                    demonstração nas empresas dos clientes e parceiros com
+                    Para nós a chave do sucesso é melhorar dia/dia com a nossa
+                    equipa de profissionais, trabalhando arduamente para conceber
+                    soluções personalizadas, que vão ao encontro das necessidades
+                    positivamente nas empresas dos clientes e parceiros com
                     demonstração de qualidade dos nossos produtos com 80%
                     satisfeito, elaborando programações de atendimento e
                     interface entre as diversas áreas de produção comercial e
                     operacional, coordenação e controle das atividade logísticas
-                    relacionadas a armazenagem e transporte, operações
+                    relacionadas a armazenamento, transporte e operações
                     especiais.
                   </p>
                 </div>
@@ -146,6 +143,7 @@
 import NavbarPrinc from "../components/NavbarPrinc";
 import BemVindoAngLess from "../components/quemSomos/BemVindo-AngLess";
 import RecebaNovidades from "../components/RecebaNovidades";
+import TitleBar from "../components/TitleBar";
 import Footer from "../components/Footer";
 
 export default {
@@ -155,6 +153,7 @@ export default {
     BemVindoAngLess,
     RecebaNovidades,
     Footer,
+    TitleBar
   },
 };
 </script>
@@ -182,7 +181,7 @@ h1 {
   text-align: left;
 }
 #background-black {
-  padding: 5%;
+  /* padding: 5%; */
   background-color: rgb(46, 45, 45);
   color: #fff;
   position: relative;
@@ -272,7 +271,7 @@ h1 {
 #dataaos {
   margin-top: -5%;
   background-color: #8cb560 !important;
-  height: 200px;
+  height: 150px;
   /* border-radius: 100% 0 0 0; */
   clip-path: polygon(100% 0%, 0 100%, 100% 100%) !important;
 }

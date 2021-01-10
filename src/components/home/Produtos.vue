@@ -15,7 +15,8 @@
         </div>
       </div>
       <div class="col-12">
-        <a href="#" id="VerTodos">VER TODOS PRODUTOS</a>
+        <router-link id="VerTodos" to="/Produtos">VER TODOS PRODUTOS</router-link>
+        <!-- <a href="#" ></a> -->
       </div>
       <div class="col-lg-3 col-sm-12 col-xl-3 col-md-3">
         <div class="row links">

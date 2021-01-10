@@ -16,7 +16,7 @@
                     parceiros com maior qualidade e segurança naquilo que são as
                     diversas necessidades de bens alimentares
                   </p>
-                  <button type="button" class="btn btn-lg">Saiba Mais</button>
+                  <router-link to="/QuemSomos"><button type="button" class="btn btn-lg">Saiba Mais</button></router-link>
                 </div>
               </div>
             </div>
@@ -54,7 +54,7 @@
                 social e a prestação de serviço, comércio a grosso de bebidas,
                 alimentaos, medicamentos, Importação e Exportação.
               </p>
-              <button type="button" class="btn btn-lg">Saiba Mais</button>
+              <router-link to="/QuemSomos"><button type="button" class="btn btn-lg">Saiba Mais</button></router-link>
             </div>
           </div>
         </div>

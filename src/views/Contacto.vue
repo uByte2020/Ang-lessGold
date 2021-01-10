@@ -3,9 +3,7 @@
     <NavbarPrinc />
     <div class="container-fluid">
       <div class="row">
-        <div class="col-12 ContactoTitulo">
-          <h1 style="margin-left: 4%">CONTACTOS</h1>
-        </div>
+        <TitleBar title="CONTACTOS" pageClass="contacto-page"></TitleBar>
         <div class="col-12" id="Formulario">
           <div class="row">
             <div class="col-lg-6 col-xl-6 col-sm-12 col-md-6">
@@ -79,12 +77,14 @@
 import Footer from "../components/Footer.vue";
 import NavbarPrinc from "../components/NavbarPrinc.vue";
 import Map from "../components/Contacto/Map";
+import TitleBar from "../components/TitleBar";
 export default {
   name: "Contacto",
   components: {
     Footer,
     NavbarPrinc,
     Map,
+    TitleBar
   },
 };
 </script>

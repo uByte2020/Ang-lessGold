@@ -3,9 +3,7 @@
     <NavbarPrinc />
     <div class="container-fluid">
       <div class="row">
-        <div class="col-12 ProdutoTitulo">
-          <h1 class="ProdutoTituloH1">Produtos</h1>
-        </div>
+        <TitleBar title="Produtos" :bgImg="titleBarBgImg" pageClass="produto-page"></TitleBar>
         <div class="content">
           <div class="row">
             <ProductItem v-for="(produto, index) in produtos" :product="produto" :key="index"/>
@@ -19,6 +17,7 @@
 </template>
 <script>
 import NavbarPrinc from "../components/NavbarPrinc";
+import TitleBar from "../components/TitleBar";
 import RecebaNovidades from "../components/RecebaNovidades";
 import Footer from "../components/Footer";
 import ProductItem from "../components/Produto/ProductItem";
@@ -30,21 +29,35 @@ export default {
     NavbarPrinc,
     RecebaNovidades,
     Footer,
-    ProductItem
+    ProductItem,
+    TitleBar
   },
   data() {
     return {
       perPage: 3,
       currentPage: 3,
       produtos: produtosJson,
+      titleBarBgImg:"img34.jpg"
     };
   },
 };
 </script>
 <style scoped>
 
+.content::before{
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top:0;
+  left: 0;
+  background: url('../assets/imgs/img4.jpg') center center;
+  filter: opacity(.3);
+}
+
 .content{
-      padding-left: 35px;
+    position: relative;
+    padding-left: 35px;
     padding-right: 35px;
 }
 

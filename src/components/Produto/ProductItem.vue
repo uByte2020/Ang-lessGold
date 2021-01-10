@@ -76,6 +76,7 @@ a:hover {
   margin: 0px;
 }
 figure {
+  background-color: #fff;
   height: 100%;
   -moz-height: 100%;
   -ms-height: 100%;
