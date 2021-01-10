@@ -39,7 +39,7 @@
                 </div>
                 <p>
                   <img
-                    src="../assets/svg/Portugal.svg"
+                    src="../assets/svg/pt.svg"
                     alt="imagem-Portugal"
                     class="img-fluid IMG1"
                   />
@@ -53,7 +53,7 @@
 
                 <p>
                   <img
-                    src="../assets/svg/Angola.svg"
+                    src="../assets/svg/ao.svg"
                     alt="imagem-Angola"
                     class="img-fluid IMG1"
                   />
