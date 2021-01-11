@@ -5,8 +5,13 @@
       <div class="row">
         <TitleBar title="Produtos" :bgImg="titleBarBgImg" pageClass="produto-page"></TitleBar>
         <div class="content">
-          <div class="row">
+          <div class="row produtos-content">
             <ProductItem v-for="(produto, index) in produtos" :product="produto" :key="index"/>
+          </div>
+          <div class="overflow-auto">
+            <div>
+              <b-pagination class="customPagination" variant="success" v-model="currentPage" pills :total-rows="rows" align="right" :per-page="perPage"></b-pagination>
+            </div>
           </div>
         </div>
         <RecebaNovidades />
@@ -34,15 +39,41 @@ export default {
   },
   data() {
     return {
-      perPage: 3,
-      currentPage: 3,
-      produtos: produtosJson,
-      titleBarBgImg:"img34.jpg"
+      perPage:8,
+      currentPage: 1,
+      allProducts: produtosJson,
+      produtos: [],
+      rows:1,
+      titleBarBgImg:"img34.jpg",
+      start:0,
+      end:0
     };
   },
+  mounted(){
+    this.rows = this.allProducts.length;
+    this.setProducts(this.currentPage);
+  },
+  watch:{
+    currentPage: function(current){
+      this.setProducts(current);
+    }
+  },
+  methods:{
+    setProducts(current){
+      let temp = current*this.perPage;
+      this.start = this.perPage*(current-1);
+      this.end = this.rows <= temp ? this.rows : temp;
+      this.produtos = this.allProducts.slice(this.start, this.end)
+    },
+  }
 };
 </script>
 <style scoped>
+
+.produtos-content{
+  justify-content: flex-start;
+  display: flex;
+}
 
 .content::before{
   content: '';
@@ -57,26 +88,10 @@ export default {
 
 .content{
     position: relative;
-    padding-left: 35px;
-    padding-right: 35px;
+    padding: 35px;
+    width: 100%;
 }
 
-.ProdutoTitulo {
-  text-align: left;
-  padding: 3%;
-  background-color: #8cb560;
-  color: #fff;
-}
-.ProdutoTituloH1 {
-  text-align: left;
-  margin-left: 4%;
-}
-.ImagemGrelha {
-  text-align: left;
-  width: 100%;
-  margin: 1% auto;
-  padding: 2%;
-}
 h3 {
   font-size: 20px;
   color: #000;
@@ -84,110 +99,5 @@ h3 {
 a {
   color: #8cb560;
 }
-.icon {
-  height: 20px;
-  margin-left: 150px !important;
-  margin-right: 0px !important;
-  margin: 0px;
-}
-figure {
-  height: 100%;
-  -moz-height: 100%;
-  -ms-height: 100%;
-  -webkit-height: 100%;
-  width: 300px;
-  -moz-width: 90%;
-  -ms-width: 90%;
-  -webkit-width: 90%;
-  box-shadow: 1px -1px 5px #70707070;
-  -moz-box-shadow: 1px -1px 5px #70707070;
-  -ms-box-shadow: 1px -1px 5px #70707070;
-  -webkit-box-shadow: 1px -1px 5px #70707070;
-  border-radius: 7px;
-  -moz-border-radius: 7px;
-  -ms-border-radius: 7px;
-  -webkit-border-radius: 7px;
-  margin: 1% auto !important;
-  -moz-margin: 1% auto !important;
-  -ms-margin: 1% auto !important;
-  -webkit-margin: 1% auto !important;
-}
 
-figcaption {
-  margin: 1% auto;
-  -moz-margin: 1% auto;
-  -ms-margin: 1% auto;
-  -webkit-margin: 1% auto;
-  /* margin-left: 3%; */
-  height: 10%;
-  -moz-height: 10%;
-  -ms-height: 10%;
-  -webkit-height: 10%;
-  width: 95%;
-  -moz-width: 90%;
-  -ms-width: 90%;
-  -webkit-width: 90%;
-  padding: 4%;
-  -moz-padding: 4%;
-  -ms-padding: 4%;
-  -webkit-padding: 4%;
-  /* box-shadow: 1px 1px 5px gray; */
-}
-.img {
-  width: 100%;
-  height: 200px;
-  border-radius: 7px;
-}
-@media only screen and (max-width: 300px) {
-  
-figure {
-  height: 100%;
-  -moz-height: 100%;
-  -ms-height: 100%;
-  -webkit-height: 100%;
-  width: 250px;
-  -moz-width: 250px;
-  -ms-width: 250px;
-  -webkit-width: 250px;
-  box-shadow: 1px -1px 5px #70707070;
-  -moz-box-shadow: 1px -1px 5px #70707070;
-  -ms-box-shadow: 1px -1px 5px #70707070;
-  -webkit-box-shadow: 1px -1px 5px #70707070;
-  border-radius: 7px;
-  -moz-border-radius: 7px;
-  -ms-border-radius: 7px;
-  -webkit-border-radius: 7px;
-  margin: 1% auto !important;
-  -moz-margin: 1% auto !important;
-  -ms-margin: 1% auto !important;
-  -webkit-margin: 1% auto !important;
-}
-
-figcaption {
-  margin: 1% auto;
-  -moz-margin: 1% auto;
-  -ms-margin: 1% auto;
-  -webkit-margin: 1% auto;
-  /* margin-left: 3%; */
-  height: 10%;
-  -moz-height: 10%;
-  -ms-height: 10%;
-  -webkit-height: 10%;
-  width: 95%;
-  -moz-width: 90%;
-  -ms-width: 90%;
-  -webkit-width: 90%;
-  padding: 4%;
-  -moz-padding: 4%;
-  -ms-padding: 4%;
-  -webkit-padding: 4%;
-  /* box-shadow: 1px 1px 5px gray; */
-}
-.icon {
-  height: 20px;
-  margin-left: 150px !important;
-  margin-right: 0px !important;
-  margin-top: -40px;
-}
-}
 </style>

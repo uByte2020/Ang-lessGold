@@ -1,5 +1,5 @@
 <template>
-    <div class="col-lg-4 col-md-6 col-xl-3 col-sm-12 ImagemGrelha">
+    <div class="col-lg-3 col-md-6 col-xl-3 col-sm-12 ImagemGrelha">
         <figure>
             <img :src="loadImg(product.foto)" class="img-fluid img" />
             <figcaption>
@@ -51,8 +51,8 @@ export default {
 .ImagemGrelha {
   text-align: left;
   width: 100%;
-  margin: 1% auto;
-  padding: 2%;
+  margin: 1% 0;
+  padding: 1% 2%;
 }
 .ImagemGrelha:hover{
     cursor: pointer;
@@ -78,13 +78,7 @@ a:hover {
 figure {
   background-color: #fff;
   height: 100%;
-  -moz-height: 100%;
-  -ms-height: 100%;
-  -webkit-height: 100%;
-  width: 300px;
-  -moz-width: 90%;
-  -ms-width: 90%;
-  -webkit-width: 90%;
+  width: 100%;
   box-shadow: 1px -1px 5px #70707070;
   -moz-box-shadow: 1px -1px 5px #70707070;
   -ms-box-shadow: 1px -1px 5px #70707070;
@@ -93,10 +87,6 @@ figure {
   -moz-border-radius: 7px;
   -ms-border-radius: 7px;
   -webkit-border-radius: 7px;
-  margin: 1% auto !important;
-  -moz-margin: 1% auto !important;
-  -ms-margin: 1% auto !important;
-  -webkit-margin: 1% auto !important;
 }
 
 figcaption {
