@@ -63,7 +63,7 @@
           <h3 class="Localizacao">Localização</h3>
           <div class="row">
             <div class="col-11 mapa">
-              <Map />
+              <googleMap />
             </div>
           </div>
         </div>
@@ -76,14 +76,14 @@
 <script>
 import Footer from "../components/Footer.vue";
 import NavbarPrinc from "../components/NavbarPrinc.vue";
-import Map from "../components/Contacto/Map";
+import googleMap from "../components/Contacto/Map.vue";
 import TitleBar from "../components/TitleBar";
 export default {
   name: "Contacto",
   components: {
     Footer,
     NavbarPrinc,
-    Map,
+    googleMap,
     TitleBar
   },
 };
