@@ -7,36 +7,56 @@
         <div class="col-12" id="Formulario">
           <div class="row">
             <div class="col-lg-6 col-xl-6 col-sm-12 col-md-6">
-              <form action="" method="Post">
+              <form action="/#" method="get">
                 <div class="row">
                   <div class="col-lg-6 col-xl-6 col-md-6 col-sm-12">
                     <div class="form-group">
                       <label for="Nome">Nome</label>
-                      <input type="text" class="form-control" name="Nome" />
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="Nome"
+                        v-model="nome" required
+                      />
                     </div>
                   </div>
                   <div class="col-lg-6 col-xl-6 col-md-6 col-sm-12">
                     <div class="form-group">
                       <label for="email">E-mail</label>
-                      <input type="email" name="email" class="form-control" />
+                      <input
+                        type="email"
+                        name="email"
+                        class="form-control"
+                        v-model="email" required
+                      />
                     </div>
                   </div>
                   <div class="col-12">
                     <div class="form-group">
                       <label for="Telefone">Telefone</label>
-                      <input type="tel" name="Telefone" class="form-control" />
+                      <input
+                        type="tel"
+                        name="Telefone"
+                        class="form-control"
+                        v-model="telefone" required
+                      />
                     </div>
                   </div>
                   <div class="col-12">
                     <div class="form-group">
                       <label for="Mensagem">Mensagem</label>
-                      <textarea name="Mensagem" class="form-control" />
+                      <textarea
+                        name="Mensagem"
+                        class="form-control"
+                        v-model="mensagem"
+                      />
                     </div>
                   </div>
                   <div class="col-lg-12 col-xl-6 col-sm-12 col-md-12">
                     <button
-                      type="submit"
+                      type="button"
                       class="btn btn-default btn-lg btn-block"
+                      @click="sendformulario"
                     >
                       ENVIAR MENSAGEM
                     </button>
@@ -84,7 +104,41 @@ export default {
     Footer,
     NavbarPrinc,
     googleMap,
-    TitleBar
+    TitleBar,
+  },
+  data() {
+    return {
+      nome: "",
+      email: "",
+      mensagem: "",
+      telefone: "",
+      formulario: [],
+    };
+  },
+  methods: {
+    sendformulario() {
+      // console.log(this.formulario.nome)
+      if (
+        this.nome.length == 0 ||
+        this.email.length == 0 ||
+        this.telefone.length == 0 ||
+        this.mensagem.length == 0
+      ) {
+        alert("Preencha os espaços vazios");
+      } else {
+        this.formulario.push(
+          this.nome,
+          this.email,
+          this.telefone,
+          this.mensagem
+        );
+        console.log(this.formulario);
+        this.nome = "";
+        this.email = "";
+        this.telefone = "";
+        this.mensagem = "";
+      }
+    },
   },
 };
 </script>
@@ -291,8 +345,8 @@ label {
 .mapa {
   margin: auto !important;
 }
-@media only screen and (max-width: 300px){
-  .texto-ang-less{
+@media only screen and (max-width: 300px) {
+  .texto-ang-less {
     font-size: 20px;
   }
 }
