@@ -30,7 +30,7 @@ export default {
   name: "Map",
   data() {
     return {
-      center: { lat: 39.0282912, lng: -8.9770612 },
+      center: { lat: 39.02834934173182, lng: -8.975129809635439 },
       markers: [
         {
           positiom: { lat: this.latitude, lng: this.longitude },
