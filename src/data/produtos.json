@@ -1,14 +1,7 @@
 [
     {
         "foto": "img18.jpg",
-        "titulo": "Bacalhau Posta / Inteiro",
-        "descricao": "informação do produto",
-        "saibaMais": "Saiba mais",
-        "icon": "pt.svg"
-    },
-    {
-        "foto": "img18.jpg",
-        "titulo": "Bacalhau Graúdo",
+        "titulo": "Bacalhau",
         "descricao": "informação do produto",
         "saibaMais": "Saiba mais",
         "icon": "pt.svg"
@@ -16,6 +9,83 @@
     {
         "foto": "img24.jpg",
         "titulo": "Peixe Seco",
+        "descricao": "informação do produto",
+        "saibaMais": "Saiba mais",
+        "icon": "ao.svg"
+    },
+    {
+        "foto": "img24.jpg",
+        "titulo": "Makayabo",
+        "descricao": "informação do produto",
+        "saibaMais": "Saiba mais",
+        "icon": "ao.svg"
+    },
+    {
+        "foto": "img20.jpg",
+        "titulo": "Cerveja de Cuca",
+        "descricao": "informação do produto",
+        "saibaMais": "Saiba mais",
+        "icon": "ao.svg"
+    },
+    {
+        "foto": "img19.jpg",
+        "titulo": "Fuba",
+        "descricao": "informação do produto",
+        "saibaMais": "Saiba mais",
+        "icon": "ao.svg"
+    },
+    {
+        "foto": "img12.jpg",
+        "titulo": "Quiabo",
+        "descricao": "informação do produto",
+        "saibaMais": "Saiba mais",
+        "icon": "ao.svg"
+    },
+    {
+        "foto": "img14.jpg",
+        "titulo": "Farinha",
+        "descricao": "informação do produto",
+        "saibaMais": "Saiba mais",
+        "icon": "ao.svg"
+    },
+    {
+        "foto": "img14.jpg",
+        "titulo": "Ginguba",
+        "descricao": "informação do produto",
+        "saibaMais": "Saiba mais",
+        "icon": "ao.svg"
+    },
+    {
+        "foto": "img14.jpg",
+        "titulo": "Óleo de Palma",
+        "descricao": "informação do produto",
+        "saibaMais": "Saiba mais",
+        "icon": "ao.svg"
+    },
+    {
+        "foto": "img14.jpg",
+        "titulo": "Kizaca",
+        "descricao": "informação do produto",
+        "saibaMais": "Saiba mais",
+        "icon": "ao.svg"
+    },
+    {
+        "foto": "img14.jpg",
+        "titulo": "Milho",
+        "descricao": "informação do produto",
+        "saibaMais": "Saiba mais",
+        "icon": "ao.svg"
+    },
+    {
+        "foto": "img14.jpg",
+        "titulo": "Múca",
+        "descricao": "informação do produto",
+        "saibaMais": "Saiba mais",
+        "icon": "ao.svg"
+    },
+    {
+        "foto": "img25.jpg",
+        "titulo": "Queijo",
         "descricao": "informação do produto",
         "saibaMais": "Saiba mais",
         "icon": "pt.svg"
@@ -41,33 +111,35 @@
         "saibaMais": "Saiba mais",
         "icon": "pt.svg"
     },
+
+
     {
-        "foto": "img25.jpg",
-        "titulo": "Queijo",
+        "foto": "img19.jpg",
+        "titulo": "Bacon",
         "descricao": "informação do produto",
         "saibaMais": "Saiba mais",
         "icon": "pt.svg"
     },
     {
-        "foto": "img12.jpg",
-        "titulo": "Quiabo",
+        "foto": "img17.jpg",
+        "titulo": "Fiambre",
         "descricao": "informação do produto",
         "saibaMais": "Saiba mais",
-        "icon": "ao.svg"
+        "icon": "pt.svg"
     },
     {
-        "foto": "img18.jpg",
-        "titulo": "Fuba de Milho",
+        "foto": "img1.jpeg",
+        "titulo": "Presunto",
         "descricao": "informação do produto",
         "saibaMais": "Saiba mais",
-        "icon": "ao.svg"
+        "icon": "pt.svg"
     },
     {
-        "foto": "img14.jpg",
-        "titulo": "Farinha Musseque",
+        "foto": "img1.jpeg",
+        "titulo": "Mortadela",
         "descricao": "informação do produto",
         "saibaMais": "Saiba mais",
-        "icon": "ao.svg"
+        "icon": "pt.svg"
     },
     {
         "foto": "img10.png",
@@ -77,10 +149,32 @@
         "icon": "pt.svg"
     },
     {
-        "foto": "img20.jpg",
-        "titulo": "Cerveja de Cuca",
+        "foto": "img10.png",
+        "titulo": "Linguiça",
         "descricao": "informação do produto",
         "saibaMais": "Saiba mais",
-        "icon": "ao.svg"
+        "icon": "pt.svg"
+    },
+    {
+        "foto": "img10.png",
+        "titulo": "Peito de Frango",
+        "descricao": "informação do produto",
+        "saibaMais": "Saiba mais",
+        "icon": "pt.svg"
+    },
+    {
+        "foto": "img10.png",
+        "titulo": "Peito de Perú",
+        "descricao": "informação do produto",
+        "saibaMais": "Saiba mais",
+        "icon": "pt.svg"
+    },
+    {
+        "foto": "img10.png",
+        "titulo": "Medicamentos",
+        "descricao": "informação do produto",
+        "saibaMais": "Saiba mais",
+        "icon": "pt.svg"
     }
+    
 ]
