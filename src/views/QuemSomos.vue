@@ -244,34 +244,37 @@ h1 {
     filter: invert(68%) sepia(23%) saturate(3809%) hue-rotate(359deg) brightness(101%) contrast(106%);
 }
 .IconDiv {
-  margin-top: -50px;
+  margin-top: -40px;
   height: 70px;
 }
 .IconDiv2 {
-  margin-top: -50px;
+  margin-top: -40px;
   height: 70px;
 }
 .IconDiv3 {
-  margin-top: -50px;
+  margin-top: -40px;
   height: 70px;
 }
 .titulo {
   margin: auto;
 }
 .titulo2 {
-  margin: 5px auto;
+  margin-top: 25px;
 }
 .titulo3 {
   margin: auto;
-  margin-top: 1px;
+  margin-top: -4px;
 }
 .Texto {
+  font-size: .8rem;
 }
 .Texto2 {
-  margin: 7px auto;
+  margin-top: 25px;
+  font-size: .8rem;
 }
 .Texto3 {
-  margin-top: -10px;
+  margin-top: -8px;
+  font-size: .8rem;
 }
 #dataaos {
   margin-top: -5%;
