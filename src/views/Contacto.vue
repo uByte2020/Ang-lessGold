@@ -121,8 +121,7 @@ export default {
       if (
         this.nome.length == 0 ||
         this.email.length == 0 ||
-        this.telefone.length == 0 ||
-        this.mensagem.length == 0
+        this.telefone.length == 0
       ) {
         alert("Preencha os espaços vazios");
       } else {
