@@ -193,7 +193,7 @@ h1 {
   left: 0px;
   height: 100%;
   width: 100%;
-  background: url("../assets/imgs/img38.jpg") no-repeat center center fixed;
+  background: url("../assets/imgs/img39.jpg") no-repeat center center fixed;
   background-size: contain;
   filter: brightness(20%);
 }
