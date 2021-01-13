@@ -25,16 +25,24 @@
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav class="ml-auto">
           <b-nav-item class="navitem"
-            ><router-link :class="getnavItemClass" to="/">Home</router-link></b-nav-item
+            ><router-link :class="getnavItemClass" to="/"
+              >Home</router-link
+            ></b-nav-item
           >
           <b-nav-item
-            ><router-link :class="getnavItemClass" to="/QuemSomos">Sobre Nós</router-link></b-nav-item
+            ><router-link :class="getnavItemClass" to="/QuemSomos"
+              >Sobre Nós</router-link
+            ></b-nav-item
           >
           <b-nav-item
-            ><router-link :class="getnavItemClass" to="/Produtos">Produtos</router-link></b-nav-item
+            ><router-link :class="getnavItemClass" to="/Produtos"
+              >Produtos</router-link
+            ></b-nav-item
           >
           <b-nav-item
-            ><router-link :class="getnavItemClass" to="/Contacto">Contactos</router-link></b-nav-item
+            ><router-link :class="getnavItemClass" to="/Contacto"
+              >Contactos</router-link
+            ></b-nav-item
           >
         </b-navbar-nav>
       </b-collapse>
@@ -55,15 +63,15 @@ export default {
       this.BackgroundClick = !this.BackgroundClick;
     },
   },
-  computed:{
-    getLogoImg(){
-      return this.logoImg === 'home' ? require('@/assets/imgs/Logobranco.png')
-      : require('@/assets/imgs/LogopngAnglessGold.png');
+  computed: {
+    getLogoImg() {
+      return this.logoImg === "home"
+        ? require("@/assets/imgs/Logobranco.png")
+        : require("@/assets/imgs/LogopngAnglessGold.png");
     },
-    getnavItemClass(){
-      return this.navItemClass === 'home' ? 'nav-item-da-home'
-      : 'nav-item-da';
-    }
+    getnavItemClass() {
+      return this.navItemClass === "home" ? "nav-item-da-home" : "nav-item-da";
+    },
   },
   props: {
     backgroundColor: {
@@ -71,7 +79,7 @@ export default {
       default: "transparent",
     },
     variant: String,
-    navbarClass:{
+    navbarClass: {
       type: String,
       default: "navbar",
     },
@@ -79,14 +87,14 @@ export default {
       type: String,
       default: "#fff",
     },
-    logoImg:{
+    logoImg: {
       type: String,
-      default: 'other'
+      default: "other",
     },
-    navItemClass:{
+    navItemClass: {
       type: String,
-      default: 'other'
-    }
+      default: "other",
+    },
   },
 };
 </script>
@@ -98,17 +106,18 @@ export default {
     url(../assets/Fonts/josefin-sans.bold.ttf) format("truetype");
 }
 
-a:hover{
+a:hover {
   text-decoration: none;
 }
 
-.nav-item-da{
+.nav-item-da {
   font-size: 25px !important;
   font-family: "Josefin-SemiBold";
   color: #8cb560 !important;
 }
 
-.nav-item-da:hover, .nav-item-da-home:hover{
+.nav-item-da:hover,
+.nav-item-da-home:hover {
   color: #f8ce00 !important;
 }
 
@@ -142,7 +151,6 @@ a:hover{
   /* background-color: transparent !important; */
 }
 
-
 .navbar-dark .navbar-nav .nav-link {
   /* color: rgba(255, 255, 255, 0.5); */
   color: #fff;
@@ -152,9 +160,11 @@ a:hover{
 .img {
   margin-left: 5%;
 }
-.navbar-collapse,
 .collapse {
   margin-right: 10%;
+}
+#nav-collapse{
+  margin: auto 4%;
 }
 @media only screen and (max-width: 600px) {
   button,
@@ -192,7 +202,6 @@ a:hover{
     -ms-height: 50%;
     -webkit-height: 50%;
   }
-  .nav-collapse,
   .Marg {
     margin-top: -20%;
     -moz-margin-top: -20%;
@@ -206,12 +215,12 @@ a:hover{
 
   .navbar-collapse {
     position: absolute;
-    margin-top: 76%!important;
+    margin-top: 76% !important;
     /* margin:auto; */
     margin-left: -5%;
-    margin-right: 15%!important;
-    background-color: #343A40;
-    width: 104%!important;
+    margin-right: 15% !important;
+    background-color: #343a40;
+    width: 104% !important;
     /* padding: 5%; */
   }
 }
