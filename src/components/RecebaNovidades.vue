@@ -20,7 +20,7 @@
                 >
                   <b-icon
                     icon="arrow-right"
-                    font-scale="1"
+                    font-scale="0.9"
                     variant="default"
                   ></b-icon>
                 </button>
@@ -126,10 +126,10 @@ input {
   -moz-background-color: rgb(53, 138, 53);
   -ms-background-color: rgb(53, 138, 53);
   -webkit-background-color: rgb(53, 138, 53);
-  border-radius: 100px;
-  -moz-border-radius: 100px;
-  -ms-border-radius: 100px;
-  -webkit-border-radius: 100px;
+  border-radius: 500px!important;
+  -moz-border-radius: 500px!important;
+  -ms-border-radius: 500px!important;
+  -webkit-border-radius: 500px!important;
 }
 @media only screen and (max-width: 800px){
   #button {
@@ -186,9 +186,6 @@ input {
     -ms-font-family: "Josefin";
     -webkit-font-family: "Josefin";
     font-size: 40px;
-    -moz-font-size: 60px;
-    -ms-font-size: 60px;
-    -webkit-font-size: 60px;
   }
 }
 </style>
