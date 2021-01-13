@@ -558,18 +558,18 @@ button:hover {
   -moz-left: 0px;
   -ms-left: 0px;
   -webkit-left: 0px;
-  background: url("../assets/imgs/img21.png") no-repeat center center;
-  -moz-background: url("../assets/imgs/img21.png") no-repeat center center;
-  -ms-background: url("../assets/imgs/img21.png") no-repeat center center;
-  -webkit-background: url("../assets/imgs/img21.png") no-repeat center center;
-  filter: brightness(30%);
-  -moz-filter: brightness(30%);
-  -ms-filter: brightness(30%);
-  -webkit-filter: brightness(30%);
-  background-size: 100% 180%;
-  -moz-background-size: 100% 180%;
-  -ms-background-size: 100% 180%;
-  -webkit-background-size: 100% 180%;
+  background: url("../assets/imgs/img38.png") no-repeat center center;
+  -moz-background: url("../assets/imgs/img38.png") no-repeat center center;
+  -ms-background: url("../assets/imgs/img38.png") no-repeat center center;
+  -webkit-background: url("../assets/imgs/img38.png") no-repeat center center;
+  filter: brightness(50%) grayscale(10%);
+  -moz-filter: brightness(50%) grayscale(10%);
+  -ms-filter: brightness(50%) grayscale(10%);
+  -webkit-filter: brightness(50%) grayscale(10%);
+  background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -webkit-background-size: cover;
 }
 #EscolherNos {
   padding: 4% 6%;
