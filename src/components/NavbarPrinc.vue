@@ -129,7 +129,7 @@ a:hover{
   position: relative !important;
   z-index: 1;
   width: 100%;
-  padding: 1%;
+  /* padding: 1%; */
 
   /* background-color: transparent !important; */
 }
@@ -150,7 +150,7 @@ a:hover{
   font-size: 20px;
 }
 .img {
-  margin-left: 10%;
+  margin-left: 5%;
 }
 .navbar-collapse,
 .collapse {
@@ -239,10 +239,7 @@ a:hover{
 }
 @media only screen and (max-width: 1024px) {
   .img {
-    margin-left: -40%;
-    -moz-margin-left: -40%;
-    -ms-margin-left: -40%;
-    -webkit-margin-left: -40%;
+    margin-left: -45% !important;
     width: 90%;
     -moz-width: 90%;
     -ms-width: 90%;
