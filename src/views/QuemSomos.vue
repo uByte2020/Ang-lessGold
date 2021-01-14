@@ -61,7 +61,10 @@
                   data-aos-offset="0"
                   data-aos-duration="990"
                 >
-                  <div class="row BackgroundBlackwhite" :class="{ BackgroundBlackwhiteVisao1: Know }">
+                  <div
+                    class="row BackgroundBlackwhite"
+                    :class="{ BackgroundBlackwhite1: Know }"
+                  >
                     <div class="col-12 IconDiv">
                       <img
                         src="../assets/svg/missao.svg"
@@ -81,7 +84,8 @@
                         <span v-show="Know">
                           os melhores profissionais e gerar os retorno atrativo
                           ao accionista e atuando com ética e responsablidade
-                          sócial.</span>
+                          sócial.</span
+                        >
                         <a @click="Saber">
                           <strong> {{ SKnow }} </strong>
                         </a>
@@ -117,13 +121,12 @@
                           v-show="know == false"
                           >...</span
                         >
-                        em todo o
-                        <span v-show="know == true"
-                          >país (Angola e Portugal) nesta mesma virtude, também
-                          demos suporte a lares de acolhimento de criança e
-                          adultos desfavorecidos normalmente com sexta básica,
-                          sopas e etc. Aliado fortemente na educação, saúde,
-                          artes e cúltura e turismo.</span
+                        <span v-show="know == true">
+                          em todo o país (Angola e Portugal) nesta mesma
+                          virtude, também demos suporte a lares de acolhimento
+                          de criança e adultos desfavorecidos normalmente com
+                          sexta básica, sopas e etc. Aliado fortemente na
+                          educação, saúde, artes e cúltura e turismo.</span
                         ><a @click="saber"
                           ><strong> {{ saiba }} </strong></a
                         >
@@ -257,7 +260,7 @@ h1 {
   height: 100%;
   width: 100%;
   background: url("../assets/imgs/img39.jpg") no-repeat center center fixed;
-  background-size: contain;
+  background-size: cover;
   filter: brightness(20%);
 }
 .BackgroundBlackTexto {
@@ -274,6 +277,14 @@ h1 {
   margin: auto !important;
 }
 .BackgroundBlackwhite {
+  width: 90% !important;
+  background-color: #fff;
+  height: 260px;
+  margin: 2%;
+  color: black;
+  border-radius: 10px;
+}
+.BackgroundBlackwhite1 {
   width: 90% !important;
   background-color: #fff;
   height: 260px;
@@ -329,15 +340,13 @@ h1 {
 }
 .titulo {
   margin: auto;
-  margin-top: 25px!important;
 }
 .titulo2 {
-  margin-top: 25px!important;
   margin: auto;
 }
 .titulo3 {
   margin: auto;
-  margin-top: -4px;
+  margin-top: -35px;
 }
 .Texto {
   font-size: 0.8rem;
@@ -349,7 +358,7 @@ h1 {
   text-align: justify;
 }
 .Texto3 {
-  margin-top: -30px;
+  margin-top: -45px;
   font-size: 0.8rem;
   text-align: justify;
 }
@@ -385,6 +394,14 @@ h1 {
     width: 90% !important;
     background-color: #fff;
     height: 250px;
+    margin: 50px auto;
+    color: black;
+    border-radius: 10px;
+  }
+  .BackgroundBlackwhite1 {
+    width: 90% !important;
+    background-color: #fff;
+    height: auto;
     margin: 50px auto;
     color: black;
     border-radius: 10px;
