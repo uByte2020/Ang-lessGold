@@ -224,8 +224,16 @@ a:hover {
     padding: 2%;
   }
 }
+@media only screen and (max-width: 320px){
 
-
+  .navbar-collapse {
+    position: absolute;
+    margin-top: 100% !important;
+    margin-left: -7%!important;
+    background-color: #343a40;
+    width: 101.9% !important;
+  }
+}
 @media only screen and (max-width: 500px){
 
   .navbar-collapse {
@@ -239,7 +247,6 @@ a:hover {
     padding: 4%;
   }
 }
-
 @media only screen and (max-width: 360px){
 
   .navbar-collapse {
