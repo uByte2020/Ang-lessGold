@@ -528,10 +528,6 @@ button:hover {
   -moz-background-color: rgb(22, 20, 20);
   -ms-background-color: rgb(22, 20, 20);
   -webkit-background-color: rgb(22, 20, 20);
-  margin: 0.5% auto;
-  -moz-margin: 0.5% auto;
-  -ms-margin: 0.5% auto;
-  -webkit-margin: 0.5% auto;
   position: relative;
   -moz-position: relative;
   -ms-position: relative;

@@ -29,11 +29,11 @@
                 <div class="col-lg-12 col-md-12 col-xl-5 col-sm-12">
                   <p class="BackgroundBlackTexto">
                     Para nós a chave do sucesso é melhorar dia/dia com a nossa
-                    equipa de profissionais, trabalhando arduamente para conceber
-                    soluções personalizadas, que vão ao encontro das necessidades
-                    positivamente nas empresas dos clientes e parceiros com
-                    demonstração de qualidade dos nossos produtos com 80%
-                    satisfeito, elaborando programações de atendimento e
+                    equipa de profissionais, trabalhando arduamente para
+                    conceber soluções personalizadas, que vão ao encontro das
+                    necessidades positivamente nas empresas dos clientes e
+                    parceiros com demonstração de qualidade dos nossos produtos
+                    com 80% satisfeito, elaborando programações de atendimento e
                     interface entre as diversas áreas de produção comercial e
                     operacional, coordenação e controle das atividade logísticas
                     relacionadas a armazenamento, transporte e operações
@@ -59,7 +59,7 @@
                   data-aos-easing="ease-in-back"
                   data-aos-delay="300"
                   data-aos-offset="0"
-                  data-aos-duration="1000"
+                  data-aos-duration="990"
                 >
                   <div class="row BackgroundBlackwhite">
                     <div class="col-12 IconDiv">
@@ -81,7 +81,7 @@
                   data-aos-easing="ease-in-back"
                   data-aos-delay="300"
                   data-aos-offset="0"
-                  data-aos-duration="1000"
+                  data-aos-duration="990"
                 >
                   <div class="row BackgroundBlackwhiteVisao">
                     <div class="col-12 IconDiv2">
@@ -113,7 +113,7 @@
                   data-aos-easing="ease-in-back"
                   data-aos-delay="300"
                   data-aos-offset="0"
-                  data-aos-duration="1000"
+                  data-aos-duration="990"
                 >
                   <div class="row BackgroundBlackwhite">
                     <div class="col-12 IconDiv3">
@@ -153,7 +153,7 @@ export default {
     BemVindoAngLess,
     RecebaNovidades,
     Footer,
-    TitleBar
+    TitleBar,
   },
 };
 </script>
@@ -186,14 +186,14 @@ h1 {
   color: #fff;
   position: relative;
 }
-#background-black::before{
+#background-black::before {
   content: "";
   position: absolute;
   top: 0px;
   left: 0px;
   height: 100%;
   width: 100%;
-  background: url('../assets/imgs/img26.jpg')no-repeat center center fixed;
+  background: url("../assets/imgs/img26.jpg") no-repeat center center fixed;
   background-size: cover;
   filter: brightness(20%);
 }
@@ -222,7 +222,7 @@ h1 {
   width: 90% !important;
   background-color: #fff;
   height: 250px;
-  margin: 2%;
+  margin: 2% auto;
   color: black;
   border-radius: 10px 10px 0px 0px;
 }
@@ -239,16 +239,21 @@ h1 {
   margin-top: 3%;
   height: 100%;
   width: 70px;
-  filter: invert(70%) sepia(11%) saturate(1530%) hue-rotate(46deg)
-    brightness(93%) contrast(90%);
+  /* filter: invert(70%) sepia(11%) saturate(1530%) hue-rotate(46deg)
+    brightness(93%) contrast(90%); */
+    filter: invert(68%) sepia(23%) saturate(3809%) hue-rotate(359deg) brightness(101%) contrast(106%);
 }
 .IconDiv {
-  margin: auto;
+  margin-top: -50px;
+  height: 70px;
 }
 .IconDiv2 {
-  margin: 10px auto;
+  margin-top: -50px;
+  height: 70px;
 }
 .IconDiv3 {
+  margin-top: -50px;
+  height: 70px;
 }
 .titulo {
   margin: auto;
@@ -296,5 +301,13 @@ h1 {
   #TituloAngLessH1 {
     font-size: 35px !important;
   }
+.BackgroundBlackwhite {
+  width: 90% !important;
+  background-color: #fff;
+  height: 250px;
+  margin: 50px auto;
+  color: black;
+  border-radius: 10px;
+}
 }
 </style>
