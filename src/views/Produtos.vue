@@ -10,7 +10,7 @@
           </div>
           <div class="overflow-auto">
             <div>
-              <b-pagination class="customPagination" variant="success" v-model="currentPage" pills :total-rows="rows" align="right" :per-page="perPage"></b-pagination>
+              <b-pagination id="customPagination" class="customPagination" variant="success" v-model="currentPage" pills :total-rows="rows" align="right" :per-page="perPage"></b-pagination>
             </div>
           </div>
         </div>
@@ -64,11 +64,18 @@ export default {
       this.start = this.perPage*(current-1);
       this.end = this.rows <= temp ? this.rows : temp;
       this.produtos = this.allProducts.slice(this.start, this.end)
+      console.log(this.start, this.end)
     },
   }
 };
 </script>
 <style scoped>
+
+#customPagination .page-item .page-item{
+  background-color: red!important;
+    border-color: red!important;
+    position: static!important;
+}
 
 .produtos-content{
   justify-content: flex-start;
