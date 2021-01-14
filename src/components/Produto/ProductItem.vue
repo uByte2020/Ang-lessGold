@@ -1,6 +1,6 @@
 <template>
     <div class="col-lg-3 col-md-6 col-xl-3 col-sm-12 ImagemGrelha">
-        <figure>
+        <figure @click="callDetalhePage(produto)">
             <img :src="loadImg(product.foto)" class="img-fluid img" />
             <figcaption>
               <div>
@@ -33,6 +33,10 @@ export default {
     loadIcon(iconPath) {
       return productIcon('./'+iconPath)
     },
+    callDetalhePage(produto){
+      console.log(produto)
+      this.$router.push({ name: 'detalhes-produto', params: { produto } })
+    }
   },
 }
 </script>

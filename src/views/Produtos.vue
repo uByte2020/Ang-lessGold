@@ -6,7 +6,7 @@
         <TitleBar title="Produtos" :bgImg="titleBarBgImg" pageClass="produto-page"></TitleBar>
         <div class="content">
           <div class="row produtos-content">
-            <ProductItem v-for="(produto, index) in produtos" :product="produto" :key="index"/>
+            <ProductItem v-for="(produto, index) in produtos" :product="produto"  :key="index"/>
           </div>
           <div class="overflow-auto">
             <div>
@@ -66,6 +66,7 @@ export default {
       this.produtos = this.allProducts.slice(this.start, this.end)
       console.log(this.start, this.end)
     },
+    
   }
 };
 </script>

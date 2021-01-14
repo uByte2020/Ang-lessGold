@@ -29,7 +29,7 @@
               <div class="row">
                 <div class="col-lg-6 col-md-6 col-xl-6 col-sm-12 imagem">
                   <img
-                    src="../assets/imgs/img18.jpg"
+                    src="../assets/imgs/products/img18.jpg"
                     class="img"
                     alt="Bacalhau Posta"
                   />
@@ -66,8 +66,11 @@ import NavbarPrinc from "../components/NavbarPrinc";
 import RecebaNovidades from "../components/RecebaNovidades";
 import Footer from "../components/Footer";
 export default {
-  name: "ProdutoPage1",
+  name: "DetalhesProduto",
   components: { NavbarPrinc, RecebaNovidades, Footer },
+  props:{
+    produto: Object
+  }
 };
 </script>
 <style scoped>
