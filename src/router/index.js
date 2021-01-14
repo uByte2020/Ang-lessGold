@@ -4,6 +4,7 @@ import Home from '../views/Home.vue'
 import Contacto from '../views/Contacto.vue'
 import QuemSomos from '../views/QuemSomos.vue'
 import Produtos from '../views/Produtos.vue'
+import DetalhesProduto from '../views/DetalhesProduto.vue'
 
 Vue.use(VueRouter)
 
@@ -35,7 +36,15 @@ const routes = [
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-  }
+  },
+  {
+    path: '/detalhes-produto',
+    name: 'detalhes-produto',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: DetalhesProduto
+  },
 ]
 
 const router = new VueRouter({

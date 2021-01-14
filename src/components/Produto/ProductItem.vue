@@ -1,18 +1,18 @@
 <template>
     <div class="col-lg-3 col-md-6 col-xl-3 col-sm-12 ImagemGrelha">
-        <figure>
+        <figure @click="callDetalhePage(produto)">
             <img :src="loadImg(product.foto)" class="img-fluid img" />
             <figcaption>
+              <div>
                 <h3>{{ product.titulo }}</h3>
                 <small> {{ product.descricao }} </small><br />
+              </div>
+              <div class="d-flex flex-row justify-content-between">
                 <router-link to="#">
                     <small>{{ product.saibaMais }}</small>
                 </router-link>
-                <img
-                :src="loadIcon(product.icon)"
-                alt="Portugal"
-                class="icon img-fluid"
-                />
+                <img :src="loadIcon(product.icon)" alt="Portugal" class="icon img-fluid"/>
+              </div>
             </figcaption>
         </figure>
     </div>
@@ -33,6 +33,10 @@ export default {
     loadIcon(iconPath) {
       return productIcon('./'+iconPath)
     },
+    callDetalhePage(produto){
+      console.log(produto)
+      this.$router.push({ name: 'detalhes-produto', params: { produto } })
+    }
   },
 }
 </script>
@@ -71,9 +75,9 @@ a:hover {
 
 .icon {
   height: 20px;
-  margin-left: 150px !important;
+  /* margin-left: 150px !important;
   margin-right: 0px !important;
-  margin: 0px;
+  margin: 0px; */
 }
 figure {
   background-color: #fff;
@@ -112,7 +116,7 @@ figcaption {
 .img {
   width: 100%;
   height: 200px;
-  border-radius: 7px;
+  border-radius: 7px 7px 0 0;
   object-fit: cover;
 }
 @media only screen and (max-width: 300px) {

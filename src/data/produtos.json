@@ -4,177 +4,277 @@
         "titulo": "Bacalhau",
         "descricao": "informação do produto",
         "saibaMais": "Saiba mais",
-        "icon": "pt.svg"
+        "icon": "pt.svg",
+        "category":"Bacalhau",
+        "subProdutos":[],
+        "hasCategory":true,
+        "hasSubProdutos": false
     },
     {
         "foto": "img24.jpg",
         "titulo": "Peixe Seco",
         "descricao": "informação do produto",
         "saibaMais": "Saiba mais",
-        "icon": "ao.svg"
+        "icon": "ao.svg",
+        "category":"Bacalhau",
+        "subProdutos":[],
+        "hasCategory":true,
+        "hasSubProdutos": false
     },
     {
-        "foto": "img24.jpg",
+        "foto": "img26.jpg",
         "titulo": "Makayabo",
         "descricao": "informação do produto",
         "saibaMais": "Saiba mais",
-        "icon": "ao.svg"
+        "icon": "ao.svg",
+        "category":"Bacalhau",
+        "subProdutos":[],
+        "hasCategory":true,
+        "hasSubProdutos": false
     },
     {
         "foto": "img20.jpg",
         "titulo": "Cerveja de Cuca",
         "descricao": "informação do produto",
         "saibaMais": "Saiba mais",
-        "icon": "ao.svg"
+        "icon": "ao.svg",
+        "category":"Bacalhau",
+        "subProdutos":[],
+        "hasCategory":true,
+        "hasSubProdutos": false
     },
     {
-        "foto": "img19.jpg",
+        "foto": "img46.jpg",
         "titulo": "Fuba",
         "descricao": "informação do produto",
         "saibaMais": "Saiba mais",
-        "icon": "ao.svg"
+        "icon": "ao.svg",
+        "category":"Bacalhau",
+        "subProdutos":[],
+        "hasCategory":true,
+        "hasSubProdutos": false
     },
     {
         "foto": "img12.jpg",
         "titulo": "Quiabo",
         "descricao": "informação do produto",
         "saibaMais": "Saiba mais",
-        "icon": "ao.svg"
+        "icon": "ao.svg",
+        "category":"Bacalhau",
+        "subProdutos":[],
+        "hasCategory":true,
+        "hasSubProdutos": false
     },
     {
-        "foto": "img14.jpg",
+        "foto": "img35.jpg",
         "titulo": "Farinha",
         "descricao": "informação do produto",
         "saibaMais": "Saiba mais",
-        "icon": "ao.svg"
+        "icon": "ao.svg",
+        "category":"Bacalhau",
+        "subProdutos":[],
+        "hasCategory":true,
+        "hasSubProdutos": false
     },
     {
-        "foto": "img14.jpg",
+        "foto": "img42.jpg",
         "titulo": "Ginguba",
         "descricao": "informação do produto",
         "saibaMais": "Saiba mais",
-        "icon": "ao.svg"
+        "icon": "ao.svg",
+        "category":"Bacalhau",
+        "subProdutos":[],
+        "hasCategory":true,
+        "hasSubProdutos": false
     },
     {
-        "foto": "img14.jpg",
+        "foto": "img13.jpg",
+        "titulo": "Azeite Doce",
+        "descricao": "informação do produto",
+        "saibaMais": "Saiba mais",
+        "icon": "ao.svg",
+        "category":"Bacalhau",
+        "subProdutos":[],
+        "hasCategory":true,
+        "hasSubProdutos": false
+    },
+    {
+        "foto": "img5.jpg",
         "titulo": "Óleo de Palma",
         "descricao": "informação do produto",
         "saibaMais": "Saiba mais",
-        "icon": "ao.svg"
+        "icon": "ao.svg",
+        "category":"Bacalhau",
+        "subProdutos":[],
+        "hasCategory":true,
+        "hasSubProdutos": false
     },
     {
-        "foto": "img14.jpg",
+        "foto": "img44.jpg",
         "titulo": "Kizaca",
         "descricao": "informação do produto",
         "saibaMais": "Saiba mais",
-        "icon": "ao.svg"
+        "icon": "ao.svg",
+        "category":"Bacalhau",
+        "subProdutos":[],
+        "hasCategory":true,
+        "hasSubProdutos": false
     },
     {
-        "foto": "img14.jpg",
+        "foto": "img37.jpg",
         "titulo": "Milho",
         "descricao": "informação do produto",
         "saibaMais": "Saiba mais",
-        "icon": "ao.svg"
+        "icon": "ao.svg",
+        "category":"Bacalhau",
+        "subProdutos":[],
+        "hasCategory":true,
+        "hasSubProdutos": false
     },
     {
-        "foto": "img14.jpg",
-        "titulo": "Múca",
+        "foto": "img38.jpg",
+        "titulo": "Múcua",
         "descricao": "informação do produto",
         "saibaMais": "Saiba mais",
-        "icon": "ao.svg"
+        "icon": "ao.svg",
+        "category":"Bacalhau",
+        "subProdutos":[],
+        "hasCategory":true,
+        "hasSubProdutos": false
+    },
+    {
+        "foto": "img33.jpg",
+        "titulo": "Morango",
+        "descricao": "informação do produto",
+        "saibaMais": "Saiba mais",
+        "icon": "ao.svg",
+        "category":"Bacalhau",
+        "subProdutos":[],
+        "hasCategory":true,
+        "hasSubProdutos": false
     },
     {
         "foto": "img25.jpg",
         "titulo": "Queijo",
         "descricao": "informação do produto",
         "saibaMais": "Saiba mais",
-        "icon": "pt.svg"
+        "icon": "pt.svg",
+        "category":"Bacalhau",
+        "subProdutos":[],
+        "hasCategory":true,
+        "hasSubProdutos": false
     },
     {
         "foto": "img19.jpg",
         "titulo": "Costuletas de Porco",
         "descricao": "informação do produto",
         "saibaMais": "Saiba mais",
-        "icon": "pt.svg"
+        "icon": "pt.svg",
+        "category":"Bacalhau",
+        "subProdutos":[],
+        "hasCategory":true,
+        "hasSubProdutos": false
     },
     {
         "foto": "img17.jpg",
         "titulo": "Febra de Porco",
         "descricao": "informação do produto",
         "saibaMais": "Saiba mais",
-        "icon": "pt.svg"
+        "icon": "pt.svg",
+        "category":"Bacalhau",
+        "subProdutos":[],
+        "hasCategory":true,
+        "hasSubProdutos": false
     },
     {
         "foto": "img1.jpeg",
         "titulo": "Chispe de Porco",
         "descricao": "informação do produto",
         "saibaMais": "Saiba mais",
-        "icon": "pt.svg"
+        "icon": "pt.svg",
+        "category":"Bacalhau",
+        "subProdutos":[],
+        "hasCategory":true,
+        "hasSubProdutos": false
     },
 
 
     {
-        "foto": "img19.jpg",
+        "foto": "img27.jpg",
         "titulo": "Bacon",
         "descricao": "informação do produto",
         "saibaMais": "Saiba mais",
-        "icon": "pt.svg"
+        "icon": "pt.svg",
+        "category":"Bacalhau",
+        "subProdutos":[],
+        "hasCategory":true,
+        "hasSubProdutos": false
     },
     {
-        "foto": "img17.jpg",
-        "titulo": "Fiambre",
+        "foto": "img15.png",
+        "titulo": "Fiambre e Mortadela",
         "descricao": "informação do produto",
         "saibaMais": "Saiba mais",
-        "icon": "pt.svg"
+        "icon": "pt.svg",
+        "category":"Bacalhau",
+        "subProdutos":[],
+        "hasCategory":true,
+        "hasSubProdutos": false
     },
     {
-        "foto": "img1.jpeg",
+        "foto": "img36.jpg",
         "titulo": "Presunto",
         "descricao": "informação do produto",
         "saibaMais": "Saiba mais",
-        "icon": "pt.svg"
-    },
-    {
-        "foto": "img1.jpeg",
-        "titulo": "Mortadela",
-        "descricao": "informação do produto",
-        "saibaMais": "Saiba mais",
-        "icon": "pt.svg"
+        "icon": "pt.svg",
+        "category":"Bacalhau",
+        "subProdutos":[],
+        "hasCategory":true,
+        "hasSubProdutos": false
     },
     {
         "foto": "img10.png",
         "titulo": "Chouriço de Carne",
         "descricao": "informação do produto",
         "saibaMais": "Saiba mais",
-        "icon": "pt.svg"
+        "icon": "pt.svg",
+        "category":"Bacalhau",
+        "subProdutos":[],
+        "hasCategory":true,
+        "hasSubProdutos": false
     },
     {
-        "foto": "img10.png",
+        "foto": "img39.jpg",
         "titulo": "Linguiça",
         "descricao": "informação do produto",
         "saibaMais": "Saiba mais",
-        "icon": "pt.svg"
+        "icon": "pt.svg",
+        "category":"Bacalhau",
+        "subProdutos":[],
+        "hasCategory":true,
+        "hasSubProdutos": false
     },
     {
-        "foto": "img10.png",
-        "titulo": "Peito de Frango",
+        "foto": "img40.jpg",
+        "titulo": "Peito de Frango e de Perú",
         "descricao": "informação do produto",
         "saibaMais": "Saiba mais",
-        "icon": "pt.svg"
+        "icon": "pt.svg",
+        "category":"Bacalhau",
+        "subProdutos":[],
+        "hasCategory":true,
+        "hasSubProdutos": false
     },
     {
-        "foto": "img10.png",
-        "titulo": "Peito de Perú",
-        "descricao": "informação do produto",
-        "saibaMais": "Saiba mais",
-        "icon": "pt.svg"
-    },
-    {
-        "foto": "img10.png",
+        "foto": "img41.jpg",
         "titulo": "Medicamentos",
         "descricao": "informação do produto",
         "saibaMais": "Saiba mais",
-        "icon": "pt.svg"
+        "icon": "pt.svg",
+        "category":"Bacalhau",
+        "subProdutos":[],
+        "hasCategory":true,
+        "hasSubProdutos": false
     }
     
 ]
