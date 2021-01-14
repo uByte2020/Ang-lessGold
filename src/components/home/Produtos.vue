@@ -15,22 +15,26 @@
         </div>
       </div>
       <div class="col-12">
-        <router-link id="VerTodos" to="/Produtos">VER TODOS PRODUTOS</router-link>
+        <router-link id="VerTodos" to="/Produtos"
+          >VER TODOS PRODUTOS</router-link
+        >
         <!-- <a href="#" ></a> -->
       </div>
-      <div class="col-lg-3 col-sm-12 col-xl-3 col-md-3">
+      <div class="col-lg-2 col-sm-12 col-xl-2 col-md-3" id="links">
         <div class="row links">
           <div class="col-lg-12 col-sm-4 col-xl-12 col-md-12" id="LinkCor">
             <a
               href="#Produto"
-              :class="{ active: Alimentos, LinkActive: 'Link' }"
-              id="Link1"
+              :class="{ LinkActive: !Alimentos, LinkActive: Alimentos }"
               @click="AlimentosClick()"
               >Pereciveis</a
             >
           </div>
           <div class="col-lg-12 col-sm-4 col-xl-12 col-md-12">
-            <a href="#Produto" id="Link2" @click="AlimentosClick()"
+            <a
+              href="#Produto"
+              :class="{ LinkActive: Alimentos, LinkActive: !Alimentos }"
+              @click="AlimentosClick()"
               >Não Pereciveis</a
             >
           </div>
@@ -142,30 +146,30 @@ export default {
   },
   methods: {
     AlimentosClick() {
-      this.Alimentos = !this.Alimentos;
-      const Cor = document.getElementById("Link1");
-      const Cor2 = document.getElementById("Link2");
-      if (this.Alimentos == true) {
-        Cor.style.color = "#68aa38";
-        Cor.style.borderLeft = "2px solid #68aa38";
-        Cor.style.marginLeft = "-8%";
-        Cor.style.paddingLeft = "4%";
-        Cor.style.fontSize = "1.2rem";
-        Cor2.style.color = " #707070";
-        Cor2.style.borderLeft = "0";
-        Cor2.style.marginLeft = "-8%";
-        Cor2.style.paddingLeft = "8%";
-        Cor2.style.fontSize = "1.2rem";
-      } else {
-        Cor2.style.color = "#68aa38";
-        Cor2.style.borderLeft = "2px solid #68aa38";
-        Cor2.style.marginLeft = "-8%";
-        Cor2.style.paddingLeft = "4%";
-        Cor.style.color = " #707070";
-        Cor.style.borderLeft = "0";
-        Cor.style.marginLeft = "-8%";
-        Cor.style.paddingLeft = "8%";
-      }
+      return (this.Alimentos = !this.Alimentos);
+      // const Cor = document.getElementById("Link1");
+      // const Cor2 = document.getElementById("Link2");
+      // if (this.Alimentos == true) {
+      //   Cor.style.color = "#68aa38";
+      //   Cor.style.borderLeft = "2px solid #68aa38";
+      //   Cor.style.marginLeft = "-12%";
+      //   Cor.style.paddingLeft = "4%";
+      //   Cor.style.fontSize = "1.2rem";
+      //   Cor2.style.color = " #707070";
+      //   Cor2.style.borderLeft = "0";
+      //   Cor2.style.marginLeft = "-8%";
+      //   Cor2.style.paddingLeft = "8%";
+      //   Cor2.style.fontSize = "1.2rem";
+      // } else {
+      //   Cor2.style.color = "#68aa38";
+      //   Cor2.style.borderLeft = "2px solid #68aa38";
+      //   Cor2.style.marginLeft = "-12%";
+      //   Cor2.style.paddingLeft = "4%";
+      //   Cor.style.color = " #707070";
+      //   Cor.style.borderLeft = "0";
+      //   Cor.style.marginLeft = "-8%";
+      //   Cor.style.paddingLeft = "8%";
+      // }
     },
   },
 };
@@ -178,7 +182,7 @@ export default {
 }
 .preco {
   color: #f8ce00;
-  font-family: 'JosefiniBold';
+  font-family: "JosefiniBold";
   font-size: 1.08rem;
 }
 .titulo-produto {
@@ -193,6 +197,9 @@ export default {
 }
 .explore-prod {
   font-size: 1.2rem;
+}
+#links {
+  margin-left: 0.5px !important;
 }
 .links {
   color: #707070 !important;
@@ -209,7 +216,7 @@ export default {
   font-size: 1.2rem;
 }
 .LinkActive {
-  font-size: 16px;
+  font-size: 1.2rem;
   color: #68aa38;
   -moz-color: #68aa38;
   -ms-color: #68aa38;
@@ -218,10 +225,7 @@ export default {
   -moz-border-left: 2px solid #68aa38;
   -ms-border-left: 2px solid #68aa38;
   -webkit-border-left: 2px solid #68aa38;
-  margin-left: -8%;
-  -moz-margin-left: -8%;
-  -ms-margin-left: -8%;
-  -webkit-margin-left: -8%;
+  margin-left: -12%;
   padding-left: 8%;
   -moz-padding-left: 8%;
   -ms-padding-left: 8%;
@@ -236,9 +240,7 @@ export default {
   -moz-border-left: 2px solid #f8ce00;
   -ms-border-left: 2px solid #f8ce00;
   -webkit-border-left: 2px solid #f8ce00;
-  margin-left: -8%;
-  -moz-margin-left: -8%;
-  -ms-margin-left: -8%;
+  margin-left: -12% !important;
   -webkit-margin-left: -8%;
   padding-left: 8%;
   -moz-padding-left: 8%;
@@ -254,13 +256,8 @@ export default {
   -moz-border-left: 2px solid #f8ce00;
   -ms-border-left: 2px solid #f8ce00;
   -webkit-border-left: 2px solid #f8ce00;
-  margin-left: -8%;
-  -moz-margin-left: -8%;
-  -ms-margin-left: -8%;
-  -webkit-margin-left: -8%;
+  margin-left: -12% !important;
   padding-left: 8%;
-  -moz-padding-left: 8%;
-  -ms-padding-left: 8%;
   -webkit-padding-left: 8%;
 }
 a {
@@ -280,10 +277,20 @@ a {
 a:active,
 a:hover,
 a:focus {
-  color: #000;
-  -moz-color: #000;
-  -ms-color: #000;
-  -webkit-color: #000;
+  color: #f8ce00 !important;
+  -moz-color: #f8ce00;
+  -ms-color: #f8ce00;
+  -webkit-color: #f8ce00;
+  border-left: 2px solid #f8ce00 !important;
+  -moz-border-left: 2px solid #f8ce00;
+  -ms-border-left: 2px solid #f8ce00;
+  -webkit-border-left: 2px solid #f8ce00;
+  margin-left: -12% !important;
+  -webkit-margin-left: -8%;
+  padding-left: 8%;
+  -moz-padding-left: 8%;
+  -ms-padding-left: 8%;
+  -webkit-padding-left: 8%;
   text-decoration: none;
   -moz-text-decoration: none;
   -ms-text-decoration: none;
@@ -455,6 +462,40 @@ a:hover {
     -webkit-text-align: left;
     margin-right: 60px !important;
     color: #70707070 !important;
+  }
+  .links {
+    color: #707070 !important;
+    border-left: 3px solid #70707070;
+    text-align: left;
+    /* margin-right: -30px !important; */
+    font-family: "JosefiniBold";
+    font-size: 1.2rem;
+  }
+  .LinkActive {
+    font-size: 1.2rem;
+    color: #68aa38;
+    -moz-color: #68aa38;
+    -ms-color: #68aa38;
+    -webkit-color: #68aa38;
+    border-left: 2px solid #68aa38;
+    -moz-border-left: 2px solid #68aa38;
+    -ms-border-left: 2px solid #68aa38;
+    -webkit-border-left: 2px solid #68aa38;
+    margin-left: -17px;
+    padding-left: 8%;
+    -moz-padding-left: 8%;
+    -ms-padding-left: 8%;
+    -webkit-padding-left: 8%;
+  }
+  a:hover,
+  a:active,
+  a:focus,
+  .LinkActive:hover {
+    font-size: 1.2rem;
+    color: #f8ce00;
+    border-left: 2px solid #68aa38;
+    margin-left: -17px!important;
+    padding-left: 8%;
   }
 }
 </style>
