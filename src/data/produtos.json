@@ -1,5 +1,6 @@
 [
     {
+        "_id":1,
         "foto": "img18.jpg",
         "titulo": "Bacalhau",
         "descricao": "informação do produto",
@@ -11,6 +12,7 @@
         "hasSubProdutos": false
     },
     {
+        "_id":2,
         "foto": "img24.jpg",
         "titulo": "Peixe Seco",
         "descricao": "informação do produto",
@@ -22,6 +24,7 @@
         "hasSubProdutos": false
     },
     {
+        "_id":3,
         "foto": "img26.jpg",
         "titulo": "Makayabo",
         "descricao": "informação do produto",
@@ -33,6 +36,7 @@
         "hasSubProdutos": false
     },
     {
+        "_id":4,
         "foto": "img20.jpg",
         "titulo": "Cerveja de Cuca",
         "descricao": "informação do produto",
@@ -44,6 +48,7 @@
         "hasSubProdutos": false
     },
     {
+        "_id":5,
         "foto": "img46.jpg",
         "titulo": "Fuba",
         "descricao": "informação do produto",
@@ -55,6 +60,7 @@
         "hasSubProdutos": false
     },
     {
+        "_id":6,
         "foto": "img12.jpg",
         "titulo": "Quiabo",
         "descricao": "informação do produto",
@@ -66,6 +72,7 @@
         "hasSubProdutos": false
     },
     {
+        "_id":7,
         "foto": "img35.jpg",
         "titulo": "Farinha",
         "descricao": "informação do produto",
@@ -77,6 +84,7 @@
         "hasSubProdutos": false
     },
     {
+        "_id":8,
         "foto": "img42.jpg",
         "titulo": "Ginguba",
         "descricao": "informação do produto",
@@ -88,6 +96,7 @@
         "hasSubProdutos": false
     },
     {
+        "_id":9,
         "foto": "img13.jpg",
         "titulo": "Azeite Doce",
         "descricao": "informação do produto",
@@ -99,6 +108,7 @@
         "hasSubProdutos": false
     },
     {
+        "_id":10,
         "foto": "img5.jpg",
         "titulo": "Óleo de Palma",
         "descricao": "informação do produto",
@@ -110,6 +120,7 @@
         "hasSubProdutos": false
     },
     {
+        "_id":11,
         "foto": "img44.jpg",
         "titulo": "Kizaca",
         "descricao": "informação do produto",
@@ -121,6 +132,7 @@
         "hasSubProdutos": false
     },
     {
+        "_id":12,
         "foto": "img37.jpg",
         "titulo": "Milho",
         "descricao": "informação do produto",
@@ -132,6 +144,7 @@
         "hasSubProdutos": false
     },
     {
+        "_id":13,
         "foto": "img38.jpg",
         "titulo": "Múcua",
         "descricao": "informação do produto",
@@ -143,6 +156,7 @@
         "hasSubProdutos": false
     },
     {
+        "_id":14,
         "foto": "img33.jpg",
         "titulo": "Morango",
         "descricao": "informação do produto",
@@ -154,6 +168,7 @@
         "hasSubProdutos": false
     },
     {
+        "_id":15,
         "foto": "img25.jpg",
         "titulo": "Queijo",
         "descricao": "informação do produto",
@@ -165,6 +180,7 @@
         "hasSubProdutos": false
     },
     {
+        "_id":16,
         "foto": "img19.jpg",
         "titulo": "Costuletas de Porco",
         "descricao": "informação do produto",
@@ -176,6 +192,7 @@
         "hasSubProdutos": false
     },
     {
+        "_id":17,
         "foto": "img17.jpg",
         "titulo": "Febra de Porco",
         "descricao": "informação do produto",
@@ -187,6 +204,7 @@
         "hasSubProdutos": false
     },
     {
+        "_id":18,
         "foto": "img1.jpeg",
         "titulo": "Chispe de Porco",
         "descricao": "informação do produto",
@@ -197,9 +215,8 @@
         "hasCategory":true,
         "hasSubProdutos": false
     },
-
-
     {
+        "_id":19,
         "foto": "img27.jpg",
         "titulo": "Bacon",
         "descricao": "informação do produto",
@@ -211,6 +228,7 @@
         "hasSubProdutos": false
     },
     {
+        "_id":20,
         "foto": "img15.png",
         "titulo": "Fiambre e Mortadela",
         "descricao": "informação do produto",
@@ -222,6 +240,7 @@
         "hasSubProdutos": false
     },
     {
+        "_id":21,
         "foto": "img36.jpg",
         "titulo": "Presunto",
         "descricao": "informação do produto",
@@ -233,6 +252,7 @@
         "hasSubProdutos": false
     },
     {
+        "_id":22,
         "foto": "img10.png",
         "titulo": "Chouriço de Carne",
         "descricao": "informação do produto",
@@ -244,6 +264,7 @@
         "hasSubProdutos": false
     },
     {
+        "_id":23,
         "foto": "img39.jpg",
         "titulo": "Linguiça",
         "descricao": "informação do produto",
@@ -255,6 +276,7 @@
         "hasSubProdutos": false
     },
     {
+        "_id":24,
         "foto": "img40.jpg",
         "titulo": "Peito de Frango e de Perú",
         "descricao": "informação do produto",
@@ -266,6 +288,7 @@
         "hasSubProdutos": false
     },
     {
+        "_id":25,
         "foto": "img41.jpg",
         "titulo": "Medicamentos",
         "descricao": "informação do produto",

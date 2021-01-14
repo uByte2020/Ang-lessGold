@@ -26,7 +26,7 @@ import TitleBar from "../components/TitleBar";
 import RecebaNovidades from "../components/RecebaNovidades";
 import Footer from "../components/Footer";
 import ProductItem from "../components/Produto/ProductItem";
-import produtosJson from '@/data/produtos.json'; 
+// import { mapGetters } from 'vuex'
 
 export default {
   name: "Produtos",
@@ -41,7 +41,7 @@ export default {
     return {
       perPage:8,
       currentPage: 1,
-      allProducts: produtosJson,
+      allProducts: [],
       produtos: [],
       rows:1,
       titleBarBgImg:"img34.jpg",
@@ -50,6 +50,8 @@ export default {
     };
   },
   mounted(){
+    this.$store.dispatch('setProducts');
+    this.allProducts = this.getProducts;
     this.rows = this.allProducts.length;
     this.setProducts(this.currentPage);
   },
@@ -64,9 +66,12 @@ export default {
       this.start = this.perPage*(current-1);
       this.end = this.rows <= temp ? this.rows : temp;
       this.produtos = this.allProducts.slice(this.start, this.end)
-      console.log(this.start, this.end)
     },
-    
+  },
+  computed: {
+    getProducts () {
+      return this.$store.getters.getProducts;
+    }
   }
 };
 </script>
