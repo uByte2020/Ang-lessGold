@@ -215,13 +215,51 @@ a:hover {
 
   .navbar-collapse {
     position: absolute;
-    margin-top: 76% !important;
+    margin-top: 80% !important;
     /* margin:auto; */
-    margin-left: -5%;
-    margin-right: 15% !important;
+    margin-left: -5%!important;
+    /* margin-right: 15% !important; */
     background-color: #343a40;
-    width: 104% !important;
-    /* padding: 5%; */
+    width: 100.5% !important;
+    padding: 2%;
+  }
+}
+
+
+@media only screen and (max-width: 500px){
+
+  .navbar-collapse {
+    position: absolute;
+    margin-top: 80% !important;
+    /* margin:auto; */
+    margin-left: -5%!important;
+    /* margin-right: 15% !important; */
+    background-color: #343a40;
+    width: 101% !important;
+    padding: 4%;
+  }
+}
+
+@media only screen and (max-width: 360px){
+
+  .navbar-collapse {
+    position: absolute;
+    margin-top: 83% !important;
+    margin-left: -5%!important;
+    background-color: #343a40;
+    width: 100.5vw !important;
+    padding: 4%;
+  }
+}
+@media only screen and (max-width: 290px){
+
+  .navbar-collapse {
+    position: absolute;
+    margin-top: 100% !important;
+    margin-left: -7%!important;
+    background-color: #343a40;
+    width: 100.9% !important;
+    /* padding: 4%; */
   }
 }
 @media only screen and (max-width: 790px) {
