@@ -1,6 +1,11 @@
 <template>
   <div id="Home">
-    <NavbarPrinc :backgroundColor="'transparent'" :navbarClass="'navbar-home'" :logoImg="'home'" :navItemClass="'home'"/>
+    <NavbarPrinc
+      :backgroundColor="'transparent'"
+      :navbarClass="'navbar-home'"
+      :logoImg="'home'"
+      :navItemClass="'home'"
+    />
     <div id="home" class="container-fluid">
       <div class="row">
         <div class="Inicio col-12">
@@ -16,7 +21,11 @@
                     parceiros com maior qualidade e segurança naquilo que são as
                     diversas necessidades de bens alimentares
                   </p>
-                  <router-link to="/QuemSomos"><button type="button" class="btn btn-lg">Saiba Mais</button></router-link>
+                  <router-link to="/QuemSomos"
+                    ><button type="button" class="btn btn-lg">
+                      Saiba Mais
+                    </button></router-link
+                  >
                 </div>
               </div>
             </div>
@@ -54,7 +63,11 @@
                 social e a prestação de serviço, comércio a grosso de bebidas,
                 alimentaos, medicamentos, Importação e Exportação.
               </p>
-              <router-link to="/QuemSomos"><button type="button" class="btn btn-lg">Saiba Mais</button></router-link>
+              <router-link to="/QuemSomos"
+                ><button type="button" class="btn btn-lg">
+                  Saiba Mais
+                </button></router-link
+              >
             </div>
           </div>
         </div>
@@ -93,7 +106,17 @@
             <div
               class="col-lg-12 col-xl-12 col-sm-12 col-md-12 TextoEscolherNosTituloPrinc"
             >
-              <h2>Porque Escolher-nos</h2>
+              <h1>Porque Escolher-nos</h1>
+              <div class="progress progress3">
+                <div
+                  class="progress-bar progressCor2"
+                  role="progressbar"
+                  style="width: 100%"
+                  aria-valuenow="10"
+                  aria-valuemin="0"
+                  aria-valuemax="10"
+                ></div>
+              </div>
             </div>
             <div class="col-lg-7 col-xl-3 col-sm-8 col-md-7 TextoEscolherNos">
               <div class="col-12">
@@ -110,20 +133,32 @@
               </p>
             </div>
             <div class="col-lg-7 col-xl-3 col-sm-8 col-md-7 TextoEscolherNos">
-              <div class="col-12">
-                <img
-                  src="../assets/svg/Comprometimento.svg"
-                  alt="Comprometimento com o cliente"
-                  class="icon"
-                />
+              <div class="row">
+                <div class="col-12">
+                  <img
+                    src="../assets/svg/Comprometimento.svg"
+                    alt="Comprometimento com o cliente"
+                    class="icon"
+                  />
+                </div>
+                <h4 class="TextoEscolherNosTitulo">
+                  Comprometimento com o Cliente
+                </h4>
+                <p class="TextoEscolherNosTxt2">
+                  Procuramos sempre os melhores resultados para os nossos
+                  clientes.
+                </p>
               </div>
-              <h4 class="TextoEscolherNosTitulo">
-                Comprometimento com o Cliente
-              </h4>
-              <p class="TextoEscolherNosTxt2">
-                Procuramos sempre os melhores resultados para os nossos
-                clientes.
-              </p>
+              <!-- <div class="progress progressLargura col-12">
+                <div
+                  class="progress-bar ProgressCor1"
+                  role="progressbar"
+                  style="width: 100%"
+                  aria-valuenow="100"
+                  aria-valuemin="10"
+                  aria-valuemax="100"
+                ></div>
+              </div> -->
             </div>
             <div class="col-lg-7 col-xl-3 col-sm-8 col-md-7 TextoEscolherNos">
               <div class="col-12">
@@ -291,7 +326,7 @@ export default {
   -webkit-padding: 5%;
   /* margin-left: 10%!important; */
 }
-.TextoInicioAng{
+.TextoInicioAng {
   text-align: justify;
 }
 /* .imgof{
@@ -388,13 +423,13 @@ button {
   -webkit-color: #fff;
 }
 button:hover {
-  background-color: #f8ce00!important;
-  -moz-background-color: #f8ce00!important;
-  -ms-background-color: #f8ce00!important;
-  -webkit-background-color: #f8ce00!important;
+  background-color: #f8ce00 !important;
+  -moz-background-color: #f8ce00 !important;
+  -ms-background-color: #f8ce00 !important;
+  -webkit-background-color: #f8ce00 !important;
   color: #ffffff !important;
   -moz-color: #ffffff !important;
-  -ms-color: #ffffff!important;
+  -ms-color: #ffffff !important;
   -webkit-color: #ffffff !important;
 }
 
@@ -424,6 +459,13 @@ button:hover {
   -ms-background-color: #f8ce00 !important;
   -webkit-background-color: #f8ce00 !important;
 }
+
+.progressCor2 {
+  background-color: #68aa38;
+  -moz-background-color: #68aa38;
+  -ms-background-color: #68aa38;
+  -webkit-background-color: #68aa38;
+}
 .progress2 {
   height: 5px;
   -moz-height: 5px;
@@ -443,6 +485,25 @@ button:hover {
   -moz-background-color: #8cb560 !important;
   -ms-background-color: #8cb560 !important;
   -webkit-background-color: #8cb560 !important;
+}
+
+.progress3 {
+  height: 5px;
+  -moz-height: 5px;
+  -ms-height: 5px;
+  -webkit-height: 5px;
+  width: 30px;
+  -moz-width: 30px;
+  -ms-width: 30px;
+  -webkit-width: 30px;
+  margin-top: 0% !important;
+  -moz-margin-top: 0% !important;
+  -ms-margin-top: 0% !important;
+  -webkit-margin-top: 0% !important;
+  margin: 2% 48%;
+  -moz-margin: 2% 48%;
+  -ms-margin: 2% 48%;
+  -webkit-margin: 2% 48%;
 }
 #OQFazemosPrinc {
   margin-bottom: 0.1%;
@@ -488,7 +549,7 @@ button:hover {
   -ms-left: 0px;
   -webkit-left: 0px;
   background: url("../assets/imgs/img33.jpg") no-repeat center;
-  -moz-background: url("../assets/imgs/img33.jpg") no-repeat  center;
+  -moz-background: url("../assets/imgs/img33.jpg") no-repeat center;
   -ms-background: url("../assets/imgs/img33.jpg") no-repeat center;
   -webkit-background: url("../assets/imgs/img33.jpg") no-repeat center;
   filter: brightness(50%);
@@ -737,18 +798,17 @@ p {
   -webkit-font-size: 16px;
 }
 @media only screen and (max-width: 600px) {
-  
-.Inicio {
-  padding: 5%;
-  -moz-padding: 5%;
-  -ms-padding: 5%;
-  -webkit-padding: 5%;
-  position: relative;
-  -moz-position: relative;
-  -ms-position: relative;
-  -webkit-position: relative;
-  height: 105vh;
-}
+  .Inicio {
+    padding: 5%;
+    -moz-padding: 5%;
+    -ms-padding: 5%;
+    -webkit-padding: 5%;
+    position: relative;
+    -moz-position: relative;
+    -ms-position: relative;
+    -webkit-position: relative;
+    height: 105vh;
+  }
   .TextoInicio {
     margin-top: 20%;
     -moz-margin-top: 20%;
@@ -871,54 +931,53 @@ p {
     -webkit-font-family: "Segoe";
   }
 }
-@media only screen and (max-width: 300px){
-  #Home{
-    width: 100vw!important;
+@media only screen and (max-width: 300px) {
+  #Home {
+    width: 100vw !important;
   }
-.Inicio {
-  padding: 5%;
-  -moz-padding: 5%;
-  -ms-padding: 5%;
-  -webkit-padding: 5%;
-  position: relative;
-  -moz-position: relative;
-  -ms-position: relative;
-  -webkit-position: relative;
-  height: 100%!important;
-  width: 105%!important;
-}
-.TextoInicio {
-  margin-top: 17%;
-  -moz-margin-top: 17%;
-  -ms-margin-top: 17%;
-  -webkit-margin-top: 17%;
-  text-align: left;
-  -moz-text-align: left;
-  -ms-text-align: left;
-  -webkit-text-align: left;
-  color: #fff;
-  -moz-color: #fff;
-  -ms-color: #fff;
-  -webkit-color: #fff;
-  font-family: "Gotham";
-  -moz-font-family: "Gotham";
-  -ms-font-family: "Gotham";
-  -webkit-font-family: "Gotham";
-  /* backdrop-filter: blur(5px); */
-}
-.TextoInicioH1 {
-  /* font-size: 100%; */
-  font-size: 30px;
-}
-.TextoInicioP {
-  margin: 5% auto;
-  -moz-margin: 5% auto;
-  -ms-margin: 5% auto;
-  -webkit-margin: 5% auto;
-  width: 100%;
-  font-size: 19px;
-  color: #fff;
-}
-
+  .Inicio {
+    padding: 5%;
+    -moz-padding: 5%;
+    -ms-padding: 5%;
+    -webkit-padding: 5%;
+    position: relative;
+    -moz-position: relative;
+    -ms-position: relative;
+    -webkit-position: relative;
+    height: 100% !important;
+    width: 105% !important;
+  }
+  .TextoInicio {
+    margin-top: 17%;
+    -moz-margin-top: 17%;
+    -ms-margin-top: 17%;
+    -webkit-margin-top: 17%;
+    text-align: left;
+    -moz-text-align: left;
+    -ms-text-align: left;
+    -webkit-text-align: left;
+    color: #fff;
+    -moz-color: #fff;
+    -ms-color: #fff;
+    -webkit-color: #fff;
+    font-family: "Gotham";
+    -moz-font-family: "Gotham";
+    -ms-font-family: "Gotham";
+    -webkit-font-family: "Gotham";
+    /* backdrop-filter: blur(5px); */
+  }
+  .TextoInicioH1 {
+    /* font-size: 100%; */
+    font-size: 30px;
+  }
+  .TextoInicioP {
+    margin: 5% auto;
+    -moz-margin: 5% auto;
+    -ms-margin: 5% auto;
+    -webkit-margin: 5% auto;
+    width: 100%;
+    font-size: 19px;
+    color: #fff;
+  }
 }
 </style>

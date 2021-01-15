@@ -264,7 +264,7 @@ a:hover {
 
   .navbar-collapse {
     position: absolute;
-    margin-top: 100% !important;
+    margin-top: 90% !important;
     margin-left: -7%!important;
     background-color: #343a40;
     width: 101.9% !important;
@@ -274,7 +274,7 @@ a:hover {
 
   .navbar-collapse {
     position: absolute;
-    margin-top: 90% !important;
+    margin-top: 85% !important;
     margin-left: -7%!important;
     background-color: #343a40;
     width: 385px !important;
