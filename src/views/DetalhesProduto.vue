@@ -9,7 +9,7 @@
         <div class="col-12" id="AlimentoBacalhau">
           <div class="row">
             <div class="col-12 ColorTextoH2">
-              <!-- <h2>
+               <h2>
                 <router-link class="ColorLinkTextoH2" to=""
                   >Todos os Produtos</router-link
                 >
@@ -23,7 +23,7 @@
                     aria-valuemax="100"
                   ></div>
                 </div>
-              </h2> -->
+              </h2> 
             </div>
             <div class="col-12">
               <div class="row">
@@ -76,12 +76,12 @@ export default {
   },
   data() {
     return {
-      produtos: {}
+      produto: {}
     };
   },
   mounted(){
     this.$store.dispatch('setProducts');
-    this.produtos = this.getProducts.filter(prod=>prod._id == this._id);
+    this.produto = this.getProducts.filter(prod=>prod._id == this._id);
   },
   computed: {
     getProducts () {
