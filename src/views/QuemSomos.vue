@@ -61,7 +61,10 @@
                   data-aos-offset="0"
                   data-aos-duration="990"
                 >
-                  <div class="row BackgroundBlackwhite">
+                  <div
+                    class="row BackgroundBlackwhite"
+                    :class="{ BackgroundBlackwhite1: Know }"
+                  >
                     <div class="col-12 IconDiv">
                       <img
                         src="../assets/svg/missao.svg"
@@ -71,7 +74,22 @@
                     </div>
                     <div class="col-12"><h2 class="titulo">Missão</h2></div>
                     <div class="col-12 Texto">
-                      <p>Lorem ipsum dolor sit amet consetetur</p>
+                      <p>
+                        Ter uma empresa de importação e exportação de
+                        referencias, comprometidas em satisfazer as necessidades
+                        dos parceiros de négocio e cliente, capaz de atrair,
+                        reter e desenvolver<span v-show="Know == false"
+                          >...</span
+                        >
+                        <span v-show="Know">
+                          os melhores profissionais e gerar os retorno atrativo
+                          ao accionista e atuando com ética e responsablidade
+                          sócial.</span
+                        >
+                        <a @click="Saber">
+                          <strong> {{ SKnow }} </strong>
+                        </a>
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -83,7 +101,10 @@
                   data-aos-offset="0"
                   data-aos-duration="990"
                 >
-                  <div class="row BackgroundBlackwhiteVisao">
+                  <div
+                    class="row BackgroundBlackwhiteVisao"
+                    :class="{ BackgroundBlackwhiteVisao1: know }"
+                  >
                     <div class="col-12 IconDiv2">
                       <img
                         src="../assets/svg/visao.svg"
@@ -93,7 +114,23 @@
                     </div>
                     <div class="col-12 titulo2"><h2>Visão</h2></div>
                     <div class="col-12 Texto2">
-                      <p>Lorem ipsum dolor sit amet consetetur</p>
+                      <p>
+                        <strong>Ang Less Gold - </strong> esta fortemente
+                        envolvido na melhoria da qualidade de vida das
+                        populações e desenvolvimento de comunidade<span
+                          v-show="know == false"
+                          >...</span
+                        >
+                        <span v-show="know == true">
+                          em todo o país (Angola e Portugal) nesta mesma
+                          virtude, também demos suporte a lares de acolhimento
+                          de criança e adultos desfavorecidos normalmente com
+                          sexta básica, sopas e etc. Aliado fortemente na
+                          educação, saúde, artes e cúltura e turismo.</span
+                        ><a @click="saber"
+                          ><strong> {{ saiba }} </strong></a
+                        >
+                      </p>
                     </div>
                     <div class="progress col-12">
                       <div
@@ -125,7 +162,10 @@
                     </div>
                     <div class="col-12 titulo3"><h2>Valores</h2></div>
                     <div class="col-12 Texto3">
-                      <p>Lorem ipsum dolor sit amet consetetur</p>
+                      <p>
+                        Oferecer os melhores produtos de bens alimentares e
+                        medicamentos aos nossos clientes, amigos e parceiros.
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -154,6 +194,32 @@ export default {
     RecebaNovidades,
     Footer,
     TitleBar,
+  },
+  data() {
+    return {
+      know: false,
+      Know: false,
+      saiba: "Saiba Mais",
+      SKnow: "Saiba Mais",
+    };
+  },
+  methods: {
+    saber() {
+      this.know = !this.know;
+      if (this.know == true) {
+        this.saiba = this.saiba.replace("Mais", "Menos");
+      } else {
+        this.saiba = "Saiba Mais";
+      }
+    },
+    Saber() {
+      this.Know = !this.Know;
+      if (this.Know == true) {
+        this.SKnow = this.SKnow.replace("Mais", "Menos");
+      } else {
+        this.SKnow = "Saiba Mais";
+      }
+    },
   },
 };
 </script>
@@ -194,7 +260,7 @@ h1 {
   height: 100%;
   width: 100%;
   background: url("../assets/imgs/img39.jpg") no-repeat center center fixed;
-  background-size: contain;
+  background-size: cover;
   filter: brightness(20%);
 }
 .BackgroundBlackTexto {
@@ -213,7 +279,15 @@ h1 {
 .BackgroundBlackwhite {
   width: 90% !important;
   background-color: #fff;
-  height: 250px;
+  height: 260px;
+  margin: 2%;
+  color: black;
+  border-radius: 10px;
+}
+.BackgroundBlackwhite1 {
+  width: 90% !important;
+  background-color: #fff;
+  height: 260px;
   margin: 2%;
   color: black;
   border-radius: 10px;
@@ -221,7 +295,15 @@ h1 {
 .BackgroundBlackwhiteVisao {
   width: 90% !important;
   background-color: #fff;
-  height: 250px;
+  height: 260px;
+  margin: 2% auto;
+  color: black;
+  border-radius: 10px 10px 0px 0px;
+}
+.BackgroundBlackwhiteVisao1 {
+  width: 90% !important;
+  background-color: #fff;
+  height: auto;
   margin: 2% auto;
   color: black;
   border-radius: 10px 10px 0px 0px;
@@ -241,7 +323,8 @@ h1 {
   width: 70px;
   /* filter: invert(70%) sepia(11%) saturate(1530%) hue-rotate(46deg)
     brightness(93%) contrast(90%); */
-    filter: invert(68%) sepia(23%) saturate(3809%) hue-rotate(359deg) brightness(101%) contrast(106%);
+  filter: invert(68%) sepia(23%) saturate(3809%) hue-rotate(359deg)
+    brightness(101%) contrast(106%);
 }
 .IconDiv {
   margin-top: -40px;
@@ -259,22 +342,25 @@ h1 {
   margin: auto;
 }
 .titulo2 {
-  margin-top: 25px;
+  margin: auto;
 }
 .titulo3 {
   margin: auto;
-  margin-top: -4px;
+  margin-top: -35px;
 }
 .Texto {
-  font-size: .8rem;
+  font-size: 0.8rem;
+  text-align: justify;
 }
 .Texto2 {
-  margin-top: 25px;
-  font-size: .8rem;
+  /* margin-top: 25px; */
+  font-size: 0.8rem;
+  text-align: justify;
 }
 .Texto3 {
-  margin-top: -8px;
-  font-size: .8rem;
+  margin-top: -45px;
+  font-size: 0.8rem;
+  text-align: justify;
 }
 #dataaos {
   margin-top: -5%;
@@ -304,13 +390,21 @@ h1 {
   #TituloAngLessH1 {
     font-size: 35px !important;
   }
-.BackgroundBlackwhite {
-  width: 90% !important;
-  background-color: #fff;
-  height: 250px;
-  margin: 50px auto;
-  color: black;
-  border-radius: 10px;
-}
+  .BackgroundBlackwhite {
+    width: 90% !important;
+    background-color: #fff;
+    height: 250px;
+    margin: 50px auto;
+    color: black;
+    border-radius: 10px;
+  }
+  .BackgroundBlackwhite1 {
+    width: 90% !important;
+    background-color: #fff;
+    height: auto;
+    margin: 50px auto;
+    color: black;
+    border-radius: 10px;
+  }
 }
 </style>
