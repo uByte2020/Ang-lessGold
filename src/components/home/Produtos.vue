@@ -387,7 +387,7 @@ figcaption {
   -moz-font-size: 10px;
   -ms-font-size: 10px;
   -webkit-font-size: 10px;
-  color: #68aa38;
+  color: #707070;
   border-bottom: 2px solid #f8ce00;
   /* text-decoration:#f8ce00; */
   text-align: right !important;
