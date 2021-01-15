@@ -287,7 +287,7 @@ h1 {
 .BackgroundBlackwhite1 {
   width: 90% !important;
   background-color: #fff;
-  height: 260px;
+  height: 280px;
   margin: 2%;
   color: black;
   border-radius: 10px;
@@ -319,24 +319,31 @@ h1 {
 }
 .icon {
   margin-top: 3%;
-  height: 100%;
-  width: 70px;
-  /* filter: invert(70%) sepia(11%) saturate(1530%) hue-rotate(46deg)
-    brightness(93%) contrast(90%); */
-  filter: invert(68%) sepia(23%) saturate(3809%) hue-rotate(359deg)
-    brightness(101%) contrast(106%);
+  height: 80px;
+  width: 80px;
+  /* filter: invert(68%) sepia(23%) saturate(3809%) hue-rotate(359deg)
+    brightness(101%) contrast(106%); */
+  filter: invert(99%) sepia(0%) saturate(3800%) hue-rotate(239deg)
+    brightness(115%) contrast(100%);
+  background-color: #e6c4c8;
+  border-radius: 100px;
+  padding: 4%;
+  margin-bottom: 4% !important;
 }
 .IconDiv {
   margin-top: -40px;
-  height: 70px;
+  height: 80px;
+  margin-bottom: 3%;
 }
 .IconDiv2 {
   margin-top: -40px;
-  height: 70px;
+  height: 80px;
+  margin-bottom: 2%;
 }
 .IconDiv3 {
   margin-top: -40px;
-  height: 70px;
+  height: 80px;
+  margin-bottom: 3%;
 }
 .titulo {
   margin: auto;
