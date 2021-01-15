@@ -9,7 +9,7 @@
         <div class="col-12" id="AlimentoBacalhau">
           <div class="row">
             <div class="col-12 ColorTextoH2">
-              <!-- <h2>
+              <h2>
                 <router-link class="ColorLinkTextoH2" to=""
                   >Todos os Produtos</router-link
                 >
@@ -23,10 +23,10 @@
                     aria-valuemax="100"
                   ></div>
                 </div>
-              </h2> -->
+              </h2>
             </div>
-            <div class="col-12" v-if="getProducts">
-              <div class="row" v-for="produtos in getSubProduto" :key="produtos">
+            <div class="col-12" v-for="produtos in getSubProduto" :key="produtos">
+              <div class="row">
                 <div class="col-lg-6 col-md-6 col-xl-6 col-sm-12 imagem">
                   <img
                     src="../assets/imgs/products/img18.jpg"
@@ -132,7 +132,7 @@ a:hover {
   -webkit-background-color: #8cb560 !important;
 }
 .img {
-  height: 75% !important;
+  height: auto !important;
   width: 70%;
   border-radius: 5px;
   box-shadow: 2px 2px 8px #707070;

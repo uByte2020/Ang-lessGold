@@ -224,16 +224,7 @@ a:hover {
     padding: 2%;
   }
 }
-@media only screen and (max-width: 320px){
 
-  .navbar-collapse {
-    position: absolute;
-    margin-top: 100% !important;
-    margin-left: -7%!important;
-    background-color: #343a40;
-    width: 101.9% !important;
-  }
-}
 @media only screen and (max-width: 500px){
 
   .navbar-collapse {
@@ -243,7 +234,7 @@ a:hover {
     margin-left: -5%!important;
     /* margin-right: 15% !important; */
     background-color: #343a40;
-    width: 101% !important;
+    width: 101.2% !important;
     padding: 4%;
   }
 }
@@ -265,8 +256,38 @@ a:hover {
     margin-top: 100% !important;
     margin-left: -7%!important;
     background-color: #343a40;
-    width: 100.9% !important;
+    width: 101.3% !important;
     /* padding: 4%; */
+  }
+}
+@media only screen and (min-width: 310px) and (max-width: 320px){
+
+  .navbar-collapse {
+    position: absolute;
+    margin-top: 100% !important;
+    margin-left: -7%!important;
+    background-color: #343a40;
+    width: 101.9% !important;
+  }
+}
+@media only screen and (min-width: 370px) and (max-width: 375px){
+
+  .navbar-collapse {
+    position: absolute;
+    margin-top: 90% !important;
+    margin-left: -7%!important;
+    background-color: #343a40;
+    width: 385px !important;
+  }
+}
+@media only screen and (min-width: 530px) and (max-width: 540px){
+
+  .navbar-collapse {
+    position: absolute;
+    margin-top: 60% !important;
+    margin-left: -7%!important;
+    background-color: #343a40;
+    width: 562px !important;
   }
 }
 @media only screen and (max-width: 790px) {
