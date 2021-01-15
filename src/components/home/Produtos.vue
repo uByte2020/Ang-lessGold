@@ -388,36 +388,17 @@ figcaption {
   -ms-font-size: 10px;
   -webkit-font-size: 10px;
   color: #68aa38;
-  text-decoration:#f8ce00;
-  -moz-text-decoration: blue;
-  -ms-text-decoration: blue;
-  -webkit-text-decoration: blue;
+  border-bottom: 2px solid #f8ce00;
+  /* text-decoration:#f8ce00; */
   text-align: right !important;
-  -moz-text-align: right !important;
-  -ms-text-align: right !important;
-  -webkit-text-align: right !important;
   margin-left: 80%;
-  -moz-margin-left: 80%;
-  -ms-margin-left: 80%;
-  -webkit-margin-left: 80%;
 }
 #VerTodos:hover {
-  color: #68aa38!important;
-  -moz-color: #68aa38;
-  -ms-color: #68aa38;
-  -webkit-color: #68aa38;
-  text-decoration: 1px #68aa38 !important;
-  -moz-text-decoration: 1px #68aa38;
-  -ms-text-decoration: 1px #68aa38;
-  -webkit-text-decoration: 1px #68aa38;
+  color: #f8ce00!important;
   font-size: 10px;
   -moz-font-size: 10px;
   -ms-font-size: 10px;
   -webkit-font-size: 10px;
-  text-decoration: blue !important;
-  -moz-text-decoration: blue;
-  -ms-text-decoration: blue;
-  -webkit-text-decoration: blue;
   text-align: right !important;
   -moz-text-align: right !important;
   -ms-text-align: right !important;
@@ -432,9 +413,6 @@ a {
 }
 a:active {
   color: #707070;
-}
-a:hover {
-  /* color: #68aa38; */
 }
 @media only screen and (max-width: 600px) {
   #VerTodos {
