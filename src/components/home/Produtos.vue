@@ -18,13 +18,12 @@
         <router-link id="VerTodos" to="/Produtos"
           >VER TODOS PRODUTOS</router-link
         >
-        <!-- <a href="#" ></a> -->
       </div>
       <div class="col-lg-2 col-sm-12 col-xl-2 col-md-3" id="links">
         <div class="row links">
           <div class="col-lg-12 col-sm-4 col-xl-12 col-md-12" id="LinkCor">
             <a
-              href="#Produto"
+              href="#Produto" class="LinkCor2"
               :class="{ LinkActive: !Alimentos, LinkActive: Alimentos }"
               @click="AlimentosClick()"
               >Pereciveis</a
@@ -32,7 +31,7 @@
           </div>
           <div class="col-lg-12 col-sm-4 col-xl-12 col-md-12">
             <a
-              href="#Produto"
+              href="#Produto" class="LinkCor2"
               :class="{ LinkActive: Alimentos, LinkActive: !Alimentos }"
               @click="AlimentosClick()"
               >Não Pereciveis</a
@@ -261,10 +260,6 @@ export default {
   -webkit-padding-left: 8%;
 }
 a {
-  /* color: #707070!important;
-  -moz-color: #000;
-  -ms-color: #000;
-  -webkit-color: #000; */
   text-decoration: none;
   -moz-text-decoration: none;
   -ms-text-decoration: none;
@@ -274,9 +269,7 @@ a {
   -ms-background-color: transparent;
   -webkit-background-color: transparent;
 }
-a:active,
-a:hover,
-a:focus {
+.LinkCor2:hover{
   color: #f8ce00 !important;
   -moz-color: #f8ce00;
   -ms-color: #f8ce00;
@@ -295,8 +288,6 @@ a:focus {
   -moz-text-decoration: none;
   -ms-text-decoration: none;
   -webkit-text-decoration: none;
-}
-a:active {
 }
 .img {
   height: 155px;
@@ -396,11 +387,8 @@ figcaption {
   -moz-font-size: 10px;
   -ms-font-size: 10px;
   -webkit-font-size: 10px;
-  color: gray;
-  -moz-color: gray;
-  -ms-color: gray;
-  -webkit-color: gray;
-  text-decoration: blue;
+  color: #68aa38;
+  text-decoration:#f8ce00;
   -moz-text-decoration: blue;
   -ms-text-decoration: blue;
   -webkit-text-decoration: blue;
@@ -414,20 +402,36 @@ figcaption {
   -webkit-margin-left: 80%;
 }
 #VerTodos:hover {
-  color: #68aa38;
+  color: #68aa38!important;
   -moz-color: #68aa38;
   -ms-color: #68aa38;
   -webkit-color: #68aa38;
-  text-decoration: 1px #68aa38;
+  text-decoration: 1px #68aa38 !important;
   -moz-text-decoration: 1px #68aa38;
   -ms-text-decoration: 1px #68aa38;
   -webkit-text-decoration: 1px #68aa38;
+  font-size: 10px;
+  -moz-font-size: 10px;
+  -ms-font-size: 10px;
+  -webkit-font-size: 10px;
+  text-decoration: blue !important;
+  -moz-text-decoration: blue;
+  -ms-text-decoration: blue;
+  -webkit-text-decoration: blue;
+  text-align: right !important;
+  -moz-text-align: right !important;
+  -ms-text-align: right !important;
+  -webkit-text-align: right !important;
+  margin-left: 80%;
+  -moz-margin-left: 80%;
+  -ms-margin-left: 80%;
+  -webkit-margin-left: 80%;
 }
 a {
   color: #707070;
 }
 a:active {
-  color: #f8ce00;
+  color: #707070;
 }
 a:hover {
   /* color: #68aa38; */
@@ -487,9 +491,6 @@ a:hover {
     -ms-padding-left: 8%;
     -webkit-padding-left: 8%;
   }
-  a:hover,
-  a:active,
-  a:focus,
   .LinkActive:hover {
     font-size: 1.2rem;
     color: #f8ce00;
