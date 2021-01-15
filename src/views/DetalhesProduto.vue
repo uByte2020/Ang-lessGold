@@ -9,7 +9,7 @@
         <div class="col-12" id="AlimentoBacalhau">
           <div class="row">
             <div class="col-12 ColorTextoH2">
-               <h2>
+              <!-- <h2>
                 <router-link class="ColorLinkTextoH2" to=""
                   >Todos os Produtos</router-link
                 >
@@ -23,10 +23,10 @@
                     aria-valuemax="100"
                   ></div>
                 </div>
-              </h2> 
+              </h2> -->
             </div>
-            <div class="col-12">
-              <div class="row">
+            <div class="col-12" v-if="getProducts">
+              <div class="row" v-for="produtos in getSubProduto" :key="produtos">
                 <div class="col-lg-6 col-md-6 col-xl-6 col-sm-12 imagem">
                   <img
                     src="../assets/imgs/products/img18.jpg"
@@ -37,10 +37,7 @@
                 <div class="col-lg-6 col-md-6 col-xl-6 col-sm-12 Texto">
                   <h1 class="Bacalhau">Bacalhau Posta/Inteira</h1>
                   <p class="BacalhauTexto">
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr
+                    {{produtos}}
                   </p>
                   <h4 class="BacalhauH4">
                     Produto proveniente de
@@ -68,7 +65,7 @@ import Footer from "../components/Footer";
 export default {
   name: "DetalhesProduto",
   components: { NavbarPrinc, RecebaNovidades, Footer },
-  props:{
+  props: {
     _id: {
       type: String,
       required: true,
@@ -76,18 +73,23 @@ export default {
   },
   data() {
     return {
-      produto: {}
+      produto: {},
     };
   },
-  mounted(){
-    this.$store.dispatch('setProducts');
-    this.produto = this.getProducts.filter(prod=>prod._id == this._id);
+  mounted() {
+    this.$store.dispatch("setProducts");
+    this.produto = this.getProducts.filter((prod) => prod._id == this._id);
   },
   computed: {
-    getProducts () {
+    getProducts() {
       return this.$store.getters.getProducts;
-    }
-  }
+    },
+    getSubProduto() {
+      return this.produto.hasSubProdutos
+        ? this.produto.subProdutos
+        : [this.produto];
+    },
+  },
 };
 </script>
 <style scoped>
@@ -162,28 +164,29 @@ a:hover {
 .icon {
   height: 30px;
 }
-#AlimentoBacalhau{
+#AlimentoBacalhau {
   position: relative;
 }
-#AlimentoBacalhau::before{
+#AlimentoBacalhau::before {
   content: "";
   width: 100%;
   height: 100%;
   top: 0px;
   left: 0px;
   position: absolute;
-   background: url('../assets/imgs/img4.jpg') no-repeat center center;
-  -moz-background: url('../assets/imgs/img4.jpg') no-repeat center center;
-  -ms-background: url('../assets/imgs/img4.jpg')no-repeat center center;
-  -webkit-background: url('../assets/imgs/img4.jpg') no-repeat center center;
+  background: url("../assets/imgs/img4.jpg") no-repeat center center;
+  -moz-background: url("../assets/imgs/img4.jpg") no-repeat center center;
+  -ms-background: url("../assets/imgs/img4.jpg") no-repeat center center;
+  -webkit-background: url("../assets/imgs/img4.jpg") no-repeat center center;
   background-size: 100% 120%;
   -moz-background-size: 100% 120%;
   -ms-background-size: 100% 120%;
   -webkit-background-size: 100% 150%;
-  filter:opacity(0.1);
-  -moz-filter:opacity(0.1);
-  -ms-filter:opacity(0.1);
-  -webkit-filter:opacity(0.1);}
+  filter: opacity(0.1);
+  -moz-filter: opacity(0.1);
+  -ms-filter: opacity(0.1);
+  -webkit-filter: opacity(0.1);
+}
 @font-face {
   font-family: "Josefin";
   src: local("Fonts"),
