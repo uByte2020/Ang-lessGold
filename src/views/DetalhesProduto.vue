@@ -10,7 +10,7 @@
           <div class="row">
             <div class="col-12 ColorTextoH2">
               <h2>
-                <router-link class="ColorLinkTextoH2" to=""
+                <router-link class="ColorLinkTextoH2" to="/Produtos"
                   >Todos os Produtos</router-link
                 >
                 <div class="progress">
@@ -25,31 +25,12 @@
                 </div>
               </h2>
             </div>
-            <div class="col-12" v-for="produtos in getSubProduto" :key="produtos">
-              <div class="row">
-                <div class="col-lg-6 col-md-6 col-xl-6 col-sm-12 imagem">
-                  <img
-                    src="../assets/imgs/products/img18.jpg"
-                    class="img"
-                    alt="Bacalhau Posta"
-                  />
-                </div>
-                <div class="col-lg-6 col-md-6 col-xl-6 col-sm-12 Texto">
-                  <h1 class="Bacalhau">Bacalhau Posta/Inteira</h1>
-                  <p class="BacalhauTexto">
-                    {{produtos}}
-                  </p>
-                  <h4 class="BacalhauH4">
-                    Produto proveniente de
-                    <img
-                      src="../assets/svg/pt.svg"
-                      alt="Portugal"
-                      class="icon img-fluid"
-                    />
-                  </h4>
-                </div>
+            <div class="content">
+              <div class="row content-row">
+                <detalhe-produto-item v-for="(produto, index) in getSubProduto" :product="produto"  :key="index"/>
               </div>
             </div>
+            
           </div>
         </div>
         <RecebaNovidades />
@@ -61,10 +42,11 @@
 <script>
 import NavbarPrinc from "../components/NavbarPrinc";
 import RecebaNovidades from "../components/RecebaNovidades";
+import DetalheProdutoItem from "../components/detalheProduto/DetalheProdutoItem";
 import Footer from "../components/Footer";
 export default {
   name: "DetalhesProduto",
-  components: { NavbarPrinc, RecebaNovidades, Footer },
+  components: { NavbarPrinc, DetalheProdutoItem,RecebaNovidades, Footer },
   props: {
     _id: {
       type: String,
@@ -78,7 +60,7 @@ export default {
   },
   mounted() {
     this.$store.dispatch("setProducts");
-    this.produto = this.getProducts.filter((prod) => prod._id == this._id);
+    this.produto = this.getProducts.filter((prod) => prod._id == this._id)[0];
   },
   computed: {
     getProducts() {
@@ -93,9 +75,19 @@ export default {
 };
 </script>
 <style scoped>
+
+.content{
+  width: 100%;
+}
+
+.content-row{
+  margin-left: 0!important;
+  margin-right: 0!important;
+}
+
 .ColorTextoH2 {
   text-align: left !important;
-  margin: 5% auto;
+  margin: 2% auto;
 }
 .ColorLinkTextoH2 {
   color: #8cb560;

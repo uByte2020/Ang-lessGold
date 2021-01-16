@@ -54,7 +54,7 @@
             <div class="col-lg-12 col-md-12 col-xl-12 col-sm-12 tabelasBracas">
               <div class="row justify-content-md-center centro">
                 <div
-                  class="col-lg-3 col-md-12 col-xl-3 col-sm-12"
+                  class="col-lg-4 col-md-12 col-xl-4 col-sm-12"
                   data-aos="fade-up"
                   data-aos-easing="ease-in-back"
                   data-aos-delay="300"
@@ -94,7 +94,7 @@
                   </div>
                 </div>
                 <div
-                  class="col-lg-3 col-md-12 col-xl-3 col-sm-12"
+                  class="col-lg-4 col-md-12 col-xl-4 col-sm-12"
                   data-aos="fade-up"
                   data-aos-easing="ease-in-back"
                   data-aos-delay="300"
@@ -145,7 +145,7 @@
                   </div>
                 </div>
                 <div
-                  class="col-lg-3 col-md-12 col-xl-3 col-sm-12"
+                  class="col-lg-4 col-md-12 col-xl-4 col-sm-12"
                   data-aos="fade-up"
                   data-aos-easing="ease-in-back"
                   data-aos-delay="300"

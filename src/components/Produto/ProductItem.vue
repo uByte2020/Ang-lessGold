@@ -34,7 +34,7 @@ export default {
       return productIcon('./'+iconPath)
     },
     callDetalhePage(){
-      this.$router.push({ name: 'detalhes-produto', params: { _id: this.product._id } })
+      this.$router.push({ name: 'detalhes-produto', params: { _id: String(this.product._id) } })
     }
   },
 }
