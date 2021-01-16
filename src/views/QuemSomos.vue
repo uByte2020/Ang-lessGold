@@ -280,7 +280,7 @@ h1 {
   width: 90% !important;
   background-color: #fff;
   height: 260px;
-  margin: 2%;
+  margin: 2% auto;
   color: black;
   border-radius: 10px;
 }
@@ -296,7 +296,7 @@ h1 {
   width: 90% !important;
   background-color: #fff;
   height: 260px;
-  margin: 2% auto;
+  margin: 2% auto!important;
   color: black;
   border-radius: 10px 10px 0px 0px;
 }
@@ -304,7 +304,7 @@ h1 {
   width: 90% !important;
   background-color: #fff;
   height: auto;
-  margin: 2% auto;
+  margin: 2% auto!important;
   color: black;
   border-radius: 10px 10px 0px 0px;
 }

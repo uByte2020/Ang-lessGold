@@ -20,7 +20,7 @@
                     aria-valuemax="10"
                   ></div>
                 </div>
-                <p>Estranda da Mendanha</p>
+                <p>Estrada da Mendanha</p>
                 <p>Nº 25 Bloco 4 - 4 C</p>
                 <p>Parque norte</p>
                 <p>2580-588 Carregando</p>
