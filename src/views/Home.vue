@@ -285,7 +285,7 @@ export default {
   -webkit-filter: grayscale(50%) brightness(30%) !important;
 }
 .TextoInicio {
-  margin-top: 15%;
+  margin-top: 50px;
   -moz-margin-top: 15%;
   -ms-margin-top: 15%;
   -webkit-margin-top: 15%;
@@ -811,7 +811,7 @@ p {
     height: 105vh;
   }
   .TextoInicio {
-    margin-top: 20%;
+    margin-top: 40px;
     -moz-margin-top: 20%;
     -ms-margin-top: 20%;
     -webkit-margin-top: 20%;
@@ -838,6 +838,7 @@ p {
     -ms-padding: 5%;
     -webkit-padding: 5%;
   }
+  
 }
 @media only screen and (max-width: 1590px) {
   .TextoEscolherNosTxt {
@@ -930,6 +931,30 @@ p {
     -moz-font-family: "Segoe";
     -ms-font-family: "Segoe";
     -webkit-font-family: "Segoe";
+  }
+}
+@media only screen and (min-width: 400px) and (max-width: 800px){
+  .TextoInicio {
+    margin-top: 150px;
+    -moz-margin-top: 20%;
+    -ms-margin-top: 20%;
+    -webkit-margin-top: 20%;
+  }
+}
+@media only screen and (min-width: 370px) and (max-width: 375px){
+  .TextoInicio {
+    margin-top: 170px;
+    -moz-margin-top: 20%;
+    -ms-margin-top: 20%;
+    -webkit-margin-top: 20%;
+  }
+}
+@media only screen and (min-width: 310px) and (max-width: 320px){
+  .TextoInicio {
+    margin-top: 60px;
+    -moz-margin-top: 20%;
+    -ms-margin-top: 20%;
+    -webkit-margin-top: 20%;
   }
 }
 @media only screen and (max-width: 300px) {

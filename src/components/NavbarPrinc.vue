@@ -149,21 +149,15 @@ a:hover {
   position: relative !important;
   z-index: 1;
   width: 100%;
-  /* padding: 1%; */
-
-  /* background-color: transparent !important; */
 }
 
 .navbar-home {
   position: absolute !important;
   z-index: 1;
   width: 100%;
-  /* padding: 1%; */
-  /* background-color: transparent !important; */
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  /* color: rgba(255, 255, 255, 0.5); */
   color: #fff;
   font-family: "Josefin";
   font-size: 20px;
@@ -264,7 +258,7 @@ a:hover {
 
   .navbar-collapse {
     position: absolute;
-    margin-top: 300px !important;
+    margin-top: 290px !important;
     margin-left: -7%!important;
     background-color: #343a40;
     width: 101.3% !important;
