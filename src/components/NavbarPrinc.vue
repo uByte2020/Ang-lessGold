@@ -215,7 +215,7 @@ a:hover {
 
   .navbar-collapse {
     position: absolute;
-    margin-top: 80% !important;
+    margin-top: 300px !important;
     /* margin:auto; */
     margin-left: -5%!important;
     /* margin-right: 15% !important; */
@@ -229,7 +229,7 @@ a:hover {
 
   .navbar-collapse {
     position: absolute;
-    margin-top: 80% !important;
+    margin-top: 310px !important;
     /* margin:auto; */
     margin-left: -5%!important;
     /* margin-right: 15% !important; */
@@ -242,7 +242,7 @@ a:hover {
 
   .navbar-collapse {
     position: absolute;
-    margin-top: 83% !important;
+    margin-top: 300px !important;
     margin-left: -5%!important;
     background-color: #343a40;
     width: 100.5vw !important;
@@ -253,7 +253,7 @@ a:hover {
 
   .navbar-collapse {
     position: absolute;
-    margin-top: 100% !important;
+    margin-top: 300px !important;
     margin-left: -7%!important;
     background-color: #343a40;
     width: 101.3% !important;
@@ -264,7 +264,7 @@ a:hover {
 
   .navbar-collapse {
     position: absolute;
-    margin-top: 90% !important;
+    /* margin-top: 90% !important; */
     margin-left: -7%!important;
     background-color: #343a40;
     width: 101.9% !important;
@@ -274,7 +274,7 @@ a:hover {
 
   .navbar-collapse {
     position: absolute;
-    margin-top: 85% !important;
+    /* margin-top: 85% !important; */
     margin-left: -7%!important;
     background-color: #343a40;
     width: 385px !important;
@@ -284,7 +284,7 @@ a:hover {
 
   .navbar-collapse {
     position: absolute;
-    margin-top: 60% !important;
+    /* margin-top: 60% !important; */
     margin-left: -7%!important;
     background-color: #343a40;
     width: 562px !important;
