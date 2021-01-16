@@ -5,7 +5,7 @@
       <div class="row">
         <TitleBar title="Produtos" :bgImg="titleBarBgImg" pageClass="produto-page"></TitleBar>
         <div class="content">
-          <div class="row produtos-content">
+          <div class="row produtos-content" id="product-content">
             <ProductItem v-for="(produto, index) in produtos" :product="produto"  :key="index"/>
           </div>
           <div class="overflow-auto">
@@ -54,10 +54,21 @@ export default {
     this.allProducts = this.getProducts;
     this.rows = this.allProducts.length;
     this.setProducts(this.currentPage);
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
   },
   watch:{
     currentPage: function(current){
       this.setProducts(current);
+      let element = document.getElementById("product-content")
+      let position = element.getBoundingClientRect();
+      window.scrollTo({
+        top: position.top,
+        behavior: 'smooth'
+      });
     }
   },
   methods:{

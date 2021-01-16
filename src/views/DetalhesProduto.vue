@@ -69,6 +69,10 @@ export default {
   mounted() {
     this.$store.dispatch("setProducts");
     this.produto = this.getProducts.filter((prod) => prod._id == this._id)[0];
+    window.scrollTo({
+      top: 0,
+      left: 0
+    });
   },
   computed: {
     getProducts() {
