@@ -4,6 +4,7 @@ import router from './router'
 import store from './store'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
+import 'animate.css/animate.min.css'
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 import * as VueGoogleMaps from "vue2-google-maps";
 import AOS from 'aos'

@@ -66,10 +66,7 @@ export default {};
   -moz-font-family: "Josefin";
   -ms-font-family: "Josefin";
   -webkit-font-family: "Josefin";
-  font-size: 60px;
-  -moz-font-size: 60px;
-  -ms-font-size: 60px;
-  -webkit-font-size: 60px;
+  font-size: 3rem;
 }
 .RecebaNovidadesTexto2 {
   font-size: 24px;

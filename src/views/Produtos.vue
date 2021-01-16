@@ -5,7 +5,7 @@
       <div class="row">
         <TitleBar title="Produtos" :bgImg="titleBarBgImg" pageClass="produto-page"></TitleBar>
         <div class="content">
-          <div class="row produtos-content">
+          <div class="row produtos-content" id="product-content">
             <ProductItem v-for="(produto, index) in produtos" :product="produto"  :key="index"/>
           </div>
           <div class="overflow-auto">
@@ -54,10 +54,21 @@ export default {
     this.allProducts = this.getProducts;
     this.rows = this.allProducts.length;
     this.setProducts(this.currentPage);
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    });
   },
   watch:{
     currentPage: function(current){
       this.setProducts(current);
+      let element = document.getElementById("product-content")
+      let position = element.getBoundingClientRect();
+      window.scrollTo({
+        top: position.top,
+        behavior: 'smooth'
+      });
     }
   },
   methods:{
@@ -77,6 +88,12 @@ export default {
 </script>
 <style scoped>
 
+/** Animations */
+.my-element {
+  animation: bounce; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+/** Animations End */
 #customPagination .page-item .page-item{
   background-color: red!important;
     border-color: red!important;
@@ -88,6 +105,7 @@ export default {
   display: flex;
 }
 
+
 .content::before{
   content: '';
   position: absolute;
@@ -95,8 +113,8 @@ export default {
   width: 100%;
   top:0;
   left: 0;
-  background: url('../assets/imgs/img4.jpg') center center;
-  filter: opacity(.3);
+  background: url('../assets/imgs/img4.jpg') center center fixed;
+  filter: opacity(.3) brightness(60%);
 }
 
 .content{

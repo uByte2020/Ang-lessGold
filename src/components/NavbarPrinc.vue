@@ -24,22 +24,22 @@
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav class="ml-auto">
           <b-nav-item class="navitem"
-            ><router-link :class="getnavItemClass" to="/"
+            ><router-link class="nav-item-text" :class="getnavItemClass" to="/"
               >Home</router-link
             ></b-nav-item
           >
           <b-nav-item
-            ><router-link :class="getnavItemClass" to="/QuemSomos"
+            ><router-link class="nav-item-text" :class="getnavItemClass" to="/QuemSomos"
               >Sobre Nós</router-link
             ></b-nav-item
           >
           <b-nav-item
-            ><router-link :class="getnavItemClass" to="/Produtos"
+            ><router-link class="nav-item-text" :class="getnavItemClass" to="/Produtos"
               >Produtos</router-link
             ></b-nav-item
           >
           <b-nav-item
-            ><router-link :class="getnavItemClass" to="/Contacto"
+            ><router-link class="nav-item-text" :class="getnavItemClass" to="/Contacto"
               >Contactos</router-link
             ></b-nav-item
           >
@@ -136,6 +136,10 @@ a:hover {
   font-size: 25px !important;
   font-family: "Josefin-SemiBold";
   color: #fff !important;
+}
+
+.nav-item-text{
+  font-weight: bold!important;
 }
 
 .nav-link {

@@ -10,17 +10,18 @@
         </div>
         <div class="col-lg-6 col-md-6 col-xl-6 col-sm-12 Texto">
             <h1 class="Bacalhau">{{product.titulo}}</h1>
-            <p class="BacalhauTexto">
-            {{"produtos"}}
-            </p>
-            <h4 class="BacalhauH4">
-            Origem:
-            <!-- <img
-                :src="loadIcon(product.icon)"
-                alt="Portugal"
-                class="icon img-fluid"
-            /> -->
-            </h4>
+            <ul>
+                <li><label>Quantidade:</label> <span>{{product.quantidade}}</span></li>
+                <li><label>Características:</label> <span>{{product.caracteristica}}</span></li>
+                <li class="BacalhauH4">
+                    <label>Origem: </label> <span class="mr-3">{{product.origem}}</span>
+                    <img
+                        :src="loadIcon(product.icon)"
+                        alt="Portugal"
+                        class="icon img-fluid"
+                    />
+                </li>
+            </ul>
         </div>
         </div>
     </div>
@@ -32,7 +33,19 @@ const productIcon = require.context('@/assets/svg/', false, /\.png$|\.jpg$|\.svg
 export default {
   name: 'detalhe-produto-item',
   props: {
-    product:Object
+    product:{
+        type:Object,
+        required: true,
+        default:()=>{
+            return {
+                titulo: 'Produto',
+                foto:'img1.jpeg',
+                icon: 'ao.svg',
+                quantidade:'',
+                caracteristica:''
+            }
+        }
+    }
   },
   methods: {
     loadImg(imgPath) {
@@ -41,12 +54,34 @@ export default {
     loadIcon(iconPath) {
       return productIcon('./'+iconPath)
     },
+    getOrigem(icon){
+        return icon.startWith('ao') ? 'Angola':'Portugal';
+    }
   },
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
+ul{
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0;
+    margin-left: 0.67em;
+}
+
+ul li label{
+    font-size: 1.6rem;
+    color: #707070;
+}
+
+ul li span{
+    font-size: 1.6rem;
+    font-weight: bold;
+    font-family: Josefin;
+    /* font-style: italic; */
+}
 .produto-detalhe-item{
     margin-bottom: 1%;
     margin-top: 1%;
@@ -56,15 +91,24 @@ a:hover {
   text-decoration: none;
 }
 
+.img:hover{
+  filter:brightness(80%);
+  transition: 0.3s;
+  transform: scale(1.02);
+}
+
 .img {
-  height: auto !important;
+  cursor: pointer;
+  height: 100% !important;
   width: 70%;
   border-radius: 5px;
-  box-shadow: 2px 2px 8px #707070;
-  object-fit: fill !important;
+  /* box-shadow: 2px 2px 8px #707070; */
+  object-fit: cover !important;
+   transition: 0.3s ease-out;
 }
 .imagem {
-  margin-left: -2%;
+    height: 350px;
+    margin-left: -2%;
 }
 .Texto {
   text-align: left;
