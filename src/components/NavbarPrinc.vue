@@ -58,7 +58,6 @@ export default {
   },
   methods: {
     toggleBackgroundClick() {
-      console.log(this.BackgroundClick);
       this.BackgroundClick = !this.BackgroundClick;
     },
   },

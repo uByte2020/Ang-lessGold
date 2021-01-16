@@ -55,7 +55,6 @@ export default {
       this.scrollPosition = window.scrollY;
     },
     toggleBackgroundClick() {
-      console.log(this.BackgroundClick);
       this.BackgroundClick = !this.BackgroundClick;
     },
   },
