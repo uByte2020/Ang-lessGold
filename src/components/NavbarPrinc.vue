@@ -1,6 +1,5 @@
 <template>
   <div>
-    <!-- :style="{ position: position }" -->
     <b-navbar
       class="mt-0"
       :class="navbarClass"
@@ -15,11 +14,11 @@
       <b-navbar-toggle
         target="nav-collapse"
         @click="toggleBackgroundClick"
-        class="Marg"
+        class="Marg" 
       >
-        <template #default="{ expanded }">
-          <b-icon v-if="expanded" icon="x" font-scale="1"></b-icon>
-          <b-icon v-else icon="list" font-scale="1"></b-icon> </template
+        <template #default="{ expanded }" :class="getnavIcon">
+          <b-icon v-if="expanded" icon="x" :class="getnavIcon" font-scale="1"></b-icon>
+          <b-icon v-else icon="list" :class="getnavIcon" font-scale="1"></b-icon> </template
       ></b-navbar-toggle>
 
       <b-collapse id="nav-collapse" is-nav>
@@ -72,6 +71,9 @@ export default {
     getnavItemClass() {
       return this.navItemClass === "home" ? "nav-item-da-home" : "nav-item-da";
     },
+    getnavIcon(){
+      return this.navcollapseIcon==="home" ? 'nav-icon-corHome':'nav-icon-cor'
+    }
   },
   props: {
     backgroundColor: {
@@ -95,6 +97,10 @@ export default {
       type: String,
       default: "other",
     },
+    navcollapseIcon:{
+      type: String,
+      default: "other"
+    }
   },
 };
 </script>
@@ -109,7 +115,12 @@ export default {
 a:hover {
   text-decoration: none;
 }
-
+.nav-icon-corHome{
+  color: #fff!important;
+}
+.nav-icon-cor{
+  color: #000!important;
+}
 .nav-item-da {
   font-size: 25px !important;
   font-family: "Josefin-SemiBold";
@@ -295,7 +306,7 @@ a:hover {
   .navbar-toggle,
   .Marg,
   .collapse {
-    color: black !important;
+    color: black ;
   }
   .img {
     margin-left: -50%;

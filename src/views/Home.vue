@@ -5,6 +5,7 @@
       :navbarClass="'navbar-home'"
       :logoImg="'home'"
       :navItemClass="'home'"
+      :navcollapseIcon="'home'"
     />
     <div id="home" class="container-fluid">
       <div class="row">
