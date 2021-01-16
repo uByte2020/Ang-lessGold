@@ -1,139 +1,140 @@
 <template>
-  <div id="Produto" class="container">
-    <div class="row produto">
-      <div class="col-lg-12 col-sm-12 col-xl-12 col-md-12">
-        <h2 class="titulo-produto">Explore os Nossos Produtos</h2>
-        <div class="progress">
-          <div
-            class="progress-bar progressCor"
-            role="progressbar"
-            style="width: 100%"
-            aria-valuenow="10"
-            aria-valuemin="0"
-            aria-valuemax="10"
-          ></div>
+  <div id="Produto">
+    <div class="container">
+      <div class="row produto">
+        <div class="col-lg-12 col-sm-12 col-xl-12 col-md-12">
+          <h2 class="titulo-produto">Explore os Nossos Produtos</h2>
+          <div class="progress">
+            <div
+              class="progress-bar progressCor"
+              role="progressbar"
+              style="width: 100%"
+              aria-valuenow="10"
+              aria-valuemin="0"
+              aria-valuemax="10"
+            ></div>
+          </div>
         </div>
-      </div>
-      <div class="col-12">
-        <router-link id="VerTodos" to="/Produtos"
-          >VER TODOS PRODUTOS</router-link
+        <div class="col-12">
+          <router-link id="VerTodos" to="/Produtos"
+            >VER TODOS PRODUTOS</router-link
+          >
+        </div>
+        <div class="col-lg-2 col-sm-12 col-xl-2 col-md-3" id="links">
+          <div class="row links">
+            <div class="col-lg-12 col-sm-4 col-xl-12 col-md-12" :class="{ 'link-active': Alimentos }">
+              <a
+                href="#Produto" class="link-normal" :class="{ 'link-active-a': Alimentos }"
+                @click="AlimentosClick(true)"
+                >Pereciveis</a
+              >
+            </div>
+            <div class="col-lg-12 col-sm-4 col-xl-12 col-md-12" :class="{ 'link-active': !Alimentos }">
+              <a
+                href="#Produto" class="link-normal" :class="{ 'link-active-a': !Alimentos }"
+                @click="AlimentosClick(false)"
+                >Não Pereciveis</a
+              >
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-lg-9 col-sm-12 col-xl-9 col-md-9"
+          id="pereciveis"
+          v-show="Alimentos === true"
         >
-      </div>
-      <div class="col-lg-2 col-sm-12 col-xl-2 col-md-3" id="links">
-        <div class="row links">
-          <div class="col-lg-12 col-sm-4 col-xl-12 col-md-12" id="LinkCor">
-            <a
-              href="#Produto" class="LinkCor2"
-              :class="{ LinkActive: !Alimentos, LinkActive: Alimentos }"
-              @click="AlimentosClick()"
-              >Pereciveis</a
-            >
-          </div>
-          <div class="col-lg-12 col-sm-4 col-xl-12 col-md-12">
-            <a
-              href="#Produto" class="LinkCor2"
-              :class="{ LinkActive: Alimentos, LinkActive: !Alimentos }"
-              @click="AlimentosClick()"
-              >Não Pereciveis</a
-            >
-          </div>
-        </div>
-      </div>
-      <div
-        class="col-lg-9 col-sm-12 col-xl-9 col-md-9"
-        id="pereciveis"
-        v-show="Alimentos === true"
-      >
-        <div class="row carouselContainer">
-          <div class="col-lg-4 col-sm-12 col-xl-4 col-md-4 DivImg">
-            <figure>
-              <img
-                src="@/assets/imgs/products/img10.png"
-                class="img-fluid img"
-                alt="Chouriço"
-              />
-              <figcaption>
-                <h6 class="explore-prod">Chouriço</h6>
-                <p class="preco">Preço</p>
-              </figcaption>
-            </figure>
-          </div>
-          <div class="col-lg-4 col-sm-12 col-xl-4 col-md-4 DivImg">
-            <figure>
-              <img
-                src="@/assets/imgs/products/img1.jpeg"
-                class="img-fluid img"
-                alt="Chispe"
-              />
-              <figcaption>
-                <h6 class="explore-prod">Chispe</h6>
-                <p class="preco">Preço</p>
-              </figcaption>
-            </figure>
-          </div>
-          <div class="col-lg-4 col-sm-12 col-xl-4 col-md-4 DivImg">
-            <figure>
-              <img
-                src="@/assets/imgs/products/img17.jpg"
-                class="img-fluid img"
-                alt="Carne"
-              />
-              <figcaption>
-                <h6 class="explore-prod">Carne</h6>
-                <p class="preco">Preço</p>
-              </figcaption>
-            </figure>
+          <div class="row carouselContainer">
+            <div class="col-lg-4 col-sm-12 col-xl-4 col-md-4 DivImg">
+              <figure>
+                <img
+                  src="@/assets/imgs/products/img10.png"
+                  class="img-fluid img"
+                  alt="Chouriço"
+                />
+                <figcaption>
+                  <h6 class="explore-prod">Chouriço</h6>
+                  <p class="preco">Preço</p>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="col-lg-4 col-sm-12 col-xl-4 col-md-4 DivImg">
+              <figure>
+                <img
+                  src="@/assets/imgs/products/img1.jpeg"
+                  class="img-fluid img"
+                  alt="Chispe"
+                />
+                <figcaption>
+                  <h6 class="explore-prod">Chispe</h6>
+                  <p class="preco">Preço</p>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="col-lg-4 col-sm-12 col-xl-4 col-md-4 DivImg">
+              <figure>
+                <img
+                  src="@/assets/imgs/products/img17.jpg"
+                  class="img-fluid img"
+                  alt="Carne"
+                />
+                <figcaption>
+                  <h6 class="explore-prod">Carne</h6>
+                  <p class="preco">Preço</p>
+                </figcaption>
+              </figure>
+            </div>
           </div>
         </div>
-      </div>
-      <div
-        class="col-lg-9 col-sm-12 col-xl-9 col-md-9 DivImg"
-        id="Npereciveis"
-        v-show="Alimentos == false"
-      >
-        <div class="row">
-          <div class="col-lg-4 col-sm-12 col-xl-4 col-md-4 DivImg">
-            <figure>
-              <img
-                src="@/assets/imgs/products/img14.jpg"
-                class="img-fluid img"
-                alt="Farinha Musseque"
-              />
-              <figcaption>
-                <h6 class="explore-prod">Farinha Musseque</h6>
-                <p class="preco">Preço</p>
-              </figcaption>
-            </figure>
-          </div>
-          <div class="col-lg-4 col-sm-12 col-xl-4 col-md-4 DivImg">
-            <figure>
-              <img
-                src="@/assets/imgs/products/img18.jpg"
-                class="img-fluid img"
-                alt="Peixe Seco"
-              />
-              <figcaption>
-                <h6 class="explore-prod">Peixe Seco</h6>
-                <p class="preco">Preço</p>
-              </figcaption>
-            </figure>
-          </div>
-          <div class="col-lg-4 col-sm-12 col-xl-4 col-md-4 DivImg">
-            <figure>
-              <img
-                src="@/assets/imgs/products/img6.jpg"
-                class="img-fluid img"
-                alt="Mucua"
-              />
-              <figcaption>
-                <h6 class="explore-prod">Múcua</h6>
-                <p class="preco">Preço</p>
-              </figcaption>
-            </figure>
+        <div
+          class="col-lg-9 col-sm-12 col-xl-9 col-md-9"
+          id="Npereciveis"
+          v-show="Alimentos == false"
+        >
+          <div class="row">
+            <div class="col-lg-4 col-sm-12 col-xl-4 col-md-4 DivImg">
+              <figure>
+                <img
+                  src="@/assets/imgs/products/img14.jpg"
+                  class="img-fluid img"
+                  alt="Farinha Musseque"
+                />
+                <figcaption>
+                  <h6 class="explore-prod">Farinha Musseque</h6>
+                  <p class="preco">Preço</p>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="col-lg-4 col-sm-12 col-xl-4 col-md-4 DivImg">
+              <figure>
+                <img
+                  src="@/assets/imgs/products/img18.jpg"
+                  class="img-fluid img"
+                  alt="Peixe Seco"
+                />
+                <figcaption>
+                  <h6 class="explore-prod">Peixe Seco</h6>
+                  <p class="preco">Preço</p>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="col-lg-4 col-sm-12 col-xl-4 col-md-4 DivImg">
+              <figure>
+                <img
+                  src="@/assets/imgs/products/img6.jpg"
+                  class="img-fluid img"
+                  alt="Mucua"
+                />
+                <figcaption>
+                  <h6 class="explore-prod">Múcua</h6>
+                  <p class="preco">Preço</p>
+                </figcaption>
+              </figure>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    
   </div>
 </template>
 <script>
@@ -144,8 +145,9 @@ export default {
     };
   },
   methods: {
-    AlimentosClick() {
-      return (this.Alimentos = !this.Alimentos);
+    AlimentosClick(type) {
+      this.Alimentos = type;
+      return this.Alimentos;
       // const Cor = document.getElementById("Link1");
       // const Cor2 = document.getElementById("Link2");
       // if (this.Alimentos == true) {
@@ -194,6 +196,7 @@ export default {
   -ms-padding: 6%;
   -webkit-padding: 6%;
   position: relative;
+  width: 100%;
 }
 #Produto::before{
   content: "";
@@ -203,7 +206,10 @@ export default {
   left: 0px;
   position: absolute;
   background: url('../../assets/imgs/img4.jpg') center center fixed;
-  filter: opacity(.2);
+   filter: opacity(.3) brightness(60%);
+  -moz-filter: 6%;
+  -ms-filter: 6%;
+  -webkit-filter: 6%;
 }
 .explore-prod {
   font-size: 1.2rem;
@@ -225,6 +231,25 @@ export default {
   font-family: "JosefiniBold";
   font-size: 1.2rem;
 }
+
+.link-normal{
+  text-decoration: none;
+}
+
+
+.link-normal:hover{
+  color: #68aa38 !important;
+}
+.link-active-a{
+  font-size: 1.2rem;
+  color: #68aa38;
+}
+
+.link-active{
+    margin-left: -1%;
+  border-left: 2px solid #68aa38;
+}
+
 .LinkActive {
   font-size: 1.2rem;
   color: #68aa38;
@@ -235,40 +260,42 @@ export default {
   -moz-border-left: 2px solid #68aa38;
   -ms-border-left: 2px solid #68aa38;
   -webkit-border-left: 2px solid #68aa38;
-  margin-left: -12%;
-  padding-left: 8%;
+  /* margin-left: -12%; */
+  /* padding-left: 8%;
   -moz-padding-left: 8%;
   -ms-padding-left: 8%;
-  -webkit-padding-left: 8%;
+  -webkit-padding-left: 8%; */
+  /* border-left: 2px solid #68aa38; */
+    margin-left: -1%;
 }
 .LinkActive:hover {
   color: #f8ce00 !important;
   -moz-color: #f8ce00;
   -ms-color: #f8ce00;
   -webkit-color: #f8ce00;
-  border-left: 2px solid #f8ce00 !important;
+  /* border-left: 2px solid #f8ce00 !important;
   -moz-border-left: 2px solid #f8ce00;
   -ms-border-left: 2px solid #f8ce00;
-  -webkit-border-left: 2px solid #f8ce00;
-  margin-left: -12% !important;
+  -webkit-border-left: 2px solid #f8ce00; */
+  /* margin-left: -12% !important;
   -webkit-margin-left: -8%;
   padding-left: 8%;
   -moz-padding-left: 8%;
   -ms-padding-left: 8%;
-  -webkit-padding-left: 8%;
+  -webkit-padding-left: 8%; */
 }
 #Link2:hover {
   color: #f8ce00 !important;
   -moz-color: #f8ce00;
   -ms-color: #f8ce00;
   -webkit-color: #f8ce00;
-  border-left: 2px solid #f8ce00 !important;
+  /* border-left: 2px solid #f8ce00 !important;
   -moz-border-left: 2px solid #f8ce00;
   -ms-border-left: 2px solid #f8ce00;
   -webkit-border-left: 2px solid #f8ce00;
   margin-left: -12% !important;
   padding-left: 8%;
-  -webkit-padding-left: 8%;
+  -webkit-padding-left: 8%; */
 }
 a {
   text-decoration: none;
@@ -285,7 +312,7 @@ a {
   -moz-color: #f8ce00;
   -ms-color: #f8ce00;
   -webkit-color: #f8ce00;
-  border-left: 2px solid #f8ce00 !important;
+  /* border-left: 2px solid #f8ce00 !important;
   -moz-border-left: 2px solid #f8ce00;
   -ms-border-left: 2px solid #f8ce00;
   -webkit-border-left: 2px solid #f8ce00;
@@ -294,7 +321,7 @@ a {
   padding-left: 8%;
   -moz-padding-left: 8%;
   -ms-padding-left: 8%;
-  -webkit-padding-left: 8%;
+  -webkit-padding-left: 8%; */
   text-decoration: none;
   -moz-text-decoration: none;
   -ms-text-decoration: none;
@@ -320,14 +347,14 @@ a {
   -webkit-margin-top: 2%;
 }
 figure {
-  height: 90%;
-  -moz-height: 100%;
-  -ms-height: 100%;
-  -webkit-height: 100%;
-  width: 200px;
-  -moz-width: auto;
-  -ms-width: auto;
-  -webkit-width: auto;
+  height: 250px;
+  -moz-height: 250px;
+  -ms-height: 250px;
+  -webkit-height: 250px;
+  width: 94%;
+  -moz-width: 94%;
+  -ms-width: 94%;
+  -webkit-width: 94%;
   box-shadow: 1px 1px 4px #70707070;
   -moz-box-shadow: 0px 0px 1px gray;
   -ms-box-shadow: 0px 0px 1px gray;
@@ -341,6 +368,7 @@ figure {
   -ms-margin: 1% auto !important;
   -webkit-margin: 1% auto !important;
   transition: 0.2s ease-out;
+  background-color: #fff;
 }
 figure:hover {
   transform: scale(1.08);

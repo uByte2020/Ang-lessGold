@@ -117,7 +117,6 @@ export default {
   },
   methods: {
     sendformulario() {
-      // console.log(this.formulario.nome)
       if (
         this.nome.length == 0 ||
         this.email.length == 0 ||
@@ -131,7 +130,6 @@ export default {
           this.telefone,
           this.mensagem
         );
-        console.log(this.formulario);
         this.nome = "";
         this.email = "";
         this.telefone = "";
