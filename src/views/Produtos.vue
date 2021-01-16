@@ -113,7 +113,7 @@ export default {
   width: 100%;
   top:0;
   left: 0;
-  background: url('../assets/imgs/img4.jpg') center center;
+  background: url('../assets/imgs/img4.jpg') center center fixed;
   filter: opacity(.3) brightness(60%);
 }
 
