@@ -114,10 +114,19 @@ figcaption {
 }
 .img {
   width: 100%;
-  height: 200px;
+  height: 250px;
   border-radius: 7px 7px 0 0;
   object-fit: cover;
+  position: relative;
+  border-bottom: 1px solid rgba(0,0,0,.1);
+  transition: 0.3s ease-out;
 }
+
+.img:hover{
+  filter:brightness(80%);
+  transition: 0.3s;
+}
+
 @media only screen and (max-width: 300px) {
   
 figure {

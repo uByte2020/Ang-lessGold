@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="animate__animated animate__fadeInRight animate__faster">
     <NavbarPrinc />
     <div class="container-fluid">
       <div class="row">
@@ -30,7 +30,13 @@
                 <detalhe-produto-item v-for="(produto, index) in getSubProduto" :product="produto"  :key="index"/>
               </div>
             </div>
-            
+            <div class="col-12 ColorTextoH2">
+              <div class="div-contact-us">
+                <router-link to="/Contacto">
+                  <button class="btn">Contacte-nos</button>
+                </router-link>
+              </div>
+            </div>
           </div>
         </div>
         <RecebaNovidades />
@@ -80,6 +86,7 @@ export default {
 
 .content{
   width: 100%;
+  margin-bottom: 1%;
 }
 
 .content-row{
@@ -164,18 +171,25 @@ a:hover {
   left: 0px;
   position: absolute;
   background: url("../assets/imgs/img4.jpg") no-repeat center center;
-  -moz-background: url("../assets/imgs/img4.jpg") no-repeat center center;
-  -ms-background: url("../assets/imgs/img4.jpg") no-repeat center center;
-  -webkit-background: url("../assets/imgs/img4.jpg") no-repeat center center;
   background-size: 100% 120%;
-  -moz-background-size: 100% 120%;
-  -ms-background-size: 100% 120%;
-  -webkit-background-size: 100% 150%;
-  filter: opacity(0.1);
-  -moz-filter: opacity(0.1);
-  -ms-filter: opacity(0.1);
-  -webkit-filter: opacity(0.1);
+  filter: opacity(0.1) brightness(60%);
+  -moz-filter: opacity(0.1) brightness(60%);
+  -ms-filter: opacity(0.1) brightness(60%);
+  -webkit-filter: opacity(0.1) brightness(60%);
 }
+
+.div-contact-us{
+    padding-left: 5%;
+    margin-bottom: 2%;
+}
+
+.div-contact-us button{
+  background-color: #68aa38;
+  color: #fff;
+  font-family: Josefin;
+  font-size: 1.7rem;
+}
+
 @font-face {
   font-family: "Josefin";
   src: local("Fonts"),

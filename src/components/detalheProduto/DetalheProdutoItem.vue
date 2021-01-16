@@ -14,7 +14,7 @@
                 <li><label>Quantidade:</label> <span>{{product.quantidade}}</span></li>
                 <li><label>Características:</label> <span>{{product.caracteristica}}</span></li>
                 <li class="BacalhauH4">
-                    <label>Origem: </label> <span>{{product.origem}} </span>
+                    <label>Origem: </label> <span class="mr-3">{{product.origem}}</span>
                     <img
                         :src="loadIcon(product.icon)"
                         alt="Portugal"
@@ -77,7 +77,10 @@ ul li label{
 }
 
 ul li span{
-    font-size: 1.5rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+    font-family: Josefin;
+    /* font-style: italic; */
 }
 .produto-detalhe-item{
     margin-bottom: 1%;
@@ -88,12 +91,20 @@ a:hover {
   text-decoration: none;
 }
 
+.img:hover{
+  filter:brightness(80%);
+  transition: 0.3s;
+  transform: scale(1.02);
+}
+
 .img {
+  cursor: pointer;
   height: 100% !important;
   width: 70%;
   border-radius: 5px;
-  box-shadow: 2px 2px 8px #707070;
+  /* box-shadow: 2px 2px 8px #707070; */
   object-fit: cover !important;
+   transition: 0.3s ease-out;
 }
 .imagem {
     height: 350px;

@@ -77,6 +77,12 @@ export default {
 </script>
 <style scoped>
 
+/** Animations */
+.my-element {
+  animation: bounce; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+/** Animations End */
 #customPagination .page-item .page-item{
   background-color: red!important;
     border-color: red!important;
@@ -88,6 +94,7 @@ export default {
   display: flex;
 }
 
+
 .content::before{
   content: '';
   position: absolute;
@@ -96,7 +103,7 @@ export default {
   top:0;
   left: 0;
   background: url('../assets/imgs/img4.jpg') center center;
-  filter: opacity(.3);
+  filter: opacity(.3) brightness(60%);
 }
 
 .content{

@@ -164,10 +164,10 @@
             {
                 "_id": 1,
                 "foto": "img35.jpg",
-                "titulo": "Farinha de Trigo",
+                "titulo": "Farinha de Fina",
                 "descricao": "Fornecemos a grosso",
                 "quantidade": "500 Sacos x 20 kg ou 50kg",
-                "caracteristica": "Farinha Branca",
+                "caracteristica": "Farinha de Trigo, Branca",
                 "origem": "Angola",
                 "saibaMais": "Saiba mais",
                 "icon": "ao.svg",
@@ -402,7 +402,7 @@
     },
     {
         "_id": 20,
-        "foto": "img15.png",
+        "foto": "img15.jpg",
         "titulo": "Fiambre e Mortadela",
         "descricao": "Fornecemos a grosso",
         "quantidade": "Caixas Conforme a Solicitação do Cliente",
