@@ -3,26 +3,26 @@
     <NavbarPrinc />
     <div class="container-fluid">
       <div class="row">
-        <div class="col-12 ProdutoTitulo">
-          <h1 class="ProdutoTituloH1">Produtos</h1>
-        </div>
+        <TitleBar title="Detalhe do Produto" :bgImg="titleBarBgImg" pageClass="produto-page"></TitleBar>
         <div class="col-12" id="AlimentoBacalhau">
           <div class="row">
             <div class="col-12 ColorTextoH2">
               <h2>
                 <router-link class="ColorLinkTextoH2" to="/Produtos"
-                  >Todos os Produtos</router-link
+                  >Todos os Produtos
+                  <div class="progress">
+                    <div
+                      class="progress-bar ProgressCor1"
+                      role="progressbar"
+                      style="width: 100%"
+                      aria-valuenow="100"
+                      aria-valuemin="10"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                </router-link
                 >
-                <div class="progress">
-                  <div
-                    class="progress-bar ProgressCor1"
-                    role="progressbar"
-                    style="width: 100%"
-                    aria-valuenow="100"
-                    aria-valuemin="10"
-                    aria-valuemax="100"
-                  ></div>
-                </div>
+                
               </h2>
             </div>
             <div class="content">
@@ -41,12 +41,13 @@
 </template>
 <script>
 import NavbarPrinc from "../components/NavbarPrinc";
-import RecebaNovidades from "../components/RecebaNovidades";
+import TitleBar from "../components/TitleBar";
 import DetalheProdutoItem from "../components/detalheProduto/DetalheProdutoItem";
+import RecebaNovidades from "../components/RecebaNovidades";
 import Footer from "../components/Footer";
 export default {
   name: "DetalhesProduto",
-  components: { NavbarPrinc, DetalheProdutoItem,RecebaNovidades, Footer },
+  components: { NavbarPrinc,TitleBar, DetalheProdutoItem,RecebaNovidades, Footer },
   props: {
     _id: {
       type: String,
@@ -56,6 +57,7 @@ export default {
   data() {
     return {
       produto: {},
+      titleBarBgImg:"img34.jpg",
     };
   },
   mounted() {
@@ -87,10 +89,11 @@ export default {
 
 .ColorTextoH2 {
   text-align: left !important;
-  margin: 2% auto;
+  margin: 1% auto;
 }
 .ColorLinkTextoH2 {
   color: #8cb560;
+  font-size: 1.4rem;
 }
 h2 {
   margin-left: 5%;
@@ -108,14 +111,8 @@ a:hover {
   text-decoration: none;
 }
 .progress {
-  height: 5px;
-  -moz-height: 5px;
-  -ms-height: 5px;
-  -webkit-height: 5px;
-  width: 265px;
-  -moz-width: 265px;
-  -ms-width: 265px;
-  -webkit-width: 265px;
+  height: 2.5px;
+  width: 190px;
 }
 .ProgressCor1 {
   background-color: #8cb560 !important;
