@@ -1,6 +1,5 @@
 <template>
   <div>
-    <!-- :style="{ position: position }" -->
     <b-navbar
       class="mt-0"
       :class="navbarClass"
@@ -15,11 +14,11 @@
       <b-navbar-toggle
         target="nav-collapse"
         @click="toggleBackgroundClick"
-        class="Marg"
+        class="Marg" 
       >
-        <template #default="{ expanded }">
-          <b-icon v-if="expanded" icon="x" font-scale="1"></b-icon>
-          <b-icon v-else icon="list" font-scale="1"></b-icon> </template
+        <template #default="{ expanded }" :class="getnavIcon">
+          <b-icon v-if="expanded" icon="x" :class="getnavIcon" font-scale="1"></b-icon>
+          <b-icon v-else icon="list" :class="getnavIcon" font-scale="1"></b-icon> </template
       ></b-navbar-toggle>
 
       <b-collapse id="nav-collapse" is-nav>
@@ -72,6 +71,9 @@ export default {
     getnavItemClass() {
       return this.navItemClass === "home" ? "nav-item-da-home" : "nav-item-da";
     },
+    getnavIcon(){
+      return this.navcollapseIcon==="home" ? 'nav-icon-corHome':'nav-icon-cor'
+    }
   },
   props: {
     backgroundColor: {
@@ -95,6 +97,10 @@ export default {
       type: String,
       default: "other",
     },
+    navcollapseIcon:{
+      type: String,
+      default: "other"
+    }
   },
 };
 </script>
@@ -109,7 +115,12 @@ export default {
 a:hover {
   text-decoration: none;
 }
-
+.nav-icon-corHome{
+  color: #fff!important;
+}
+.nav-icon-cor{
+  color: #000!important;
+}
 .nav-item-da {
   font-size: 25px !important;
   font-family: "Josefin-SemiBold";
@@ -142,21 +153,15 @@ a:hover {
   position: relative !important;
   z-index: 1;
   width: 100%;
-  /* padding: 1%; */
-
-  /* background-color: transparent !important; */
 }
 
 .navbar-home {
   position: absolute !important;
   z-index: 1;
   width: 100%;
-  /* padding: 1%; */
-  /* background-color: transparent !important; */
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  /* color: rgba(255, 255, 255, 0.5); */
   color: #fff;
   font-family: "Josefin";
   font-size: 20px;
@@ -219,7 +224,7 @@ a:hover {
 
   .navbar-collapse {
     position: absolute;
-    margin-top: 80% !important;
+    margin-top: 300px !important;
     /* margin:auto; */
     margin-left: -5%!important;
     /* margin-right: 15% !important; */
@@ -233,7 +238,7 @@ a:hover {
 
   .navbar-collapse {
     position: absolute;
-    margin-top: 80% !important;
+    margin-top: 310px !important;
     /* margin:auto; */
     margin-left: -5%!important;
     /* margin-right: 15% !important; */
@@ -246,7 +251,7 @@ a:hover {
 
   .navbar-collapse {
     position: absolute;
-    margin-top: 83% !important;
+    margin-top: 300px !important;
     margin-left: -5%!important;
     background-color: #343a40;
     width: 100.5vw !important;
@@ -257,7 +262,7 @@ a:hover {
 
   .navbar-collapse {
     position: absolute;
-    margin-top: 100% !important;
+    margin-top: 290px !important;
     margin-left: -7%!important;
     background-color: #343a40;
     width: 101.3% !important;
@@ -268,7 +273,7 @@ a:hover {
 
   .navbar-collapse {
     position: absolute;
-    margin-top: 90% !important;
+    /* margin-top: 90% !important; */
     margin-left: -7%!important;
     background-color: #343a40;
     width: 101.9% !important;
@@ -278,7 +283,7 @@ a:hover {
 
   .navbar-collapse {
     position: absolute;
-    margin-top: 85% !important;
+    /* margin-top: 85% !important; */
     margin-left: -7%!important;
     background-color: #343a40;
     width: 385px !important;
@@ -288,7 +293,7 @@ a:hover {
 
   .navbar-collapse {
     position: absolute;
-    margin-top: 60% !important;
+    /* margin-top: 60% !important; */
     margin-left: -7%!important;
     background-color: #343a40;
     width: 562px !important;
@@ -299,7 +304,7 @@ a:hover {
   .navbar-toggle,
   .Marg,
   .collapse {
-    color: black !important;
+    color: black ;
   }
   .img {
     margin-left: -50%;

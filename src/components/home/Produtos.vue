@@ -1,6 +1,6 @@
 <template>
   <div id="Produto" class="container">
-    <div class="row">
+    <div class="row produto">
       <div class="col-lg-12 col-sm-12 col-xl-12 col-md-12">
         <h2 class="titulo-produto">Explore os Nossos Produtos</h2>
         <div class="progress">
@@ -44,7 +44,7 @@
         id="pereciveis"
         v-show="Alimentos === true"
       >
-        <div class="row">
+        <div class="row carouselContainer">
           <div class="col-lg-4 col-sm-12 col-xl-4 col-md-4 DivImg">
             <figure>
               <img
@@ -193,6 +193,17 @@ export default {
   -moz-padding: 6%;
   -ms-padding: 6%;
   -webkit-padding: 6%;
+  position: relative;
+}
+#Produto::before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  position: absolute;
+  background: url('../../assets/imgs/img4.jpg') center center fixed;
+  filter: opacity(.2);
 }
 .explore-prod {
   font-size: 1.2rem;
