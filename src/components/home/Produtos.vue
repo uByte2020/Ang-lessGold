@@ -44,7 +44,7 @@
         id="pereciveis"
         v-show="Alimentos === true"
       >
-        <div class="row">
+        <div class="row carouselContainer">
           <div class="col-lg-4 col-sm-12 col-xl-4 col-md-4 DivImg">
             <figure>
               <img
