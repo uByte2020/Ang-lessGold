@@ -11,7 +11,9 @@
       <div class="row">
         <div class="Inicio col-12">
           <div class="row TextoInicio">
-            <div class="container">
+            <div
+              class="container animate__animated animate__fadeInRight animate__faster"
+            >
               <div class="row">
                 <div class="col-lg-8 col-xl-8 col-sm-12 col-md-12">
                   <h1 class="TextoInicioH1">
@@ -40,7 +42,12 @@
             <div class="col-lg-5 col-xl-5 col-sm-12 col-md-12 imgof">
               <img src="@/assets/imgs/img30.jpg" alt="" class="img-fluid img" />
             </div>
-            <div class="col-lg-7 col-xl-7 col-sm-12 col-md-12 TextoBemVindo">
+            <div
+              class="col-lg-7 col-xl-7 col-sm-12 col-md-12 TextoBemVindo"
+              data-aos="fade-left"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
               <h2 class="TextoBemVindoH1">
                 Bem-Vindo <br />
                 À ANG LESS GOLD
@@ -77,7 +84,12 @@
             <div class="container">
               <div class="row">
                 <div class="col-lg-8 col-xl-6 col-sm-12 col-md-8 OQFazemos">
-                  <div class="col-lg-9 col-xl-9 col-sm-12 col-md-9">
+                  <div
+                    class="col-lg-9 col-xl-9 col-sm-12 col-md-9"
+                    data-aos="fade-left"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine"
+                  >
                     <h3>O que fazemos</h3>
                     <div class="progress">
                       <div
@@ -90,7 +102,12 @@
                       ></div>
                     </div>
                   </div>
-                  <div class="col-lg-8 col-xl-10 col-sm-12 col-md-8">
+                  <div
+                    class="col-lg-8 col-xl-10 col-sm-12 col-md-8"
+                    data-aos="fade-left"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine"
+                  >
                     <p>
                       Operamos com importações e exportações diversas como,
                       Alimentos, Bebidas e Medicamentos, entre outros, na venda
@@ -119,7 +136,12 @@
                 ></div>
               </div>
             </div>
-            <div class="col-lg-7 col-xl-3 col-sm-8 col-md-7 TextoEscolherNos">
+            <div
+              class="col-lg-7 col-xl-3 col-sm-8 col-md-7 TextoEscolherNos"
+              data-aos="flip-up"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
               <div class="col-12">
                 <img
                   src="../assets/svg/Responsabilidadesocial.svg"
@@ -133,7 +155,12 @@
                 exportação
               </p>
             </div>
-            <div class="col-lg-7 col-xl-3 col-sm-8 col-md-7 TextoEscolherNos">
+            <div
+              class="col-lg-7 col-xl-3 col-sm-8 col-md-7 TextoEscolherNos"
+              data-aos="flip-up"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
               <div class="row">
                 <div class="col-12">
                   <img
@@ -150,18 +177,13 @@
                   clientes.
                 </p>
               </div>
-              <!-- <div class="progress progressLargura col-12">
-                <div
-                  class="progress-bar ProgressCor1"
-                  role="progressbar"
-                  style="width: 100%"
-                  aria-valuenow="100"
-                  aria-valuemin="10"
-                  aria-valuemax="100"
-                ></div>
-              </div> -->
             </div>
-            <div class="col-lg-7 col-xl-3 col-sm-8 col-md-7 TextoEscolherNos">
+            <div
+              class="col-lg-7 col-xl-3 col-sm-8 col-md-7 TextoEscolherNos"
+              data-aos="flip-up"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
               <div class="col-12">
                 <img
                   src="../assets/svg/Qualidadeproduto.svg"
@@ -838,7 +860,6 @@ p {
     -ms-padding: 5%;
     -webkit-padding: 5%;
   }
-  
 }
 @media only screen and (max-width: 1590px) {
   .TextoEscolherNosTxt {
@@ -933,7 +954,7 @@ p {
     -webkit-font-family: "Segoe";
   }
 }
-@media only screen and (min-width: 400px) and (max-width: 800px){
+@media only screen and (min-width: 400px) and (max-width: 800px) {
   .TextoInicio {
     margin-top: 150px;
     -moz-margin-top: 20%;
@@ -941,7 +962,7 @@ p {
     -webkit-margin-top: 20%;
   }
 }
-@media only screen and (min-width: 370px) and (max-width: 375px){
+@media only screen and (min-width: 370px) and (max-width: 375px) {
   .TextoInicio {
     margin-top: 170px;
     -moz-margin-top: 20%;
@@ -949,7 +970,7 @@ p {
     -webkit-margin-top: 20%;
   }
 }
-@media only screen and (min-width: 310px) and (max-width: 320px){
+@media only screen and (min-width: 310px) and (max-width: 320px) {
   .TextoInicio {
     margin-top: 60px;
     -moz-margin-top: 20%;

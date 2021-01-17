@@ -308,7 +308,7 @@ figcaption {
   border-bottom: 2px solid #f8ce00;
   /* text-decoration:#f8ce00; */
   text-align: right !important;
-  margin-left: 80%;
+  margin-left: 660px;
 }
 #VerTodos:hover {
   color: #f8ce00!important;
@@ -320,10 +320,7 @@ figcaption {
   -moz-text-align: right !important;
   -ms-text-align: right !important;
   -webkit-text-align: right !important;
-  margin-left: 80%;
-  -moz-margin-left: 80%;
-  -ms-margin-left: 80%;
-  -webkit-margin-left: 80%;
+  margin-left: 660px;
 }
 a {
   color: #707070;
@@ -345,7 +342,7 @@ a:active {
     -moz-text-decoration: blue;
     -ms-text-decoration: blue;
     -webkit-text-decoration: blue;
-    margin: auto;
+    margin: auto !important;
     -moz-margin: auto;
     -ms-margin: auto;
     -webkit-margin: auto;

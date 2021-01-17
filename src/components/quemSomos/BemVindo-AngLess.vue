@@ -7,7 +7,9 @@
             <div class="col-lg-4 col-xl-4 col-sm-12 col-md-12">
               <img src="@/assets/imgs/img30.jpg" alt="" class="img-fluid img" />
             </div>
-            <div class="col-lg-8 col-xl-8 col-sm-12 col-md-12 TextoBemVindo">
+            <div
+              class="col-lg-8 col-xl-8 col-sm-12 col-md-12 TextoBemVindo animate__animated animate__fadeInRight animate__faster"
+            >
               <h2 class="TextoBemVindoH1">
                 Bem-Vindo <br />
                 À ANG LESS GOLD

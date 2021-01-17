@@ -27,7 +27,12 @@
             <div class="col-12 TxTEImg">
               <div class="row justify-content-md-center">
                 <div class="col-lg-12 col-md-12 col-xl-5 col-sm-12">
-                  <p class="BackgroundBlackTexto">
+                  <p
+                    class="BackgroundBlackTexto"
+                    data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine"
+                  >
                     Para nós a chave do sucesso é melhorar dia/dia com a nossa
                     equipa de profissionais, trabalhando arduamente para
                     conceber soluções personalizadas, que vão ao encontro das
@@ -78,9 +83,9 @@
                           >...</span
                         >
                         <span v-show="Know">
-                          os melhores profissionais e gerar os retornos atrativos
-                          aos accionistas e atuando com ética e responsablidade
-                          sócial.</span
+                          os melhores profissionais e gerar os retornos
+                          atrativos aos accionistas e atuando com ética e
+                          responsablidade sócial.</span
                         >
                         <a @click="Saber">
                           <strong> {{ SKnow }} </strong>
@@ -108,8 +113,8 @@
                     <div class="col-12 Texto2">
                       <p>
                         <strong>Ang Less Gold </strong> está fortemente
-                        envolvida na melhoria da qualidade de vida da
-                        população e desenvolvimento da comunidade<span
+                        envolvida na melhoria da qualidade de vida da população
+                        e desenvolvimento da comunidade<span
                           v-show="know == false"
                           >...</span
                         >
@@ -212,6 +217,23 @@ export default {
 };
 </script>
 <style scoped>
+/* Animate */
+.my-element {
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: bounce; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 10s; /* don't forget to set a duration! */
+}
+.animate__animated.animate__bounce {
+  --animate-duration: 21s;
+}
+
+/* This changes all the animations globally */
+:root {
+  --animate-duration: 800ms;
+  --animate-delay: 0.9s;
+}
 h1 {
   text-align: left;
   margin-left: 4%;
@@ -282,7 +304,7 @@ h1 {
   width: 90% !important;
   background-color: #fff;
   height: 260px;
-  margin: 2% auto!important;
+  margin: 2% auto !important;
   color: black;
   border-radius: 10px 10px 0px 0px;
 }
@@ -290,12 +312,12 @@ h1 {
   width: 90% !important;
   background-color: #fff;
   height: auto;
-  margin: 2% auto!important;
+  margin: 2% auto !important;
   color: black;
   border-radius: 10px 10px 0px 0px;
 }
 
-.missao-visao-valor{
+.missao-visao-valor {
   transition: 0.3s;
 }
 
@@ -381,7 +403,7 @@ h1 {
   -webkit-background-color: #8cb560 !important;
 }
 
-a{
+a {
   cursor: pointer;
 }
 @font-face {

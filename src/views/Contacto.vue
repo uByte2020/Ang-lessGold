@@ -16,7 +16,8 @@
                         type="text"
                         class="form-control"
                         name="Nome"
-                        v-model="nome" required
+                        v-model="nome"
+                        required
                       />
                     </div>
                   </div>
@@ -27,7 +28,8 @@
                         type="email"
                         name="email"
                         class="form-control"
-                        v-model="email" required
+                        v-model="email"
+                        required
                       />
                     </div>
                   </div>
@@ -38,7 +40,8 @@
                         type="tel"
                         name="Telefone"
                         class="form-control"
-                        v-model="telefone" required
+                        v-model="telefone"
+                        required
                       />
                     </div>
                   </div>
@@ -69,7 +72,12 @@
                 <div class="col-12 AngLess">
                   <h2 class="AngLessTitulo">ANG LESS GOLD</h2>
                 </div>
-                <div class="col-12 Texto">
+                <div
+                  class="col-12 Texto"
+                  data-aos="fade-right"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine"
+                >
                   <p class="texto-ang-less">Estrada da Mendanha</p>
                   <p class="texto-ang-less">Nº 25 Bloco 4 - 4 C</p>
                   <p class="texto-ang-less">Parque norte</p>
