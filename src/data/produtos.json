@@ -11,7 +11,9 @@
         "icon": "pt.svg",
         "category": "Bacalhau",
         "hasCategory": true,
+        "isPerecivel": false,
         "hasSubProdutos": true,
+        "top":1,
         "subProdutos": [
             {
                 "_id": 1,
@@ -25,6 +27,7 @@
                 "icon": "pt.svg",
                 "category": "Bacalhau",
                 "hasCategory": true,
+                "isPerecivel": false,
                 "hasSubProdutos": false
             },
             {
@@ -39,6 +42,7 @@
                 "icon": "pt.svg",
                 "category": "Bacalhau",
                 "hasCategory": true,
+                "isPerecivel": false,
                 "hasSubProdutos": false
             }
         ]
@@ -56,6 +60,7 @@
         "category": "Bacalhau",
         "subProdutos": [],
         "hasCategory": true,
+        "isPerecivel": false,
         "hasSubProdutos": false
     },
     {
@@ -71,6 +76,7 @@
         "category": "Bacalhau",
         "subProdutos": [],
         "hasCategory": true,
+        "isPerecivel": false,
         "hasSubProdutos": false
     },
     {
@@ -86,6 +92,8 @@
         "category": "Bacalhau",
         "subProdutos": [],
         "hasCategory": true,
+        "isPerecivel": true,
+        "top":2,
         "hasSubProdutos": false
     },
     {
@@ -100,6 +108,8 @@
         "icon": "ao.svg",
         "category": "Bacalhau",
         "hasCategory": true,
+        "isPerecivel": false,
+        "top":3,
         "hasSubProdutos": true,
         "subProdutos": [
             {
@@ -114,6 +124,7 @@
                 "icon": "ao.svg",
                 "category": "Bacalhau",
                 "hasCategory": true,
+                "isPerecivel": false,
                 "hasSubProdutos": false
             },
             {
@@ -128,6 +139,7 @@
                 "icon": "ao.svg",
                 "category": "Bacalhau",
                 "hasCategory": true,
+                "isPerecivel": false,
                 "hasSubProdutos": false
             }
         ]
@@ -145,6 +157,7 @@
         "category": "Bacalhau",
         "subProdutos": [],
         "hasCategory": true,
+        "isPerecivel": true,
         "hasSubProdutos": false
     },
     {
@@ -159,6 +172,8 @@
         "icon": "ao.svg",
         "category": "Bacalhau",
         "hasCategory": true,
+        "isPerecivel": false,
+        "top":4,
         "hasSubProdutos": true,
         "subProdutos": [
             {
@@ -173,6 +188,7 @@
                 "icon": "ao.svg",
                 "category": "Bacalhau",
                 "hasCategory": true,
+                "isPerecivel": false,
                 "hasSubProdutos": false
             },
             {
@@ -187,6 +203,7 @@
                 "icon": "ao.svg",
                 "category": "Bacalhau",
                 "hasCategory": true,
+                "isPerecivel": false,
                 "hasSubProdutos": false
             }
         ]
@@ -204,6 +221,7 @@
         "category": "Bacalhau",
         "subProdutos": [],
         "hasCategory": true,
+        "isPerecivel": true,
         "hasSubProdutos": false
     },
     {
@@ -219,6 +237,7 @@
         "category": "Bacalhau",
         "subProdutos": [],
         "hasCategory": true,
+        "isPerecivel": true,
         "hasSubProdutos": false
     },
     {
@@ -234,6 +253,7 @@
         "category": "Bacalhau",
         "subProdutos": [],
         "hasCategory": true,
+        "isPerecivel": true,
         "hasSubProdutos": false
     },
     {
@@ -249,6 +269,7 @@
         "category": "Bacalhau",
         "subProdutos": [],
         "hasCategory": true,
+        "isPerecivel": true,
         "hasSubProdutos": false
     },
     {
@@ -263,6 +284,7 @@
         "icon": "ao.svg",
         "category": "Bacalhau",
         "hasCategory": true,
+        "isPerecivel": true,
         "hasSubProdutos": false,
         "subProdutos": [
             {
@@ -277,6 +299,7 @@
                 "icon": "ao.svg",
                 "category": "Bacalhau",
                 "hasCategory": true,
+                "isPerecivel": true,
                 "hasSubProdutos": false
             },
             {
@@ -291,6 +314,7 @@
                 "icon": "ao.svg",
                 "category": "Bacalhau",
                 "hasCategory": true,
+                "isPerecivel": true,
                 "hasSubProdutos": false
             }
         ]
@@ -308,6 +332,7 @@
         "category": "Bacalhau",
         "subProdutos": [],
         "hasCategory": true,
+        "isPerecivel": false,
         "hasSubProdutos": false
     },
     {
@@ -323,6 +348,7 @@
         "category": "Bacalhau",
         "subProdutos": [],
         "hasCategory": true,
+        "isPerecivel": true,
         "hasSubProdutos": false
     },
     {
@@ -338,6 +364,7 @@
         "category": "Bacalhau",
         "subProdutos": [],
         "hasCategory": true,
+        "isPerecivel": true,
         "hasSubProdutos": false
     },
     {
@@ -353,6 +380,8 @@
         "category": "Bacalhau",
         "subProdutos": [],
         "hasCategory": true,
+        "isPerecivel": true,
+        "top":5,
         "hasSubProdutos": false
     },
     {
@@ -368,6 +397,7 @@
         "category": "Bacalhau",
         "subProdutos": [],
         "hasCategory": true,
+        "isPerecivel": true,
         "hasSubProdutos": false
     },
     {
@@ -383,6 +413,7 @@
         "category": "Bacalhau",
         "subProdutos": [],
         "hasCategory": true,
+        "isPerecivel": true,
         "hasSubProdutos": false
     },
     {
@@ -398,6 +429,7 @@
         "category": "Bacalhau",
         "subProdutos": [],
         "hasCategory": true,
+        "isPerecivel": true,
         "hasSubProdutos": false
     },
     {
@@ -413,6 +445,7 @@
         "category": "Bacalhau",
         "subProdutos": [],
         "hasCategory": true,
+        "isPerecivel": true,
         "hasSubProdutos": false
     },
     {
@@ -428,6 +461,7 @@
         "category": "Bacalhau",
         "subProdutos": [],
         "hasCategory": true,
+        "isPerecivel": true,
         "hasSubProdutos": false
     },
     {
@@ -443,6 +477,7 @@
         "category": "Bacalhau",
         "subProdutos": [],
         "hasCategory": true,
+        "isPerecivel": true,
         "hasSubProdutos": false
     },
     {
@@ -458,6 +493,7 @@
         "category": "Bacalhau",
         "subProdutos": [],
         "hasCategory": true,
+        "isPerecivel": true,
         "hasSubProdutos": false
     },
     {
@@ -473,6 +509,8 @@
         "category": "Bacalhau",
         "subProdutos": [],
         "hasCategory": true,
+        "isPerecivel": true,
+        "top":6,
         "hasSubProdutos": false
     },
     {
@@ -488,6 +526,7 @@
         "category": "Bacalhau",
         "subProdutos": [],
         "hasCategory": true,
+        "isPerecivel": true,
         "hasSubProdutos": false
     }
 ]

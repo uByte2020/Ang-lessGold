@@ -44,45 +44,7 @@
           v-show="Alimentos === true"
         >
           <div class="row carouselContainer">
-            <div class="col-lg-4 col-sm-12 col-xl-4 col-md-4 DivImg">
-              <figure>
-                <img
-                  src="@/assets/imgs/products/img10.png"
-                  class="img-fluid img"
-                  alt="Chouriço"
-                />
-                <figcaption>
-                  <h6 class="explore-prod">Chouriço</h6>
-                  <p class="preco">Preço</p>
-                </figcaption>
-              </figure>
-            </div>
-            <div class="col-lg-4 col-sm-12 col-xl-4 col-md-4 DivImg">
-              <figure>
-                <img
-                  src="@/assets/imgs/products/img1.jpeg"
-                  class="img-fluid img"
-                  alt="Chispe"
-                />
-                <figcaption>
-                  <h6 class="explore-prod">Chispe</h6>
-                  <p class="preco">Preço</p>
-                </figcaption>
-              </figure>
-            </div>
-            <div class="col-lg-4 col-sm-12 col-xl-4 col-md-4 DivImg">
-              <figure>
-                <img
-                  src="@/assets/imgs/products/img17.jpg"
-                  class="img-fluid img"
-                  alt="Carne"
-                />
-                <figcaption>
-                  <h6 class="explore-prod">Carne</h6>
-                  <p class="preco">Preço</p>
-                </figcaption>
-              </figure>
-            </div>
+            <top-product-item v-for="(produto, index) in getPerecivelProducts" :product="produto"  :key="index"/>
           </div>
         </div>
         <div
@@ -91,45 +53,7 @@
           v-show="Alimentos == false"
         >
           <div class="row">
-            <div class="col-lg-4 col-sm-12 col-xl-4 col-md-4 DivImg">
-              <figure>
-                <img
-                  src="@/assets/imgs/products/img14.jpg"
-                  class="img-fluid img"
-                  alt="Farinha Musseque"
-                />
-                <figcaption>
-                  <h6 class="explore-prod">Farinha Musseque</h6>
-                  <p class="preco">Preço</p>
-                </figcaption>
-              </figure>
-            </div>
-            <div class="col-lg-4 col-sm-12 col-xl-4 col-md-4 DivImg">
-              <figure>
-                <img
-                  src="@/assets/imgs/products/img18.jpg"
-                  class="img-fluid img"
-                  alt="Peixe Seco"
-                />
-                <figcaption>
-                  <h6 class="explore-prod">Peixe Seco</h6>
-                  <p class="preco">Preço</p>
-                </figcaption>
-              </figure>
-            </div>
-            <div class="col-lg-4 col-sm-12 col-xl-4 col-md-4 DivImg">
-              <figure>
-                <img
-                  src="@/assets/imgs/products/img6.jpg"
-                  class="img-fluid img"
-                  alt="Mucua"
-                />
-                <figcaption>
-                  <h6 class="explore-prod">Múcua</h6>
-                  <p class="preco">Preço</p>
-                </figcaption>
-              </figure>
-            </div>
+            <top-product-item v-for="(produto, index) in getNotPerecivelProducts" :product="produto"  :key="index"/>
           </div>
         </div>
       </div>
@@ -138,41 +62,36 @@
   </div>
 </template>
 <script>
+import TopProductItem from "./TopProductItem";
 export default {
+  components: { TopProductItem },
   data() {
     return {
       Alimentos: true,
+      allProducts: [],
     };
+  },
+  mounted(){
+    this.$store.dispatch('setProducts');
+    this.allProducts = this.getProducts;
   },
   methods: {
     AlimentosClick(type) {
       this.Alimentos = type;
       return this.Alimentos;
-      // const Cor = document.getElementById("Link1");
-      // const Cor2 = document.getElementById("Link2");
-      // if (this.Alimentos == true) {
-      //   Cor.style.color = "#68aa38";
-      //   Cor.style.borderLeft = "2px solid #68aa38";
-      //   Cor.style.marginLeft = "-12%";
-      //   Cor.style.paddingLeft = "4%";
-      //   Cor.style.fontSize = "1.2rem";
-      //   Cor2.style.color = " #707070";
-      //   Cor2.style.borderLeft = "0";
-      //   Cor2.style.marginLeft = "-8%";
-      //   Cor2.style.paddingLeft = "8%";
-      //   Cor2.style.fontSize = "1.2rem";
-      // } else {
-      //   Cor2.style.color = "#68aa38";
-      //   Cor2.style.borderLeft = "2px solid #68aa38";
-      //   Cor2.style.marginLeft = "-12%";
-      //   Cor2.style.paddingLeft = "4%";
-      //   Cor.style.color = " #707070";
-      //   Cor.style.borderLeft = "0";
-      //   Cor.style.marginLeft = "-8%";
-      //   Cor.style.paddingLeft = "8%";
-      // }
     },
   },
+  computed:{
+    getPerecivelProducts(){
+      return this.allProducts.filter(prod=>prod.isPerecivel && 'top' in prod).sort((a,b)=> a.top - b.top);
+    },
+    getNotPerecivelProducts(){
+      return this.allProducts.filter(prod=>!prod.isPerecivel && 'top' in prod).sort((a,b)=> a.top - b.top);
+    },
+    getProducts () {
+      return this.$store.getters.getProducts;
+    }
+  }
 };
 </script>
 <style scoped>
@@ -205,12 +124,18 @@ export default {
   top: 0px;
   left: 0px;
   position: absolute;
-  background: url('../../assets/imgs/img4.jpg') center center fixed;
+  /* background: url('../../assets/imgs/img4.jpg') center center fixed; */
    filter: opacity(.3) brightness(60%);
   -moz-filter: 6%;
   -ms-filter: 6%;
   -webkit-filter: 6%;
 }
+
+#Produto .container{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
 .explore-prod {
   font-size: 1.2rem;
 }
@@ -260,12 +185,6 @@ export default {
   -moz-border-left: 2px solid #68aa38;
   -ms-border-left: 2px solid #68aa38;
   -webkit-border-left: 2px solid #68aa38;
-  /* margin-left: -12%; */
-  /* padding-left: 8%;
-  -moz-padding-left: 8%;
-  -ms-padding-left: 8%;
-  -webkit-padding-left: 8%; */
-  /* border-left: 2px solid #68aa38; */
     margin-left: -1%;
 }
 .LinkActive:hover {
@@ -273,29 +192,12 @@ export default {
   -moz-color: #f8ce00;
   -ms-color: #f8ce00;
   -webkit-color: #f8ce00;
-  /* border-left: 2px solid #f8ce00 !important;
-  -moz-border-left: 2px solid #f8ce00;
-  -ms-border-left: 2px solid #f8ce00;
-  -webkit-border-left: 2px solid #f8ce00; */
-  /* margin-left: -12% !important;
-  -webkit-margin-left: -8%;
-  padding-left: 8%;
-  -moz-padding-left: 8%;
-  -ms-padding-left: 8%;
-  -webkit-padding-left: 8%; */
 }
 #Link2:hover {
   color: #f8ce00 !important;
   -moz-color: #f8ce00;
   -ms-color: #f8ce00;
   -webkit-color: #f8ce00;
-  /* border-left: 2px solid #f8ce00 !important;
-  -moz-border-left: 2px solid #f8ce00;
-  -ms-border-left: 2px solid #f8ce00;
-  -webkit-border-left: 2px solid #f8ce00;
-  margin-left: -12% !important;
-  padding-left: 8%;
-  -webkit-padding-left: 8%; */
 }
 a {
   text-decoration: none;
@@ -312,16 +214,6 @@ a {
   -moz-color: #f8ce00;
   -ms-color: #f8ce00;
   -webkit-color: #f8ce00;
-  /* border-left: 2px solid #f8ce00 !important;
-  -moz-border-left: 2px solid #f8ce00;
-  -ms-border-left: 2px solid #f8ce00;
-  -webkit-border-left: 2px solid #f8ce00;
-  margin-left: -12% !important;
-  -webkit-margin-left: -8%;
-  padding-left: 8%;
-  -moz-padding-left: 8%;
-  -ms-padding-left: 8%;
-  -webkit-padding-left: 8%; */
   text-decoration: none;
   -moz-text-decoration: none;
   -ms-text-decoration: none;
@@ -334,7 +226,6 @@ a {
   -moz-object-fit: cover;
   -ms-object-fit: cover;
   -webkit-object-fit: cover;
-  /* box-shadow: 1px 1px 5px gray; */
   border-radius: 7px;
   -moz-border-radius: 7px;
   -ms-border-radius: 7px;
@@ -342,9 +233,8 @@ a {
 }
 .DivImg {
   margin-top: 2%;
-  -moz-margin-top: 2%;
-  -ms-margin-top: 2%;
-  -webkit-margin-top: 2%;
+  padding-left: 0!important;
+  padding-right: 0!important;
 }
 figure {
   height: 250px;
@@ -369,6 +259,7 @@ figure {
   -webkit-margin: 1% auto !important;
   transition: 0.2s ease-out;
   background-color: #fff;
+  cursor: pointer;
 }
 figure:hover {
   transform: scale(1.08);
@@ -380,7 +271,6 @@ figcaption {
   -moz-margin: 1% auto;
   -ms-margin: 1% auto;
   -webkit-margin: 1% auto;
-  /* margin-left: 3%; */
   height: 10%;
   -moz-height: 10%;
   -ms-height: 10%;
@@ -399,21 +289,9 @@ figcaption {
 }
 .progress {
   height: 5px;
-  -moz-height: 5px;
-  -ms-height: 5px;
-  -webkit-height: 5px;
   width: 30px;
-  -moz-width: 30px;
-  -ms-width: 30px;
-  -webkit-width: 30px;
   margin-top: 0% !important;
-  -moz-margin-top: 0% !important;
-  -ms-margin-top: 0% !important;
-  -webkit-margin-top: 0% !important;
-  margin: 2% 48%;
-  -moz-margin: 2% 48%;
-  -ms-margin: 2% 48%;
-  -webkit-margin: 2% 48%;
+  margin: 0 auto;
 }
 .progressCor {
   background-color: #68aa38;

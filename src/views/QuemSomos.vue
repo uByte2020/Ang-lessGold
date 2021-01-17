@@ -62,7 +62,7 @@
                   data-aos-duration="990"
                 >
                   <div
-                    class="row BackgroundBlackwhite"
+                    class="row missao-visao-valor BackgroundBlackwhite"
                     :class="{ BackgroundBlackwhite1: Know }"
                   >
                     <div class="col-12 IconDiv">
@@ -76,14 +76,14 @@
                     <div class="col-12 Texto">
                       <p>
                         Ter uma empresa de importação e exportação de
-                        referencias, comprometidas em satisfazer as necessidades
-                        dos parceiros de négocio e cliente, capaz de atrair,
+                        referência, comprometida em satisfazer as necessidades
+                        dos parceiros de négocio e clientes, capaz de atrair,
                         reter e desenvolver<span v-show="Know == false"
                           >...</span
                         >
                         <span v-show="Know">
-                          os melhores profissionais e gerar os retorno atrativo
-                          ao accionista e atuando com ética e responsablidade
+                          os melhores profissionais e gerar os retornos atrativos
+                          aos accionistas e atuando com ética e responsablidade
                           sócial.</span
                         >
                         <a @click="Saber">
@@ -102,7 +102,7 @@
                   data-aos-duration="990"
                 >
                   <div
-                    class="row BackgroundBlackwhiteVisao"
+                    class="row missao-visao-valor BackgroundBlackwhiteVisao"
                     :class="{ BackgroundBlackwhiteVisao1: know }"
                   >
                     <div class="col-12 IconDiv2">
@@ -115,18 +115,18 @@
                     <div class="col-12 titulo2"><h2>Visão</h2></div>
                     <div class="col-12 Texto2">
                       <p>
-                        <strong>Ang Less Gold - </strong> esta fortemente
-                        envolvido na melhoria da qualidade de vida das
-                        populações e desenvolvimento de comunidade<span
+                        <strong>Ang Less Gold </strong> está fortemente
+                        envolvida na melhoria da qualidade de vida da
+                        população e desenvolvimento da comunidade<span
                           v-show="know == false"
                           >...</span
                         >
                         <span v-show="know == true">
-                          em todo o país (Angola e Portugal) nesta mesma
-                          virtude, também demos suporte a lares de acolhimento
-                          de criança e adultos desfavorecidos normalmente com
+                          em todo o país (Angola e Portugal). Nesta mesma
+                          virtude, também damos suporte a lares de acolhimento
+                          de criança e adultos desfavorecidos, normalmente com
                           sexta básica, sopas e etc. Aliado fortemente na
-                          educação, saúde, artes e cúltura e turismo.</span
+                          educação, saúde, artes, cúltura e turismo.</span
                         ><a @click="saber"
                           ><strong> {{ saiba }} </strong></a
                         >
@@ -152,7 +152,7 @@
                   data-aos-offset="0"
                   data-aos-duration="990"
                 >
-                  <div class="row BackgroundBlackwhite">
+                  <div class="row missao-visao-valor BackgroundBlackwhite">
                     <div class="col-12 IconDiv3">
                       <img
                         src="../assets/svg/valor.svg"
@@ -228,9 +228,7 @@ h1 {
   text-align: left;
   margin-left: 4%;
 }
-.BemVCompenent {
-  /* margin: auto 3% !important; */
-}
+
 .TituloAngLess {
   font-family: "Gotham";
   color: #707070;
@@ -266,7 +264,7 @@ h1 {
 .BackgroundBlackTexto {
   text-align: justify;
   font-size: 19px;
-  line-height: 2;
+  line-height: 1.5;
   width: 100%;
 }
 .tabelasBracas {
@@ -308,6 +306,11 @@ h1 {
   color: black;
   border-radius: 10px 10px 0px 0px;
 }
+
+.missao-visao-valor{
+  transition: 0.3s;
+}
+
 .img {
   height: auto;
   width: 90%;
@@ -388,6 +391,10 @@ h1 {
   -moz-background-color: #8cb560 !important;
   -ms-background-color: #8cb560 !important;
   -webkit-background-color: #8cb560 !important;
+}
+
+a{
+  cursor: pointer;
 }
 @font-face {
   font-family: "Gotham";

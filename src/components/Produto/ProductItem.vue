@@ -74,9 +74,6 @@ a:hover {
 
 .icon {
   height: 20px;
-  /* margin-left: 150px !important;
-  margin-right: 0px !important;
-  margin: 0px; */
 }
 figure {
   background-color: #fff;
