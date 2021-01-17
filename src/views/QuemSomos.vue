@@ -55,11 +55,7 @@
               <div class="row justify-content-md-center centro">
                 <div
                   class="col-lg-4 col-md-12 col-xl-4 col-sm-12"
-                  data-aos="fade-up"
-                  data-aos-easing="ease-in-back"
-                  data-aos-delay="300"
-                  data-aos-offset="0"
-                  data-aos-duration="990"
+                  data-aos="flip-up"
                 >
                   <div
                     class="row missao-visao-valor BackgroundBlackwhite"
@@ -95,11 +91,7 @@
                 </div>
                 <div
                   class="col-lg-4 col-md-12 col-xl-4 col-sm-12"
-                  data-aos="fade-up"
-                  data-aos-easing="ease-in-back"
-                  data-aos-delay="300"
-                  data-aos-offset="0"
-                  data-aos-duration="990"
+                  data-aos="flip-up"
                 >
                   <div
                     class="row missao-visao-valor BackgroundBlackwhiteVisao"
@@ -146,11 +138,7 @@
                 </div>
                 <div
                   class="col-lg-4 col-md-12 col-xl-4 col-sm-12"
-                  data-aos="fade-up"
-                  data-aos-easing="ease-in-back"
-                  data-aos-delay="300"
-                  data-aos-offset="0"
-                  data-aos-duration="990"
+                  data-aos="flip-up"
                 >
                   <div class="row missao-visao-valor BackgroundBlackwhite">
                     <div class="col-12 IconDiv3">
@@ -405,7 +393,6 @@ a{
     font-size: 35px !important;
   }
   .BackgroundBlackwhite {
-    width: 90% !important;
     background-color: #fff;
     height: 250px;
     margin: 50px auto;
@@ -413,9 +400,7 @@ a{
     border-radius: 10px;
   }
   .BackgroundBlackwhite1 {
-    width: 90% !important;
     background-color: #fff;
-    height: auto;
     margin: 50px auto;
     color: black;
     border-radius: 10px;
