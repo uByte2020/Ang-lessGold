@@ -22,6 +22,7 @@ Vue.use(VueGoogleMaps, {
 new Vue({
   created(){
     AOS.init({duration: 1200,})
+    // AOS.init({disable: "phone"})
   },
   router,
   store,
