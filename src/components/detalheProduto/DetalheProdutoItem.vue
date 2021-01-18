@@ -174,5 +174,19 @@ a:hover {
     font-size: 20px;
     color: #70707070;
   }
+  .Bacalhau{
+    font-size: 35px;
+    margin-top: 2%;
+  }
+  ul li label{
+    font-size: 1.3rem;
+    color: #707070;
+}
+ul li span{
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: Josefin;
+    /* font-style: italic; */
+}
 }
 </style>

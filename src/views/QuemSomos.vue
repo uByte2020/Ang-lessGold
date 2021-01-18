@@ -28,7 +28,7 @@
               <div class="row justify-content-md-center">
                 <div
                   class="col-lg-12 col-md-12 col-xl-5 col-sm-12"
-                  data-aos="zoom-in-down"
+                  data-aos="fade-right"
                   data-aos-easing="ease-in-back"
                   data-aos-delay="300"
                   data-aos-offset="0"
