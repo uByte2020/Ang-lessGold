@@ -26,13 +26,15 @@
           <div class="row">
             <div class="col-12 TxTEImg">
               <div class="row justify-content-md-center">
-                <div class="col-lg-12 col-md-12 col-xl-5 col-sm-12">
-                  <p
-                    class="BackgroundBlackTexto"
-                    data-aos="fade-right"
-                    data-aos-offset="300"
-                    data-aos-easing="ease-in-sine"
-                  >
+                <div
+                  class="col-lg-12 col-md-12 col-xl-5 col-sm-12"
+                  data-aos="fade-right"
+                  data-aos-easing="ease-in-back"
+                  data-aos-delay="300"
+                  data-aos-offset="0"
+                  data-aos-duration="1000"
+                >
+                  <p class="BackgroundBlackTexto">
                     Para nós a chave do sucesso é melhorar dia/dia com a nossa
                     equipa de profissionais, trabalhando arduamente para
                     conceber soluções personalizadas, que vão ao encontro das

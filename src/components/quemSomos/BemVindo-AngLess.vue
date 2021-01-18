@@ -8,9 +8,13 @@
               <img src="@/assets/imgs/img30.jpg" alt="" class="img-fluid img" />
             </div>
             <div
-              class="col-lg-8 col-xl-8 col-sm-12 col-md-12 TextoBemVindo animate__animated animate__fadeInRight animate__faster"
+              class="col-lg-8 col-xl-8 col-sm-12 col-md-12 TextoBemVindo"
             >
-              <h2 class="TextoBemVindoH1">
+              <h2 class="TextoBemVindoH1" data-aos="zoom-in-down"
+              data-aos-easing="ease-in-back"
+              data-aos-delay="300"
+              data-aos-offset="0"
+              data-aos-duration="1000">
                 Bem-Vindo <br />
                 À ANG LESS GOLD
               </h2>
@@ -24,7 +28,11 @@
                   aria-valuemax="10"
                 ></div>
               </div>
-              <p class="TextoInicioP">
+              <p class="TextoInicioP" data-aos="zoom-in-down"
+              data-aos-easing="ease-in-back"
+              data-aos-delay="300"
+              data-aos-offset="0"
+              data-aos-duration="1200">
                 A <b>ANG LESS GOLD</b> é uma empresa de direito Português,
                 Contribuinte fiscal nº 515015253 com sede em estrada da Mendanha
                 nº 25 Bloco 4 4c Parque norte, Carregado e Cadafais, conselho de

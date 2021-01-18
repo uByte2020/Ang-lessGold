@@ -11,9 +11,7 @@
       <div class="row">
         <div class="Inicio col-12">
           <div class="row TextoInicio">
-            <div
-              class="container animate__animated animate__fadeInRight animate__faster"
-            >
+            <div class="container animate__animated animate__fadeInLeft">
               <div class="row">
                 <div class="col-lg-8 col-xl-8 col-sm-12 col-md-12">
                   <h1 class="TextoInicioH1">
@@ -44,9 +42,11 @@
             </div>
             <div
               class="col-lg-7 col-xl-7 col-sm-12 col-md-12 TextoBemVindo"
-              data-aos="fade-left"
-              data-aos-offset="300"
-              data-aos-easing="ease-in-sine"
+              data-aos="zoom-in-down"
+              data-aos-easing="ease-in-back"
+              data-aos-delay="300"
+              data-aos-offset="0"
+              data-aos-duration="1500"
             >
               <h2 class="TextoBemVindoH1">
                 Bem-Vindo <br />
@@ -84,12 +84,11 @@
             <div class="container">
               <div class="row">
                 <div class="col-lg-8 col-xl-6 col-sm-12 col-md-8 OQFazemos">
-                  <div
-                    class="col-lg-9 col-xl-9 col-sm-12 col-md-9"
-                    data-aos="fade-left"
-                    data-aos-offset="300"
-                    data-aos-easing="ease-in-sine"
-                  >
+                  <div class="col-lg-9 col-xl-9 col-sm-12 col-md-9" data-aos="zoom-in-up"
+                    data-aos-easing="ease-in-back"
+                    data-aos-delay="300"
+                    data-aos-offset="0"
+                    data-aos-duration="1300">
                     <h3>O que fazemos</h3>
                     <div class="progress">
                       <div
@@ -104,9 +103,11 @@
                   </div>
                   <div
                     class="col-lg-8 col-xl-10 col-sm-12 col-md-8"
-                    data-aos="fade-left"
-                    data-aos-offset="300"
-                    data-aos-easing="ease-in-sine"
+                    data-aos="zoom-in-up"
+                    data-aos-easing="ease-in-back"
+                    data-aos-delay="300"
+                    data-aos-offset="0"
+                    data-aos-duration="1500"
                   >
                     <p>
                       Operamos com importações e exportações diversas como,
@@ -137,7 +138,7 @@
               </div>
             </div>
             <div
-              class="col-lg-7 col-xl-3 col-sm-8 col-md-7 TextoEscolherNos"
+              class="col-lg-4 col-xl-3 col-sm-12 col-md-12 TextoEscolherNos"
               data-aos="flip-up"
               data-aos-offset="300"
               data-aos-easing="ease-in-sine"
@@ -156,7 +157,7 @@
               </p>
             </div>
             <div
-              class="col-lg-7 col-xl-3 col-sm-8 col-md-7 TextoEscolherNos"
+              class="col-lg-4 col-xl-3 col-sm-12 col-md-12 TextoEscolherNos"
               data-aos="flip-up"
               data-aos-offset="300"
               data-aos-easing="ease-in-sine"
@@ -179,7 +180,7 @@
               </div>
             </div>
             <div
-              class="col-lg-7 col-xl-3 col-sm-8 col-md-7 TextoEscolherNos"
+              class="col-lg-4 col-xl-3 col-sm-12 col-md-12 TextoEscolherNos"
               data-aos="flip-up"
               data-aos-offset="300"
               data-aos-easing="ease-in-sine"
@@ -233,6 +234,23 @@ export default {
 </script>
 
 <style scoped>
+/* Animação */
+.my-element {
+  display: inline-block;
+  /* margin: 0 0.5rem; */
+
+  animation: bounce; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 3s; /* don't forget to set a duration! */
+}
+.animate__animated.animate__fadeInLeft {
+  --animate-duration: 3s;
+}
+
+/* This changes all the animations globally */
+:root {
+  --animate-duration: 800ms;
+  --animate-delay: 0.9s;
+}
 @font-face {
   font-family: "Josefin";
   src: local("Fonts"),
@@ -307,7 +325,7 @@ export default {
   -webkit-filter: grayscale(50%) brightness(30%) !important;
 }
 .TextoInicio {
-  margin-top: 50px;
+  margin-top: 150px;
   -moz-margin-top: 15%;
   -ms-margin-top: 15%;
   -webkit-margin-top: 15%;
@@ -849,16 +867,16 @@ p {
     -webkit-padding: 5%;
   }
 }
+@media only screen and (min-width: 1000px) and (max-width: 1024px){
+  .TextoInicio{
+    margin-top: 300px;
+  }
+}
+
 @media only screen and (max-width: 800px) {
   #BemVindo-LesGold {
     margin: 1% auto !important;
-    -moz-margin: 1% auto;
-    -ms-margin: 1% auto;
-    -webkit-margin: 1% auto;
     padding: 5%;
-    -moz-padding: 5%;
-    -ms-padding: 5%;
-    -webkit-padding: 5%;
   }
 }
 @media only screen and (max-width: 1590px) {
@@ -954,28 +972,32 @@ p {
     -webkit-font-family: "Segoe";
   }
 }
-@media only screen and (min-width: 400px) and (max-width: 800px) {
+@media only screen and (min-width: 400px) and (max-width: 700px) {
   .TextoInicio {
-    margin-top: 150px;
-    -moz-margin-top: 20%;
-    -ms-margin-top: 20%;
-    -webkit-margin-top: 20%;
+    margin-top: 170px;
+  }
+}
+@media only screen and (min-width: 750px) and (max-width: 770px) {
+  .TextoInicio {
+    margin-top: 200px;
+  }
+  #Home{
+    width: 100vw!important;
   }
 }
 @media only screen and (min-width: 370px) and (max-width: 375px) {
   .TextoInicio {
     margin-top: 170px;
-    -moz-margin-top: 20%;
-    -ms-margin-top: 20%;
-    -webkit-margin-top: 20%;
+  }
+}
+@media only screen and (min-width: 350px) and (max-width: 360px){
+  .TextoInicio{
+    margin-top: 68px;
   }
 }
 @media only screen and (min-width: 310px) and (max-width: 320px) {
   .TextoInicio {
     margin-top: 60px;
-    -moz-margin-top: 20%;
-    -ms-margin-top: 20%;
-    -webkit-margin-top: 20%;
   }
 }
 @media only screen and (max-width: 300px) {
@@ -984,12 +1006,7 @@ p {
   }
   .Inicio {
     padding: 5%;
-    -moz-padding: 5%;
-    -ms-padding: 5%;
-    -webkit-padding: 5%;
     position: relative;
-    -moz-position: relative;
-    -ms-position: relative;
     -webkit-position: relative;
     height: 100% !important;
     width: 105% !important;

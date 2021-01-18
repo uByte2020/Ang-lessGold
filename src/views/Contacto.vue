@@ -74,9 +74,6 @@
                 </div>
                 <div
                   class="col-12 Texto"
-                  data-aos="fade-right"
-                  data-aos-offset="300"
-                  data-aos-easing="ease-in-sine"
                 >
                   <p class="texto-ang-less">Estrada da Mendanha</p>
                   <p class="texto-ang-less">Nº 25 Bloco 4 - 4 C</p>
